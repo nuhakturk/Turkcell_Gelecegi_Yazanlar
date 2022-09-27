@@ -17,10 +17,16 @@ namespace Dosya_islemleri
             InitializeComponent();
         }
 
-        private void Btn_KonumSec_Click(object sender, EventArgs e)
+        private void BtnKonumSec_Click(object sender, EventArgs e)
         {
             folderBrowserDialog1.ShowDialog();
             label1.Text = folderBrowserDialog1.SelectedPath;
+        }
+
+        private void BtnOpenFileDialog_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
+            label1.Text = openFileDialog1.FileName;
         }
     }
 }
