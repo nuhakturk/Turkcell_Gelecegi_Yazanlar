@@ -58,6 +58,16 @@ namespace Dosya_islemleri
             }
         }
 
+        private void BtnYazdir_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = "Metin Dosyası |*.txt";
+            saveFileDialog1.ShowDialog();
+            StreamWriter kaydet = new StreamWriter(saveFileDialog1.FileName);
+            kaydet.WriteLine(richTextBox1.Text);
+            kaydet.Close();
+            MessageBox.Show("Metin belgesine kayıt yapıldı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
         private void BtnKonum_Click(object sender, EventArgs e)
         {
             if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)

@@ -44,6 +44,8 @@ namespace Dosya_islemleri
             this.TxtAd = new System.Windows.Forms.TextBox();
             this.BtnOku = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.BtnYazdir = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // BtnKonumSec
@@ -59,7 +61,7 @@ namespace Dosya_islemleri
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(25, 468);
+            this.label1.Location = new System.Drawing.Point(28, 138);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(64, 25);
             this.label1.TabIndex = 1;
@@ -156,16 +158,36 @@ namespace Dosya_islemleri
             this.listBox1.FormattingEnabled = true;
             this.listBox1.HorizontalScrollbar = true;
             this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(30, 148);
+            this.listBox1.Location = new System.Drawing.Point(33, 174);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(403, 279);
+            this.listBox1.Size = new System.Drawing.Size(403, 129);
             this.listBox1.TabIndex = 11;
+            // 
+            // BtnYazdir
+            // 
+            this.BtnYazdir.Location = new System.Drawing.Point(513, 403);
+            this.BtnYazdir.Name = "BtnYazdir";
+            this.BtnYazdir.Size = new System.Drawing.Size(274, 47);
+            this.BtnYazdir.TabIndex = 12;
+            this.BtnYazdir.Text = "Yazdır";
+            this.BtnYazdir.UseVisualStyleBackColor = true;
+            this.BtnYazdir.Click += new System.EventHandler(this.BtnYazdir_Click);
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Location = new System.Drawing.Point(33, 318);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(403, 167);
+            this.richTextBox1.TabIndex = 13;
+            this.richTextBox1.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(860, 511);
+            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.BtnYazdir);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.BtnOku);
             this.Controls.Add(this.label3);
@@ -204,6 +226,8 @@ namespace Dosya_islemleri
         private System.Windows.Forms.TextBox TxtAd;
         private System.Windows.Forms.Button BtnOku;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button BtnYazdir;
+        private System.Windows.Forms.RichTextBox richTextBox1;
     }
 }
 
