@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Dosya_islemleri
 {
@@ -27,6 +28,43 @@ namespace Dosya_islemleri
         {
             openFileDialog1.ShowDialog();
             label1.Text = openFileDialog1.FileName;
+        }
+
+        private void BtnSaveFileDialog_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.ShowDialog();
+        }
+
+        string belgeYolu, belgeAdi;
+
+        private void BtnOlustur_Click(object sender, EventArgs e)
+        {
+            belgeAdi = TxtAd.Text;
+            StreamWriter sw = File.CreateText(belgeYolu + "\\" + belgeAdi + ".txt");
+            MessageBox.Show("Belgeniz başarıyla oluşturuldu", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void BtnOku_Click(object sender, EventArgs e)
+        {
+            if(openFileDialog1.ShowDialog() == DialogResult.OK)
+            {
+                StreamReader oku = new StreamReader(openFileDialog1.FileName);
+                string satir = oku.ReadLine();
+                while(satir != null)
+                {
+                    listBox1.Items.Add(satir);
+                    satir = oku.ReadLine();
+                }
+            }
+        }
+
+        private void BtnKonum_Click(object sender, EventArgs e)
+        {
+            if (folderBrowserDialog1.ShowDialog() == DialogResult.OK)
+            {
+                belgeYolu = folderBrowserDialog1.SelectedPath;
+                TxtYol.Text = belgeYolu;
+            }
         }
     }
 }
