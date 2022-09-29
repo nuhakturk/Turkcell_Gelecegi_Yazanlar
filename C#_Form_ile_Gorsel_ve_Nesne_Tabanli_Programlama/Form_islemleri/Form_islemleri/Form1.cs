@@ -33,6 +33,7 @@ namespace Form_islemleri
             if(TxtKullaniciAd.Text == "Admin" && TxtSifre.Text == "1234" && TxtKod1.Text == TxtKod2.Text)
             {
                 Form2 frm = new Form2();
+                frm.kullanici = TxtKullaniciAd.Text;
                 frm.Show();
                 this.Hide();
             }

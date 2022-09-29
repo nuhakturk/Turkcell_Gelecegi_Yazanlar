@@ -16,5 +16,12 @@ namespace Form_islemleri
         {
             InitializeComponent();
         }
+
+        public string kullanici;
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            label2.Text = kullanici;
+        }
     }
 }
