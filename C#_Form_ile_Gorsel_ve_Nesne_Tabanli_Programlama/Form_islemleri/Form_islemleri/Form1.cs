@@ -26,6 +26,7 @@ namespace Form_islemleri
         private void Form1_Load(object sender, EventArgs e)
         {
             kodolustur();
+            timer1.Start();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -40,6 +41,31 @@ namespace Form_islemleri
             else
             {
                 MessageBox.Show("Hatalı bilgi girişi: Kullanıcı adı, şifre veya kod yanlış girildi!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+            }
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form3 frm = new Form3();
+            frm.Show();
+        }
+
+        int sayac = 0;
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            sayac++;
+            if(sayac % 2 == 0)
+            {
+                label3.BackColor = Color.YellowGreen;
+            }
+            else
+            {
+                label3.BackColor = Color.OrangeRed;
+            }
+            if(sayac == 10)
+            {
+                sayac = 0;
             }
         }
     }

@@ -29,6 +29,7 @@ namespace Form_islemleri
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.TxtKullaniciAd = new System.Windows.Forms.TextBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -40,6 +41,7 @@ namespace Form_islemleri
             this.TxtKod1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.TxtKod2 = new System.Windows.Forms.TextBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -105,13 +107,14 @@ namespace Form_islemleri
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Şifremi Unuttum";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Ravie", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label3.Location = new System.Drawing.Point(120, 39);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(117, 39);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(369, 38);
             this.label3.TabIndex = 8;
@@ -140,6 +143,11 @@ namespace Form_islemleri
             this.TxtKod2.Name = "TxtKod2";
             this.TxtKod2.Size = new System.Drawing.Size(145, 30);
             this.TxtKod2.TabIndex = 34;
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 500;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Form1
             // 
@@ -183,6 +191,7 @@ namespace Form_islemleri
         private System.Windows.Forms.TextBox TxtKod1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox TxtKod2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
