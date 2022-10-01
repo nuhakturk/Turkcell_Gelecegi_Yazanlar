@@ -44,6 +44,12 @@ namespace Temel_Arac_Kullanimlari
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button2 = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -111,7 +117,7 @@ namespace Temel_Arac_Kullanimlari
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(158, 158);
+            this.label6.Location = new System.Drawing.Point(154, 158);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(60, 24);
             this.label6.TabIndex = 6;
@@ -129,7 +135,7 @@ namespace Temel_Arac_Kullanimlari
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(158, 216);
+            this.label8.Location = new System.Drawing.Point(154, 216);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(60, 24);
             this.label8.TabIndex = 8;
@@ -200,11 +206,70 @@ namespace Temel_Arac_Kullanimlari
             this.listBox1.Size = new System.Drawing.Size(383, 136);
             this.listBox1.TabIndex = 14;
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(158, 264);
+            this.maskedTextBox1.Mask = "(999) 000-0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(192, 28);
+            this.maskedTextBox1.TabIndex = 15;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(61, 267);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(79, 24);
+            this.label11.TabIndex = 16;
+            this.label11.Text = "Telefon:";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(82, 316);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(58, 24);
+            this.label12.TabIndex = 18;
+            this.label12.Text = "Tarih:";
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Location = new System.Drawing.Point(158, 313);
+            this.maskedTextBox2.Mask = "00/00/0000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(192, 28);
+            this.maskedTextBox2.TabIndex = 17;
+            this.maskedTextBox2.ValidatingType = typeof(System.DateTime);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(103, 362);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(37, 24);
+            this.label13.TabIndex = 20;
+            this.label13.Text = "Tc:";
+            // 
+            // maskedTextBox3
+            // 
+            this.maskedTextBox3.Location = new System.Drawing.Point(158, 359);
+            this.maskedTextBox3.Mask = "00000000000";
+            this.maskedTextBox3.Name = "maskedTextBox3";
+            this.maskedTextBox3.Size = new System.Drawing.Size(192, 28);
+            this.maskedTextBox3.TabIndex = 19;
+            this.maskedTextBox3.ValidatingType = typeof(int);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1044, 311);
+            this.ClientSize = new System.Drawing.Size(1044, 414);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.maskedTextBox3);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
@@ -246,6 +311,12 @@ namespace Temel_Arac_Kullanimlari
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox3;
     }
 }
 
