@@ -31,52 +31,60 @@ namespace Temel_Arac_Kullanimlari
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtAdSoyad = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtSinav1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.TxtSinav2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.TxtSinav3 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TxtOrtalama = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.BtnKaydet = new System.Windows.Forms.Button();
+            this.BtnHesapla = new System.Windows.Forms.Button();
+            this.BtnTemizle = new System.Windows.Forms.Button();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.TxtDurum = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(323, 34);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.label1.Font = new System.Drawing.Font("MV Boli", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(344, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(226, 25);
+            this.label1.Size = new System.Drawing.Size(346, 31);
             this.label1.TabIndex = 0;
             this.label1.Text = "Öğrenci Not Kayıt Sistemi";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(44, 97);
+            this.label2.Location = new System.Drawing.Point(30, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 25);
             this.label2.TabIndex = 1;
             this.label2.Text = "Ad Soyad:";
             // 
-            // textBox1
+            // TxtAdSoyad
             // 
-            this.textBox1.Location = new System.Drawing.Point(145, 94);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(230, 31);
-            this.textBox1.TabIndex = 2;
+            this.TxtAdSoyad.Location = new System.Drawing.Point(131, 88);
+            this.TxtAdSoyad.Name = "TxtAdSoyad";
+            this.TxtAdSoyad.Size = new System.Drawing.Size(230, 31);
+            this.TxtAdSoyad.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(85, 137);
+            this.label3.Location = new System.Drawing.Point(71, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 25);
             this.label3.TabIndex = 3;
@@ -84,138 +92,193 @@ namespace Temel_Arac_Kullanimlari
             // 
             // comboBox1
             // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(145, 134);
+            this.comboBox1.Items.AddRange(new object[] {
+            "Algoritma",
+            "Yapay Zeka",
+            "Biçimsel Diller",
+            "Mikro İşlemciler"});
+            this.comboBox1.Location = new System.Drawing.Point(131, 128);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(230, 33);
             this.comboBox1.TabIndex = 4;
             // 
-            // textBox2
+            // TxtSinav1
             // 
-            this.textBox2.Location = new System.Drawing.Point(514, 94);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(78, 31);
-            this.textBox2.TabIndex = 6;
+            this.TxtSinav1.Location = new System.Drawing.Point(500, 88);
+            this.TxtSinav1.Name = "TxtSinav1";
+            this.TxtSinav1.Size = new System.Drawing.Size(78, 31);
+            this.TxtSinav1.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(413, 97);
+            this.label4.Location = new System.Drawing.Point(399, 91);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(76, 25);
             this.label4.TabIndex = 5;
             this.label4.Text = "Sınav 1:";
             // 
-            // textBox3
+            // TxtSinav2
             // 
-            this.textBox3.Location = new System.Drawing.Point(514, 134);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(78, 31);
-            this.textBox3.TabIndex = 8;
+            this.TxtSinav2.Location = new System.Drawing.Point(500, 128);
+            this.TxtSinav2.Name = "TxtSinav2";
+            this.TxtSinav2.Size = new System.Drawing.Size(78, 31);
+            this.TxtSinav2.TabIndex = 8;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(413, 137);
+            this.label5.Location = new System.Drawing.Point(399, 131);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(76, 25);
             this.label5.TabIndex = 7;
             this.label5.Text = "Sınav 2:";
             // 
-            // textBox4
+            // TxtSinav3
             // 
-            this.textBox4.Location = new System.Drawing.Point(734, 94);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(78, 31);
-            this.textBox4.TabIndex = 10;
+            this.TxtSinav3.Location = new System.Drawing.Point(500, 168);
+            this.TxtSinav3.Name = "TxtSinav3";
+            this.TxtSinav3.Size = new System.Drawing.Size(78, 31);
+            this.TxtSinav3.TabIndex = 10;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(633, 97);
+            this.label6.Location = new System.Drawing.Point(399, 171);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 25);
             this.label6.TabIndex = 9;
             this.label6.Text = "Sınav 3:";
             // 
-            // textBox5
+            // TxtOrtalama
             // 
-            this.textBox5.Location = new System.Drawing.Point(734, 134);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(78, 31);
-            this.textBox5.TabIndex = 12;
+            this.TxtOrtalama.Location = new System.Drawing.Point(684, 88);
+            this.TxtOrtalama.Name = "TxtOrtalama";
+            this.TxtOrtalama.Size = new System.Drawing.Size(78, 31);
+            this.TxtOrtalama.TabIndex = 12;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(666, 137);
+            this.label7.Location = new System.Drawing.Point(624, 91);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(43, 25);
             this.label7.TabIndex = 11;
             this.label7.Text = "Ort:";
             // 
-            // button1
+            // BtnKaydet
             // 
-            this.button1.Location = new System.Drawing.Point(145, 186);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 33);
-            this.button1.TabIndex = 13;
-            this.button1.Text = "Kaydet";
-            this.button1.UseVisualStyleBackColor = true;
+            this.BtnKaydet.Location = new System.Drawing.Point(131, 220);
+            this.BtnKaydet.Name = "BtnKaydet";
+            this.BtnKaydet.Size = new System.Drawing.Size(153, 33);
+            this.BtnKaydet.TabIndex = 13;
+            this.BtnKaydet.Text = "Kaydet";
+            this.BtnKaydet.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // BtnHesapla
             // 
-            this.button2.Location = new System.Drawing.Point(304, 186);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(153, 33);
-            this.button2.TabIndex = 14;
-            this.button2.Text = "Hesapla";
-            this.button2.UseVisualStyleBackColor = true;
+            this.BtnHesapla.Location = new System.Drawing.Point(290, 220);
+            this.BtnHesapla.Name = "BtnHesapla";
+            this.BtnHesapla.Size = new System.Drawing.Size(153, 33);
+            this.BtnHesapla.TabIndex = 14;
+            this.BtnHesapla.Text = "Hesapla";
+            this.BtnHesapla.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // BtnTemizle
             // 
-            this.button3.Location = new System.Drawing.Point(463, 186);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(153, 33);
-            this.button3.TabIndex = 15;
-            this.button3.Text = "Temizle";
-            this.button3.UseVisualStyleBackColor = true;
+            this.BtnTemizle.Location = new System.Drawing.Point(449, 220);
+            this.BtnTemizle.Name = "BtnTemizle";
+            this.BtnTemizle.Size = new System.Drawing.Size(153, 33);
+            this.BtnTemizle.TabIndex = 15;
+            this.BtnTemizle.Text = "Temizle";
+            this.BtnTemizle.UseVisualStyleBackColor = true;
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(49, 238);
+            this.listBox1.Location = new System.Drawing.Point(35, 272);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(763, 179);
+            this.listBox1.Size = new System.Drawing.Size(986, 179);
             this.listBox1.TabIndex = 16;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(41, 171);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(84, 25);
+            this.label8.TabIndex = 17;
+            this.label8.Text = "Numara:";
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(131, 168);
+            this.maskedTextBox1.Mask = "0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(230, 31);
+            this.maskedTextBox1.TabIndex = 18;
+            // 
+            // TxtDurum
+            // 
+            this.TxtDurum.Location = new System.Drawing.Point(683, 128);
+            this.TxtDurum.Name = "TxtDurum";
+            this.TxtDurum.Size = new System.Drawing.Size(78, 31);
+            this.TxtDurum.TabIndex = 20;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(593, 131);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(74, 25);
+            this.label9.TabIndex = 19;
+            this.label9.Text = "Durum:";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Temel_Arac_Kullanimlari.Properties.Resources.aurielaki150800025;
+            this.pictureBox1.Location = new System.Drawing.Point(809, 88);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(212, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 21;
+            this.pictureBox1.TabStop = false;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(857, 431);
+            this.ClientSize = new System.Drawing.Size(1047, 469);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.TxtDurum);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.BtnTemizle);
+            this.Controls.Add(this.BtnHesapla);
+            this.Controls.Add(this.BtnKaydet);
+            this.Controls.Add(this.TxtOrtalama);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.TxtSinav3);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.TxtSinav2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.TxtSinav1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.TxtAdSoyad);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form2";
             this.Text = "Form2";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -225,20 +288,25 @@ namespace Temel_Arac_Kullanimlari
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtAdSoyad;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtSinav1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtSinav2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox TxtSinav3;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox TxtOrtalama;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button BtnKaydet;
+        private System.Windows.Forms.Button BtnHesapla;
+        private System.Windows.Forms.Button BtnTemizle;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.TextBox TxtDurum;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
