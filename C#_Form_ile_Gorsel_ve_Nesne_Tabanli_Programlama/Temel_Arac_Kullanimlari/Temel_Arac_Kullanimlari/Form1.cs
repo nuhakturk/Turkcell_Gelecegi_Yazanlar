@@ -16,5 +16,10 @@ namespace Temel_Arac_Kullanimlari
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            label6.Text = "Ankara";
+        }
     }
 }
