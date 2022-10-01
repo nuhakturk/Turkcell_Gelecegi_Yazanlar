@@ -42,6 +42,8 @@ namespace Temel_Arac_Kullanimlari
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
@@ -173,11 +175,38 @@ namespace Temel_Arac_Kullanimlari
             this.comboBox1.Size = new System.Drawing.Size(199, 30);
             this.comboBox1.TabIndex = 12;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(649, 57);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(186, 56);
+            this.button2.TabIndex = 13;
+            this.button2.Text = "Listele";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 22;
+            this.listBox1.Items.AddRange(new object[] {
+            "C#",
+            "Java",
+            "Python",
+            "Flutter",
+            "R"});
+            this.listBox1.Location = new System.Drawing.Point(649, 155);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(383, 136);
+            this.listBox1.TabIndex = 14;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(616, 428);
+            this.ClientSize = new System.Drawing.Size(1044, 311);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox1);
@@ -215,6 +244,8 @@ namespace Temel_Arac_Kullanimlari
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

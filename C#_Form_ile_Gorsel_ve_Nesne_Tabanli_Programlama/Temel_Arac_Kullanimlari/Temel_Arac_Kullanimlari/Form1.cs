@@ -24,5 +24,13 @@ namespace Temel_Arac_Kullanimlari
             //label8.Text = textBox1.Text;
             textBox1.Text = "React Native";
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add("JavaScript");
+            listBox1.Items.Add("PostgreSQL");
+            comboBox1.Items.Add("Trabzon");
+            listBox1.Items.Add(textBox1.Text);
+        }
     }
 }
