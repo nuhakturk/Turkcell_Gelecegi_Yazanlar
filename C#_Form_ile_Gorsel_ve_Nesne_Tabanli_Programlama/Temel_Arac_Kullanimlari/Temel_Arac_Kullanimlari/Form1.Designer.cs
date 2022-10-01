@@ -53,8 +53,12 @@ namespace Temel_Arac_Kullanimlari
             this.maskedTextBox3 = new System.Windows.Forms.MaskedTextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -206,14 +210,14 @@ namespace Temel_Arac_Kullanimlari
             "Python",
             "Flutter",
             "R"});
-            this.listBox1.Location = new System.Drawing.Point(649, 155);
+            this.listBox1.Location = new System.Drawing.Point(649, 133);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(383, 136);
+            this.listBox1.Size = new System.Drawing.Size(383, 114);
             this.listBox1.TabIndex = 14;
             // 
             // maskedTextBox1
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(158, 264);
+            this.maskedTextBox1.Location = new System.Drawing.Point(108, 28);
             this.maskedTextBox1.Mask = "(999) 000-0000";
             this.maskedTextBox1.Name = "maskedTextBox1";
             this.maskedTextBox1.Size = new System.Drawing.Size(192, 28);
@@ -222,7 +226,7 @@ namespace Temel_Arac_Kullanimlari
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(61, 267);
+            this.label11.Location = new System.Drawing.Point(11, 31);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(79, 24);
             this.label11.TabIndex = 16;
@@ -231,7 +235,7 @@ namespace Temel_Arac_Kullanimlari
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(82, 316);
+            this.label12.Location = new System.Drawing.Point(32, 80);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(58, 24);
             this.label12.TabIndex = 18;
@@ -239,7 +243,7 @@ namespace Temel_Arac_Kullanimlari
             // 
             // maskedTextBox2
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(158, 313);
+            this.maskedTextBox2.Location = new System.Drawing.Point(108, 77);
             this.maskedTextBox2.Mask = "00/00/0000";
             this.maskedTextBox2.Name = "maskedTextBox2";
             this.maskedTextBox2.Size = new System.Drawing.Size(192, 28);
@@ -249,7 +253,7 @@ namespace Temel_Arac_Kullanimlari
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(103, 362);
+            this.label13.Location = new System.Drawing.Point(53, 126);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(37, 24);
             this.label13.TabIndex = 20;
@@ -257,7 +261,7 @@ namespace Temel_Arac_Kullanimlari
             // 
             // maskedTextBox3
             // 
-            this.maskedTextBox3.Location = new System.Drawing.Point(158, 359);
+            this.maskedTextBox3.Location = new System.Drawing.Point(108, 123);
             this.maskedTextBox3.Mask = "00000000000";
             this.maskedTextBox3.Name = "maskedTextBox3";
             this.maskedTextBox3.Size = new System.Drawing.Size(192, 28);
@@ -267,9 +271,9 @@ namespace Temel_Arac_Kullanimlari
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(649, 297);
+            this.pictureBox1.Location = new System.Drawing.Point(13, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(186, 90);
+            this.pictureBox1.Size = new System.Drawing.Size(186, 124);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
@@ -277,26 +281,46 @@ namespace Temel_Arac_Kullanimlari
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(850, 297);
+            this.pictureBox2.Location = new System.Drawing.Point(205, 27);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(182, 90);
+            this.pictureBox2.Size = new System.Drawing.Size(182, 124);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.pictureBox1);
+            this.groupBox1.Controls.Add(this.pictureBox2);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Location = new System.Drawing.Point(636, 264);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(396, 168);
+            this.groupBox1.TabIndex = 23;
+            this.groupBox1.TabStop = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.maskedTextBox2);
+            this.groupBox2.Controls.Add(this.maskedTextBox1);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.label11);
+            this.groupBox2.Controls.Add(this.maskedTextBox3);
+            this.groupBox2.Controls.Add(this.label12);
+            this.groupBox2.Location = new System.Drawing.Point(35, 264);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(595, 170);
+            this.groupBox2.TabIndex = 24;
+            this.groupBox2.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1044, 414);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.maskedTextBox3);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.maskedTextBox1);
+            this.BackColor = System.Drawing.Color.OliveDrab;
+            this.ClientSize = new System.Drawing.Size(1044, 444);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.comboBox1);
@@ -318,6 +342,9 @@ namespace Temel_Arac_Kullanimlari
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -348,6 +375,8 @@ namespace Temel_Arac_Kullanimlari
         private System.Windows.Forms.MaskedTextBox maskedTextBox3;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }
 
