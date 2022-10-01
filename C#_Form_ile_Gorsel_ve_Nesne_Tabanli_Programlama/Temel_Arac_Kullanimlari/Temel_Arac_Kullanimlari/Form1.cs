@@ -20,6 +20,8 @@ namespace Temel_Arac_Kullanimlari
         private void button1_Click(object sender, EventArgs e)
         {
             label6.Text = "Ankara";
+            //label8.Text = textBox1.Text;
+            textBox1.Text = "React Native";
         }
     }
 }
