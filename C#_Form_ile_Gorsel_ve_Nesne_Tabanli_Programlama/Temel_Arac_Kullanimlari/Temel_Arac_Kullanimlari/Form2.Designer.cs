@@ -200,6 +200,7 @@ namespace Temel_Arac_Kullanimlari
             this.BtnTemizle.TabIndex = 15;
             this.BtnTemizle.Text = "Temizle";
             this.BtnTemizle.UseVisualStyleBackColor = true;
+            this.BtnTemizle.Click += new System.EventHandler(this.BtnTemizle_Click);
             // 
             // listBox1
             // 

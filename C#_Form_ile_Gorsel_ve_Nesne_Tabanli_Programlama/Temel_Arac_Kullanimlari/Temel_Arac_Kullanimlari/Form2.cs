@@ -57,5 +57,18 @@ namespace Temel_Arac_Kullanimlari
             sayac++;
             label10.Text = sayac.ToString();
         }
+
+        private void BtnTemizle_Click(object sender, EventArgs e)
+        {
+            TxtAdSoyad.Text = "";
+            TxtDurum.Clear();
+            TxtOrtalama.Clear();
+            TxtSinav1.Clear();
+            TxtSinav2.Clear();
+            TxtSinav3.Clear();
+            maskedTextBox1.Clear();
+            comboBox1.SelectedIndex = -1;
+            TxtAdSoyad.Focus();
+        }
     }
 }
