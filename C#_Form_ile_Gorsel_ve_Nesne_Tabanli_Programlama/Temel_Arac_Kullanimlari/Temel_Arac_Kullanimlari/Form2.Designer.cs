@@ -249,7 +249,7 @@ namespace Temel_Arac_Kullanimlari
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Temel_Arac_Kullanimlari.Properties.Resources.aurielaki150800025;
-            this.pictureBox1.Location = new System.Drawing.Point(809, 88);
+            this.pictureBox1.Location = new System.Drawing.Point(809, 41);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(212, 120);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
