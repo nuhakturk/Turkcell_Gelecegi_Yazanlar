@@ -104,5 +104,10 @@ namespace Temel_Arac_Kullanimlari
                 }
             }
         }
+
+        private void BtnListboxTemizle_Click(object sender, EventArgs e)
+        {
+            listBox2.Items.Clear();
+        }
     }
 }

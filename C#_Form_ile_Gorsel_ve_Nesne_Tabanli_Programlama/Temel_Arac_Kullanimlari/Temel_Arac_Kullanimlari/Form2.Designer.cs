@@ -336,6 +336,7 @@ namespace Temel_Arac_Kullanimlari
             this.BtnListboxTemizle.TabIndex = 29;
             this.BtnListboxTemizle.Text = "Listbox Temizle";
             this.BtnListboxTemizle.UseVisualStyleBackColor = true;
+            this.BtnListboxTemizle.Click += new System.EventHandler(this.BtnListboxTemizle_Click);
             // 
             // Form2
             // 
@@ -375,6 +376,7 @@ namespace Temel_Arac_Kullanimlari
             this.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form2";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
