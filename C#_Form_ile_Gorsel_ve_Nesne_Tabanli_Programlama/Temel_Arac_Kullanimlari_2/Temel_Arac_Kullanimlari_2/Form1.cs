@@ -66,5 +66,17 @@ namespace Temel_Arac_Kullanimlari_2
         {
             MessageBox.Show("Bu uygulamayı Turkcell Geleceği Yazanlar Platformu dersleri altında gerçekleştirmekteyiz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        int sayac = 0;
+        private void başlatToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            sayac++;
+            label2.Text = sayac.ToString();
+        }
     }
 }

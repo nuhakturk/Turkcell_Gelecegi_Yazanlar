@@ -66,6 +66,9 @@ namespace Temel_Arac_Kullanimlari_2
             this.yardımToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripSeparator();
             this.çıkışToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.label2 = new System.Windows.Forms.Label();
+            this.başlatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -232,6 +235,7 @@ namespace Temel_Arac_Kullanimlari_2
             this.ayarlarToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.yardımToolStripMenuItem,
             this.hakkımızdaToolStripMenuItem,
+            this.başlatToolStripMenuItem,
             this.toolStripMenuItem1,
             this.çıkışToolStripMenuItem});
             this.ayarlarToolStripMenuItem.Name = "ayarlarToolStripMenuItem";
@@ -317,7 +321,7 @@ namespace Temel_Arac_Kullanimlari_2
             this.toolStripMenuItem2,
             this.çıkışToolStripMenuItem1});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(211, 110);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(157, 82);
             // 
             // hakkımızdaToolStripMenuItem1
             // 
@@ -343,12 +347,33 @@ namespace Temel_Arac_Kullanimlari_2
             this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(210, 24);
             this.çıkışToolStripMenuItem1.Text = "Çıkış";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(100, 134);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(60, 24);
+            this.label2.TabIndex = 4;
+            this.label2.Text = "label2";
+            // 
+            // başlatToolStripMenuItem
+            // 
+            this.başlatToolStripMenuItem.Name = "başlatToolStripMenuItem";
+            this.başlatToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.başlatToolStripMenuItem.Text = "Başlat";
+            this.başlatToolStripMenuItem.Click += new System.EventHandler(this.başlatToolStripMenuItem_Click);
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(948, 454);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.menuStrip1);
@@ -403,6 +428,9 @@ namespace Temel_Arac_Kullanimlari_2
         private System.Windows.Forms.ToolStripMenuItem yardımToolStripMenuItem1;
         private System.Windows.Forms.ToolStripSeparator toolStripMenuItem2;
         private System.Windows.Forms.ToolStripMenuItem çıkışToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem başlatToolStripMenuItem;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
