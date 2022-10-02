@@ -85,5 +85,24 @@ namespace Temel_Arac_Kullanimlari
             MessageBox.Show("Merhaba Dünya Derslerimiz Devam Ediyor", "Mesaj Kutusu", 
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question);
         }
+
+        private void BtnForDongusu_Click(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 10; i++)
+            {
+                listBox2.Items.Add(i + "- Merhaba");
+            }
+        }
+
+        private void BtnForDongusu2_Click(object sender, EventArgs e)
+        {
+            for (int i = 1; i <= 20; i++)
+            {
+                if (i % 3 == 0)
+                {
+                    listBox2.Items.Add(i);
+                }
+            }
+        }
     }
 }

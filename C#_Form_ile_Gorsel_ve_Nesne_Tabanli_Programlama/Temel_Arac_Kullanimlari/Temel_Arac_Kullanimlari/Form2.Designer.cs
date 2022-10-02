@@ -55,6 +55,10 @@ namespace Temel_Arac_Kullanimlari
             this.BtnSayac = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.BtnMesajKutusu = new System.Windows.Forms.Button();
+            this.BtnForDongusu = new System.Windows.Forms.Button();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.BtnForDongusu2 = new System.Windows.Forms.Button();
+            this.BtnListboxTemizle = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -207,9 +211,9 @@ namespace Temel_Arac_Kullanimlari
             // 
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 25;
-            this.listBox1.Location = new System.Drawing.Point(35, 272);
+            this.listBox1.Location = new System.Drawing.Point(35, 310);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(986, 179);
+            this.listBox1.Size = new System.Drawing.Size(726, 179);
             this.listBox1.TabIndex = 16;
             // 
             // label8
@@ -295,11 +299,53 @@ namespace Temel_Arac_Kullanimlari
             this.BtnMesajKutusu.UseVisualStyleBackColor = true;
             this.BtnMesajKutusu.Click += new System.EventHandler(this.BtnMesajKutusu_Click);
             // 
+            // BtnForDongusu
+            // 
+            this.BtnForDongusu.Location = new System.Drawing.Point(35, 263);
+            this.BtnForDongusu.Name = "BtnForDongusu";
+            this.BtnForDongusu.Size = new System.Drawing.Size(153, 33);
+            this.BtnForDongusu.TabIndex = 26;
+            this.BtnForDongusu.Text = "For Döngüsü";
+            this.BtnForDongusu.UseVisualStyleBackColor = true;
+            this.BtnForDongusu.Click += new System.EventHandler(this.BtnForDongusu_Click);
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 25;
+            this.listBox2.Location = new System.Drawing.Point(767, 310);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(254, 179);
+            this.listBox2.TabIndex = 27;
+            // 
+            // BtnForDongusu2
+            // 
+            this.BtnForDongusu2.Location = new System.Drawing.Point(194, 263);
+            this.BtnForDongusu2.Name = "BtnForDongusu2";
+            this.BtnForDongusu2.Size = new System.Drawing.Size(153, 33);
+            this.BtnForDongusu2.TabIndex = 28;
+            this.BtnForDongusu2.Text = "For Döngüsü 2";
+            this.BtnForDongusu2.UseVisualStyleBackColor = true;
+            this.BtnForDongusu2.Click += new System.EventHandler(this.BtnForDongusu2_Click);
+            // 
+            // BtnListboxTemizle
+            // 
+            this.BtnListboxTemizle.Location = new System.Drawing.Point(353, 263);
+            this.BtnListboxTemizle.Name = "BtnListboxTemizle";
+            this.BtnListboxTemizle.Size = new System.Drawing.Size(153, 33);
+            this.BtnListboxTemizle.TabIndex = 29;
+            this.BtnListboxTemizle.Text = "Listbox Temizle";
+            this.BtnListboxTemizle.UseVisualStyleBackColor = true;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1047, 469);
+            this.ClientSize = new System.Drawing.Size(1047, 503);
+            this.Controls.Add(this.BtnListboxTemizle);
+            this.Controls.Add(this.BtnForDongusu2);
+            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.BtnForDongusu);
             this.Controls.Add(this.BtnMesajKutusu);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.BtnSayac);
@@ -364,5 +410,9 @@ namespace Temel_Arac_Kullanimlari
         private System.Windows.Forms.Button BtnSayac;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button BtnMesajKutusu;
+        private System.Windows.Forms.Button BtnForDongusu;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.Button BtnForDongusu2;
+        private System.Windows.Forms.Button BtnListboxTemizle;
     }
 }
