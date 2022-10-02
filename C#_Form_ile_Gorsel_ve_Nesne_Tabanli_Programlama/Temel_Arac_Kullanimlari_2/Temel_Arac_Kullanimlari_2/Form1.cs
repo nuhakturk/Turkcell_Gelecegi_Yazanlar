@@ -61,5 +61,10 @@ namespace Temel_Arac_Kullanimlari_2
         {
             webBrowser1.Navigate("http://www.facebook.com");
         }
+
+        private void hakkımızdaToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Bu uygulamayı Turkcell Geleceği Yazanlar Platformu dersleri altında gerçekleştirmekteyiz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }
