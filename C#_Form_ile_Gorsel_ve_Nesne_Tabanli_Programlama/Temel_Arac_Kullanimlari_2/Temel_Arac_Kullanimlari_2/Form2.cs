@@ -25,5 +25,15 @@ namespace Temel_Arac_Kullanimlari_2
             chart1.Series["Bolge"].Points.AddXY("Doğu Anadolu", 16);
             chart1.Series["Bolge"].Points.AddXY("Marmara", 24);
         }
+
+        private void BtnArttir_Click(object sender, EventArgs e)
+        {
+            progressBar1.Value += 10;
+        }
+
+        private void BtnAzalt_Click(object sender, EventArgs e)
+        {
+            progressBar1.Value -= 10;
+        }
     }
 }
