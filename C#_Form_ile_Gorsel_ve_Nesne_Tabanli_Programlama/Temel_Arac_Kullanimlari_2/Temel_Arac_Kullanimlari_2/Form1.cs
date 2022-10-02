@@ -41,5 +41,25 @@ namespace Temel_Arac_Kullanimlari_2
         {
             this.BackColor = Color.Orange;
         }
+
+        private void googleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("http://www.google.com");
+        }
+
+        private void youtubeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("http://www.youtube.com");
+        }
+
+        private void twitterToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("http://www.twitter.com");
+        }
+
+        private void facebookToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            webBrowser1.Navigate("http://www.facebook.com");
+        }
     }
 }
