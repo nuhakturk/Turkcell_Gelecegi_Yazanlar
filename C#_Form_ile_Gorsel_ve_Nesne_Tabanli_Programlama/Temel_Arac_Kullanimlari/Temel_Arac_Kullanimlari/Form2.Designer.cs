@@ -52,6 +52,8 @@ namespace Temel_Arac_Kullanimlari
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnCizgi = new System.Windows.Forms.Button();
+            this.BtnSayac = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -262,11 +264,32 @@ namespace Temel_Arac_Kullanimlari
             this.BtnCizgi.UseVisualStyleBackColor = true;
             this.BtnCizgi.Click += new System.EventHandler(this.BtnCizgi_Click);
             // 
+            // BtnSayac
+            // 
+            this.BtnSayac.Location = new System.Drawing.Point(768, 220);
+            this.BtnSayac.Name = "BtnSayac";
+            this.BtnSayac.Size = new System.Drawing.Size(153, 33);
+            this.BtnSayac.TabIndex = 23;
+            this.BtnSayac.Text = "Sayaç";
+            this.BtnSayac.UseVisualStyleBackColor = true;
+            this.BtnSayac.Click += new System.EventHandler(this.BtnSayac_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(688, 171);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(73, 25);
+            this.label10.TabIndex = 24;
+            this.label10.Text = "label10";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1047, 469);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.BtnSayac);
             this.Controls.Add(this.BtnCizgi);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TxtDurum);
@@ -325,5 +348,7 @@ namespace Temel_Arac_Kullanimlari
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnCizgi;
+        private System.Windows.Forms.Button BtnSayac;
+        private System.Windows.Forms.Label label10;
     }
 }

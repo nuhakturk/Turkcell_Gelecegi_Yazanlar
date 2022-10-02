@@ -50,5 +50,12 @@ namespace Temel_Arac_Kullanimlari
         {
             listBox1.Items.Add("------------------------------------------------------------");
         }
+
+        int sayac = 0;
+        private void BtnSayac_Click(object sender, EventArgs e)
+        {
+            sayac++;
+            label10.Text = sayac.ToString();
+        }
     }
 }
