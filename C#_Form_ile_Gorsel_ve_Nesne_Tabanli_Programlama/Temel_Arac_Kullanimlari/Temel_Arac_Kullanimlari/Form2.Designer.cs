@@ -54,6 +54,7 @@ namespace Temel_Arac_Kullanimlari
             this.BtnCizgi = new System.Windows.Forms.Button();
             this.BtnSayac = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
+            this.BtnMesajKutusu = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -174,7 +175,7 @@ namespace Temel_Arac_Kullanimlari
             // 
             // BtnKaydet
             // 
-            this.BtnKaydet.Location = new System.Drawing.Point(131, 220);
+            this.BtnKaydet.Location = new System.Drawing.Point(35, 224);
             this.BtnKaydet.Name = "BtnKaydet";
             this.BtnKaydet.Size = new System.Drawing.Size(153, 33);
             this.BtnKaydet.TabIndex = 13;
@@ -184,7 +185,7 @@ namespace Temel_Arac_Kullanimlari
             // 
             // BtnHesapla
             // 
-            this.BtnHesapla.Location = new System.Drawing.Point(290, 220);
+            this.BtnHesapla.Location = new System.Drawing.Point(194, 224);
             this.BtnHesapla.Name = "BtnHesapla";
             this.BtnHesapla.Size = new System.Drawing.Size(153, 33);
             this.BtnHesapla.TabIndex = 14;
@@ -194,7 +195,7 @@ namespace Temel_Arac_Kullanimlari
             // 
             // BtnTemizle
             // 
-            this.BtnTemizle.Location = new System.Drawing.Point(449, 220);
+            this.BtnTemizle.Location = new System.Drawing.Point(353, 224);
             this.BtnTemizle.Name = "BtnTemizle";
             this.BtnTemizle.Size = new System.Drawing.Size(153, 33);
             this.BtnTemizle.TabIndex = 15;
@@ -257,7 +258,7 @@ namespace Temel_Arac_Kullanimlari
             // 
             // BtnCizgi
             // 
-            this.BtnCizgi.Location = new System.Drawing.Point(609, 220);
+            this.BtnCizgi.Location = new System.Drawing.Point(513, 224);
             this.BtnCizgi.Name = "BtnCizgi";
             this.BtnCizgi.Size = new System.Drawing.Size(153, 33);
             this.BtnCizgi.TabIndex = 22;
@@ -267,7 +268,7 @@ namespace Temel_Arac_Kullanimlari
             // 
             // BtnSayac
             // 
-            this.BtnSayac.Location = new System.Drawing.Point(768, 220);
+            this.BtnSayac.Location = new System.Drawing.Point(672, 224);
             this.BtnSayac.Name = "BtnSayac";
             this.BtnSayac.Size = new System.Drawing.Size(153, 33);
             this.BtnSayac.TabIndex = 23;
@@ -284,11 +285,22 @@ namespace Temel_Arac_Kullanimlari
             this.label10.TabIndex = 24;
             this.label10.Text = "label10";
             // 
+            // BtnMesajKutusu
+            // 
+            this.BtnMesajKutusu.Location = new System.Drawing.Point(831, 224);
+            this.BtnMesajKutusu.Name = "BtnMesajKutusu";
+            this.BtnMesajKutusu.Size = new System.Drawing.Size(153, 33);
+            this.BtnMesajKutusu.TabIndex = 25;
+            this.BtnMesajKutusu.Text = "Mesaj Kutusu";
+            this.BtnMesajKutusu.UseVisualStyleBackColor = true;
+            this.BtnMesajKutusu.Click += new System.EventHandler(this.BtnMesajKutusu_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1047, 469);
+            this.Controls.Add(this.BtnMesajKutusu);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.BtnSayac);
             this.Controls.Add(this.BtnCizgi);
@@ -351,5 +363,6 @@ namespace Temel_Arac_Kullanimlari
         private System.Windows.Forms.Button BtnCizgi;
         private System.Windows.Forms.Button BtnSayac;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button BtnMesajKutusu;
     }
 }

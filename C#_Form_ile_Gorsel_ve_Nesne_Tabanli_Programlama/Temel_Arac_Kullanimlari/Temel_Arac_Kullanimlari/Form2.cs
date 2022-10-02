@@ -70,5 +70,11 @@ namespace Temel_Arac_Kullanimlari
             comboBox1.SelectedIndex = -1;
             TxtAdSoyad.Focus();
         }
+
+        private void BtnMesajKutusu_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Merhaba Dünya Derslerimiz Devam Ediyor", "Mesaj Kutusu", 
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+        }
     }
 }
