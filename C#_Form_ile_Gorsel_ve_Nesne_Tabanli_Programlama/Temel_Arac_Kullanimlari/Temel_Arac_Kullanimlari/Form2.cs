@@ -119,5 +119,27 @@ namespace Temel_Arac_Kullanimlari
                 x++;
             }
         }
+
+        private void BtnDizi1_Click(object sender, EventArgs e)
+        {
+            string[] sehirler = { "Adana", "Ankara", "İstanbul", "Malatya", "Bursa", "Trabzon" };
+            TxtAdSoyad.Text = sehirler[4];
+        }
+
+        private void BtnDizi2_Click(object sender, EventArgs e)
+        {
+            int[] sayilar = { 34, 66, 97, 32, 98, 104, 327, 78 };
+            //for (int i = 0; i < sayilar.Length; i++)
+            //{
+            //    listBox2.Items.Add(sayilar[i]);
+            //}
+            foreach (var k in sayilar)
+            {
+                if (k % 4 == 0)
+                {
+                    listBox2.Items.Add(k);
+                }
+            }
+        }
     }
 }

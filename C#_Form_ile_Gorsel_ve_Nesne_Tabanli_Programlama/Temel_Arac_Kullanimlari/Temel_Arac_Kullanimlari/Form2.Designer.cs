@@ -60,6 +60,8 @@ namespace Temel_Arac_Kullanimlari
             this.BtnForDongusu2 = new System.Windows.Forms.Button();
             this.BtnListboxTemizle = new System.Windows.Forms.Button();
             this.BtnWhile = new System.Windows.Forms.Button();
+            this.BtnDizi1 = new System.Windows.Forms.Button();
+            this.BtnDizi2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -349,11 +351,33 @@ namespace Temel_Arac_Kullanimlari
             this.BtnWhile.UseVisualStyleBackColor = true;
             this.BtnWhile.Click += new System.EventHandler(this.BtnWhile_Click);
             // 
+            // BtnDizi1
+            // 
+            this.BtnDizi1.Location = new System.Drawing.Point(671, 263);
+            this.BtnDizi1.Name = "BtnDizi1";
+            this.BtnDizi1.Size = new System.Drawing.Size(153, 33);
+            this.BtnDizi1.TabIndex = 31;
+            this.BtnDizi1.Text = "Dizi 1";
+            this.BtnDizi1.UseVisualStyleBackColor = true;
+            this.BtnDizi1.Click += new System.EventHandler(this.BtnDizi1_Click);
+            // 
+            // BtnDizi2
+            // 
+            this.BtnDizi2.Location = new System.Drawing.Point(831, 263);
+            this.BtnDizi2.Name = "BtnDizi2";
+            this.BtnDizi2.Size = new System.Drawing.Size(153, 33);
+            this.BtnDizi2.TabIndex = 32;
+            this.BtnDizi2.Text = "Dizi 2";
+            this.BtnDizi2.UseVisualStyleBackColor = true;
+            this.BtnDizi2.Click += new System.EventHandler(this.BtnDizi2_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1047, 503);
+            this.Controls.Add(this.BtnDizi2);
+            this.Controls.Add(this.BtnDizi1);
             this.Controls.Add(this.BtnWhile);
             this.Controls.Add(this.BtnListboxTemizle);
             this.Controls.Add(this.BtnForDongusu2);
@@ -429,5 +453,7 @@ namespace Temel_Arac_Kullanimlari
         private System.Windows.Forms.Button BtnForDongusu2;
         private System.Windows.Forms.Button BtnListboxTemizle;
         private System.Windows.Forms.Button BtnWhile;
+        private System.Windows.Forms.Button BtnDizi1;
+        private System.Windows.Forms.Button BtnDizi2;
     }
 }
