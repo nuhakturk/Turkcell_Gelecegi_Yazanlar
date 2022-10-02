@@ -44,6 +44,7 @@ namespace Temel_Arac_Kullanimlari_2
         private void timer1_Tick(object sender, EventArgs e)
         {
             PrgBarIslem1.Value += 1;
+            label1.Text = "İşlem 1(" + PrgBarIslem1.Value + "%):";
             if (PrgBarIslem1.Value == 100)
             {
                 timer1.Stop();
@@ -54,6 +55,7 @@ namespace Temel_Arac_Kullanimlari_2
         private void timer2_Tick(object sender, EventArgs e)
         {
             PrgBarIslem2.Value += 10;
+            label2.Text = "İşlem 1(" + PrgBarIslem2.Value + "%):";
             if (PrgBarIslem2.Value == 100)
             {
                 timer2.Stop();
@@ -64,6 +66,7 @@ namespace Temel_Arac_Kullanimlari_2
         private void timer3_Tick(object sender, EventArgs e)
         {
             PrgBarIslem3.Value += 20;
+            label3.Text = "İşlem 1(" + PrgBarIslem3.Value + "%):";
             if (PrgBarIslem3.Value == 100)
             {
                 timer3.Stop();

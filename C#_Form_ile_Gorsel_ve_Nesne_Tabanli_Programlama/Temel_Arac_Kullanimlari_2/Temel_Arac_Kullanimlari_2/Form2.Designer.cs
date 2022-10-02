@@ -30,9 +30,9 @@ namespace Temel_Arac_Kullanimlari_2
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.BtnArttir = new System.Windows.Forms.Button();
             this.BtnAzalt = new System.Windows.Forms.Button();
@@ -52,17 +52,17 @@ namespace Temel_Arac_Kullanimlari_2
             // 
             // chart1
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chart1.Legends.Add(legend3);
+            chartArea5.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart1.Legends.Add(legend5);
             this.chart1.Location = new System.Drawing.Point(12, 12);
             this.chart1.Name = "chart1";
             this.chart1.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Bolge";
-            this.chart1.Series.Add(series3);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Bolge";
+            this.chart1.Series.Add(series5);
             this.chart1.Size = new System.Drawing.Size(359, 151);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
@@ -100,7 +100,7 @@ namespace Temel_Arac_Kullanimlari_2
             // 
             // PrgBarIslem1
             // 
-            this.PrgBarIslem1.Location = new System.Drawing.Point(151, 275);
+            this.PrgBarIslem1.Location = new System.Drawing.Point(218, 275);
             this.PrgBarIslem1.Name = "PrgBarIslem1";
             this.PrgBarIslem1.Size = new System.Drawing.Size(363, 38);
             this.PrgBarIslem1.TabIndex = 4;
@@ -127,7 +127,7 @@ namespace Temel_Arac_Kullanimlari_2
             // 
             // PrgBarIslem2
             // 
-            this.PrgBarIslem2.Location = new System.Drawing.Point(151, 319);
+            this.PrgBarIslem2.Location = new System.Drawing.Point(218, 319);
             this.PrgBarIslem2.Name = "PrgBarIslem2";
             this.PrgBarIslem2.Size = new System.Drawing.Size(363, 38);
             this.PrgBarIslem2.TabIndex = 6;
@@ -144,7 +144,7 @@ namespace Temel_Arac_Kullanimlari_2
             // 
             // PrgBarIslem3
             // 
-            this.PrgBarIslem3.Location = new System.Drawing.Point(151, 363);
+            this.PrgBarIslem3.Location = new System.Drawing.Point(218, 363);
             this.PrgBarIslem3.Name = "PrgBarIslem3";
             this.PrgBarIslem3.Size = new System.Drawing.Size(363, 38);
             this.PrgBarIslem3.TabIndex = 8;
@@ -152,7 +152,7 @@ namespace Temel_Arac_Kullanimlari_2
             // BtnBaslat
             // 
             this.BtnBaslat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.BtnBaslat.Location = new System.Drawing.Point(553, 270);
+            this.BtnBaslat.Location = new System.Drawing.Point(621, 273);
             this.BtnBaslat.Name = "BtnBaslat";
             this.BtnBaslat.Size = new System.Drawing.Size(115, 43);
             this.BtnBaslat.TabIndex = 10;
