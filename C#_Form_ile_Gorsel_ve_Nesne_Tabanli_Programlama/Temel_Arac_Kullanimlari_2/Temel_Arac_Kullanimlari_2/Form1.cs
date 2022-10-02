@@ -21,5 +21,25 @@ namespace Temel_Arac_Kullanimlari_2
         {
             label1.Text = "Yazdırma komutları menü alanına tıklandı";
         }
+
+        private void sarıToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Yellow;
+        }
+
+        private void maviToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.DodgerBlue;
+        }
+
+        private void pembeToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.HotPink;
+        }
+
+        private void turuncuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.BackColor = Color.Orange;
+        }
     }
 }
