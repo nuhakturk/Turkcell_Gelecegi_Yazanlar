@@ -35,5 +35,40 @@ namespace Temel_Arac_Kullanimlari_2
         {
             progressBar1.Value -= 10;
         }
+
+        private void BtnBaslat_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            PrgBarIslem1.Value += 1;
+            if (PrgBarIslem1.Value == 100)
+            {
+                timer1.Stop();
+                timer2.Start();
+            }
+        }
+
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            PrgBarIslem2.Value += 10;
+            if (PrgBarIslem2.Value == 100)
+            {
+                timer2.Stop();
+                timer3.Start();
+            }
+        }
+
+        private void timer3_Tick(object sender, EventArgs e)
+        {
+            PrgBarIslem3.Value += 20;
+            if (PrgBarIslem3.Value == 100)
+            {
+                timer3.Stop();
+                MessageBox.Show("Tüm işlemler tamamlandı");
+            }
+        }
     }
 }
