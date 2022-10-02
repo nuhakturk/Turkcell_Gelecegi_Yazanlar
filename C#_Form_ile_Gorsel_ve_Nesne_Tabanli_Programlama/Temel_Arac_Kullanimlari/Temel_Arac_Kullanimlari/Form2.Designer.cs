@@ -51,6 +51,7 @@ namespace Temel_Arac_Kullanimlari
             this.TxtDurum = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.BtnCizgi = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -177,6 +178,7 @@ namespace Temel_Arac_Kullanimlari
             this.BtnKaydet.TabIndex = 13;
             this.BtnKaydet.Text = "Kaydet";
             this.BtnKaydet.UseVisualStyleBackColor = true;
+            this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
             // 
             // BtnHesapla
             // 
@@ -250,11 +252,22 @@ namespace Temel_Arac_Kullanimlari
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
+            // BtnCizgi
+            // 
+            this.BtnCizgi.Location = new System.Drawing.Point(609, 220);
+            this.BtnCizgi.Name = "BtnCizgi";
+            this.BtnCizgi.Size = new System.Drawing.Size(153, 33);
+            this.BtnCizgi.TabIndex = 22;
+            this.BtnCizgi.Text = "Çizgi";
+            this.BtnCizgi.UseVisualStyleBackColor = true;
+            this.BtnCizgi.Click += new System.EventHandler(this.BtnCizgi_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1047, 469);
+            this.Controls.Add(this.BtnCizgi);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.TxtDurum);
             this.Controls.Add(this.label9);
@@ -311,5 +324,6 @@ namespace Temel_Arac_Kullanimlari
         private System.Windows.Forms.TextBox TxtDurum;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button BtnCizgi;
     }
 }

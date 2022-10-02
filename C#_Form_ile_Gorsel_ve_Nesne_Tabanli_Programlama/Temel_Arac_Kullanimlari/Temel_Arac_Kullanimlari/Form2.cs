@@ -36,5 +36,19 @@ namespace Temel_Arac_Kullanimlari
             }
             TxtDurum.Text = durum;
         }
+
+        private void BtnKaydet_Click(object sender, EventArgs e)
+        {
+            string adsoyad, ders, numara;
+            adsoyad = TxtAdSoyad.Text;
+            ders = comboBox1.Text;
+            numara = maskedTextBox1.Text;
+            listBox1.Items.Add(adsoyad + " " + ders + " Numara:" + numara + " Ortalama:" + TxtOrtalama.Text + " Durum:" + TxtDurum.Text);
+        }
+
+        private void BtnCizgi_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Add("------------------------------------------------------------");
+        }
     }
 }
