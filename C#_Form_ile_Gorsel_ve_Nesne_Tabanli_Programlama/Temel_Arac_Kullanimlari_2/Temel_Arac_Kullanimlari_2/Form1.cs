@@ -78,5 +78,41 @@ namespace Temel_Arac_Kullanimlari_2
             sayac++;
             label2.Text = sayac.ToString();
         }
+
+        private void BtnBaslat_Click(object sender, EventArgs e)
+        {
+            timer2.Start();
+        }
+
+        private void BtnDurdur_Click(object sender, EventArgs e)
+        {
+            timer2.Stop();
+        }
+
+        int sure = 0;
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            this.Text = sure.ToString();
+            sure++;
+            if (sure >= 0 && sure <= 30)
+            {
+                panel1.BackColor = Color.Red;
+                panel3.BackColor = Color.Transparent;
+            }
+            if (sure > 30 && sure <= 40)
+            {
+                panel2.BackColor = Color.Yellow;
+            }
+            if (sure > 40 && sure <= 70)
+            {
+                panel3.BackColor = Color.Green;
+                panel1.BackColor = Color.Transparent;
+                panel2.BackColor = Color.Transparent;
+            }
+            if (sure == 71)
+            {
+                sure = 0;
+            }
+        }
     }
 }

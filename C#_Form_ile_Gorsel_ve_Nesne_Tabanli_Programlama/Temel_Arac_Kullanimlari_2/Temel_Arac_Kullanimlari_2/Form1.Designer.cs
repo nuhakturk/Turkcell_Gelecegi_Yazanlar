@@ -69,6 +69,12 @@ namespace Temel_Arac_Kullanimlari_2
             this.label2 = new System.Windows.Forms.Label();
             this.başlatToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.BtnBaslat = new System.Windows.Forms.Button();
+            this.BtnDurdur = new System.Windows.Forms.Button();
+            this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.menuStrip1.SuspendLayout();
             this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -267,10 +273,10 @@ namespace Temel_Arac_Kullanimlari_2
             // 
             // webBrowser1
             // 
-            this.webBrowser1.Location = new System.Drawing.Point(495, 268);
+            this.webBrowser1.Location = new System.Drawing.Point(590, 346);
             this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
             this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(441, 174);
+            this.webBrowser1.Size = new System.Drawing.Size(346, 96);
             this.webBrowser1.TabIndex = 2;
             // 
             // webSiteleriToolStripMenuItem
@@ -326,25 +332,25 @@ namespace Temel_Arac_Kullanimlari_2
             // hakkımızdaToolStripMenuItem1
             // 
             this.hakkımızdaToolStripMenuItem1.Name = "hakkımızdaToolStripMenuItem1";
-            this.hakkımızdaToolStripMenuItem1.Size = new System.Drawing.Size(210, 24);
+            this.hakkımızdaToolStripMenuItem1.Size = new System.Drawing.Size(156, 24);
             this.hakkımızdaToolStripMenuItem1.Text = "Hakkımızda";
             this.hakkımızdaToolStripMenuItem1.Click += new System.EventHandler(this.hakkımızdaToolStripMenuItem1_Click);
             // 
             // yardımToolStripMenuItem1
             // 
             this.yardımToolStripMenuItem1.Name = "yardımToolStripMenuItem1";
-            this.yardımToolStripMenuItem1.Size = new System.Drawing.Size(210, 24);
+            this.yardımToolStripMenuItem1.Size = new System.Drawing.Size(156, 24);
             this.yardımToolStripMenuItem1.Text = "Yardım";
             // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(207, 6);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(153, 6);
             // 
             // çıkışToolStripMenuItem1
             // 
             this.çıkışToolStripMenuItem1.Name = "çıkışToolStripMenuItem1";
-            this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(210, 24);
+            this.çıkışToolStripMenuItem1.Size = new System.Drawing.Size(156, 24);
             this.çıkışToolStripMenuItem1.Text = "Çıkış";
             // 
             // label2
@@ -367,12 +373,62 @@ namespace Temel_Arac_Kullanimlari_2
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(32, 196);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(200, 110);
+            this.panel1.TabIndex = 5;
+            // 
+            // panel2
+            // 
+            this.panel2.Location = new System.Drawing.Point(238, 196);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(200, 110);
+            this.panel2.TabIndex = 6;
+            // 
+            // panel3
+            // 
+            this.panel3.Location = new System.Drawing.Point(444, 196);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(200, 110);
+            this.panel3.TabIndex = 7;
+            // 
+            // BtnBaslat
+            // 
+            this.BtnBaslat.Location = new System.Drawing.Point(650, 196);
+            this.BtnBaslat.Name = "BtnBaslat";
+            this.BtnBaslat.Size = new System.Drawing.Size(115, 52);
+            this.BtnBaslat.TabIndex = 8;
+            this.BtnBaslat.Text = "Başlat";
+            this.BtnBaslat.UseVisualStyleBackColor = true;
+            this.BtnBaslat.Click += new System.EventHandler(this.BtnBaslat_Click);
+            // 
+            // BtnDurdur
+            // 
+            this.BtnDurdur.Location = new System.Drawing.Point(650, 254);
+            this.BtnDurdur.Name = "BtnDurdur";
+            this.BtnDurdur.Size = new System.Drawing.Size(115, 52);
+            this.BtnDurdur.TabIndex = 9;
+            this.BtnDurdur.Text = "Durdur";
+            this.BtnDurdur.UseVisualStyleBackColor = true;
+            this.BtnDurdur.Click += new System.EventHandler(this.BtnDurdur_Click);
+            // 
+            // timer2
+            // 
+            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(948, 454);
             this.ContextMenuStrip = this.contextMenuStrip1;
+            this.Controls.Add(this.BtnDurdur);
+            this.Controls.Add(this.BtnBaslat);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.webBrowser1);
             this.Controls.Add(this.label1);
@@ -431,6 +487,12 @@ namespace Temel_Arac_Kullanimlari_2
         private System.Windows.Forms.ToolStripMenuItem başlatToolStripMenuItem;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button BtnBaslat;
+        private System.Windows.Forms.Button BtnDurdur;
+        private System.Windows.Forms.Timer timer2;
     }
 }
 
