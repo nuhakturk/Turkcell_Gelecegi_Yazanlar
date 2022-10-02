@@ -154,6 +154,7 @@ namespace Temel_Arac_Kullanimlari
             // 
             // TxtOrtalama
             // 
+            this.TxtOrtalama.Enabled = false;
             this.TxtOrtalama.Location = new System.Drawing.Point(684, 88);
             this.TxtOrtalama.Name = "TxtOrtalama";
             this.TxtOrtalama.Size = new System.Drawing.Size(78, 31);
@@ -224,6 +225,7 @@ namespace Temel_Arac_Kullanimlari
             // 
             // TxtDurum
             // 
+            this.TxtDurum.Enabled = false;
             this.TxtDurum.Location = new System.Drawing.Point(683, 128);
             this.TxtDurum.Name = "TxtDurum";
             this.TxtDurum.Size = new System.Drawing.Size(78, 31);

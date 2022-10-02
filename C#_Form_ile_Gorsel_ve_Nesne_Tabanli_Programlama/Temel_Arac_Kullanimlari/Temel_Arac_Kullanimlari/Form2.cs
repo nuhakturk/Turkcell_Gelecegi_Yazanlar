@@ -26,6 +26,15 @@ namespace Temel_Arac_Kullanimlari
             s3 = Convert.ToInt16(TxtSinav3.Text);
             ort = (s1 + s2 + s3) / 3;
             TxtOrtalama.Text = ort.ToString();
+            if(ort >= 50)
+            {
+                durum = "Geçti";
+            }
+            else
+            {
+                durum = "Kaldı";
+            }
+            TxtDurum.Text = durum;
         }
     }
 }
