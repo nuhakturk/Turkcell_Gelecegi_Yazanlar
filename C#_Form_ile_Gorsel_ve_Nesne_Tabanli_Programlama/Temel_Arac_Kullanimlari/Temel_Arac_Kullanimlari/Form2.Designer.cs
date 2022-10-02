@@ -185,6 +185,7 @@ namespace Temel_Arac_Kullanimlari
             this.BtnHesapla.TabIndex = 14;
             this.BtnHesapla.Text = "Hesapla";
             this.BtnHesapla.UseVisualStyleBackColor = true;
+            this.BtnHesapla.Click += new System.EventHandler(this.BtnHesapla_Click);
             // 
             // BtnTemizle
             // 

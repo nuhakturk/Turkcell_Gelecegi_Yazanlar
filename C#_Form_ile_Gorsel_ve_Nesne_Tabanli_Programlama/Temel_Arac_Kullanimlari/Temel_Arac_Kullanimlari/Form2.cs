@@ -16,5 +16,16 @@ namespace Temel_Arac_Kullanimlari
         {
             InitializeComponent();
         }
+
+        private void BtnHesapla_Click(object sender, EventArgs e)
+        {
+            int s1, s2, s3, ort;
+            string durum;
+            s1 = Convert.ToInt16(TxtSinav1.Text);
+            s2 = Convert.ToInt16(TxtSinav2.Text);
+            s3 = Convert.ToInt16(TxtSinav3.Text);
+            ort = (s1 + s2 + s3) / 3;
+            TxtOrtalama.Text = ort.ToString();
+        }
     }
 }
