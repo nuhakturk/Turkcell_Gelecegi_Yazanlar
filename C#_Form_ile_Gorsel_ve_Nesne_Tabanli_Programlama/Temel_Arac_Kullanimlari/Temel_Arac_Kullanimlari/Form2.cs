@@ -109,5 +109,15 @@ namespace Temel_Arac_Kullanimlari
         {
             listBox2.Items.Clear();
         }
+
+        private void BtnWhile_Click(object sender, EventArgs e)
+        {
+            int x = 1;
+            while (x <= 10)
+            {
+                listBox2.Items.Add(x + "- While Döngüsü");
+                x++;
+            }
+        }
     }
 }

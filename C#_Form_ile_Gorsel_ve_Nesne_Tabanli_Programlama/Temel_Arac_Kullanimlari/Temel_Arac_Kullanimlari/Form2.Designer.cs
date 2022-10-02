@@ -59,6 +59,7 @@ namespace Temel_Arac_Kullanimlari
             this.listBox2 = new System.Windows.Forms.ListBox();
             this.BtnForDongusu2 = new System.Windows.Forms.Button();
             this.BtnListboxTemizle = new System.Windows.Forms.Button();
+            this.BtnWhile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -338,11 +339,22 @@ namespace Temel_Arac_Kullanimlari
             this.BtnListboxTemizle.UseVisualStyleBackColor = true;
             this.BtnListboxTemizle.Click += new System.EventHandler(this.BtnListboxTemizle_Click);
             // 
+            // BtnWhile
+            // 
+            this.BtnWhile.Location = new System.Drawing.Point(512, 263);
+            this.BtnWhile.Name = "BtnWhile";
+            this.BtnWhile.Size = new System.Drawing.Size(153, 33);
+            this.BtnWhile.TabIndex = 30;
+            this.BtnWhile.Text = "While Döngüsü";
+            this.BtnWhile.UseVisualStyleBackColor = true;
+            this.BtnWhile.Click += new System.EventHandler(this.BtnWhile_Click);
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1047, 503);
+            this.Controls.Add(this.BtnWhile);
             this.Controls.Add(this.BtnListboxTemizle);
             this.Controls.Add(this.BtnForDongusu2);
             this.Controls.Add(this.listBox2);
@@ -416,5 +428,6 @@ namespace Temel_Arac_Kullanimlari
         private System.Windows.Forms.ListBox listBox2;
         private System.Windows.Forms.Button BtnForDongusu2;
         private System.Windows.Forms.Button BtnListboxTemizle;
+        private System.Windows.Forms.Button BtnWhile;
     }
 }
