@@ -20,6 +20,7 @@ namespace Temel_Arac_Kullanimlari_2
         private void button1_Click(object sender, EventArgs e)
         {
             checkBox1.Checked = true;
+            radioButton3.Checked = true;
         }
     }
 }
