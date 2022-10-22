@@ -24,4 +24,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+
+// baseUrl/home/index
+// baseUrl/home/privacy
 app.Run();
