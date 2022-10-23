@@ -2,15 +2,25 @@
 
 namespace MyAspNetCoreApp.Web.Controllers
 {
+    public class Product
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+    }
+
     public class OrnekController : Controller
     {
         public IActionResult Index()
         {
-            ViewBag.name = "ahmet";
+            var productList = new List<Product>()
+            {
+                new(){Id=1,Name="Kalem"},
+                new(){Id=2,Name="Defter"},
+                new(){Id=3,Name="Silgi"}
 
-            TempData["surname"] = "yıldız";
 
-            return View();
+            };
+            return View(productList);
         }
 
         public IActionResult Index2()
