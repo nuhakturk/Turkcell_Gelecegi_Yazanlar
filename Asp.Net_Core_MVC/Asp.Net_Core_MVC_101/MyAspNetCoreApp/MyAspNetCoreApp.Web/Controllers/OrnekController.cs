@@ -6,6 +6,11 @@ namespace MyAspNetCoreApp.Web.Controllers
     {
         public IActionResult Index()
         {
+
+            ViewBag.name = "Asp.Net Core";
+
+            //ViewBag.name = new List<string>() { "ahmet", "mehmet", "hasan" };
+
             return View();
         }
 
