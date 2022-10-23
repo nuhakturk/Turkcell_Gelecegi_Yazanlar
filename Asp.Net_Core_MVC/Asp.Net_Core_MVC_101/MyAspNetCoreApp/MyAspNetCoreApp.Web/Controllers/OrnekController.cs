@@ -9,7 +9,12 @@ namespace MyAspNetCoreApp.Web.Controllers
 
             ViewBag.name = "Asp.Net Core";
 
-            //ViewBag.name = new List<string>() { "ahmet", "mehmet", "hasan" };
+            ViewData["age"] = 30;
+
+            ViewData["names"] = new List<string>() { "ahmet", "mehmet", "hasan" };
+
+
+            ViewBag.person = new { Id = 1, Name = "ahmet", Age = 23 };
 
             return View();
         }
