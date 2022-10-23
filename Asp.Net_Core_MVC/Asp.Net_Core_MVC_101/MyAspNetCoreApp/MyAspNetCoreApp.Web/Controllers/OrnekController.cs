@@ -6,20 +6,22 @@ namespace MyAspNetCoreApp.Web.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.name = "ahmet";
 
-            ViewBag.name = "Asp.Net Core";
-
-            ViewData["age"] = 30;
-
-            ViewData["names"] = new List<string>() { "ahmet", "mehmet", "hasan" };
-
-
-            ViewBag.person = new { Id = 1, Name = "ahmet", Age = 23 };
+            TempData["surname"] = "yıldız";
 
             return View();
         }
 
         public IActionResult Index2()
+        {
+
+            var surName = TempData["surname"];
+
+            return View();
+        }
+
+        public IActionResult Index3()
         {
             //veritabanı kaydetme işlemi
             return RedirectToAction("Index", "Ornek");
