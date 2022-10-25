@@ -16338,6 +16338,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\Views\\Shared\\_HeaderPartialView.cshtml",
+      "TargetPath": "Views\\Shared\\_HeaderPartialView.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\Views\\_ViewStart.cshtml",
       "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -16355,6 +16360,11 @@
     {
       "FilePath": "c:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\Views\\Home\\Index.cshtml",
       "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\Views\\Shared\\_FooterPartialView.cshtml",
+      "TargetPath": "Views\\Shared\\_FooterPartialView.cshtml",
       "FileKind": "mvc"
     }
   ],
