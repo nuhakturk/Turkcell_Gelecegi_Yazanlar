@@ -16338,6 +16338,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\Views\\Shared\\_MenuPartialView.cshtml",
+      "TargetPath": "Views\\Shared\\_MenuPartialView.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\Views\\Shared\\_HeaderPartialView.cshtml",
       "TargetPath": "Views\\Shared\\_HeaderPartialView.cshtml",
       "FileKind": "mvc"
