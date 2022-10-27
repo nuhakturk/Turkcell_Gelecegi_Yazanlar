@@ -16303,6 +16303,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\Views\\Products\\Index.cshtml",
+      "TargetPath": "Views\\Products\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\Views\\Shared\\ExampleLayout.cshtml",
       "TargetPath": "Views\\Shared\\ExampleLayout.cshtml",
       "FileKind": "mvc"
