@@ -16298,6 +16298,11 @@
   "RootNamespace": "MyAspNetCoreApp.Web",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\Views\\Products\\Add.cshtml",
+      "TargetPath": "Views\\Products\\Add.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\Views\\Shared\\_MenuPartialView.cshtml",
       "TargetPath": "Views\\Shared\\_MenuPartialView.cshtml",
       "FileKind": "mvc"
@@ -16310,6 +16315,11 @@
     {
       "FilePath": "c:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\Views\\Shared\\ExampleLayout.cshtml",
       "TargetPath": "Views\\Shared\\ExampleLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\Views\\Products\\Update.cshtml",
+      "TargetPath": "Views\\Products\\Update.cshtml",
       "FileKind": "mvc"
     },
     {
