@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Xj1GJvAhlM+FoUR0f22OFr1XIpjOfN8sWeCnLQOR+Sc=",
+  "Hash": "cBS0YpFjO8lWt3ILEa1bCsV+7wrwcVo0+RO8KtXBzi4=",
   "Source": "MyAspNetCoreApp.Web",
   "BasePath": "_content/MyAspNetCoreApp.Web",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MyAspNetCoreApp.Web.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\wwwroot\\css\\example.css",
+      "SourceId": "MyAspNetCoreApp.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\wwwroot\\",
+      "BasePath": "_content/MyAspNetCoreApp.Web",
+      "RelativePath": "css/example.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\example.css"
     },
     {
       "Identity": "C:\\Users\\nuh_9\\Documents\\Sites\\Turkcell_Gelecegi_Yazanlar\\Asp.Net_Core_MVC\\Asp.Net_Core_MVC_101\\MyAspNetCoreApp\\MyAspNetCoreApp.Web\\wwwroot\\css\\site.css",
