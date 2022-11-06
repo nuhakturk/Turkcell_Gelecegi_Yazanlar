@@ -32,8 +32,11 @@ namespace MyAspNetCoreApp.Web.Controllers
 
         public IActionResult Remove(int id)
         {
+            var product = _context.Products.Find(id);
 
-            _productRepository.Remove(id);
+            _context.Products.Remove(product);
+
+            _context.SaveChanges();
             return RedirectToAction("Index");
 
         }
