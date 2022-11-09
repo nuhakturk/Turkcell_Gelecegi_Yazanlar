@@ -27,6 +27,8 @@ namespace MyAspNetCoreApp.Web.Controllers
         {
             var products = _context.Products.ToList();
 
+            var product = _context.Products.First();
+            
             return View(products);
         }
 
