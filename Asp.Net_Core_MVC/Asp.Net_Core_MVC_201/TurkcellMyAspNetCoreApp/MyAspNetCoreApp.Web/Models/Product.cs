@@ -9,5 +9,6 @@
         public int Stock { get; set; }
 
         public string? Color { get; set; }
+        public string? Barcode { get; set; }
     }
 }
