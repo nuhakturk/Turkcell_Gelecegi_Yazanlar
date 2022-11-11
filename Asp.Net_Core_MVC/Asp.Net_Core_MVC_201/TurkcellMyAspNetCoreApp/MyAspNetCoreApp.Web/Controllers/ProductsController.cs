@@ -43,9 +43,16 @@ namespace MyAspNetCoreApp.Web.Controllers
 
         }
 
+        [HttpGet]
         public IActionResult Add()
         {
 
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult SaveProduct()
+        {
             return View();
         }
 
