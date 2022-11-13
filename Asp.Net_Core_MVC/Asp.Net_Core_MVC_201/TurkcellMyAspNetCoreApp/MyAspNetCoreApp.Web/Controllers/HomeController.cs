@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyAspNetCoreApp.Web.Helpers;
 using MyAspNetCoreApp.Web.Models;
 using System.Diagnostics;
 
@@ -20,6 +21,7 @@ namespace MyAspNetCoreApp.Web.Controllers
 
         public IActionResult Privacy()
         {
+
             return View();
         }
 
