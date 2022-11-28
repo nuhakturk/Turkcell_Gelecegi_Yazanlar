@@ -23,18 +23,22 @@
         <label for="Color" class="form-label">Ürün Renk:</label>
         <input class="form-control" asp-for="Color" />
     </div>
-    <div class="form-check">
-        <input class="form-check-input" asp-for="IsPublish" />
-        <label class="form-check-label" for="flexCheckDefault">
-            Yayınlansın mı ?
-        </label>
-    
-        @foreach (var item in ViewBag.Expire as List<string>)
+    <div class="mb-3">
+        <div class="form-check">
+            <input class="form-check-input" asp-for="IsPublish" />
+            <label class="form-check-label" for="flexCheckDefault">
+                Yayınlansın mı ?
+            </label>
+        </div>
+    </div>
+    <div class="mb-3">
+        <span>Ürün kaç ay satışta kalacak ?</span>
+        @foreach (var item in ViewBag.Expire as Dictionary<string, int>)
         {
             <div class="form-check">
-                <input class="form-check-input" type="radio" asp-for="Expire" value="@item"/>
+                <input class="form-check-input" type="radio" asp-for="Expire" value="@item.Value"/>
                 <label class="form-check-label" for="flexRadioDefault1">
-                    @item
+                    @item.Key
                 </label>
             </div>
         }
