@@ -8,26 +8,17 @@ namespace MyAspNetCoreApp.Web.Controllers
     {
         private AppDbContext _context;
 
-        private IHelper _helper;
 
         private readonly ProductRepository _productRepository;
-        public ProductsController(AppDbContext context, IHelper helper)
+        public ProductsController(AppDbContext context)
         {
             _productRepository =new  ProductRepository();
-            _helper = helper;
             _context = context;
 
             
         }
-        public IActionResult Index([FromServices]IHelper helper2)
+        public IActionResult Index()
         {
-
-            var text = "Asp.Net";
-            var upperText = _helper.Upper(text);
-
-            var status = _helper.Equals(helper2);
-            
-
             var products = _context.Products.ToList();
 
             
@@ -48,6 +39,7 @@ namespace MyAspNetCoreApp.Web.Controllers
         [HttpGet]
         public IActionResult Add()
         {
+            ViewBag.Expire = new List<string>() { "1 Ay", "3 Ay", "6 Ay", "12 Ay" };
 
             return View();
         }
@@ -55,16 +47,6 @@ namespace MyAspNetCoreApp.Web.Controllers
         [HttpPost]
         public IActionResult Add(Product newProduct)
         {
-            //Request Header-Body
-
-            //1. yöntem
-            //var name = HttpContext.Request.Form["Name"].ToString();
-            //var price = decimal.Parse(HttpContext.Request.Form["Price"].ToString());
-            //var stock = int.Parse(HttpContext.Request.Form["Stock"].ToString());
-            //var color = HttpContext.Request.Form["Color"].ToString();
-
-            //2. yöntem
-            //Product newProduct = new Product() { Name = Name, Price = Price, Color = Color, Stock = Stock };
 
             _context.Products.Add(newProduct);
             _context.SaveChanges();
