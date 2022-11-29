@@ -17,12 +17,14 @@
 <table class="table">
     <thead>
         <tr>
-        <th>Id</th>
-        <th>İsim</th>
-        <th>Fiyat</th>
-        <th>Stok</th>
-        <th>İşlem</th>
-        <th>Renk</th>
+            <th>Id</th>
+            <th>İsim</th>
+            <th>Fiyat</th>
+            <th>Stok</th>
+            <th>Renk</th>
+            <th>Yayınlansın mı?</th>
+            <th>Süre(Ay)</th>
+            <th>İşlem</th>
         </tr>
     </thead>
     <tbody>
@@ -30,15 +32,18 @@
     {
         <tr>
             <td>@item.Id</td>
-              <td>@item.Name</td>
-                <td>@item.Price</td>
-                  <td>@item.Stock</td>
-                    <td>@item.Color</td>
-                  <td>
-                      <a asp-controller="products" asp-action="remove" asp-route-id="@item.Id">Sil</a>
-                      
-                                <a asp-controller="products" asp-action="update" asp-route-id="@item.Id">Güncelle</a>        
-                  </td>
+            <td>@item.Name</td>
+            <td>@item.Price</td>
+            <td>@item.Stock</td>
+            <td>@item.Color</td>
+            <td>
+                @(item.IsPublish ? "Evet" : "Hayır")
+            </td>
+            <td>@item.Expire</td>
+            <td>
+                <a asp-controller="products" asp-action="remove" asp-route-id="@item.Id">Sil</a>
+                <a asp-controller="products" asp-action="update" asp-route-id="@item.Id">Güncelle</a>        
+            </td>
         </tr>
     }
     </tbody>
