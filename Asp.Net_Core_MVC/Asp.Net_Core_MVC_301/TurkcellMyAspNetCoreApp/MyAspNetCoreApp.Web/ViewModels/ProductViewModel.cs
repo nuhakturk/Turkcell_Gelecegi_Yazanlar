@@ -19,11 +19,14 @@ namespace MyAspNetCoreApp.Web.ViewModels
 
         [Required(ErrorMessage = "Açıklama alanı boş olamaz")]
         public string Description { get; set; }
+        [Required(ErrorMessage = "Renk seçimi boş olamaz")]
         public string? Color { get; set; }
 
+        [Required(ErrorMessage = "Yayınlanma tarihi boş olamaz")]
         public DateTime? PublishDate { get; set; }
         public bool IsPublish { get; set; }
 
-        public int Expire { get; set; }
+        [Required(ErrorMessage = "Yayınlanma süresi boş olamaz")]
+        public int? Expire { get; set; }
     }
 }
