@@ -60,6 +60,7 @@ namespace MyAspNetCoreApp.Web.Controllers
         [HttpPost]
         public IActionResult Add(ProductViewModel newProduct)
         {
+            
 
             if(ModelState.IsValid)
             {
@@ -71,6 +72,10 @@ namespace MyAspNetCoreApp.Web.Controllers
             }
             else
             {
+                if (!string.IsNullOrEmpty(newProduct.Name) && newProduct.Name.StartsWith("A"))
+                {
+                    ModelState.AddModelError(String.Empty, "Ürün ismi A harfi ile başlayamaz");
+                }
                 ViewBag.Expire = new Dictionary<string, int>()
                 {
                     {"1 Ay", 1},
