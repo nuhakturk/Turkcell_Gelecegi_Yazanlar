@@ -1,7 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MyAspNetCoreApp.Web.Helpers;
 using MyAspNetCoreApp.Web.Models;
+using MyAspNetCoreApp.Web.ViewModels;
 
 namespace MyAspNetCoreApp.Web.Controllers
 {
@@ -9,21 +11,19 @@ namespace MyAspNetCoreApp.Web.Controllers
     {
         private AppDbContext _context;
 
-
+        private readonly IMapper _mapper;
         private readonly ProductRepository _productRepository;
-        public ProductsController(AppDbContext context)
+        public ProductsController(AppDbContext context, IMapper mapper)
         {
-            _productRepository =new  ProductRepository();
+            _productRepository = new ProductRepository();
             _context = context;
-
-            
+            _mapper = mapper;
         }
         public IActionResult Index()
         {
             var products = _context.Products.ToList();
-
             
-            return View(products);
+            return View(_mapper.Map<List<ProductViewModel>>(products));
         }
 
         public IActionResult Remove(int id)
