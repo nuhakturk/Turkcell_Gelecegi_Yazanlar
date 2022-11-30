@@ -1,4 +1,5 @@
-﻿using Microsoft.Build.Framework;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Build.Framework;
 using System.ComponentModel.DataAnnotations;
 using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribute;
 
@@ -8,6 +9,7 @@ namespace MyAspNetCoreApp.Web.ViewModels
     {
         public int Id { get; set; }
 
+        [Remote(action:"HasProductName", controller:"Products")]
         [StringLength(50,ErrorMessage ="İsim alanına en fazla 50 karakter girilebilir.")]
         [Required(ErrorMessage ="İsim alanı boş olamaz")]
         public string? Name { get; set; }
