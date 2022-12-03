@@ -2,7 +2,7 @@
 {
     public class ProductListPartialViewModel
     {
-        public List<ProductListPartialViewModel> Products { get; set; }
+        public List<ProductPartialViewModel> Products { get; set; }
     }
     public class ProductPartialViewModel
     {
