@@ -11,15 +11,12 @@ namespace MyAspNetCoreApp.Web.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly AppDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, AppDbContext context)
         {
             _logger = logger;
-        }
-
-        public HomeController(AppDbContext context)
-        {
             _context = context;
         }
+
 
         public IActionResult Index()
         {
@@ -42,6 +39,19 @@ namespace MyAspNetCoreApp.Web.Controllers
 
         public IActionResult Privacy()
         {
+            var products = _context.Products.OrderByDescending(x => x.Id).Select(x =>
+            new ProductPartialViewModel()
+            {
+                Id = x.Id,
+                Name = x.Name,
+                Price = x.Price,
+                Stock = x.Stock
+            }).ToList();
+
+            ViewBag.productListPartialViewModel = new ProductListPartialViewModel()
+            {
+                Products = products
+            };
 
             return View();
         }
