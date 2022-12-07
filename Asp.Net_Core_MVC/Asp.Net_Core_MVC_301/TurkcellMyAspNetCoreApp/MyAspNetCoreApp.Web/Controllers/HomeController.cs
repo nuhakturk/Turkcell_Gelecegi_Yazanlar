@@ -75,6 +75,7 @@ namespace MyAspNetCoreApp.Web.Controllers
             {
                 var visitor = _mapper.Map<Visitor>(visitorViewModel);
 
+                visitor.Created= DateTime.Now;
                 _context.Visitors.Add(visitor);
                 _context.SaveChanges();
 
