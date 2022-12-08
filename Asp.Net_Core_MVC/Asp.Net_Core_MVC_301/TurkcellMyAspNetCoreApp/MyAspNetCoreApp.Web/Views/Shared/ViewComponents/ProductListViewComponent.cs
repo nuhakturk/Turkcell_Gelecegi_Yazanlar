@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Razor.TagHelpers;
 using MyAspNetCoreApp.Web.Models;
 using MyAspNetCoreApp.Web.ViewModels;
 
 namespace MyAspNetCoreApp.Web.Views.Shared.ViewComponents
 {
+    //[ViewComponent(Name ="p-list")] // component isim değiştirmek istediğimizde kullanılır.
     public class ProductListViewComponent : ViewComponent
     {
         private readonly AppDbContext _context;
