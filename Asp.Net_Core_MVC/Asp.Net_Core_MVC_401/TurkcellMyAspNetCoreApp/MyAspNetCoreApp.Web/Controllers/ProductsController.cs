@@ -26,9 +26,9 @@ namespace MyAspNetCoreApp.Web.Controllers
             return View(_mapper.Map<List<ProductViewModel>>(products));
         }
 
-        public IActionResult GetById(int id)
+        public IActionResult GetById(int productid)
         {
-            var product = _context.Products.Find(id);
+            var product = _context.Products.Find(productid);
 
             return View(_mapper.Map<ProductViewModel>(product));
         }
