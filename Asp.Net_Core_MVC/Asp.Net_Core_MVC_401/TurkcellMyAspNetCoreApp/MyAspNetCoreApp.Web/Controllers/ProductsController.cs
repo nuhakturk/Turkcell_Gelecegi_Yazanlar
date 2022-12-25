@@ -28,6 +28,10 @@ namespace MyAspNetCoreApp.Web.Controllers
 
         public IActionResult Pages(int page, int pageSize)
         {
+            // page=1 pagesize=3 => ilk 3 kayıt
+            // page=2 pagesize=3 => ikinci 3 kayıt
+            var products= _context.Products
+
             ViewBag.page = page;
             ViewBag.pageSize = pageSize;
 
