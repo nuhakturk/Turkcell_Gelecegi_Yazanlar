@@ -26,6 +26,7 @@ namespace MyAspNetCoreApp.Web.Controllers
             return View(_mapper.Map<List<ProductViewModel>>(products));
         }
 
+        [Route("[controller]/[action]/{page}/{pageSize}")]
         public IActionResult Pages(int page, int pageSize)
         {
             // page=1 pagesize=3 => ilk 3 kayıt
@@ -39,6 +40,7 @@ namespace MyAspNetCoreApp.Web.Controllers
             return View(_mapper.Map<List<ProductViewModel>>(products));
         }
 
+        [Route("urunler/urun/{productid}")]
         public IActionResult GetById(int productid)
         {
             var product = _context.Products.Find(productid);
