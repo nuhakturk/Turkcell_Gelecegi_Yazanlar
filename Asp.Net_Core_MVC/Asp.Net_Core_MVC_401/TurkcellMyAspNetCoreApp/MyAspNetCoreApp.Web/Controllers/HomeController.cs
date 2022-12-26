@@ -7,6 +7,8 @@ using System.Diagnostics;
 
 namespace MyAspNetCoreApp.Web.Controllers
 {
+
+    [Route("[controller]/[action]")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -19,7 +21,9 @@ namespace MyAspNetCoreApp.Web.Controllers
             _mapper = mapper;
         }
 
-
+        [Route("")]
+        [Route("Home")]
+        [Route("Home/Index")]
         public IActionResult Index()
         {
             var products = _context.Products.OrderByDescending(x=>x.Id).Select(x=> 

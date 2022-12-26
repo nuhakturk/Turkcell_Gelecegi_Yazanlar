@@ -7,6 +7,8 @@ using MyAspNetCoreApp.Web.ViewModels;
 
 namespace MyAspNetCoreApp.Web.Controllers
 {
+
+    [Route("[controller]/[action]")]
     public class ProductsController : Controller
     {
         private AppDbContext _context;
@@ -26,6 +28,7 @@ namespace MyAspNetCoreApp.Web.Controllers
             return View(_mapper.Map<List<ProductViewModel>>(products));
         }
 
+        //[HttpGet("{page}/{pageSize}")]
         [Route("[controller]/[action]/{page}/{pageSize}", Name = "productpage")]
         public IActionResult Pages(int page, int pageSize)
         {
@@ -48,6 +51,7 @@ namespace MyAspNetCoreApp.Web.Controllers
             return View(_mapper.Map<ProductViewModel>(product));
         }
 
+        [HttpGet("{id}")]
         public IActionResult Remove(int id)
         {
             var product = _context.Products.Find(id);

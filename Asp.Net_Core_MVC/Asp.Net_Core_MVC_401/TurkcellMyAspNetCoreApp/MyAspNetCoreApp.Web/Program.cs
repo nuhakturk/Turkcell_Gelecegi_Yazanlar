@@ -53,9 +53,11 @@ app.UseAuthorization();
 //    name: "productgetbyid",
 //    pattern: "{controller}/{action}/{productid}");
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}");
+app.MapControllers();
+
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 //baseUrl/ürünler/kalem/1
 // baseUrl/home/index
