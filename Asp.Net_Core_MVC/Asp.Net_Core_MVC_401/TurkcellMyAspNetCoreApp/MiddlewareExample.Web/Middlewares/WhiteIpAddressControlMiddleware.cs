@@ -5,7 +5,7 @@ namespace MiddlewareExample.Web.Middlewares
     public class WhiteIpAddressControlMiddleware
     {
         private readonly RequestDelegate _requestDelegate;
-        private const string WhiteIpAddress = "::1";
+        private const string WhiteIpAddress = "192.01.01.02";
 
         public WhiteIpAddressControlMiddleware(RequestDelegate requestDelegate)
         {
