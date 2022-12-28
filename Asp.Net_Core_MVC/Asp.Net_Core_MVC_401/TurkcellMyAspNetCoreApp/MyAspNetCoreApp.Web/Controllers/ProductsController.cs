@@ -22,6 +22,8 @@ namespace MyAspNetCoreApp.Web.Controllers
             _context = context;
             _mapper = mapper;
         }
+
+        [CacheResourceFilter]
         public IActionResult Index()
         {
             var products = _context.Products.ToList();
