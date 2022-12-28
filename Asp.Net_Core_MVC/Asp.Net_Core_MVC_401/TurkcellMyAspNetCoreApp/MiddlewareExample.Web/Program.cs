@@ -16,22 +16,24 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
-app.MapWhen(context => context.Request.Query.ContainsKey("name"), app =>
-{
-    app.Use(async (context, next) =>
-    {
-        await context.Response.WriteAsync("Before 1. Middleware\n");
+#region MapWhen Kullanýlmasý
+//app.MapWhen(context => context.Request.Query.ContainsKey("name"), app =>
+//{
+//    app.Use(async (context, next) =>
+//    {
+//        await context.Response.WriteAsync("Before 1. Middleware\n");
 
-        await next();
+//        await next();
 
-        await context.Response.WriteAsync("Before 2. Middleware\n");
-    });
+//        await context.Response.WriteAsync("Before 2. Middleware\n");
+//    });
 
-    app.Run(async (context) =>
-    {
-        await context.Response.WriteAsync("Terminal 3. Middleware\n");
-    });
-});
+//    app.Run(async (context) =>
+//    {
+//        await context.Response.WriteAsync("Terminal 3. Middleware\n");
+//    });
+//}); 
+#endregion
 
 #region Use ve Run Kullanýmý
 //app.Use(async (context, next) =>
