@@ -16,6 +16,23 @@ if (!app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
+app.MapWhen(context => context.Request.Query.ContainsKey("name"), app =>
+{
+    app.Use(async (context, next) =>
+    {
+        await context.Response.WriteAsync("Before 1. Middleware\n");
+
+        await next();
+
+        await context.Response.WriteAsync("Before 2. Middleware\n");
+    });
+
+    app.Run(async (context) =>
+    {
+        await context.Response.WriteAsync("Terminal 3. Middleware\n");
+    });
+});
+
 #region Use ve Run Kullanýmý
 //app.Use(async (context, next) =>
 //{
@@ -41,14 +58,16 @@ app.UseStaticFiles();
 //}); 
 #endregion
 
-app.Map("/ornek", app =>
-{
+#region Map Methodu Kullanýmý
+//app.Map("/ornek", app =>
+//{
 
-    //app.Run(async context =>
-    //{
-    //    await context.Response.WriteAsync("Ornek url'i için middleware");
-    //});
-});
+//    //app.Run(async context =>
+//    //{
+//    //    await context.Response.WriteAsync("Ornek url'i için middleware");
+//    //});
+//}); 
+#endregion
 
 app.UseRouting();
 
