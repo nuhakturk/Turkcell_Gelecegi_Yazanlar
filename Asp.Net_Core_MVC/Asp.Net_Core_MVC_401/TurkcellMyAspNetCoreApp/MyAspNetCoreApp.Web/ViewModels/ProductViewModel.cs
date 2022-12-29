@@ -35,5 +35,7 @@ namespace MyAspNetCoreApp.Web.ViewModels
 
         [Required(ErrorMessage = "Yayınlanma süresi boş olamaz.")]
         public int? Expire { get; set; }
+
+        public IFormFile Image { get; set; }
     }
 }

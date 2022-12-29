@@ -66,6 +66,11 @@
         <input class="form-control" asp-for="PublishDate" />
         <span class="text-danger" asp-validation-for="PublishDate"></span>
     </div>
+    <div class="mb-3">
+        <label for="formFileLg" class="form-label">Ürün Resim</label>
+        <input class="form-control form-control-lg" asp-for="Image" type="file">
+    </div>
+
     <button type="submit" class="btn btn-primary">Ürün Kaydet</button>
 </form>
 
