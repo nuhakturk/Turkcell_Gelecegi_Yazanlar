@@ -11,7 +11,7 @@
 
 </div>
 
-<form asp-controller="Products" asp-action="Add" method="post">
+<form asp-controller="Products" asp-action="Add" method="post" enctype="multipart/form-data">
     <div class="mb-3">
         <label asp-for="Name" class="form-label">Ürün İsmi:</label>
         <input class="form-control" asp-for="Name" />

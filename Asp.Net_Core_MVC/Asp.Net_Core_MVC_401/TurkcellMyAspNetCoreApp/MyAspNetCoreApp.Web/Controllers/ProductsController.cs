@@ -92,7 +92,7 @@ namespace MyAspNetCoreApp.Web.Controllers
         }
 
         [HttpPost]
-        public async IActionResult Add(ProductViewModel newProduct)
+        public IActionResult Add(ProductViewModel newProduct)
         {
             IActionResult result = null;
             
@@ -111,7 +111,10 @@ namespace MyAspNetCoreApp.Web.Controllers
 
                     newProduct.Image.CopyTo(stream);
 
-                    _context.Products.Add(_mapper.Map<Product>(newProduct));
+                    var product = _mapper.Map<Product>(newProduct);
+                    product.ImagePath = newProduct.Image.FileName;
+
+                    _context.Products.Add(product);
                     _context.SaveChanges();
 
                     TempData["status"] = "Ürün başarıyla eklendi.";
@@ -119,7 +122,7 @@ namespace MyAspNetCoreApp.Web.Controllers
                 }
                 catch (Exception)
                 {
-                    ModelState.AddModelError(String.Empty,"Ürün kaydedilirken bir hata meydana geldi. Lütfen daha sonra tekrar deneyiniz.");
+                    ModelState.AddModelError(String.Empty, "Ürün kaydedilirken bir hata meydana geldi. Lütfen daha sonra tekrar deneyiniz.");
 
                     result = View();
                 }
