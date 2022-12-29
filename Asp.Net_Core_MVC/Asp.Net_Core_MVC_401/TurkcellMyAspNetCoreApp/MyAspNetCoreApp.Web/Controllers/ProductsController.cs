@@ -92,12 +92,44 @@ namespace MyAspNetCoreApp.Web.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add(ProductViewModel newProduct)
+        public async IActionResult Add(ProductViewModel newProduct)
         {
-            //if (!string.IsNullOrEmpty(newProduct.Name) && newProduct.Name.StartsWith("A"))
-            //{
-            //    ModelState.AddModelError(String.Empty, "Ürün ismi A harfi ile başlayamaz");
-            //}
+            IActionResult result = null;
+            
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    var root = _fileProvider.GetDirectoryContents("wwwroot");
+
+                    var images = root.First(x => x.Name == "images");
+
+                    var path = Path.Combine(images.PhysicalPath, newProduct.Image.FileName);
+
+                    using var stream = new FileStream(path, FileMode.Create);
+
+                    newProduct.Image.CopyTo(stream);
+
+                    _context.Products.Add(_mapper.Map<Product>(newProduct));
+                    _context.SaveChanges();
+
+                    TempData["status"] = "Ürün başarıyla eklendi.";
+                    return RedirectToAction("Index");
+                }
+                catch (Exception)
+                {
+                    ModelState.AddModelError(String.Empty,"Ürün kaydedilirken bir hata meydana geldi. Lütfen daha sonra tekrar deneyiniz.");
+
+                    result = View();
+                }
+                
+            }
+            else
+            {
+                result = View();
+            }
+
             ViewBag.Expire = new Dictionary<string, int>()
                 {
                     {"1 Ay", 1},
@@ -112,29 +144,7 @@ namespace MyAspNetCoreApp.Web.Controllers
                     new() { Data="Sarı", Value="Sarı"}
                 }, "Value", "Data");
 
-            if (ModelState.IsValid)
-            {
-                try
-                {
-                    _context.Products.Add(_mapper.Map<Product>(newProduct));
-                    _context.SaveChanges();
-
-                    TempData["status"] = "Ürün başarıyla eklendi.";
-                    return RedirectToAction("Index");
-                }
-                catch (Exception)
-                {
-                    ModelState.AddModelError(String.Empty,"Ürün kaydedilirken bir hata meydana geldi. Lütfen daha sonra tekrar deneyiniz.");
-
-                    return View();
-                }
-                
-            }
-            else
-            {
-                return View();
-            }
-
+            return result;
         }
 
         [ServiceFilter(typeof(NotFoundFilter))]
