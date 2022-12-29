@@ -26,7 +26,7 @@ namespace MyAspNetCoreApp.Web.Controllers
             _fileProvider = fileProvider;
         }
 
-        [CacheResourceFilter]
+        //[CacheResourceFilter]
         public IActionResult Index()
         {
             var products = _context.Products.ToList();

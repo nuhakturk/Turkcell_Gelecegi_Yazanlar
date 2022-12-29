@@ -18,6 +18,7 @@
     <thead>
         <tr>
             <th>Id</th>
+            <th>Resim</th>
             <th>İsim</th>
             <th>Fiyat</th>
             <th>Stok</th>
@@ -33,6 +34,12 @@
     {
         <tr>
             <td>@item.Id</td>
+            <td>
+                @if(!String.IsNullOrEmpty(item.ImagePath))
+                {
+                        <img style="width: 100px; height:100px;" src="~/images/@(item.ImagePath)" />
+                }
+            </td>
             <td>@item.Name</td>
             <td>@item.Price</td>
             <td>@item.Stock</td>
