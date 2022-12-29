@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.Extensions.FileProviders;
 using MyAspNetCoreApp.Web.Filters;
 using MyAspNetCoreApp.Web.Helpers;
 using MyAspNetCoreApp.Web.Models;
@@ -13,14 +14,16 @@ namespace MyAspNetCoreApp.Web.Controllers
     public class ProductsController : Controller
     {
         private AppDbContext _context;
+        private readonly IFileProvider _fileProvider;
 
         private readonly IMapper _mapper;
         private readonly ProductRepository _productRepository;
-        public ProductsController(AppDbContext context, IMapper mapper)
+        public ProductsController(AppDbContext context, IMapper mapper, IFileProvider fileProvider)
         {
             _productRepository = new ProductRepository();
             _context = context;
             _mapper = mapper;
+            _fileProvider = fileProvider;
         }
 
         [CacheResourceFilter]
