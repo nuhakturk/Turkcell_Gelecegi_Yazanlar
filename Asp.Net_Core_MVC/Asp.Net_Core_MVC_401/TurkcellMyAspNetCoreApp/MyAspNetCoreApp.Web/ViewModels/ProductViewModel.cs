@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding.Validation;
 using Microsoft.Build.Framework;
 using System.ComponentModel.DataAnnotations;
 using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribute;
@@ -38,6 +39,7 @@ namespace MyAspNetCoreApp.Web.ViewModels
 
         public IFormFile Image { get; set; }
 
+        [ValidateNever]
         public string ImagePath { get; set; }
     }
 }
