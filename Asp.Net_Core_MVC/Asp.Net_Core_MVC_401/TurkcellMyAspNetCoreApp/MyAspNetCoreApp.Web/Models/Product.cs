@@ -15,6 +15,6 @@
 
         public int Expire{ get; set; }
 
-        public string ImagePath { get; set; }
+        public string? ImagePath { get; set; }
     }
 }

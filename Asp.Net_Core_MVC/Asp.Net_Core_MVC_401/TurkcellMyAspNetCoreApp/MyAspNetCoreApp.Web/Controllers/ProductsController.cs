@@ -102,7 +102,7 @@ namespace MyAspNetCoreApp.Web.Controllers
                 try
                 {
                     var product = _mapper.Map<Product>(newProduct);
-                    if (newProduct.Image != null & newProduct.Image.Length>0)
+                    if (newProduct.Image != null && newProduct.Image.Length>0)
                     {
                         var root = _fileProvider.GetDirectoryContents("wwwroot");
 
@@ -179,11 +179,11 @@ namespace MyAspNetCoreApp.Web.Controllers
                 new() { Data="Sarı", Value="Sarı"}
             }, "Value", "Data", product.Color);
 
-            return View(_mapper.Map<ProductViewModel>(product));
+            return View(_mapper.Map<ProductUpdateViewModel>(product));
         }
 
         [HttpPost]
-        public IActionResult Update(ProductViewModel updateProduct)
+        public IActionResult Update(ProductUpdateViewModel updateProduct)
         {
             if (!ModelState.IsValid)
             {
@@ -203,6 +203,22 @@ namespace MyAspNetCoreApp.Web.Controllers
                 }, "Value", "Data", updateProduct.Color);
 
                 return View();
+            }
+
+            if (updateProduct.Image != null && updateProduct.Image.Length > 0)
+            {
+                var root = _fileProvider.GetDirectoryContents("wwwroot");
+
+                var images = root.First(x => x.Name == "images");
+
+                var randomImageName = Guid.NewGuid() + Path.GetExtension(updateProduct.Image.FileName);
+
+                var path = Path.Combine(images.PhysicalPath, randomImageName);
+
+                using var stream = new FileStream(path, FileMode.Create);
+
+                updateProduct.Image.CopyTo(stream);
+                updateProduct.ImagePath = randomImageName;
             }
 
             _context.Products.Update(_mapper.Map<Product>(updateProduct));

@@ -6,11 +6,11 @@ using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribut
 
 namespace MyAspNetCoreApp.Web.ViewModels
 {
-    public class ProductViewModel
+    public class ProductUpdateViewModel
     {
         public int Id { get; set; }
 
-        [Remote(action:"HasProductName", controller:"Products")]
+        
         [StringLength(50,ErrorMessage ="İsim alanına en fazla 50 karakter girilebilir.")]
         [Required(ErrorMessage ="İsim alanı boş olamaz")]
         public string? Name { get; set; }
