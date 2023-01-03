@@ -88,6 +88,10 @@ namespace MyAspNetCoreApp.Web.Controllers
                 new() { Data="Sarı", Value="Sarı"}
             }, "Value", "Data");
 
+            var categories = _context.Category.ToList();
+
+            ViewBag.CategorySelect = new SelectList(categories, "Id", "Name");
+
             return View();
         }
 

@@ -27,7 +27,7 @@ namespace MyAspNetCoreApp.Web.ViewModels
         [StringLength(300,MinimumLength=50,ErrorMessage = "Açıklama alanı 50 ile 300 karakter arasında olabilir.")]
         [Required(ErrorMessage = "Açıklama alanı boş olamaz.")]
         public string Description { get; set; }
-        [Required(ErrorMessage = "Renk seçimi boş olamaz.")]
+        [Required(ErrorMessage = "Renk seçiniz.")]
         public string? Color { get; set; }
 
         [Required(ErrorMessage = "Yayınlanma tarihi boş olamaz.")]
@@ -42,5 +42,7 @@ namespace MyAspNetCoreApp.Web.ViewModels
 
         [ValidateNever]
         public string ImagePath { get; set; }
+        [Required(ErrorMessage = "Kategori seçiniz.")]
+        public int CategoryId { get; set; }
     }
 }
