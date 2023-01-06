@@ -9,19 +9,18 @@
 			function loadComments() {
 				$.ajax({
 					type: "GET",
-					url: "/VisitorAjax/SaveVisitorComment",
-					data: jsonData,
+					url: "/VisitorAjax/VisitorCommentList",
 					success: function (data) {
 						console.log(data);
 						$.each(data, function (index, item) {
-							let item = `<div class="card mt-3">
+							let comment = `<div class="card mt-3">
 														<div class="card-body">
 															<h5 class="card-title">${item.name}</h5>
 																	<h6 class="card-subtitle mb-2 text-muted">${item.created}</h6>
 																	<p class="card-text">${item.comment}</p>
 														</div>
 													</div>`;
-							$("#comments").append(item);
+							$("#comments").append(comment);
 						})
 					},
 					error: function (e) {
@@ -43,7 +42,8 @@
 					url:"/VisitorAjax/SaveVisitorComment",
 					data:jsonData,
 					success:function(data){
-						console.log(data);
+						alert("yorum kaydedildi");
+						loadComments();
 					},
 					error:function(e){
 						console.log(e);
