@@ -30,8 +30,8 @@
 		{
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.label1 = new System.Windows.Forms.Label();
 			this.TxtKategoriAd = new System.Windows.Forms.TextBox();
+			this.label1 = new System.Windows.Forms.Label();
 			this.BtnListele = new System.Windows.Forms.Button();
 			this.BtnKaydet = new System.Windows.Forms.Button();
 			this.BtnSil = new System.Windows.Forms.Button();
@@ -43,6 +43,7 @@
 			// 
 			// dataGridView1
 			// 
+			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Location = new System.Drawing.Point(12, 99);
 			this.dataGridView1.Name = "dataGridView1";
@@ -61,6 +62,13 @@
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
 			// 
+			// TxtKategoriAd
+			// 
+			this.TxtKategoriAd.Location = new System.Drawing.Point(172, 28);
+			this.TxtKategoriAd.Name = "TxtKategoriAd";
+			this.TxtKategoriAd.Size = new System.Drawing.Size(210, 30);
+			this.TxtKategoriAd.TabIndex = 1;
+			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
@@ -70,13 +78,6 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Kategori Adı:";
 			// 
-			// TxtKategoriAd
-			// 
-			this.TxtKategoriAd.Location = new System.Drawing.Point(172, 28);
-			this.TxtKategoriAd.Name = "TxtKategoriAd";
-			this.TxtKategoriAd.Size = new System.Drawing.Size(210, 30);
-			this.TxtKategoriAd.TabIndex = 1;
-			// 
 			// BtnListele
 			// 
 			this.BtnListele.Location = new System.Drawing.Point(538, 99);
@@ -85,6 +86,7 @@
 			this.BtnListele.TabIndex = 2;
 			this.BtnListele.Text = "Listele";
 			this.BtnListele.UseVisualStyleBackColor = true;
+			this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
 			// 
 			// BtnKaydet
 			// 
