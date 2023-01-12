@@ -37,6 +37,8 @@
 			this.BtnSil = new System.Windows.Forms.Button();
 			this.BtnGuncelle = new System.Windows.Forms.Button();
 			this.BtnAra = new System.Windows.Forms.Button();
+			this.TxtID = new System.Windows.Forms.TextBox();
+			this.label2 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
@@ -54,6 +56,8 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.TxtID);
+			this.groupBox1.Controls.Add(this.label2);
 			this.groupBox1.Controls.Add(this.TxtKategoriAd);
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Location = new System.Drawing.Point(13, 12);
@@ -64,15 +68,15 @@
 			// 
 			// TxtKategoriAd
 			// 
-			this.TxtKategoriAd.Location = new System.Drawing.Point(172, 28);
+			this.TxtKategoriAd.Location = new System.Drawing.Point(141, 31);
 			this.TxtKategoriAd.Name = "TxtKategoriAd";
-			this.TxtKategoriAd.Size = new System.Drawing.Size(210, 30);
+			this.TxtKategoriAd.Size = new System.Drawing.Size(138, 30);
 			this.TxtKategoriAd.TabIndex = 1;
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(32, 33);
+			this.label1.Location = new System.Drawing.Point(6, 36);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(125, 25);
 			this.label1.TabIndex = 0;
@@ -106,6 +110,7 @@
 			this.BtnSil.TabIndex = 4;
 			this.BtnSil.Text = "Sil";
 			this.BtnSil.UseVisualStyleBackColor = true;
+			this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
 			// 
 			// BtnGuncelle
 			// 
@@ -124,6 +129,22 @@
 			this.BtnAra.TabIndex = 6;
 			this.BtnAra.Text = "Ara";
 			this.BtnAra.UseVisualStyleBackColor = true;
+			// 
+			// TxtID
+			// 
+			this.TxtID.Location = new System.Drawing.Point(371, 31);
+			this.TxtID.Name = "TxtID";
+			this.TxtID.Size = new System.Drawing.Size(116, 30);
+			this.TxtID.TabIndex = 3;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(328, 36);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(37, 25);
+			this.label2.TabIndex = 2;
+			this.label2.Text = "ID:";
 			// 
 			// Form1
 			// 
@@ -160,6 +181,8 @@
 		private System.Windows.Forms.Button BtnSil;
 		private System.Windows.Forms.Button BtnGuncelle;
 		private System.Windows.Forms.Button BtnAra;
+		private System.Windows.Forms.TextBox TxtID;
+		private System.Windows.Forms.Label label2;
 	}
 }
 

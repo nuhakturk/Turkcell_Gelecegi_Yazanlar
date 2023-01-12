@@ -38,6 +38,16 @@ namespace Urun_Takip
 			baglanti.Close();
 			MessageBox.Show("Kategoriniz başarılı bir şekilde eklendi");
 		}
+
+		private void BtnSil_Click(object sender, EventArgs e)
+		{
+			baglanti.Open();
+			SqlCommand komut3 = new SqlCommand("Delete from TBLKATEGORI where ID=@p1", baglanti);
+			komut3.Parameters.AddWithValue("@p1", TxtID.Text);
+			komut3.ExecuteNonQuery();
+			baglanti.Close();
+			MessageBox.Show("Kategori silme işlemi başarılı bir şekilde gerçekleşti");
+		}
 	}
 }
 //Data Source=DESKTOP-U5FIOK2\SQLEXPRESS;Initial Catalog=DbUrun;Integrated Security=True
