@@ -1,0 +1,8 @@
+Programlama dilleri ve frameworkler listesi
+
+-------------
+C#
+Java
+React Js
+Html + Css
+Python
