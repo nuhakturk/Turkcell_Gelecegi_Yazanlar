@@ -48,6 +48,18 @@ namespace Urun_Takip
 			baglanti.Close();
 			MessageBox.Show("Kategori silme işlemi başarılı bir şekilde gerçekleşti");
 		}
+
+		private void BtnGuncelle_Click(object sender, EventArgs e)
+		{
+			baglanti.Open();
+			SqlCommand komut4 = new SqlCommand("update TBLKATEGORI set Ad=@p1 where ID=@p2", baglanti);
+			komut4.Parameters.AddWithValue("@p1", TxtKategoriAd.Text);
+			komut4.Parameters.AddWithValue("@p2", TxtID.Text);
+			komut4.ExecuteNonQuery();
+			baglanti.Close();
+			MessageBox.Show("Kategori güncelleme işlemi başarılı bir şekilde gerçekleşti");
+		}
 	}
 }
 //Data Source=DESKTOP-U5FIOK2\SQLEXPRESS;Initial Catalog=DbUrun;Integrated Security=True
+//CRUD --> Create Read Update Delete Search
