@@ -59,6 +59,16 @@ namespace Urun_Takip
 			baglanti.Close();
 			MessageBox.Show("Kategori güncelleme işlemi başarılı bir şekilde gerçekleşti");
 		}
+
+		private void BtnAra_Click(object sender, EventArgs e)
+		{
+			SqlCommand komut = new SqlCommand("Select * From TBLKATEGORI Where Ad=@p1", baglanti);
+			komut.Parameters.AddWithValue("@p1", TxtKategoriAd.Text);
+			SqlDataAdapter da = new SqlDataAdapter(komut);
+			DataTable dt = new DataTable();
+			da.Fill(dt);
+			dataGridView1.DataSource = dt;
+		}
 	}
 }
 //Data Source=DESKTOP-U5FIOK2\SQLEXPRESS;Initial Catalog=DbUrun;Integrated Security=True
