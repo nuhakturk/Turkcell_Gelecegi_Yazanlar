@@ -69,7 +69,7 @@ namespace Urun_Takip
 		{
 			TxtID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
 			TxtAd.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
-			//NudStok.Value = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+			NudStok.Value = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString());
 			TxtAlisFiyat.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
 			TxtSatisFiyat.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
 			comboBox1.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[5].Value;
