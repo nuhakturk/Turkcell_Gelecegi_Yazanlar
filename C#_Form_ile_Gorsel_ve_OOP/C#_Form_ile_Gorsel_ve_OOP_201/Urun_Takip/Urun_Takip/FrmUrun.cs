@@ -41,6 +41,18 @@ namespace Urun_Takip
 			dataGridView1.DataSource = dt;
 		}
 
-		
+		private void BtnKaydet_Click(object sender, EventArgs e)
+		{
+			baglanti.Open();
+			SqlCommand komut3 = new SqlCommand("insert into TblUrunler (UrunAd, Stok, AlisFiyat, SatisFiyat, Kategori) values (@p1, @p2, @p3, @p4, @p5)", baglanti);
+			komut3.Parameters.AddWithValue("@p1", TxtAd.Text);
+			komut3.Parameters.AddWithValue("@p2", NudStok.Value);
+			komut3.Parameters.AddWithValue("@p3", TxtAlisFiyat.Text);
+			komut3.Parameters.AddWithValue("@p4", TxtSatisFiyat.Text);
+			komut3.Parameters.AddWithValue("@p5", comboBox1.SelectedValue);
+			komut3.ExecuteNonQuery();
+			baglanti.Close();
+			MessageBox.Show("Ürün kaydı başarılı bir şekilde gerçekleşti");
+		}
 	}
 }
