@@ -30,7 +30,7 @@
 		{
 			this.panel1 = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
+			this.LblToplamKategori = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
@@ -65,7 +65,7 @@
 			// panel1
 			// 
 			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(160)))), ((int)(((byte)(133)))));
-			this.panel1.Controls.Add(this.label2);
+			this.panel1.Controls.Add(this.LblToplamKategori);
 			this.panel1.Controls.Add(this.label1);
 			this.panel1.Location = new System.Drawing.Point(12, 12);
 			this.panel1.Name = "panel1";
@@ -81,15 +81,15 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Toplam Kategori Sayısı";
 			// 
-			// label2
+			// LblToplamKategori
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.label2.Location = new System.Drawing.Point(100, 108);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(85, 29);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "label2";
+			this.LblToplamKategori.AutoSize = true;
+			this.LblToplamKategori.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.LblToplamKategori.Location = new System.Drawing.Point(100, 108);
+			this.LblToplamKategori.Name = "LblToplamKategori";
+			this.LblToplamKategori.Size = new System.Drawing.Size(85, 29);
+			this.LblToplamKategori.TabIndex = 1;
+			this.LblToplamKategori.Text = "label2";
 			// 
 			// panel2
 			// 
@@ -312,6 +312,7 @@
 			this.Name = "Frmistatistik";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "İstatistikler";
+			this.Load += new System.EventHandler(this.Frmistatistik_Load);
 			this.panel1.ResumeLayout(false);
 			this.panel1.PerformLayout();
 			this.panel2.ResumeLayout(false);
@@ -335,7 +336,7 @@
 		#endregion
 
 		private System.Windows.Forms.Panel panel1;
-		private System.Windows.Forms.Label label2;
+		private System.Windows.Forms.Label LblToplamKategori;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Panel panel2;
 		private System.Windows.Forms.Label label3;
