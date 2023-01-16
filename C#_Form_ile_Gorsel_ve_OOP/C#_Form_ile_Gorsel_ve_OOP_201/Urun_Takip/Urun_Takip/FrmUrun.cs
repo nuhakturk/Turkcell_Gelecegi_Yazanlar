@@ -64,5 +64,15 @@ namespace Urun_Takip
 			baglanti.Close();
 			MessageBox.Show("İstediğiniz ürünün silme işlemi başarılı bir şekilde gerçekleşti");
 		}
+
+		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			TxtID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+			TxtAd.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+			//NudStok.Value = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+			TxtAlisFiyat.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+			TxtSatisFiyat.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+			comboBox1.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[5].Value;
+		}
 	}
 }
