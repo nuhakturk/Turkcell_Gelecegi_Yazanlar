@@ -32,7 +32,7 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.LblToplamKategori = new System.Windows.Forms.Label();
 			this.panel2 = new System.Windows.Forms.Panel();
-			this.label3 = new System.Windows.Forms.Label();
+			this.LblToplamUrun = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.panel3 = new System.Windows.Forms.Panel();
 			this.label5 = new System.Windows.Forms.Label();
@@ -94,31 +94,31 @@
 			// panel2
 			// 
 			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(152)))), ((int)(((byte)(219)))));
-			this.panel2.Controls.Add(this.label3);
+			this.panel2.Controls.Add(this.LblToplamUrun);
 			this.panel2.Controls.Add(this.label4);
 			this.panel2.Location = new System.Drawing.Point(283, 12);
 			this.panel2.Name = "panel2";
 			this.panel2.Size = new System.Drawing.Size(265, 177);
 			this.panel2.TabIndex = 2;
 			// 
-			// label3
+			// LblToplamUrun
 			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.label3.Location = new System.Drawing.Point(100, 108);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(85, 29);
-			this.label3.TabIndex = 1;
-			this.label3.Text = "label3";
+			this.LblToplamUrun.AutoSize = true;
+			this.LblToplamUrun.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.LblToplamUrun.Location = new System.Drawing.Point(100, 108);
+			this.LblToplamUrun.Name = "LblToplamUrun";
+			this.LblToplamUrun.Size = new System.Drawing.Size(85, 29);
+			this.LblToplamUrun.TabIndex = 1;
+			this.LblToplamUrun.Text = "label3";
 			// 
 			// label4
 			// 
 			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(45, 44);
+			this.label4.Location = new System.Drawing.Point(59, 44);
 			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(195, 22);
+			this.label4.Size = new System.Drawing.Size(167, 22);
 			this.label4.TabIndex = 0;
-			this.label4.Text = "Toplam Kategori Sayısı";
+			this.label4.Text = "Toplam Ürün Sayısı";
 			// 
 			// panel3
 			// 
@@ -339,7 +339,7 @@
 		private System.Windows.Forms.Label LblToplamKategori;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.Panel panel2;
-		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Label LblToplamUrun;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Panel panel3;
 		private System.Windows.Forms.Label label5;

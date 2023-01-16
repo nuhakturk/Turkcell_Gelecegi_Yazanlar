@@ -32,6 +32,16 @@ namespace Urun_Takip
 				LblToplamKategori.Text = dr[0].ToString();
 			}
 			baglanti.Close();
+
+			//Toplam Kategori Sayısı
+			baglanti.Open();
+			SqlCommand komut2 = new SqlCommand("Select COUNT(*) From TBLURUNLER", baglanti);
+			SqlDataReader dr2 = komut2.ExecuteReader();
+			while (dr2.Read())
+			{
+				LblToplamUrun.Text = dr2[0].ToString();
+			}
+			baglanti.Close();
 		}
 	}
 }
