@@ -21,6 +21,17 @@ namespace Urun_Takip
 			InitializeComponent();
 		}
 
+		private void FrmUrun_Load(object sender, EventArgs e)
+		{
+			SqlCommand komut2 = new SqlCommand("Select * From TBLKATEGORI", baglanti);
+			SqlDataAdapter da2 = new SqlDataAdapter(komut2);
+			DataTable dt2 = new DataTable();
+			da2.Fill(dt2);
+			comboBox1.DisplayMember = "Ad";
+			comboBox1.ValueMember = "ID";
+			comboBox1.DataSource = dt2;
+		}
+
 		private void BtnListele_Click(object sender, EventArgs e)
 		{
 			SqlCommand komut1 = new SqlCommand("Select * From TblUrunler", baglanti);
@@ -29,5 +40,7 @@ namespace Urun_Takip
 			da.Fill(dt);
 			dataGridView1.DataSource = dt;
 		}
+
+		
 	}
 }
