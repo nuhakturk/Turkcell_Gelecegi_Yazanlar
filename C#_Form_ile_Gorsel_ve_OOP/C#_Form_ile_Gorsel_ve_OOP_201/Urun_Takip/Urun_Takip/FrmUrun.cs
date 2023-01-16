@@ -54,5 +54,15 @@ namespace Urun_Takip
 			baglanti.Close();
 			MessageBox.Show("Ürün kaydı başarılı bir şekilde gerçekleşti");
 		}
+
+		private void BtnSil_Click(object sender, EventArgs e)
+		{
+			baglanti.Open();
+			SqlCommand komut4 = new SqlCommand("delete from tblurunler where urunId=@p1", baglanti);
+			komut4.Parameters.AddWithValue("@p1", TxtID.Text);
+			komut4.ExecuteNonQuery();
+			baglanti.Close();
+			MessageBox.Show("İstediğiniz ürünün silme işlemi başarılı bir şekilde gerçekleşti");
+		}
 	}
 }
