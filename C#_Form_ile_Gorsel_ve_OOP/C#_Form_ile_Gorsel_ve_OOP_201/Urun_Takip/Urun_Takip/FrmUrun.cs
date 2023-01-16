@@ -74,5 +74,20 @@ namespace Urun_Takip
 			TxtSatisFiyat.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
 			comboBox1.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[5].Value;
 		}
+
+		private void BtnGuncelle_Click(object sender, EventArgs e)
+		{
+			baglanti.Open();
+			SqlCommand komut5 = new SqlCommand("update tblurunler set urunad=@p1, stok=@p2, Alisfiyat=@p3, SatisFiyat=@p4, Kategori=@p5 where urunId=@p6", baglanti);
+			komut5.Parameters.AddWithValue("@p1", TxtAd.Text);
+			komut5.Parameters.AddWithValue("@p2", NudStok.Value);
+			komut5.Parameters.AddWithValue("@p3", decimal.Parse(TxtAlisFiyat.Text));
+			komut5.Parameters.AddWithValue("@p4", decimal.Parse(TxtSatisFiyat.Text));
+			komut5.Parameters.AddWithValue("@p5", comboBox1.SelectedValue);
+			komut5.Parameters.AddWithValue("@p6", TxtID.Text);
+			komut5.ExecuteNonQuery();
+			baglanti.Close();
+			MessageBox.Show("Ürün bilgileri başarıyla güncellendi", "Güncelleme", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+		}
 	}
 }
