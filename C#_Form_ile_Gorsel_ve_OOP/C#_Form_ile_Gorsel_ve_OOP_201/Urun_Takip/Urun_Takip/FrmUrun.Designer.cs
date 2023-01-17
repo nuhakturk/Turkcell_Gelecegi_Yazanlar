@@ -31,6 +31,8 @@
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.BtnListele = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.NudStok = new System.Windows.Forms.NumericUpDown();
+			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.BtnGuncelle = new System.Windows.Forms.Button();
 			this.BtnSil = new System.Windows.Forms.Button();
 			this.BtnKaydet = new System.Windows.Forms.Button();
@@ -44,8 +46,6 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.TxtID = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.NudStok = new System.Windows.Forms.NumericUpDown();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.NudStok)).BeginInit();
@@ -96,6 +96,22 @@
 			this.groupBox1.Size = new System.Drawing.Size(290, 465);
 			this.groupBox1.TabIndex = 3;
 			this.groupBox1.TabStop = false;
+			// 
+			// NudStok
+			// 
+			this.NudStok.Location = new System.Drawing.Point(141, 99);
+			this.NudStok.Name = "NudStok";
+			this.NudStok.Size = new System.Drawing.Size(138, 28);
+			this.NudStok.TabIndex = 16;
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Location = new System.Drawing.Point(141, 202);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(138, 30);
+			this.comboBox1.TabIndex = 15;
 			// 
 			// BtnGuncelle
 			// 
@@ -209,22 +225,6 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Ürün ID:";
 			// 
-			// comboBox1
-			// 
-			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(141, 202);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(138, 30);
-			this.comboBox1.TabIndex = 15;
-			// 
-			// NudStok
-			// 
-			this.NudStok.Location = new System.Drawing.Point(141, 99);
-			this.NudStok.Name = "NudStok";
-			this.NudStok.Size = new System.Drawing.Size(138, 28);
-			this.NudStok.TabIndex = 16;
-			// 
 			// FrmUrun
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -235,6 +235,7 @@
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "FrmUrun";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmUrun";
 			this.Load += new System.EventHandler(this.FrmUrun_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

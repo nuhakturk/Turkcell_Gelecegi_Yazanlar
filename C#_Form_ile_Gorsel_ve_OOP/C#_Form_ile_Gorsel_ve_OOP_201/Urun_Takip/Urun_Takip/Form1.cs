@@ -69,6 +69,12 @@ namespace Urun_Takip
 			da.Fill(dt);
 			dataGridView1.DataSource = dt;
 		}
+
+		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			TxtID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+			TxtKategoriAd.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+		}
 	}
 }
 //Data Source=DESKTOP-U5FIOK2\SQLEXPRESS;Initial Catalog=DbUrun;Integrated Security=True

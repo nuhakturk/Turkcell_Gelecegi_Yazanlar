@@ -298,6 +298,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			this.ClientSize = new System.Drawing.Size(1103, 382);
 			this.Controls.Add(this.panel5);
 			this.Controls.Add(this.panel4);
@@ -309,6 +310,8 @@
 			this.Controls.Add(this.panel1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.Margin = new System.Windows.Forms.Padding(4);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "Frmistatistik";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "İstatistikler";

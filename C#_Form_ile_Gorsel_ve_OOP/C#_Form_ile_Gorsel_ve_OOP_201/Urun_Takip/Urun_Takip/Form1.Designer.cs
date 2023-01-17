@@ -30,6 +30,8 @@
 		{
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.TxtID = new System.Windows.Forms.TextBox();
+			this.label2 = new System.Windows.Forms.Label();
 			this.TxtKategoriAd = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
 			this.BtnListele = new System.Windows.Forms.Button();
@@ -37,8 +39,6 @@
 			this.BtnSil = new System.Windows.Forms.Button();
 			this.BtnGuncelle = new System.Windows.Forms.Button();
 			this.BtnAra = new System.Windows.Forms.Button();
-			this.TxtID = new System.Windows.Forms.TextBox();
-			this.label2 = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
@@ -53,6 +53,7 @@
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.Size = new System.Drawing.Size(507, 270);
 			this.dataGridView1.TabIndex = 0;
+			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
 			// 
 			// groupBox1
 			// 
@@ -65,6 +66,22 @@
 			this.groupBox1.Size = new System.Drawing.Size(507, 81);
 			this.groupBox1.TabIndex = 1;
 			this.groupBox1.TabStop = false;
+			// 
+			// TxtID
+			// 
+			this.TxtID.Location = new System.Drawing.Point(371, 31);
+			this.TxtID.Name = "TxtID";
+			this.TxtID.Size = new System.Drawing.Size(116, 30);
+			this.TxtID.TabIndex = 3;
+			// 
+			// label2
+			// 
+			this.label2.AutoSize = true;
+			this.label2.Location = new System.Drawing.Point(328, 36);
+			this.label2.Name = "label2";
+			this.label2.Size = new System.Drawing.Size(37, 25);
+			this.label2.TabIndex = 2;
+			this.label2.Text = "ID:";
 			// 
 			// TxtKategoriAd
 			// 
@@ -132,26 +149,11 @@
 			this.BtnAra.UseVisualStyleBackColor = true;
 			this.BtnAra.Click += new System.EventHandler(this.BtnAra_Click);
 			// 
-			// TxtID
-			// 
-			this.TxtID.Location = new System.Drawing.Point(371, 31);
-			this.TxtID.Name = "TxtID";
-			this.TxtID.Size = new System.Drawing.Size(116, 30);
-			this.TxtID.TabIndex = 3;
-			// 
-			// label2
-			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(328, 36);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(37, 25);
-			this.label2.TabIndex = 2;
-			this.label2.Text = "ID:";
-			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
 			this.ClientSize = new System.Drawing.Size(712, 381);
 			this.Controls.Add(this.BtnAra);
@@ -163,7 +165,10 @@
 			this.Controls.Add(this.dataGridView1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+			this.MaximizeBox = false;
+			this.MinimizeBox = false;
 			this.Name = "Form1";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Kategoriler";
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.groupBox1.ResumeLayout(false);

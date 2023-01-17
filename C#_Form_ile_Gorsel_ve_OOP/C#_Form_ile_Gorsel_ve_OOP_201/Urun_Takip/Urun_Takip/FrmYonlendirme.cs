@@ -16,5 +16,36 @@ namespace Urun_Takip
 		{
 			InitializeComponent();
 		}
+
+		private void PnlUrun_Click(object sender, EventArgs e)
+		{
+			FrmUrun fr =new FrmUrun();
+			fr.Show();
+		}
+
+		private void PnlKategori_Click(object sender, EventArgs e)
+		{
+			Form1 frm= new Form1();
+			frm.Show();
+		}
+
+		private void Pnlistatistik_Click(object sender, EventArgs e)
+		{
+			Frmistatistik frm= new Frmistatistik();
+			frm.Show();
+		}
+
+		private void PnlGrafik_Click(object sender, EventArgs e)
+		{
+			FrmGrafikler frm= new FrmGrafikler();
+			frm.Show();
+		}
+
+		private void PnlLogin_Click(object sender, EventArgs e)
+		{
+			FrmAdmin frm = new FrmAdmin();
+			frm.Show();
+			this.Hide();
+		}
 	}
 }

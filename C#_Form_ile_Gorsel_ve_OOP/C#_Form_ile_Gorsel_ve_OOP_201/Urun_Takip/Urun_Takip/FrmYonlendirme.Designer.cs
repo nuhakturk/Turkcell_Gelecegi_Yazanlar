@@ -28,32 +28,33 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.panel4 = new System.Windows.Forms.Panel();
+			this.PnlUrun = new System.Windows.Forms.Panel();
 			this.label8 = new System.Windows.Forms.Label();
-			this.panel1 = new System.Windows.Forms.Panel();
+			this.PnlKategori = new System.Windows.Forms.Panel();
 			this.label1 = new System.Windows.Forms.Label();
-			this.panel2 = new System.Windows.Forms.Panel();
+			this.Pnlistatistik = new System.Windows.Forms.Panel();
 			this.label2 = new System.Windows.Forms.Label();
-			this.panel3 = new System.Windows.Forms.Panel();
+			this.PnlGrafik = new System.Windows.Forms.Panel();
 			this.label3 = new System.Windows.Forms.Label();
-			this.panel5 = new System.Windows.Forms.Panel();
+			this.PnlLogin = new System.Windows.Forms.Panel();
 			this.label4 = new System.Windows.Forms.Label();
-			this.panel4.SuspendLayout();
-			this.panel1.SuspendLayout();
-			this.panel2.SuspendLayout();
-			this.panel3.SuspendLayout();
-			this.panel5.SuspendLayout();
+			this.PnlUrun.SuspendLayout();
+			this.PnlKategori.SuspendLayout();
+			this.Pnlistatistik.SuspendLayout();
+			this.PnlGrafik.SuspendLayout();
+			this.PnlLogin.SuspendLayout();
 			this.SuspendLayout();
 			// 
-			// panel4
+			// PnlUrun
 			// 
-			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-			this.panel4.Controls.Add(this.label8);
-			this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.panel4.Location = new System.Drawing.Point(25, 30);
-			this.panel4.Name = "panel4";
-			this.panel4.Size = new System.Drawing.Size(238, 147);
-			this.panel4.TabIndex = 5;
+			this.PnlUrun.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+			this.PnlUrun.Controls.Add(this.label8);
+			this.PnlUrun.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.PnlUrun.Location = new System.Drawing.Point(25, 30);
+			this.PnlUrun.Name = "PnlUrun";
+			this.PnlUrun.Size = new System.Drawing.Size(238, 147);
+			this.PnlUrun.TabIndex = 5;
+			this.PnlUrun.Click += new System.EventHandler(this.PnlUrun_Click);
 			// 
 			// label8
 			// 
@@ -64,15 +65,16 @@
 			this.label8.TabIndex = 0;
 			this.label8.Text = "Ürün İşlemleri";
 			// 
-			// panel1
+			// PnlKategori
 			// 
-			this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-			this.panel1.Controls.Add(this.label1);
-			this.panel1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.panel1.Location = new System.Drawing.Point(269, 30);
-			this.panel1.Name = "panel1";
-			this.panel1.Size = new System.Drawing.Size(238, 147);
-			this.panel1.TabIndex = 6;
+			this.PnlKategori.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+			this.PnlKategori.Controls.Add(this.label1);
+			this.PnlKategori.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.PnlKategori.Location = new System.Drawing.Point(269, 30);
+			this.PnlKategori.Name = "PnlKategori";
+			this.PnlKategori.Size = new System.Drawing.Size(238, 147);
+			this.PnlKategori.TabIndex = 6;
+			this.PnlKategori.Click += new System.EventHandler(this.PnlKategori_Click);
 			// 
 			// label1
 			// 
@@ -83,15 +85,16 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Kategori İşlemleri";
 			// 
-			// panel2
+			// Pnlistatistik
 			// 
-			this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-			this.panel2.Controls.Add(this.label2);
-			this.panel2.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.panel2.Location = new System.Drawing.Point(513, 30);
-			this.panel2.Name = "panel2";
-			this.panel2.Size = new System.Drawing.Size(238, 147);
-			this.panel2.TabIndex = 7;
+			this.Pnlistatistik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+			this.Pnlistatistik.Controls.Add(this.label2);
+			this.Pnlistatistik.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.Pnlistatistik.Location = new System.Drawing.Point(513, 30);
+			this.Pnlistatistik.Name = "Pnlistatistik";
+			this.Pnlistatistik.Size = new System.Drawing.Size(238, 147);
+			this.Pnlistatistik.TabIndex = 7;
+			this.Pnlistatistik.Click += new System.EventHandler(this.Pnlistatistik_Click);
 			// 
 			// label2
 			// 
@@ -102,15 +105,16 @@
 			this.label2.TabIndex = 0;
 			this.label2.Text = "İstatistikler";
 			// 
-			// panel3
+			// PnlGrafik
 			// 
-			this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-			this.panel3.Controls.Add(this.label3);
-			this.panel3.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.panel3.Location = new System.Drawing.Point(757, 30);
-			this.panel3.Name = "panel3";
-			this.panel3.Size = new System.Drawing.Size(238, 147);
-			this.panel3.TabIndex = 8;
+			this.PnlGrafik.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+			this.PnlGrafik.Controls.Add(this.label3);
+			this.PnlGrafik.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.PnlGrafik.Location = new System.Drawing.Point(757, 30);
+			this.PnlGrafik.Name = "PnlGrafik";
+			this.PnlGrafik.Size = new System.Drawing.Size(238, 147);
+			this.PnlGrafik.TabIndex = 8;
+			this.PnlGrafik.Click += new System.EventHandler(this.PnlGrafik_Click);
 			// 
 			// label3
 			// 
@@ -121,15 +125,16 @@
 			this.label3.TabIndex = 0;
 			this.label3.Text = "Grafikler";
 			// 
-			// panel5
+			// PnlLogin
 			// 
-			this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
-			this.panel5.Controls.Add(this.label4);
-			this.panel5.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.panel5.Location = new System.Drawing.Point(1001, 30);
-			this.panel5.Name = "panel5";
-			this.panel5.Size = new System.Drawing.Size(238, 147);
-			this.panel5.TabIndex = 9;
+			this.PnlLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(196)))), ((int)(((byte)(15)))));
+			this.PnlLogin.Controls.Add(this.label4);
+			this.PnlLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.PnlLogin.Location = new System.Drawing.Point(1001, 30);
+			this.PnlLogin.Name = "PnlLogin";
+			this.PnlLogin.Size = new System.Drawing.Size(238, 147);
+			this.PnlLogin.TabIndex = 9;
+			this.PnlLogin.Click += new System.EventHandler(this.PnlLogin_Click);
 			// 
 			// label4
 			// 
@@ -146,42 +151,42 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.ClientSize = new System.Drawing.Size(1263, 204);
-			this.Controls.Add(this.panel5);
-			this.Controls.Add(this.panel3);
-			this.Controls.Add(this.panel2);
-			this.Controls.Add(this.panel1);
-			this.Controls.Add(this.panel4);
+			this.Controls.Add(this.PnlLogin);
+			this.Controls.Add(this.PnlGrafik);
+			this.Controls.Add(this.Pnlistatistik);
+			this.Controls.Add(this.PnlKategori);
+			this.Controls.Add(this.PnlUrun);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
 			this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
 			this.Name = "FrmYonlendirme";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmYonlendirme";
-			this.panel4.ResumeLayout(false);
-			this.panel4.PerformLayout();
-			this.panel1.ResumeLayout(false);
-			this.panel1.PerformLayout();
-			this.panel2.ResumeLayout(false);
-			this.panel2.PerformLayout();
-			this.panel3.ResumeLayout(false);
-			this.panel3.PerformLayout();
-			this.panel5.ResumeLayout(false);
-			this.panel5.PerformLayout();
+			this.PnlUrun.ResumeLayout(false);
+			this.PnlUrun.PerformLayout();
+			this.PnlKategori.ResumeLayout(false);
+			this.PnlKategori.PerformLayout();
+			this.Pnlistatistik.ResumeLayout(false);
+			this.Pnlistatistik.PerformLayout();
+			this.PnlGrafik.ResumeLayout(false);
+			this.PnlGrafik.PerformLayout();
+			this.PnlLogin.ResumeLayout(false);
+			this.PnlLogin.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
 
 		#endregion
 
-		private System.Windows.Forms.Panel panel4;
+		private System.Windows.Forms.Panel PnlUrun;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.Panel panel1;
+		private System.Windows.Forms.Panel PnlKategori;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Panel panel2;
+		private System.Windows.Forms.Panel Pnlistatistik;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.Panel panel3;
+		private System.Windows.Forms.Panel PnlGrafik;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.Panel panel5;
+		private System.Windows.Forms.Panel PnlLogin;
 		private System.Windows.Forms.Label label4;
 	}
 }
