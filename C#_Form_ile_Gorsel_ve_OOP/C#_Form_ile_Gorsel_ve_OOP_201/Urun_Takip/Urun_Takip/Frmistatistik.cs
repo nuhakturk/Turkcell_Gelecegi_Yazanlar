@@ -82,6 +82,16 @@ namespace Urun_Takip
 				LblEnDusukStok.Text = dr6["UrunAd"].ToString();
 			}
 			baglanti.Close();
+
+			//Laptop Toplam Kar Oranı
+			baglanti.Open();
+			SqlCommand komut7 = new SqlCommand("Select Stok*(SatisFiyat - AlisFiyat) From TBLURUNLER where UrunAd='Laptop'", baglanti);
+			SqlDataReader dr7 = komut7.ExecuteReader();
+			while (dr7.Read())
+			{
+				LblLaptopToplamKar.Text = dr7[0].ToString() + " ₺";
+			}
+			baglanti.Close();
 		}
 	}
 }
