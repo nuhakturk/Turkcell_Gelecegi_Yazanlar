@@ -92,6 +92,16 @@ namespace Urun_Takip
 				LblLaptopToplamKar.Text = dr7[0].ToString() + " ₺";
 			}
 			baglanti.Close();
+
+			//Beyaz Eşya Toplam Kar Oranı
+			baglanti.Open();
+			SqlCommand komut8 = new SqlCommand("Select Sum(Stok*(SatisFiyat-AlisFiyat)) as 'Toplam Stokla Çarpılan Sonuç' From TBLURUNLER where Kategori=(Select ID From TBLKATEGORI Where Ad='Beyaz Eşya')", baglanti);
+			SqlDataReader dr8 = komut8.ExecuteReader();
+			while (dr8.Read())
+			{
+				LblBeyazEsyaToplamKar.Text = dr8[0].ToString() + " ₺";
+			}
+			baglanti.Close();
 		}
 	}
 }
