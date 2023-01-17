@@ -30,7 +30,7 @@ namespace Urun_Takip
 			SqlDataReader dr=komut.ExecuteReader();
 			if(dr.Read())
 			{
-				FrmUrun fr = new FrmUrun();
+				FrmYonlendirme fr = new FrmYonlendirme();
 				fr.Show();
 				this.Hide();
 			}

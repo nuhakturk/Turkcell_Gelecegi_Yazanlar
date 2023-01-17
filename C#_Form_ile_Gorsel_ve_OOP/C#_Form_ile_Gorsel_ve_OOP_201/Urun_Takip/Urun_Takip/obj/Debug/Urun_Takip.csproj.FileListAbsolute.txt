@@ -12,3 +12,4 @@ C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_
 C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_201\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.FrmUrun.resources
 C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_201\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.Frmistatistik.resources
 C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_201\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.FrmAdmin.resources
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_201\Urun_Takip\Urun_Takip\obj\Debug\Urun_Takip.FrmYonlendirme.resources
