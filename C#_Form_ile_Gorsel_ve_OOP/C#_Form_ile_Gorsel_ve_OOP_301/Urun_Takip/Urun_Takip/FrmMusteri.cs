@@ -31,5 +31,11 @@ namespace Urun_Takip
 			tb.MusteriEkle(TxtAd.Text, TxtSoyad.Text, TxtSehir.Text, decimal.Parse(TxtBakiye.Text));
 			MessageBox.Show("Müşteri sisteme kaydedildi");
 		}
+
+		private void BtnSil_Click(object sender, EventArgs e)
+		{
+			tb.MusteriSil(int.Parse(TxtID.Text));
+			MessageBox.Show("Müşteri sistemden silindi");
+		}
 	}
 }

@@ -73,6 +73,7 @@
 			this.BtnSil.TabIndex = 8;
 			this.BtnSil.Text = "Sil";
 			this.BtnSil.UseVisualStyleBackColor = true;
+			this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
 			// 
 			// BtnKaydet
 			// 
