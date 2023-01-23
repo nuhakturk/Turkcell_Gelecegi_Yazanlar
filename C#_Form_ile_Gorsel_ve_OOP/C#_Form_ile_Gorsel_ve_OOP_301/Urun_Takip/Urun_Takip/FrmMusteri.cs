@@ -37,5 +37,14 @@ namespace Urun_Takip
 			tb.MusteriSil(int.Parse(TxtID.Text));
 			MessageBox.Show("Müşteri sistemden silindi");
 		}
+
+		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			TxtID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+			TxtAd.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+			TxtSoyad.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+			TxtSehir.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+			TxtBakiye.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+		}
 	}
 }
