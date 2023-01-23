@@ -16,7 +16,7 @@ namespace Urun_Takip
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FrmMusteri());
+			Application.Run(new FrmSatislar());
 		}
 	}
 }
