@@ -46,5 +46,11 @@ namespace Urun_Takip
 			TxtSehir.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
 			TxtBakiye.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
 		}
+
+		private void BtnGuncelle_Click(object sender, EventArgs e)
+		{
+			tb.MusteriGuncelle(TxtAd.Text, TxtSoyad.Text, TxtSehir.Text, decimal.Parse(TxtBakiye.Text), int.Parse(TxtID.Text));
+			MessageBox.Show("Müşteri bilgileri güncellendi");
+		}
 	}
 }
