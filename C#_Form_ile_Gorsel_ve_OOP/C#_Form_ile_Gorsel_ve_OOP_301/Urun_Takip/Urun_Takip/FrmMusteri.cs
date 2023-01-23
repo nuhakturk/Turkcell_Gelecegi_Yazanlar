@@ -52,5 +52,21 @@ namespace Urun_Takip
 			tb.MusteriGuncelle(TxtAd.Text, TxtSoyad.Text, TxtSehir.Text, decimal.Parse(TxtBakiye.Text), int.Parse(TxtID.Text));
 			MessageBox.Show("Müşteri bilgileri güncellendi");
 		}
+
+		private void BtnAra_Click(object sender, EventArgs e)
+		{
+			if (RdbAd.Checked == true)
+			{
+				dataGridView1.DataSource = tb.AdaGoreListele(TxtAranacak.Text);
+			}
+			if (RdbSoyad.Checked == true)
+			{
+				dataGridView1.DataSource = tb.SoyadaGoreListele(TxtAranacak.Text);
+			}
+			if (RdbSehir.Checked == true)
+			{
+				dataGridView1.DataSource = tb.SehreGoreListele(TxtAranacak.Text);
+			}
+		}
 	}
 }
