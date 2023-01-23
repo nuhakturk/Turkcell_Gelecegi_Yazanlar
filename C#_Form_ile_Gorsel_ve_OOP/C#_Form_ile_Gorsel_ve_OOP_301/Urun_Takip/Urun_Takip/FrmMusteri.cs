@@ -17,9 +17,12 @@ namespace Urun_Takip
 			InitializeComponent();
 		}
 
-		private void textBox1_TextChanged(object sender, EventArgs e)
-		{
 
+		private void BtnListele_Click(object sender, EventArgs e)
+		{
+			DataSet1TableAdapters.TBLMUSTERITableAdapter tb = new DataSet1TableAdapters.TBLMUSTERITableAdapter();
+			dataGridView1.DataSource = tb.MusteriListesi();
+			//databind
 		}
 	}
 }

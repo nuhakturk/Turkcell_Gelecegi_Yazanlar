@@ -91,6 +91,7 @@
 			this.BtnListele.TabIndex = 4;
 			this.BtnListele.Text = "Listele";
 			this.BtnListele.UseVisualStyleBackColor = true;
+			this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
 			// 
 			// TxtBakiye
 			// 
@@ -225,7 +226,6 @@
 			this.TxtAranacak.Name = "TxtAranacak";
 			this.TxtAranacak.Size = new System.Drawing.Size(153, 28);
 			this.TxtAranacak.TabIndex = 15;
-			this.TxtAranacak.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
 			// 
 			// label6
 			// 
@@ -289,6 +289,7 @@
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "FrmMusteri";
+			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmMusteri";
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
