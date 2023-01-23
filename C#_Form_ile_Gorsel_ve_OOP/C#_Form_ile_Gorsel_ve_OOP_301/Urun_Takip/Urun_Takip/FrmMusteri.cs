@@ -12,6 +12,8 @@ namespace Urun_Takip
 {
 	public partial class FrmMusteri : Form
 	{
+		DataSet1TableAdapters.TBLMUSTERITableAdapter tb = new DataSet1TableAdapters.TBLMUSTERITableAdapter();
+
 		public FrmMusteri()
 		{
 			InitializeComponent();
@@ -20,9 +22,14 @@ namespace Urun_Takip
 
 		private void BtnListele_Click(object sender, EventArgs e)
 		{
-			DataSet1TableAdapters.TBLMUSTERITableAdapter tb = new DataSet1TableAdapters.TBLMUSTERITableAdapter();
 			dataGridView1.DataSource = tb.MusteriListesi();
 			//databind
+		}
+
+		private void BtnKaydet_Click(object sender, EventArgs e)
+		{
+			tb.MusteriEkle(TxtAd.Text, TxtSoyad.Text, TxtSehir.Text, decimal.Parse(TxtBakiye.Text));
+			MessageBox.Show("Müşteri sisteme kaydedildi");
 		}
 	}
 }
