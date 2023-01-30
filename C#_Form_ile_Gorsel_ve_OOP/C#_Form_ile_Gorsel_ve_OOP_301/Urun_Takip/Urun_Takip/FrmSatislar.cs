@@ -28,5 +28,16 @@ namespace Urun_Takip
 			da.Fill(dt);
 			dataGridView1.DataSource= dt;
 		}
+
+		private void FrmSatislar_Load(object sender, EventArgs e)
+		{
+			SqlCommand komut2 = new SqlCommand("Select * From TBLURUNLER", baglanti);
+			SqlDataAdapter da = new SqlDataAdapter(komut2);
+			DataTable dt2 = new DataTable();
+			da.Fill(dt2);
+			comboBox1.DisplayMember = "UrunAd";
+			comboBox1.ValueMember = "UrunId";
+			comboBox1.DataSource = dt2;
+		}
 	}
 }

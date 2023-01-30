@@ -30,6 +30,12 @@
 		{
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.MskTarih = new System.Windows.Forms.MaskedTextBox();
+			this.TxtMusteri = new System.Windows.Forms.TextBox();
+			this.comboBox1 = new System.Windows.Forms.ComboBox();
+			this.label8 = new System.Windows.Forms.Label();
+			this.TxtToplam = new System.Windows.Forms.TextBox();
+			this.label7 = new System.Windows.Forms.Label();
 			this.BtnGuncelle = new System.Windows.Forms.Button();
 			this.BtnSil = new System.Windows.Forms.Button();
 			this.BtnKaydet = new System.Windows.Forms.Button();
@@ -42,12 +48,6 @@
 			this.label2 = new System.Windows.Forms.Label();
 			this.TxtID = new System.Windows.Forms.TextBox();
 			this.label1 = new System.Windows.Forms.Label();
-			this.TxtToplam = new System.Windows.Forms.TextBox();
-			this.label7 = new System.Windows.Forms.Label();
-			this.label8 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
-			this.TxtMusteri = new System.Windows.Forms.TextBox();
-			this.MskTarih = new System.Windows.Forms.MaskedTextBox();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
@@ -88,6 +88,56 @@
 			this.groupBox1.Size = new System.Drawing.Size(290, 465);
 			this.groupBox1.TabIndex = 8;
 			this.groupBox1.TabStop = false;
+			// 
+			// MskTarih
+			// 
+			this.MskTarih.Location = new System.Drawing.Point(141, 229);
+			this.MskTarih.Mask = "00/00/0000";
+			this.MskTarih.Name = "MskTarih";
+			this.MskTarih.Size = new System.Drawing.Size(138, 28);
+			this.MskTarih.TabIndex = 16;
+			this.MskTarih.ValidatingType = typeof(System.DateTime);
+			// 
+			// TxtMusteri
+			// 
+			this.TxtMusteri.Location = new System.Drawing.Point(141, 91);
+			this.TxtMusteri.Name = "TxtMusteri";
+			this.TxtMusteri.Size = new System.Drawing.Size(138, 28);
+			this.TxtMusteri.TabIndex = 15;
+			// 
+			// comboBox1
+			// 
+			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.comboBox1.FormattingEnabled = true;
+			this.comboBox1.Location = new System.Drawing.Point(141, 56);
+			this.comboBox1.Name = "comboBox1";
+			this.comboBox1.Size = new System.Drawing.Size(138, 30);
+			this.comboBox1.TabIndex = 14;
+			// 
+			// label8
+			// 
+			this.label8.AutoSize = true;
+			this.label8.Location = new System.Drawing.Point(77, 230);
+			this.label8.Name = "label8";
+			this.label8.Size = new System.Drawing.Size(52, 22);
+			this.label8.TabIndex = 13;
+			this.label8.Text = "Tarih";
+			// 
+			// TxtToplam
+			// 
+			this.TxtToplam.Location = new System.Drawing.Point(141, 192);
+			this.TxtToplam.Name = "TxtToplam";
+			this.TxtToplam.Size = new System.Drawing.Size(138, 28);
+			this.TxtToplam.TabIndex = 10;
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(54, 196);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(75, 22);
+			this.label7.TabIndex = 11;
+			this.label7.Text = "Toplam:";
 			// 
 			// BtnGuncelle
 			// 
@@ -192,56 +242,6 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Satış ID:";
 			// 
-			// TxtToplam
-			// 
-			this.TxtToplam.Location = new System.Drawing.Point(141, 192);
-			this.TxtToplam.Name = "TxtToplam";
-			this.TxtToplam.Size = new System.Drawing.Size(138, 28);
-			this.TxtToplam.TabIndex = 10;
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(54, 196);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(75, 22);
-			this.label7.TabIndex = 11;
-			this.label7.Text = "Toplam:";
-			// 
-			// label8
-			// 
-			this.label8.AutoSize = true;
-			this.label8.Location = new System.Drawing.Point(77, 230);
-			this.label8.Name = "label8";
-			this.label8.Size = new System.Drawing.Size(52, 22);
-			this.label8.TabIndex = 13;
-			this.label8.Text = "Tarih";
-			// 
-			// comboBox1
-			// 
-			this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Location = new System.Drawing.Point(141, 56);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(138, 30);
-			this.comboBox1.TabIndex = 14;
-			// 
-			// TxtMusteri
-			// 
-			this.TxtMusteri.Location = new System.Drawing.Point(141, 91);
-			this.TxtMusteri.Name = "TxtMusteri";
-			this.TxtMusteri.Size = new System.Drawing.Size(138, 28);
-			this.TxtMusteri.TabIndex = 15;
-			// 
-			// MskTarih
-			// 
-			this.MskTarih.Location = new System.Drawing.Point(141, 229);
-			this.MskTarih.Mask = "00/00/0000";
-			this.MskTarih.Name = "MskTarih";
-			this.MskTarih.Size = new System.Drawing.Size(138, 28);
-			this.MskTarih.TabIndex = 16;
-			this.MskTarih.ValidatingType = typeof(System.DateTime);
-			// 
 			// FrmSatislar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -250,10 +250,11 @@
 			this.Controls.Add(this.dataGridView1);
 			this.Controls.Add(this.groupBox1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "FrmSatislar";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmSatislar";
+			this.Load += new System.EventHandler(this.FrmSatislar_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
