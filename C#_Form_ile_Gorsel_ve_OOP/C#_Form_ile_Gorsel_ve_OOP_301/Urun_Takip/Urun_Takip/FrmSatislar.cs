@@ -50,5 +50,14 @@ namespace Urun_Takip
 			ds.SatisEkle(int.Parse(comboBox1.SelectedValue.ToString()), int.Parse(TxtMusteri.Text), byte.Parse(TxtAdet.Text), decimal.Parse(TxtFiyat.Text), decimal.Parse(TxtToplam.Text), DateTime.Parse(MskTarih.Text));
 			MessageBox.Show("Satış başarıyla yapıldı");
 		}
+
+		private void BtnHesapla_Click(object sender, EventArgs e)
+		{
+			double adet, fiyat, toplam;
+			adet = Convert.ToDouble(TxtAdet.Text);
+			fiyat = Convert.ToDouble(TxtFiyat.Text);
+			toplam = adet * fiyat;
+			TxtToplam.Text = toplam.ToString();
+		}
 	}
 }

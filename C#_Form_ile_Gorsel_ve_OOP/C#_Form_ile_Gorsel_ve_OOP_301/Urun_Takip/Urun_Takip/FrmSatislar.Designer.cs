@@ -37,7 +37,7 @@
 			this.TxtToplam = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
 			this.BtnGuncelle = new System.Windows.Forms.Button();
-			this.BtnSil = new System.Windows.Forms.Button();
+			this.BtnHesapla = new System.Windows.Forms.Button();
 			this.BtnKaydet = new System.Windows.Forms.Button();
 			this.BtnListele = new System.Windows.Forms.Button();
 			this.TxtFiyat = new System.Windows.Forms.TextBox();
@@ -72,7 +72,7 @@
 			this.groupBox1.Controls.Add(this.TxtToplam);
 			this.groupBox1.Controls.Add(this.label7);
 			this.groupBox1.Controls.Add(this.BtnGuncelle);
-			this.groupBox1.Controls.Add(this.BtnSil);
+			this.groupBox1.Controls.Add(this.BtnHesapla);
 			this.groupBox1.Controls.Add(this.BtnKaydet);
 			this.groupBox1.Controls.Add(this.BtnListele);
 			this.groupBox1.Controls.Add(this.TxtFiyat);
@@ -148,14 +148,15 @@
 			this.BtnGuncelle.Text = "Güncelle";
 			this.BtnGuncelle.UseVisualStyleBackColor = true;
 			// 
-			// BtnSil
+			// BtnHesapla
 			// 
-			this.BtnSil.Location = new System.Drawing.Point(123, 365);
-			this.BtnSil.Name = "BtnSil";
-			this.BtnSil.Size = new System.Drawing.Size(156, 44);
-			this.BtnSil.TabIndex = 8;
-			this.BtnSil.Text = "Sil";
-			this.BtnSil.UseVisualStyleBackColor = true;
+			this.BtnHesapla.Location = new System.Drawing.Point(123, 365);
+			this.BtnHesapla.Name = "BtnHesapla";
+			this.BtnHesapla.Size = new System.Drawing.Size(156, 44);
+			this.BtnHesapla.TabIndex = 8;
+			this.BtnHesapla.Text = "Hesapla";
+			this.BtnHesapla.UseVisualStyleBackColor = true;
+			this.BtnHesapla.Click += new System.EventHandler(this.BtnHesapla_Click);
 			// 
 			// BtnKaydet
 			// 
@@ -273,7 +274,7 @@
 		private System.Windows.Forms.TextBox TxtToplam;
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Button BtnGuncelle;
-		private System.Windows.Forms.Button BtnSil;
+		private System.Windows.Forms.Button BtnHesapla;
 		private System.Windows.Forms.Button BtnKaydet;
 		private System.Windows.Forms.Button BtnListele;
 		private System.Windows.Forms.TextBox TxtFiyat;
