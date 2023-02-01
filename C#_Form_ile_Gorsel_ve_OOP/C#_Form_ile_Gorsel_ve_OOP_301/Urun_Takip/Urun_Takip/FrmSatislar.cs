@@ -44,7 +44,7 @@ namespace Urun_Takip
 			comboBox1.DataSource = dt2;
 
 			
-			dataGridView1.DataSource = ds.SatisListesi();
+			//dataGridView1.DataSource = ds.SatisListesi();
 		}
 
 		private void BtnKaydet_Click(object sender, EventArgs e)
@@ -69,9 +69,15 @@ namespace Urun_Takip
 			TxtAdet.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
 			TxtFiyat.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
 			TxtToplam.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
-			MskTarih.Text = DateTime.Parse(dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString()).ToString("MM/dd/yyyy");
+			MskTarih.Text = DateTime.Parse(dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString()).ToString("dd/MM/yyyy");
 			comboBox1.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
 			TxtMusteri.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
+		}
+
+		private void BtnGuncelle_Click(object sender, EventArgs e)
+		{
+			ds.SatisGuncelle(int.Parse(comboBox1.SelectedValue.ToString()), int.Parse(TxtMusteri.Text), byte.Parse(TxtAdet.Text), decimal.Parse(TxtFiyat.Text), decimal.Parse(TxtToplam.Text), DateTime.Parse(MskTarih.Text), int.Parse(TxtID.Text));
+			MessageBox.Show("Satış başarıyla güncellendi.");
 		}
 	}
 }
