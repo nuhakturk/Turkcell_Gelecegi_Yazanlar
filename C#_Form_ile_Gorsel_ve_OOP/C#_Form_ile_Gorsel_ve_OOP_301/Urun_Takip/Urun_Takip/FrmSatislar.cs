@@ -29,6 +29,8 @@ namespace Urun_Takip
 			DataTable dt = new DataTable();
 			da.Fill(dt);
 			dataGridView1.DataSource= dt;
+			dataGridView1.Columns["UrunId"].Visible = false;
+			dataGridView1.Columns["MusteriID"].Visible = false;
 		}
 
 		private void FrmSatislar_Load(object sender, EventArgs e)
@@ -58,6 +60,18 @@ namespace Urun_Takip
 			fiyat = Convert.ToDouble(TxtFiyat.Text);
 			toplam = adet * fiyat;
 			TxtToplam.Text = toplam.ToString();
+		}
+
+		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			TxtID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+			
+			TxtAdet.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+			TxtFiyat.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+			TxtToplam.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+			MskTarih.Text = DateTime.Parse(dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString()).ToString("MM/dd/yyyy");
+			comboBox1.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+			TxtMusteri.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
 		}
 	}
 }

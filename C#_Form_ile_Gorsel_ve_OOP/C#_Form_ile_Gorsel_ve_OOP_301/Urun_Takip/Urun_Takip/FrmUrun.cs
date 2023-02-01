@@ -34,7 +34,7 @@ namespace Urun_Takip
 
 		private void BtnListele_Click(object sender, EventArgs e)
 		{
-			SqlCommand komut1 = new SqlCommand("Select UrunId,UrunAd,Stok,AlisFiyat,SatisFiyat,Ad,Kategori From TBLURUNLER INNER JOIN TBLKATEGORI ON TBLURUNLER.Kategori = TBLKATEGORI.ID", baglanti);
+			SqlCommand komut1 = new SqlCommand("Select UrunId,UrunAd,Stok,AlisFiyat,SatisFiyat,Ad as 'Kategori Adı',Kategori From TBLURUNLER INNER JOIN TBLKATEGORI ON TBLURUNLER.Kategori = TBLKATEGORI.ID", baglanti);
 			SqlDataAdapter da = new SqlDataAdapter(komut1);
 			DataTable dt = new DataTable();
 			da.Fill(dt);
@@ -73,7 +73,7 @@ namespace Urun_Takip
 			NudStok.Value = int.Parse(dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString());
 			TxtAlisFiyat.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
 			TxtSatisFiyat.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
-			comboBox1.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[6].Value;
+			comboBox1.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
 		}
 
 		private void BtnGuncelle_Click(object sender, EventArgs e)
