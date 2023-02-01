@@ -15,6 +15,8 @@ namespace Urun_Takip
 	{
 		SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-U5FIOK2\\SQLEXPRESS;Initial Catalog=DbUrun;Integrated Security=True");
 
+		DataSet1TableAdapters.TBLSATISLARTableAdapter ds = new DataSet1TableAdapters.TBLSATISLARTableAdapter();
+
 		public FrmSatislar()
 		{
 			InitializeComponent();
@@ -39,8 +41,14 @@ namespace Urun_Takip
 			comboBox1.ValueMember = "UrunId";
 			comboBox1.DataSource = dt2;
 
-			DataSet1TableAdapters.TBLSATISLARTableAdapter ds = new DataSet1TableAdapters.TBLSATISLARTableAdapter();
+			
 			dataGridView1.DataSource = ds.SatisListesi();
+		}
+
+		private void BtnKaydet_Click(object sender, EventArgs e)
+		{
+			ds.SatisEkle(int.Parse(comboBox1.SelectedValue.ToString()), int.Parse(TxtMusteri.Text), byte.Parse(TxtAdet.Text), decimal.Parse(TxtFiyat.Text), decimal.Parse(TxtToplam.Text), DateTime.Parse(MskTarih.Text));
+			MessageBox.Show("Satış başarıyla yapıldı");
 		}
 	}
 }
