@@ -38,6 +38,9 @@ namespace Urun_Takip
 			comboBox1.DisplayMember = "UrunAd";
 			comboBox1.ValueMember = "UrunId";
 			comboBox1.DataSource = dt2;
+
+			DataSet1TableAdapters.TBLSATISLARTableAdapter ds = new DataSet1TableAdapters.TBLSATISLARTableAdapter();
+			dataGridView1.DataSource = ds.SatisListesi();
 		}
 	}
 }
