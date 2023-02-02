@@ -4,12 +4,12 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="9a888f040cb84a4488127aaed09f0c88" Name="Diagram1">
-        <EntityTypeShape EntityType="DbUrunModel.TBLADMIN" Width="1.5" PointX="7.125" PointY="0.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbUrunModel.TBLKATEGORI" Width="1.5" PointX="0.5" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbUrunModel.TBLMUSTERI" Width="1.5" PointX="4.75" PointY="3.875" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbUrunModel.TBLSATISLAR" Width="1.5" PointX="4.75" PointY="0.5" IsExpanded="true" />
-        <EntityTypeShape EntityType="DbUrunModel.TBLURUNLER" Width="1.5" PointX="2.625" PointY="0.5" IsExpanded="true" />
+      <Diagram DiagramId="7533a1b048414c6cab8589da2442ed7e" Name="Diagram1">
+        <EntityTypeShape EntityType="DbUrunModel.TBLADMIN" Width="1.5" PointX="7.125" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbUrunModel.TBLKATEGORI" Width="1.5" PointX="0.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbUrunModel.TBLMUSTERI" Width="1.5" PointX="4.875" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbUrunModel.TBLSATISLAR" Width="1.5" PointX="5" PointY="0.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DbUrunModel.TBLURUNLER" Width="1.5" PointX="2.75" PointY="0.5" IsExpanded="true" />
         <AssociationConnector Association="DbUrunModel.FK_TBLURUNLER_TBLKATEGORI" ManuallyRouted="false" />
         <AssociationConnector Association="DbUrunModel.FK_TBLSATISLAR_TBLMUSTERI" ManuallyRouted="false" />
         <AssociationConnector Association="DbUrunModel.FK_TBLSATISLAR_TBLURUNLER" ManuallyRouted="false" />

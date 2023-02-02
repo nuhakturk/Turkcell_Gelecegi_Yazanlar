@@ -77,6 +77,7 @@
 			this.BtnListele.TabIndex = 3;
 			this.BtnListele.Text = "Listele";
 			this.BtnListele.UseVisualStyleBackColor = true;
+			this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
 			// 
 			// textBox2
 			// 
