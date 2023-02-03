@@ -44,5 +44,17 @@ namespace Urun_Takip_Entity
 			db.SaveChanges();
 			MessageBox.Show("Müşteri sistemden silindi");
 		}
+
+		private void BtnGuncelle_Click(object sender, EventArgs e)
+		{
+			int id = int.Parse(TxtID.Text);
+			var x = db.TBLMUSTERI.Find(id);
+			x.Ad = TxtAd.Text;
+			x.Soyad = TxtSoyad.Text;
+			x.Sehir = TxtSehir.Text;
+			x.Bakiye = decimal.Parse(TxtBakiye.Text);
+			db.SaveChanges();
+			MessageBox.Show("Müşteri bilgisi güncellendi");
+		}
 	}
 }

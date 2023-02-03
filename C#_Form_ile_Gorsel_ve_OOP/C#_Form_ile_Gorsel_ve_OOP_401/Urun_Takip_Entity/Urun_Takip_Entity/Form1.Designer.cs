@@ -42,6 +42,7 @@
 			this.label5 = new System.Windows.Forms.Label();
 			this.BtnKaydet = new System.Windows.Forms.Button();
 			this.BtnSil = new System.Windows.Forms.Button();
+			this.BtnGuncelle = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -52,7 +53,7 @@
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(638, 365);
+			this.dataGridView1.Size = new System.Drawing.Size(638, 393);
 			this.dataGridView1.TabIndex = 0;
 			// 
 			// label1
@@ -165,11 +166,22 @@
 			this.BtnSil.UseVisualStyleBackColor = true;
 			this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
 			// 
+			// BtnGuncelle
+			// 
+			this.BtnGuncelle.Location = new System.Drawing.Point(734, 362);
+			this.BtnGuncelle.Name = "BtnGuncelle";
+			this.BtnGuncelle.Size = new System.Drawing.Size(177, 43);
+			this.BtnGuncelle.TabIndex = 14;
+			this.BtnGuncelle.Text = "Guncelle";
+			this.BtnGuncelle.UseVisualStyleBackColor = true;
+			this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(923, 389);
+			this.ClientSize = new System.Drawing.Size(923, 415);
+			this.Controls.Add(this.BtnGuncelle);
 			this.Controls.Add(this.BtnSil);
 			this.Controls.Add(this.BtnKaydet);
 			this.Controls.Add(this.TxtBakiye);
@@ -210,6 +222,7 @@
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Button BtnKaydet;
 		private System.Windows.Forms.Button BtnSil;
+		private System.Windows.Forms.Button BtnGuncelle;
 	}
 }
 
