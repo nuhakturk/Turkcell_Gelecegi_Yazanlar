@@ -30,16 +30,17 @@
 		{
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.label1 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.TxtID = new System.Windows.Forms.TextBox();
 			this.BtnListele = new System.Windows.Forms.Button();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.TxtAd = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
-			this.textBox3 = new System.Windows.Forms.TextBox();
+			this.TxtSoyad = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.TxtSehir = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
-			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.TxtBakiye = new System.Windows.Forms.TextBox();
 			this.label5 = new System.Windows.Forms.Label();
+			this.BtnKaydet = new System.Windows.Forms.Button();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
 			// 
@@ -62,12 +63,12 @@
 			this.label1.TabIndex = 1;
 			this.label1.Text = "ID:";
 			// 
-			// textBox1
+			// TxtID
 			// 
-			this.textBox1.Location = new System.Drawing.Point(765, 25);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(146, 30);
-			this.textBox1.TabIndex = 2;
+			this.TxtID.Location = new System.Drawing.Point(765, 25);
+			this.TxtID.Name = "TxtID";
+			this.TxtID.Size = new System.Drawing.Size(146, 30);
+			this.TxtID.TabIndex = 2;
 			// 
 			// BtnListele
 			// 
@@ -79,12 +80,12 @@
 			this.BtnListele.UseVisualStyleBackColor = true;
 			this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
 			// 
-			// textBox2
+			// TxtAd
 			// 
-			this.textBox2.Location = new System.Drawing.Point(765, 61);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(146, 30);
-			this.textBox2.TabIndex = 5;
+			this.TxtAd.Location = new System.Drawing.Point(765, 61);
+			this.TxtAd.Name = "TxtAd";
+			this.TxtAd.Size = new System.Drawing.Size(146, 30);
+			this.TxtAd.TabIndex = 5;
 			// 
 			// label2
 			// 
@@ -95,12 +96,12 @@
 			this.label2.TabIndex = 4;
 			this.label2.Text = "Ad:";
 			// 
-			// textBox3
+			// TxtSoyad
 			// 
-			this.textBox3.Location = new System.Drawing.Point(765, 97);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(146, 30);
-			this.textBox3.TabIndex = 7;
+			this.TxtSoyad.Location = new System.Drawing.Point(765, 97);
+			this.TxtSoyad.Name = "TxtSoyad";
+			this.TxtSoyad.Size = new System.Drawing.Size(146, 30);
+			this.TxtSoyad.TabIndex = 7;
 			// 
 			// label3
 			// 
@@ -111,12 +112,12 @@
 			this.label3.TabIndex = 6;
 			this.label3.Text = "Soyad:";
 			// 
-			// textBox4
+			// TxtSehir
 			// 
-			this.textBox4.Location = new System.Drawing.Point(765, 133);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(146, 30);
-			this.textBox4.TabIndex = 9;
+			this.TxtSehir.Location = new System.Drawing.Point(765, 133);
+			this.TxtSehir.Name = "TxtSehir";
+			this.TxtSehir.Size = new System.Drawing.Size(146, 30);
+			this.TxtSehir.TabIndex = 9;
 			// 
 			// label4
 			// 
@@ -127,12 +128,12 @@
 			this.label4.TabIndex = 8;
 			this.label4.Text = "Şehir:";
 			// 
-			// textBox5
+			// TxtBakiye
 			// 
-			this.textBox5.Location = new System.Drawing.Point(765, 169);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(146, 30);
-			this.textBox5.TabIndex = 11;
+			this.TxtBakiye.Location = new System.Drawing.Point(765, 169);
+			this.TxtBakiye.Name = "TxtBakiye";
+			this.TxtBakiye.Size = new System.Drawing.Size(146, 30);
+			this.TxtBakiye.TabIndex = 11;
 			// 
 			// label5
 			// 
@@ -143,21 +144,32 @@
 			this.label5.TabIndex = 10;
 			this.label5.Text = "Bakiye:";
 			// 
+			// BtnKaydet
+			// 
+			this.BtnKaydet.Location = new System.Drawing.Point(734, 264);
+			this.BtnKaydet.Name = "BtnKaydet";
+			this.BtnKaydet.Size = new System.Drawing.Size(177, 43);
+			this.BtnKaydet.TabIndex = 12;
+			this.BtnKaydet.Text = "Kaydet";
+			this.BtnKaydet.UseVisualStyleBackColor = true;
+			this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
+			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(923, 389);
-			this.Controls.Add(this.textBox5);
+			this.Controls.Add(this.BtnKaydet);
+			this.Controls.Add(this.TxtBakiye);
 			this.Controls.Add(this.label5);
-			this.Controls.Add(this.textBox4);
+			this.Controls.Add(this.TxtSehir);
 			this.Controls.Add(this.label4);
-			this.Controls.Add(this.textBox3);
+			this.Controls.Add(this.TxtSoyad);
 			this.Controls.Add(this.label3);
-			this.Controls.Add(this.textBox2);
+			this.Controls.Add(this.TxtAd);
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.BtnListele);
-			this.Controls.Add(this.textBox1);
+			this.Controls.Add(this.TxtID);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.dataGridView1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -174,16 +186,17 @@
 
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox TxtID;
 		private System.Windows.Forms.Button BtnListele;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox TxtAd;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.TextBox textBox3;
+		private System.Windows.Forms.TextBox TxtSoyad;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.TextBox TxtSehir;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.TextBox TxtBakiye;
 		private System.Windows.Forms.Label label5;
+		private System.Windows.Forms.Button BtnKaydet;
 	}
 }
 

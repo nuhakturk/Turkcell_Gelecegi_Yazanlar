@@ -23,5 +23,17 @@ namespace Urun_Takip_Entity
 		{
 			dataGridView1.DataSource = db.TBLMUSTERI.ToList();
 		}
+
+		private void BtnKaydet_Click(object sender, EventArgs e)
+		{
+			TBLMUSTERI t = new TBLMUSTERI();
+			t.Ad = TxtAd.Text;
+			t.Soyad = TxtSoyad.Text;
+			t.Sehir = TxtSehir.Text;
+			t.Bakiye = decimal.Parse(TxtBakiye.Text);
+			db.TBLMUSTERI.Add(t);
+			db.SaveChanges();
+			MessageBox.Show("Yeni Müşteri Kaydı Yapıldı!");
+		}
 	}
 }
