@@ -35,5 +35,14 @@ namespace Urun_Takip_Entity
 			db.SaveChanges();
 			MessageBox.Show("Yeni Müşteri Kaydı Yapıldı!");
 		}
+
+		private void BtnSil_Click(object sender, EventArgs e)
+		{
+			int id = int.Parse(TxtID.Text);
+			var x = db.TBLMUSTERI.Find(id);
+			db.TBLMUSTERI.Remove(x);
+			db.SaveChanges();
+			MessageBox.Show("Müşteri sistemden silindi");
+		}
 	}
 }
