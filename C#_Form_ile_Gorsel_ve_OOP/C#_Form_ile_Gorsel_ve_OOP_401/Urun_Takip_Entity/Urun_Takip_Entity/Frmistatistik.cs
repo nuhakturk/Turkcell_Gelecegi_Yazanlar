@@ -28,8 +28,14 @@ namespace Urun_Takip_Entity
 			LblBeyazEsya.Text = db.TBLURUNLER.Count( x => x.Kategori == 1).ToString();
 			LblToplamStok.Text = db.TBLURUNLER.Sum(x => x.Stok).ToString();
 			LblBugunSatisAdedi.Text = db.TBLSATISLAR.Count(x => x.Tarih == bugun).ToString();
-			//LblBugunkuKasa.Text = db.TBLSATISLAR.Sum(x => x.Toplam).ToString();
+			LblBugunkuKasa.Text = db.TBLSATISLAR.Where(x => x.Tarih == bugun).Sum(y => y.Toplam).ToString() + " ₺";
 			LblToplamKasa.Text = db.TBLSATISLAR.Sum(x => x.Toplam).ToString() + " ₺";
+			LblEnYuksekFiyatliUrun.Text = (from x in db.TBLURUNLER
+										   orderby x.SatisFiyat descending
+										   select x.UrunAd).FirstOrDefault();
+			LblEnDusukFiyatliUrun.Text = (from x in db.TBLURUNLER
+										  orderby x.SatisFiyat ascending
+										  select x.UrunAd).FirstOrDefault();
 		}
 	}
 }

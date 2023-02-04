@@ -53,10 +53,10 @@
 			this.LblToplamKasa = new System.Windows.Forms.Label();
 			this.label16 = new System.Windows.Forms.Label();
 			this.panel9 = new System.Windows.Forms.Panel();
-			this.label17 = new System.Windows.Forms.Label();
+			this.LblEnYuksekFiyatliUrun = new System.Windows.Forms.Label();
 			this.label18 = new System.Windows.Forms.Label();
 			this.panel10 = new System.Windows.Forms.Panel();
-			this.label19 = new System.Windows.Forms.Label();
+			this.LblEnDusukFiyatliUrun = new System.Windows.Forms.Label();
 			this.label20 = new System.Windows.Forms.Label();
 			this.panel11 = new System.Windows.Forms.Panel();
 			this.label21 = new System.Windows.Forms.Label();
@@ -259,7 +259,7 @@
 			// LblBugunkuKasa
 			// 
 			this.LblBugunkuKasa.AutoSize = true;
-			this.LblBugunkuKasa.Location = new System.Drawing.Point(132, 76);
+			this.LblBugunkuKasa.Location = new System.Drawing.Point(95, 76);
 			this.LblBugunkuKasa.Name = "LblBugunkuKasa";
 			this.LblBugunkuKasa.Size = new System.Drawing.Size(26, 29);
 			this.LblBugunkuKasa.TabIndex = 1;
@@ -287,7 +287,7 @@
 			// LblToplamKasa
 			// 
 			this.LblToplamKasa.AutoSize = true;
-			this.LblToplamKasa.Location = new System.Drawing.Point(103, 76);
+			this.LblToplamKasa.Location = new System.Drawing.Point(90, 76);
 			this.LblToplamKasa.Name = "LblToplamKasa";
 			this.LblToplamKasa.Size = new System.Drawing.Size(26, 29);
 			this.LblToplamKasa.TabIndex = 1;
@@ -305,21 +305,21 @@
 			// panel9
 			// 
 			this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(90)))), ((int)(((byte)(36)))));
-			this.panel9.Controls.Add(this.label17);
+			this.panel9.Controls.Add(this.LblEnYuksekFiyatliUrun);
 			this.panel9.Controls.Add(this.label18);
 			this.panel9.Location = new System.Drawing.Point(12, 310);
 			this.panel9.Name = "panel9";
 			this.panel9.Size = new System.Drawing.Size(258, 143);
 			this.panel9.TabIndex = 8;
 			// 
-			// label17
+			// LblEnYuksekFiyatliUrun
 			// 
-			this.label17.AutoSize = true;
-			this.label17.Location = new System.Drawing.Point(123, 76);
-			this.label17.Name = "label17";
-			this.label17.Size = new System.Drawing.Size(26, 29);
-			this.label17.TabIndex = 1;
-			this.label17.Text = "0";
+			this.LblEnYuksekFiyatliUrun.AutoSize = true;
+			this.LblEnYuksekFiyatliUrun.Location = new System.Drawing.Point(46, 76);
+			this.LblEnYuksekFiyatliUrun.Name = "LblEnYuksekFiyatliUrun";
+			this.LblEnYuksekFiyatliUrun.Size = new System.Drawing.Size(26, 29);
+			this.LblEnYuksekFiyatliUrun.TabIndex = 1;
+			this.LblEnYuksekFiyatliUrun.Text = "0";
 			// 
 			// label18
 			// 
@@ -333,25 +333,25 @@
 			// panel10
 			// 
 			this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(50)))));
-			this.panel10.Controls.Add(this.label19);
-			this.panel10.Controls.Add(this.label20);
+			this.panel10.Controls.Add(this.LblEnDusukFiyatliUrun);
+			this.panel10.Controls.Add(this.label22);
 			this.panel10.Location = new System.Drawing.Point(276, 310);
 			this.panel10.Name = "panel10";
 			this.panel10.Size = new System.Drawing.Size(258, 143);
 			this.panel10.TabIndex = 7;
 			// 
-			// label19
+			// LblEnDusukFiyatliUrun
 			// 
-			this.label19.AutoSize = true;
-			this.label19.Location = new System.Drawing.Point(124, 76);
-			this.label19.Name = "label19";
-			this.label19.Size = new System.Drawing.Size(26, 29);
-			this.label19.TabIndex = 1;
-			this.label19.Text = "0";
+			this.LblEnDusukFiyatliUrun.AutoSize = true;
+			this.LblEnDusukFiyatliUrun.Location = new System.Drawing.Point(75, 76);
+			this.LblEnDusukFiyatliUrun.Name = "LblEnDusukFiyatliUrun";
+			this.LblEnDusukFiyatliUrun.Size = new System.Drawing.Size(26, 29);
+			this.LblEnDusukFiyatliUrun.TabIndex = 1;
+			this.LblEnDusukFiyatliUrun.Text = "0";
 			// 
 			// label20
 			// 
-			this.label20.Location = new System.Drawing.Point(22, 12);
+			this.label20.Location = new System.Drawing.Point(15, 12);
 			this.label20.Name = "label20";
 			this.label20.Size = new System.Drawing.Size(252, 64);
 			this.label20.TabIndex = 0;
@@ -361,7 +361,7 @@
 			// 
 			this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(82)))), ((int)(((byte)(221)))));
 			this.panel11.Controls.Add(this.label21);
-			this.panel11.Controls.Add(this.label22);
+			this.panel11.Controls.Add(this.label20);
 			this.panel11.Location = new System.Drawing.Point(540, 310);
 			this.panel11.Name = "panel11";
 			this.panel11.Size = new System.Drawing.Size(258, 143);
@@ -381,9 +381,9 @@
 			this.label22.AutoSize = true;
 			this.label22.Location = new System.Drawing.Point(42, 22);
 			this.label22.Name = "label22";
-			this.label22.Size = new System.Drawing.Size(210, 29);
+			this.label22.Size = new System.Drawing.Size(241, 29);
 			this.label22.TabIndex = 0;
-			this.label22.Text = "Bugün Satış Adedi";
+			this.label22.Text = "En Düşük Fiyatlı Ürün";
 			// 
 			// panel12
 			// 
@@ -490,10 +490,10 @@
 		private System.Windows.Forms.Label LblToplamKasa;
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.Panel panel9;
-		private System.Windows.Forms.Label label17;
+		private System.Windows.Forms.Label LblEnYuksekFiyatliUrun;
 		private System.Windows.Forms.Label label18;
 		private System.Windows.Forms.Panel panel10;
-		private System.Windows.Forms.Label label19;
+		private System.Windows.Forms.Label LblEnDusukFiyatliUrun;
 		private System.Windows.Forms.Label label20;
 		private System.Windows.Forms.Panel panel11;
 		private System.Windows.Forms.Label label21;
