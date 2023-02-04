@@ -24,6 +24,8 @@ namespace Urun_Takip_Entity
 			LblMusteriSayisi.Text = db.TBLMUSTERI.Count().ToString();
 			LblKategoriSayisi.Text = db.TBLKATEGORI.Count().ToString();
 			LblUrunSayisi.Text = db.TBLURUNLER.Count().ToString();
+			LblBeyazEsya.Text = db.TBLURUNLER.Count( x => x.Kategori == 1).ToString();
+			LblToplamStok.Text = db.TBLURUNLER.Sum(x => x.Stok).ToString();
 		}
 	}
 }

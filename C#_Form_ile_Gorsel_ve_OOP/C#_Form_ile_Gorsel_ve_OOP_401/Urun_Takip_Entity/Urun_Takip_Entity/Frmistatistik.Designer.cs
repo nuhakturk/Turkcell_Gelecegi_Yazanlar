@@ -38,13 +38,13 @@
 			this.LblUrunSayisi = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.panel4 = new System.Windows.Forms.Panel();
-			this.label7 = new System.Windows.Forms.Label();
+			this.LblBeyazEsya = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
 			this.panel5 = new System.Windows.Forms.Panel();
-			this.label9 = new System.Windows.Forms.Label();
+			this.LblToplamStok = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
 			this.panel6 = new System.Windows.Forms.Panel();
-			this.label11 = new System.Windows.Forms.Label();
+			this.LblBugunSatis = new System.Windows.Forms.Label();
 			this.label12 = new System.Windows.Forms.Label();
 			this.panel7 = new System.Windows.Forms.Panel();
 			this.label13 = new System.Windows.Forms.Label();
@@ -165,21 +165,21 @@
 			// panel4
 			// 
 			this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(167)))), ((int)(((byte)(223)))));
-			this.panel4.Controls.Add(this.label7);
+			this.panel4.Controls.Add(this.LblBeyazEsya);
 			this.panel4.Controls.Add(this.label8);
 			this.panel4.Location = new System.Drawing.Point(804, 12);
 			this.panel4.Name = "panel4";
 			this.panel4.Size = new System.Drawing.Size(258, 143);
 			this.panel4.TabIndex = 4;
 			// 
-			// label7
+			// LblBeyazEsya
 			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(130, 76);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(26, 29);
-			this.label7.TabIndex = 1;
-			this.label7.Text = "0";
+			this.LblBeyazEsya.AutoSize = true;
+			this.LblBeyazEsya.Location = new System.Drawing.Point(130, 76);
+			this.LblBeyazEsya.Name = "LblBeyazEsya";
+			this.LblBeyazEsya.Size = new System.Drawing.Size(26, 29);
+			this.LblBeyazEsya.TabIndex = 1;
+			this.LblBeyazEsya.Text = "0";
 			// 
 			// label8
 			// 
@@ -193,21 +193,21 @@
 			// panel5
 			// 
 			this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(159)))), ((int)(((byte)(31)))));
-			this.panel5.Controls.Add(this.label9);
+			this.panel5.Controls.Add(this.LblToplamStok);
 			this.panel5.Controls.Add(this.label10);
 			this.panel5.Location = new System.Drawing.Point(12, 161);
 			this.panel5.Name = "panel5";
 			this.panel5.Size = new System.Drawing.Size(258, 143);
 			this.panel5.TabIndex = 4;
 			// 
-			// label9
+			// LblToplamStok
 			// 
-			this.label9.AutoSize = true;
-			this.label9.Location = new System.Drawing.Point(122, 76);
-			this.label9.Name = "label9";
-			this.label9.Size = new System.Drawing.Size(26, 29);
-			this.label9.TabIndex = 1;
-			this.label9.Text = "0";
+			this.LblToplamStok.AutoSize = true;
+			this.LblToplamStok.Location = new System.Drawing.Point(122, 76);
+			this.LblToplamStok.Name = "LblToplamStok";
+			this.LblToplamStok.Size = new System.Drawing.Size(26, 29);
+			this.LblToplamStok.TabIndex = 1;
+			this.LblToplamStok.Text = "0";
 			// 
 			// label10
 			// 
@@ -221,21 +221,21 @@
 			// panel6
 			// 
 			this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(203)))), ((int)(((byte)(56)))));
-			this.panel6.Controls.Add(this.label11);
+			this.panel6.Controls.Add(this.LblBugunSatis);
 			this.panel6.Controls.Add(this.label12);
 			this.panel6.Location = new System.Drawing.Point(276, 161);
 			this.panel6.Name = "panel6";
 			this.panel6.Size = new System.Drawing.Size(258, 143);
 			this.panel6.TabIndex = 5;
 			// 
-			// label11
+			// LblBugunSatis
 			// 
-			this.label11.AutoSize = true;
-			this.label11.Location = new System.Drawing.Point(132, 76);
-			this.label11.Name = "label11";
-			this.label11.Size = new System.Drawing.Size(26, 29);
-			this.label11.TabIndex = 1;
-			this.label11.Text = "0";
+			this.LblBugunSatis.AutoSize = true;
+			this.LblBugunSatis.Location = new System.Drawing.Point(132, 76);
+			this.LblBugunSatis.Name = "LblBugunSatis";
+			this.LblBugunSatis.Size = new System.Drawing.Size(26, 29);
+			this.LblBugunSatis.TabIndex = 1;
+			this.LblBugunSatis.Text = "0";
 			// 
 			// label12
 			// 
@@ -475,13 +475,13 @@
 		private System.Windows.Forms.Label LblUrunSayisi;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Panel panel4;
-		private System.Windows.Forms.Label label7;
+		private System.Windows.Forms.Label LblBeyazEsya;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Panel panel5;
-		private System.Windows.Forms.Label label9;
+		private System.Windows.Forms.Label LblToplamStok;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Panel panel6;
-		private System.Windows.Forms.Label label11;
+		private System.Windows.Forms.Label LblBugunSatis;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Panel panel7;
 		private System.Windows.Forms.Label label13;
