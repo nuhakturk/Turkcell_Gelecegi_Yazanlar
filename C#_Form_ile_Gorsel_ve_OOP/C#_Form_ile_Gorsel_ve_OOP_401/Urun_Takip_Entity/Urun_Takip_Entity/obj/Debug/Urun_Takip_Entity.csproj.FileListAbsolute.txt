@@ -15,3 +15,4 @@ C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_
 C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_401\Urun_Takip_Entity\Urun_Takip_Entity\obj\Debug\Urun_Takip_Entity.exe
 C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_401\Urun_Takip_Entity\Urun_Takip_Entity\obj\Debug\Urun_Takip_Entity.pdb
 C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_401\Urun_Takip_Entity\Urun_Takip_Entity\obj\Debug\Urun_Takip_Entity.FrmUrunler.resources
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_401\Urun_Takip_Entity\Urun_Takip_Entity\obj\Debug\Urun_Takip_Entity.Frmistatistik.resources

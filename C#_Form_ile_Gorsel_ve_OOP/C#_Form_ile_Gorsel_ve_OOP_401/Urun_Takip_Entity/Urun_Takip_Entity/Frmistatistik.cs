@@ -17,5 +17,13 @@ namespace Urun_Takip_Entity
 			InitializeComponent();
 		}
 
+		DbUrunEntities db = new DbUrunEntities();
+
+		private void Frmistatistik_Load(object sender, EventArgs e)
+		{
+			LblMusteriSayisi.Text = db.TBLMUSTERI.Count().ToString();
+			LblKategoriSayisi.Text = db.TBLKATEGORI.Count().ToString();
+			LblUrunSayisi.Text = db.TBLURUNLER.Count().ToString();
+		}
 	}
 }
