@@ -65,6 +65,7 @@
 			this.BtnSil.TabIndex = 28;
 			this.BtnSil.Text = "Sil";
 			this.BtnSil.UseVisualStyleBackColor = true;
+			this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
 			// 
 			// BtnKaydet
 			// 
@@ -152,6 +153,7 @@
 			// 
 			// TxtID
 			// 
+			this.TxtID.Enabled = false;
 			this.TxtID.Location = new System.Drawing.Point(841, 19);
 			this.TxtID.Name = "TxtID";
 			this.TxtID.Size = new System.Drawing.Size(146, 30);
@@ -176,6 +178,7 @@
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.Size = new System.Drawing.Size(688, 450);
 			this.dataGridView1.TabIndex = 15;
+			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
 			// 
 			// label6
 			// 

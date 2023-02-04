@@ -54,5 +54,32 @@ namespace Urun_Takip_Entity
 			db.SaveChanges();
 			MessageBox.Show("Ürün Başarılı bir şekilde sisteme kaydedildi");
 		}
+
+		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			TxtID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+			TxtUrunAd.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+			TxtStok.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+			TxtAlisFiyat.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+			TxtSatisFiyat.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+			//comboBox1.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+
+		}
+
+		private void BtnSil_Click(object sender, EventArgs e)
+		{
+			if(TxtID.Text != "")
+			{
+				int id = int.Parse(TxtID.Text);
+				var x = db.TBLURUNLER.Find(id);
+				db.TBLURUNLER.Remove(x);
+				db.SaveChanges();
+				MessageBox.Show("Ürün başarılı bir şekilde silindi", "Silme işlemi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+			}
+			else
+			{
+				MessageBox.Show("Lütfen verileri listeledikten sonra bir satıra tıklayıp silmek istediğiniz kaydı seçiniz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+			}
+		}
 	}
 }
