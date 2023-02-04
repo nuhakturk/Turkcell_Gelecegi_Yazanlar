@@ -44,13 +44,13 @@
 			this.LblToplamStok = new System.Windows.Forms.Label();
 			this.label10 = new System.Windows.Forms.Label();
 			this.panel6 = new System.Windows.Forms.Panel();
-			this.LblBugunSatis = new System.Windows.Forms.Label();
+			this.LblBugunSatisAdedi = new System.Windows.Forms.Label();
 			this.label12 = new System.Windows.Forms.Label();
 			this.panel7 = new System.Windows.Forms.Panel();
-			this.label13 = new System.Windows.Forms.Label();
+			this.LblBugunkuKasa = new System.Windows.Forms.Label();
 			this.label14 = new System.Windows.Forms.Label();
 			this.panel8 = new System.Windows.Forms.Panel();
-			this.label15 = new System.Windows.Forms.Label();
+			this.LblToplamKasa = new System.Windows.Forms.Label();
 			this.label16 = new System.Windows.Forms.Label();
 			this.panel9 = new System.Windows.Forms.Panel();
 			this.label17 = new System.Windows.Forms.Label();
@@ -221,21 +221,21 @@
 			// panel6
 			// 
 			this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(163)))), ((int)(((byte)(203)))), ((int)(((byte)(56)))));
-			this.panel6.Controls.Add(this.LblBugunSatis);
+			this.panel6.Controls.Add(this.LblBugunSatisAdedi);
 			this.panel6.Controls.Add(this.label12);
 			this.panel6.Location = new System.Drawing.Point(276, 161);
 			this.panel6.Name = "panel6";
 			this.panel6.Size = new System.Drawing.Size(258, 143);
 			this.panel6.TabIndex = 5;
 			// 
-			// LblBugunSatis
+			// LblBugunSatisAdedi
 			// 
-			this.LblBugunSatis.AutoSize = true;
-			this.LblBugunSatis.Location = new System.Drawing.Point(132, 76);
-			this.LblBugunSatis.Name = "LblBugunSatis";
-			this.LblBugunSatis.Size = new System.Drawing.Size(26, 29);
-			this.LblBugunSatis.TabIndex = 1;
-			this.LblBugunSatis.Text = "0";
+			this.LblBugunSatisAdedi.AutoSize = true;
+			this.LblBugunSatisAdedi.Location = new System.Drawing.Point(132, 76);
+			this.LblBugunSatisAdedi.Name = "LblBugunSatisAdedi";
+			this.LblBugunSatisAdedi.Size = new System.Drawing.Size(26, 29);
+			this.LblBugunSatisAdedi.TabIndex = 1;
+			this.LblBugunSatisAdedi.Text = "0";
 			// 
 			// label12
 			// 
@@ -249,21 +249,21 @@
 			// panel7
 			// 
 			this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(137)))), ((int)(((byte)(167)))));
-			this.panel7.Controls.Add(this.label13);
+			this.panel7.Controls.Add(this.LblBugunkuKasa);
 			this.panel7.Controls.Add(this.label14);
 			this.panel7.Location = new System.Drawing.Point(540, 161);
 			this.panel7.Name = "panel7";
 			this.panel7.Size = new System.Drawing.Size(258, 143);
 			this.panel7.TabIndex = 6;
 			// 
-			// label13
+			// LblBugunkuKasa
 			// 
-			this.label13.AutoSize = true;
-			this.label13.Location = new System.Drawing.Point(132, 76);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(26, 29);
-			this.label13.TabIndex = 1;
-			this.label13.Text = "0";
+			this.LblBugunkuKasa.AutoSize = true;
+			this.LblBugunkuKasa.Location = new System.Drawing.Point(132, 76);
+			this.LblBugunkuKasa.Name = "LblBugunkuKasa";
+			this.LblBugunkuKasa.Size = new System.Drawing.Size(26, 29);
+			this.LblBugunkuKasa.TabIndex = 1;
+			this.LblBugunkuKasa.Text = "0";
 			// 
 			// label14
 			// 
@@ -277,21 +277,21 @@
 			// panel8
 			// 
 			this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(128)))), ((int)(((byte)(250)))));
-			this.panel8.Controls.Add(this.label15);
+			this.panel8.Controls.Add(this.LblToplamKasa);
 			this.panel8.Controls.Add(this.label16);
 			this.panel8.Location = new System.Drawing.Point(804, 161);
 			this.panel8.Name = "panel8";
 			this.panel8.Size = new System.Drawing.Size(258, 143);
 			this.panel8.TabIndex = 7;
 			// 
-			// label15
+			// LblToplamKasa
 			// 
-			this.label15.AutoSize = true;
-			this.label15.Location = new System.Drawing.Point(132, 76);
-			this.label15.Name = "label15";
-			this.label15.Size = new System.Drawing.Size(26, 29);
-			this.label15.TabIndex = 1;
-			this.label15.Text = "0";
+			this.LblToplamKasa.AutoSize = true;
+			this.LblToplamKasa.Location = new System.Drawing.Point(103, 76);
+			this.LblToplamKasa.Name = "LblToplamKasa";
+			this.LblToplamKasa.Size = new System.Drawing.Size(26, 29);
+			this.LblToplamKasa.TabIndex = 1;
+			this.LblToplamKasa.Text = "0";
 			// 
 			// label16
 			// 
@@ -481,13 +481,13 @@
 		private System.Windows.Forms.Label LblToplamStok;
 		private System.Windows.Forms.Label label10;
 		private System.Windows.Forms.Panel panel6;
-		private System.Windows.Forms.Label LblBugunSatis;
+		private System.Windows.Forms.Label LblBugunSatisAdedi;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Panel panel7;
-		private System.Windows.Forms.Label label13;
+		private System.Windows.Forms.Label LblBugunkuKasa;
 		private System.Windows.Forms.Label label14;
 		private System.Windows.Forms.Panel panel8;
-		private System.Windows.Forms.Label label15;
+		private System.Windows.Forms.Label LblToplamKasa;
 		private System.Windows.Forms.Label label16;
 		private System.Windows.Forms.Panel panel9;
 		private System.Windows.Forms.Label label17;
