@@ -57,12 +57,12 @@
 			this.label18 = new System.Windows.Forms.Label();
 			this.panel10 = new System.Windows.Forms.Panel();
 			this.LblEnDusukFiyatliUrun = new System.Windows.Forms.Label();
+			this.label22 = new System.Windows.Forms.Label();
 			this.label20 = new System.Windows.Forms.Label();
 			this.panel11 = new System.Windows.Forms.Panel();
-			this.label21 = new System.Windows.Forms.Label();
-			this.label22 = new System.Windows.Forms.Label();
+			this.LblEnFazlaStok = new System.Windows.Forms.Label();
 			this.panel12 = new System.Windows.Forms.Panel();
-			this.label23 = new System.Windows.Forms.Label();
+			this.LblEnAzStok = new System.Windows.Forms.Label();
 			this.label24 = new System.Windows.Forms.Label();
 			this.panel1.SuspendLayout();
 			this.panel2.SuspendLayout();
@@ -349,33 +349,6 @@
 			this.LblEnDusukFiyatliUrun.TabIndex = 1;
 			this.LblEnDusukFiyatliUrun.Text = "0";
 			// 
-			// label20
-			// 
-			this.label20.Location = new System.Drawing.Point(15, 12);
-			this.label20.Name = "label20";
-			this.label20.Size = new System.Drawing.Size(252, 64);
-			this.label20.TabIndex = 0;
-			this.label20.Text = "En Fazla Ürünü Olan Kategori";
-			// 
-			// panel11
-			// 
-			this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(82)))), ((int)(((byte)(221)))));
-			this.panel11.Controls.Add(this.label21);
-			this.panel11.Controls.Add(this.label20);
-			this.panel11.Location = new System.Drawing.Point(540, 310);
-			this.panel11.Name = "panel11";
-			this.panel11.Size = new System.Drawing.Size(258, 143);
-			this.panel11.TabIndex = 7;
-			// 
-			// label21
-			// 
-			this.label21.AutoSize = true;
-			this.label21.Location = new System.Drawing.Point(132, 76);
-			this.label21.Name = "label21";
-			this.label21.Size = new System.Drawing.Size(26, 29);
-			this.label21.TabIndex = 1;
-			this.label21.Text = "0";
-			// 
 			// label22
 			// 
 			this.label22.AutoSize = true;
@@ -385,33 +358,61 @@
 			this.label22.TabIndex = 0;
 			this.label22.Text = "En Düşük Fiyatlı Ürün";
 			// 
+			// label20
+			// 
+			this.label20.AutoSize = true;
+			this.label20.Location = new System.Drawing.Point(42, 22);
+			this.label20.Name = "label20";
+			this.label20.Size = new System.Drawing.Size(236, 29);
+			this.label20.TabIndex = 0;
+			this.label20.Text = "En Fazla Stoklu Ürün";
+			// 
+			// panel11
+			// 
+			this.panel11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(82)))), ((int)(((byte)(221)))));
+			this.panel11.Controls.Add(this.LblEnFazlaStok);
+			this.panel11.Controls.Add(this.label20);
+			this.panel11.Location = new System.Drawing.Point(540, 310);
+			this.panel11.Name = "panel11";
+			this.panel11.Size = new System.Drawing.Size(258, 143);
+			this.panel11.TabIndex = 7;
+			// 
+			// LblEnFazlaStok
+			// 
+			this.LblEnFazlaStok.AutoSize = true;
+			this.LblEnFazlaStok.Location = new System.Drawing.Point(78, 76);
+			this.LblEnFazlaStok.Name = "LblEnFazlaStok";
+			this.LblEnFazlaStok.Size = new System.Drawing.Size(26, 29);
+			this.LblEnFazlaStok.TabIndex = 1;
+			this.LblEnFazlaStok.Text = "0";
+			// 
 			// panel12
 			// 
 			this.panel12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(128)))), ((int)(((byte)(250)))));
-			this.panel12.Controls.Add(this.label23);
+			this.panel12.Controls.Add(this.LblEnAzStok);
 			this.panel12.Controls.Add(this.label24);
 			this.panel12.Location = new System.Drawing.Point(804, 310);
 			this.panel12.Name = "panel12";
 			this.panel12.Size = new System.Drawing.Size(258, 143);
 			this.panel12.TabIndex = 7;
 			// 
-			// label23
+			// LblEnAzStok
 			// 
-			this.label23.AutoSize = true;
-			this.label23.Location = new System.Drawing.Point(132, 76);
-			this.label23.Name = "label23";
-			this.label23.Size = new System.Drawing.Size(26, 29);
-			this.label23.TabIndex = 1;
-			this.label23.Text = "0";
+			this.LblEnAzStok.AutoSize = true;
+			this.LblEnAzStok.Location = new System.Drawing.Point(72, 76);
+			this.LblEnAzStok.Name = "LblEnAzStok";
+			this.LblEnAzStok.Size = new System.Drawing.Size(26, 29);
+			this.LblEnAzStok.TabIndex = 1;
+			this.LblEnAzStok.Text = "0";
 			// 
 			// label24
 			// 
 			this.label24.AutoSize = true;
 			this.label24.Location = new System.Drawing.Point(42, 22);
 			this.label24.Name = "label24";
-			this.label24.Size = new System.Drawing.Size(210, 29);
+			this.label24.Size = new System.Drawing.Size(204, 29);
 			this.label24.TabIndex = 0;
-			this.label24.Text = "Bugün Satış Adedi";
+			this.label24.Text = "En Az Stoklu Ürün";
 			// 
 			// Frmistatistik
 			// 
@@ -496,10 +497,10 @@
 		private System.Windows.Forms.Label LblEnDusukFiyatliUrun;
 		private System.Windows.Forms.Label label20;
 		private System.Windows.Forms.Panel panel11;
-		private System.Windows.Forms.Label label21;
+		private System.Windows.Forms.Label LblEnFazlaStok;
 		private System.Windows.Forms.Label label22;
 		private System.Windows.Forms.Panel panel12;
-		private System.Windows.Forms.Label label23;
+		private System.Windows.Forms.Label LblEnAzStok;
 		private System.Windows.Forms.Label label24;
 	}
 }

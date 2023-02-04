@@ -36,6 +36,12 @@ namespace Urun_Takip_Entity
 			LblEnDusukFiyatliUrun.Text = (from x in db.TBLURUNLER
 										  orderby x.SatisFiyat ascending
 										  select x.UrunAd).FirstOrDefault();
+			LblEnFazlaStok.Text = (from x in db.TBLURUNLER
+							orderby x.Stok descending
+							select x.UrunAd).FirstOrDefault();
+			LblEnAzStok.Text = (from x in db.TBLURUNLER
+							orderby x.Stok ascending
+							select x.UrunAd).FirstOrDefault();
 		}
 	}
 }
