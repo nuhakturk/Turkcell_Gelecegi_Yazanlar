@@ -19,9 +19,8 @@ namespace Urun_Takip_Entity
 
 		DbUrunEntities db = new DbUrunEntities();
 
-		private void BtnListele_Click(object sender, EventArgs e)
+		void UrunListesi()
 		{
-			//dataGridView1.DataSource = db.TBLURUNLER.ToList();
 			var urunler = from x in db.TBLURUNLER
 						  select new
 						  {
@@ -35,8 +34,24 @@ namespace Urun_Takip_Entity
 			dataGridView1.DataSource = urunler.ToList();
 		}
 
+		void Temizle()
+		{
+			TxtID.Text = "";
+			TxtUrunAd.Text = "";
+			TxtStok.Text = "";
+			TxtAlisFiyat.Text = "";
+			TxtSatisFiyat.Text = "";
+		}
+
+		private void BtnListele_Click(object sender, EventArgs e)
+		{
+			//dataGridView1.DataSource = db.TBLURUNLER.ToList();
+			UrunListesi();
+		}
+
 		private void FrmUrunler_Load(object sender, EventArgs e)
 		{
+			UrunListesi();
 			comboBox1.DisplayMember = "Ad";
 			comboBox1.ValueMember = "ID";
 			comboBox1.DataSource = db.TBLKATEGORI.ToList();
@@ -53,6 +68,8 @@ namespace Urun_Takip_Entity
 			db.TBLURUNLER.Add(t);
 			db.SaveChanges();
 			MessageBox.Show("Ürün Başarılı bir şekilde sisteme kaydedildi");
+			UrunListesi();
+			Temizle();
 		}
 
 		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -80,6 +97,21 @@ namespace Urun_Takip_Entity
 			{
 				MessageBox.Show("Lütfen verileri listeledikten sonra bir satıra tıklayıp silmek istediğiniz kaydı seçiniz", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 			}
+			UrunListesi();
+		}
+
+		private void BtnGuncelle_Click(object sender, EventArgs e)
+		{
+			int id = int.Parse(TxtID.Text);
+			var x = db.TBLURUNLER.Find(id);
+			x.UrunAd = TxtUrunAd.Text;
+			x.Stok = short.Parse(TxtStok.Text);
+			x.AlisFiyat = decimal.Parse(TxtAlisFiyat.Text);
+			x.SatisFiyat = decimal.Parse(TxtSatisFiyat.Text);
+			x.Kategori = int.Parse(comboBox1.SelectedValue.ToString());
+			db.SaveChanges();
+			MessageBox.Show("Verileriniz başarılı bir şekilde güncellendi", "Güncelleme Bilgisi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			UrunListesi();
 		}
 	}
 }
