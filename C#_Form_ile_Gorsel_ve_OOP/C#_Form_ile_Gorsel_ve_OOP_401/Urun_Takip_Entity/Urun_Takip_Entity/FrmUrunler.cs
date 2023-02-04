@@ -44,7 +44,15 @@ namespace Urun_Takip_Entity
 
 		private void BtnKaydet_Click(object sender, EventArgs e)
 		{
-
+			TBLURUNLER t = new TBLURUNLER();
+			t.UrunAd = TxtUrunAd.Text;
+			t.Stok = short.Parse(TxtStok.Text);
+			t.AlisFiyat = decimal.Parse(TxtAlisFiyat.Text);
+			t.SatisFiyat = decimal.Parse(TxtSatisFiyat.Text);
+			t.Kategori = int.Parse(comboBox1.SelectedValue.ToString());
+			db.TBLURUNLER.Add(t);
+			db.SaveChanges();
+			MessageBox.Show("Ürün Başarılı bir şekilde sisteme kaydedildi");
 		}
 	}
 }
