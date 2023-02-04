@@ -74,6 +74,7 @@
 			this.BtnKaydet.TabIndex = 27;
 			this.BtnKaydet.Text = "Kaydet";
 			this.BtnKaydet.UseVisualStyleBackColor = true;
+			this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
 			// 
 			// TxtSatisFiyat
 			// 
@@ -221,6 +222,7 @@
 			this.Name = "FrmUrunler";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Ürünler";
+			this.Load += new System.EventHandler(this.FrmUrunler_Load);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.ResumeLayout(false);
 			this.PerformLayout();

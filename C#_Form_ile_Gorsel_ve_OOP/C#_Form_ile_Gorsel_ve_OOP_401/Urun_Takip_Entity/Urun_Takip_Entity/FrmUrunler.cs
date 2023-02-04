@@ -34,5 +34,17 @@ namespace Urun_Takip_Entity
 						  };
 			dataGridView1.DataSource = urunler.ToList();
 		}
+
+		private void FrmUrunler_Load(object sender, EventArgs e)
+		{
+			comboBox1.DisplayMember = "Ad";
+			comboBox1.ValueMember = "ID";
+			comboBox1.DataSource = db.TBLKATEGORI.ToList();
+		}
+
+		private void BtnKaydet_Click(object sender, EventArgs e)
+		{
+
+		}
 	}
 }
