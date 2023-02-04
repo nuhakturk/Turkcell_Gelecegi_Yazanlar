@@ -21,7 +21,17 @@ namespace Urun_Takip_Entity
 		
 		private void BtnListele_Click(object sender, EventArgs e)
 		{
-			dataGridView1.DataSource = db.TBLMUSTERI.ToList();
+			//dataGridView1.DataSource = db.TBLMUSTERI.ToList();
+			var degerler = from x in db.TBLMUSTERI
+						   select new
+						   {
+							   x.MusteriID,
+							   x.Ad,
+							   x.Soyad,
+							   x.Sehir,
+							   x.Bakiye
+						   };
+			dataGridView1.DataSource = degerler.ToList();
 		}
 
 		private void BtnKaydet_Click(object sender, EventArgs e)
