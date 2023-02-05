@@ -1,0 +1,6 @@
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\EntityLayer\bin\Debug\EntityLayer.dll
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\EntityLayer\bin\Debug\EntityLayer.pdb
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\EntityLayer\obj\Debug\EntityLayer.csproj.AssemblyReference.cache
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\EntityLayer\obj\Debug\EntityLayer.csproj.CoreCompileInputs.cache
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\EntityLayer\obj\Debug\EntityLayer.dll
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\EntityLayer\obj\Debug\EntityLayer.pdb

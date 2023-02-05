@@ -1,0 +1,9 @@
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\DataAccessLayer\bin\Debug\DataAccessLayer.dll
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\DataAccessLayer\bin\Debug\DataAccessLayer.pdb
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\DataAccessLayer\bin\Debug\EntityLayer.dll
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\DataAccessLayer\bin\Debug\EntityLayer.pdb
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\DataAccessLayer\obj\Debug\DataAccessLayer.csproj.CopyComplete
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\DataAccessLayer\obj\Debug\DataAccessLayer.dll
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\KatmanliMimariProje\DataAccessLayer\obj\Debug\DataAccessLayer.pdb
