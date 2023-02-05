@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatmanliMimariProje", "Katm
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{DB5FB2D9-E80B-474E-9AD4-EF078FC6A922}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{EFDE21FA-5924-45C1-A8F2-E8B1FFA696AE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{DB5FB2D9-E80B-474E-9AD4-EF078FC6A922}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DB5FB2D9-E80B-474E-9AD4-EF078FC6A922}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DB5FB2D9-E80B-474E-9AD4-EF078FC6A922}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFDE21FA-5924-45C1-A8F2-E8B1FFA696AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFDE21FA-5924-45C1-A8F2-E8B1FFA696AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFDE21FA-5924-45C1-A8F2-E8B1FFA696AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFDE21FA-5924-45C1-A8F2-E8B1FFA696AE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
