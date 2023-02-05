@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KatmanliMimariProje", "KatmanliMimariProje\KatmanliMimariProje.csproj", "{D0E0BBCE-5981-42D8-892F-8A3C6897AEFA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntityLayer", "EntityLayer\EntityLayer.csproj", "{DB5FB2D9-E80B-474E-9AD4-EF078FC6A922}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0E0BBCE-5981-42D8-892F-8A3C6897AEFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E0BBCE-5981-42D8-892F-8A3C6897AEFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E0BBCE-5981-42D8-892F-8A3C6897AEFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E0BBCE-5981-42D8-892F-8A3C6897AEFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB5FB2D9-E80B-474E-9AD4-EF078FC6A922}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB5FB2D9-E80B-474E-9AD4-EF078FC6A922}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB5FB2D9-E80B-474E-9AD4-EF078FC6A922}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB5FB2D9-E80B-474E-9AD4-EF078FC6A922}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D3BCB388-470D-433C-91F9-A8E58C285295}
+	EndGlobalSection
+EndGlobal
