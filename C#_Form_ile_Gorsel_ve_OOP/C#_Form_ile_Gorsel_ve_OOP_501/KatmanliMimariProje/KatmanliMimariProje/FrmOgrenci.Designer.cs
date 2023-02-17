@@ -44,7 +44,7 @@
 			this.label5 = new System.Windows.Forms.Label();
 			this.label6 = new System.Windows.Forms.Label();
 			this.BtnAra = new System.Windows.Forms.Button();
-			this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+			this.TxtNumara = new System.Windows.Forms.MaskedTextBox();
 			this.TxtAranacak = new System.Windows.Forms.MaskedTextBox();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.SuspendLayout();
@@ -117,6 +117,7 @@
 			this.BtnKaydet.TabIndex = 5;
 			this.BtnKaydet.Text = "Kaydet";
 			this.BtnKaydet.UseVisualStyleBackColor = true;
+			this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
 			// 
 			// dataGridView1
 			// 
@@ -187,14 +188,14 @@
 			this.BtnAra.Text = "Ara";
 			this.BtnAra.UseVisualStyleBackColor = true;
 			// 
-			// maskedTextBox1
+			// TxtNumara
 			// 
-			this.maskedTextBox1.Location = new System.Drawing.Point(724, 120);
-			this.maskedTextBox1.Mask = "00000";
-			this.maskedTextBox1.Name = "maskedTextBox1";
-			this.maskedTextBox1.Size = new System.Drawing.Size(145, 30);
-			this.maskedTextBox1.TabIndex = 3;
-			this.maskedTextBox1.ValidatingType = typeof(int);
+			this.TxtNumara.Location = new System.Drawing.Point(724, 120);
+			this.TxtNumara.Mask = "00000";
+			this.TxtNumara.Name = "TxtNumara";
+			this.TxtNumara.Size = new System.Drawing.Size(145, 30);
+			this.TxtNumara.TabIndex = 3;
+			this.TxtNumara.ValidatingType = typeof(int);
 			// 
 			// TxtAranacak
 			// 
@@ -211,7 +212,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(881, 392);
 			this.Controls.Add(this.TxtAranacak);
-			this.Controls.Add(this.maskedTextBox1);
+			this.Controls.Add(this.TxtNumara);
 			this.Controls.Add(this.BtnAra);
 			this.Controls.Add(this.label6);
 			this.Controls.Add(this.TxtBolum);
@@ -257,7 +258,7 @@
 		private System.Windows.Forms.Label label5;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Button BtnAra;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+		private System.Windows.Forms.MaskedTextBox TxtNumara;
 		private System.Windows.Forms.MaskedTextBox TxtAranacak;
 	}
 }
