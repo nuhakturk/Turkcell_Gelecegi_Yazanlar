@@ -26,5 +26,11 @@ namespace KatmanliMimariProje
 			ent.DersAd = TxtAd.Text;
 			BLDers.DersEkleBL(ent);
 		}
+
+		private void BtnListele_Click(object sender, EventArgs e)
+		{
+			List<EntityDers> ders = BLDers.DersListesiBL();
+			dataGridView1.DataSource = ders;
+		}
 	}
 }
