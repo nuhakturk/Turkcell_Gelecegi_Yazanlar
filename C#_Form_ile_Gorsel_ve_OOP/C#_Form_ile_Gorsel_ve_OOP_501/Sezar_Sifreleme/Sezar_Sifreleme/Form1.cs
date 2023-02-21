@@ -19,7 +19,7 @@ namespace Sezar_Sifreleme
 
 		private void button1_Click(object sender, EventArgs e)
 		{
-			//merhaba m e r h a b a
+			//merhaba --> m e r h a b a
 			string veri = "";
 			veri = textBox1.Text;
 			char[] karakterler = veri.ToCharArray();
@@ -27,6 +27,19 @@ namespace Sezar_Sifreleme
 			foreach (char eleman in karakterler)
 			{
 				textBox2.Text += Convert.ToChar(eleman + 3).ToString();
+			}
+		}
+
+		private void button2_Click(object sender, EventArgs e)
+		{
+			string sifre = "";
+			sifre = textBox2.Text;
+			char[] karakterler= sifre.ToCharArray();
+
+			//def --> d e f
+			foreach (char eleman in karakterler)
+			{
+				textBox1.Text += Convert.ToChar(eleman - 3).ToString();
 			}
 		}
 	}
