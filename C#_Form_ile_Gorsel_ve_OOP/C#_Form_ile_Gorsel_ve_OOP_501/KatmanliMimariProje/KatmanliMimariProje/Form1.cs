@@ -41,5 +41,13 @@ namespace KatmanliMimariProje
 			d.DersID = deger;
 			BLDers.DersSilBL(d.DersID);
 		}
+
+		private void BtnGuncelle_Click(object sender, EventArgs e)
+		{
+			EntityDers ent = new EntityDers();
+			ent.DersAd = TxtAd.Text;
+			ent.DersID = byte.Parse(TxtID.Text);
+			BLDers.DersGuncelleBL(ent);
+		}
 	}
 }
