@@ -1,0 +1,13 @@
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\bin\Debug\QR_Proje.exe.config
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\bin\Debug\QR_Proje.exe
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\bin\Debug\QR_Proje.pdb
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\bin\Debug\MessagingToolkit.QRCode.dll
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\obj\Debug\QR_Proje.csproj.AssemblyReference.cache
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\obj\Debug\QR_Proje.csproj.SuggestedBindingRedirects.cache
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\obj\Debug\QR_Proje.Form1.resources
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\obj\Debug\QR_Proje.Properties.Resources.resources
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\obj\Debug\QR_Proje.csproj.GenerateResource.cache
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\obj\Debug\QR_Proje.csproj.CoreCompileInputs.cache
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\obj\Debug\QR_Proje.csproj.CopyComplete
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\obj\Debug\QR_Proje.exe
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\QR_Proje\QR_Proje\obj\Debug\QR_Proje.pdb
