@@ -55,5 +55,17 @@ namespace DataAccessLayer
 			komut3.Parameters.AddWithValue("@p1", p);
 			return komut3.ExecuteNonQuery();
 		}
+
+		public static int DersGuncelle(EntityDers p)
+		{
+			SqlCommand komut4 = new SqlCommand("Update TBLDERSLER set dersad=@p1 where dersID=@p2", Baglanti.bgl);
+			if (komut4.Connection.State != ConnectionState.Open)
+			{
+				komut4.Connection.Open();
+			}
+			komut4.Parameters.AddWithValue("@p1", p.DersAd);
+			komut4.Parameters.AddWithValue("@p2", p.DersID);
+			return komut4.ExecuteNonQuery();
+		}
 	}
 }
