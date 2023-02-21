@@ -25,5 +25,28 @@ namespace DataAccessLayer
 			komut1.Parameters.AddWithValue("@p4", p.Bolum);
 			return komut1.ExecuteNonQuery();
 		}
+
+		public static List<EntityOgrenci> OgrenciListesi()
+		{
+			List<EntityOgrenci> Ogrenciler = new List<EntityOgrenci>();
+			SqlCommand komut2 = new SqlCommand("Select * From TBLOGRENCI", Baglanti.bgl);
+			if (komut2.Connection.State != ConnectionState.Open)
+			{
+				komut2.Connection.Open();
+			}
+			SqlDataReader dr = komut2.ExecuteReader();
+			while (dr.Read())
+			{
+				EntityOgrenci ent = new EntityOgrenci();
+				ent.OgrID = int.Parse(dr[0].ToString());
+				ent.Ad = dr[1].ToString();
+				ent.Soyad = dr[2].ToString();
+				ent.Numara = dr[3].ToString();
+				ent.Bolum = dr[4].ToString();
+				Ogrenciler.Add(ent);
+			}
+			dr.Close();
+			return Ogrenciler;
+		}
 	}
 }
