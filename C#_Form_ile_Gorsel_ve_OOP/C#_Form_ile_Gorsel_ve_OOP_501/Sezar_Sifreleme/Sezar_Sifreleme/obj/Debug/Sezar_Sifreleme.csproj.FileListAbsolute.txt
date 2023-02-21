@@ -1,0 +1,11 @@
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\Sezar_Sifreleme\Sezar_Sifreleme\bin\Debug\Sezar_Sifreleme.exe.config
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\Sezar_Sifreleme\Sezar_Sifreleme\bin\Debug\Sezar_Sifreleme.exe
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\Sezar_Sifreleme\Sezar_Sifreleme\bin\Debug\Sezar_Sifreleme.pdb
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\Sezar_Sifreleme\Sezar_Sifreleme\obj\Debug\Sezar_Sifreleme.csproj.AssemblyReference.cache
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\Sezar_Sifreleme\Sezar_Sifreleme\obj\Debug\Sezar_Sifreleme.csproj.SuggestedBindingRedirects.cache
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\Sezar_Sifreleme\Sezar_Sifreleme\obj\Debug\Sezar_Sifreleme.Form1.resources
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\Sezar_Sifreleme\Sezar_Sifreleme\obj\Debug\Sezar_Sifreleme.Properties.Resources.resources
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\Sezar_Sifreleme\Sezar_Sifreleme\obj\Debug\Sezar_Sifreleme.csproj.GenerateResource.cache
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\Sezar_Sifreleme\Sezar_Sifreleme\obj\Debug\Sezar_Sifreleme.csproj.CoreCompileInputs.cache
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\Sezar_Sifreleme\Sezar_Sifreleme\obj\Debug\Sezar_Sifreleme.exe
+C:\Users\nuh_9\Documents\Sites\Turkcell_Gelecegi_Yazanlar\C#_Form_ile_Gorsel_ve_OOP\C#_Form_ile_Gorsel_ve_OOP_501\Sezar_Sifreleme\Sezar_Sifreleme\obj\Debug\Sezar_Sifreleme.pdb
