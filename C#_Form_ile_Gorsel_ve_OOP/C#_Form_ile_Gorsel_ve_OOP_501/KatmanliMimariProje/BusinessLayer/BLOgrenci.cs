@@ -18,5 +18,10 @@ namespace BusinessLayer
 			}
 			return -1;
 		}
+
+		public static List<EntityOgrenci> OgrenciListesiBL()
+		{
+			return DalOgrenci.OgrenciListesi();
+		}
 	}
 }

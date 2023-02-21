@@ -57,6 +57,7 @@
 			this.BtnListele.TabIndex = 8;
 			this.BtnListele.Text = "Listele";
 			this.BtnListele.UseVisualStyleBackColor = true;
+			this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
 			// 
 			// BtnGuncelle
 			// 
@@ -121,6 +122,7 @@
 			// 
 			// dataGridView1
 			// 
+			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Location = new System.Drawing.Point(12, 87);
 			this.dataGridView1.Name = "dataGridView1";

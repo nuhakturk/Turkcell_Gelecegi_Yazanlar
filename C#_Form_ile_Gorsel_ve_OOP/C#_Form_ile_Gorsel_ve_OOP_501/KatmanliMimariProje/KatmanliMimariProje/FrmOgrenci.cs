@@ -40,5 +40,11 @@ namespace KatmanliMimariProje
 			MessageBox.Show("Öğrenci Başarıyla Eklendi");
 			Temizle();
 		}
+
+		private void BtnListele_Click(object sender, EventArgs e)
+		{
+			List<EntityOgrenci> ogrenciler = BLOgrenci.OgrenciListesiBL();
+			dataGridView1.DataSource = ogrenciler;
+		}
 	}
 }
