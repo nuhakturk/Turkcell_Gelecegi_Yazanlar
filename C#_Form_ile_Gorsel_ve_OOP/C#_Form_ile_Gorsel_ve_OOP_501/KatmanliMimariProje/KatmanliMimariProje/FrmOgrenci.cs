@@ -46,5 +46,13 @@ namespace KatmanliMimariProje
 			List<EntityOgrenci> ogrenciler = BLOgrenci.OgrenciListesiBL();
 			dataGridView1.DataSource = ogrenciler;
 		}
+
+		private void BtnSil_Click(object sender, EventArgs e)
+		{
+			int deger = int.Parse(TxtID.Text);
+			EntityOgrenci en = new EntityOgrenci();
+			en.OgrID = deger;
+			BLOgrenci.OgrenciSilBL(en.OgrID);
+		}
 	}
 }

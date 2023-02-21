@@ -23,5 +23,17 @@ namespace BusinessLayer
 		{
 			return DalOgrenci.OgrenciListesi();
 		}
+
+		public static int OgrenciSilBL(int p)
+		{
+			if (p >=1 )
+			{
+				return DalOgrenci.OgrenciSil(p);
+			}
+			else
+			{
+				return -1;
+			}
+		}
 	}
 }

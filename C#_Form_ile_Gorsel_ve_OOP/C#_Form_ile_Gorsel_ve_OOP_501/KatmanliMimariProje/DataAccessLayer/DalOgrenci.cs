@@ -48,5 +48,16 @@ namespace DataAccessLayer
 			dr.Close();
 			return Ogrenciler;
 		}
+
+		public static int OgrenciSil(int p)
+		{
+			SqlCommand komut3 = new SqlCommand("Delete From TBLOGRENCI where OgrID=@p1", Baglanti.bgl);
+			if (komut3.Connection.State != ConnectionState.Open)
+			{
+				komut3.Connection.Open();
+			}
+			komut3.Parameters.AddWithValue("@p1", p);
+			return komut3.ExecuteNonQuery();
+		}
 	}
 }

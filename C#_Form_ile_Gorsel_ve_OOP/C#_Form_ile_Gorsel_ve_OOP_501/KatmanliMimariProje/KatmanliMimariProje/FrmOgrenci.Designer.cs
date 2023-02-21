@@ -76,6 +76,7 @@
 			this.BtnSil.TabIndex = 6;
 			this.BtnSil.Text = "Sil";
 			this.BtnSil.UseVisualStyleBackColor = true;
+			this.BtnSil.Click += new System.EventHandler(this.BtnSil_Click);
 			// 
 			// TxtAd
 			// 
@@ -95,7 +96,6 @@
 			// 
 			// TxtID
 			// 
-			this.TxtID.Enabled = false;
 			this.TxtID.Location = new System.Drawing.Point(724, 12);
 			this.TxtID.Name = "TxtID";
 			this.TxtID.Size = new System.Drawing.Size(145, 30);
