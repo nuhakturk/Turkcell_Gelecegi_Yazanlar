@@ -16,7 +16,7 @@ namespace KatmanliMimariProje
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new FrmOgrenci());
+			Application.Run(new Form1());
 		}
 	}
 }

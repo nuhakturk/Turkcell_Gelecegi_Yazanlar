@@ -8,7 +8,7 @@ namespace EntityLayer
 {
 	public class EntityDers
 	{
-		public int DersID { get; set; }
+		public byte DersID { get; set; }
 		public string DersAd { get; set; }
 	}
 }

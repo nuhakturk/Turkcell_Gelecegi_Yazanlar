@@ -44,5 +44,16 @@ namespace DataAccessLayer
 			dr.Close();
 			return dersler;
 		}
+
+		public static int DersSil(byte p)
+		{
+			SqlCommand komut3 = new SqlCommand("Delete From TBLDERSLER where DersID=@p1", Baglanti.bgl);
+			if (komut3.Connection.State != ConnectionState.Open)
+			{
+				komut3.Connection.Open();
+			}
+			komut3.Parameters.AddWithValue("@p1", p);
+			return komut3.ExecuteNonQuery();
+		}
 	}
 }

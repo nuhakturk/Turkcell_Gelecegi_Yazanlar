@@ -23,5 +23,17 @@ namespace BusinessLayer
         {
             return DalDers.DersListesi();
         }
+
+        public static int DersSilBL(byte p)
+        {
+            if (p >= 1)
+            {
+                return DalDers.DersSil(p);
+            }
+            else
+            {
+                return -1;
+            }
+        }
     }
 }
