@@ -54,5 +54,16 @@ namespace KatmanliMimariProje
 			en.OgrID = deger;
 			BLOgrenci.OgrenciSilBL(en.OgrID);
 		}
+
+		private void BtnGuncelle_Click(object sender, EventArgs e)
+		{
+			EntityOgrenci ent = new EntityOgrenci();
+			ent.Ad = TxtAd.Text;
+			ent.Soyad = TxtSoyad.Text;
+			ent.Numara = TxtNumara.Text;
+			ent.Bolum = TxtBolum.Text;
+			ent.OgrID = int.Parse(TxtID.Text);
+			BLOgrenci.OgrenciGuncelleBL(ent);
+		}
 	}
 }
