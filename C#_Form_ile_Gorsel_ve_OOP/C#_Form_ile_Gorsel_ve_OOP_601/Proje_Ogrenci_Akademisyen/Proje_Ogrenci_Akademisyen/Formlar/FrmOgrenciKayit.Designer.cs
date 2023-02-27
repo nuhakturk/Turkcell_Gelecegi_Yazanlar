@@ -29,45 +29,45 @@
 		private void InitializeComponent()
 		{
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.TxtAd = new System.Windows.Forms.TextBox();
 			this.BtnKaydet = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.TxtSoyad = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
-			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.TxtSifre = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
-			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.TxtSifreTekrar = new System.Windows.Forms.TextBox();
 			this.label5 = new System.Windows.Forms.Label();
-			this.textBox6 = new System.Windows.Forms.TextBox();
+			this.TxtMail = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
-			this.textBox7 = new System.Windows.Forms.TextBox();
+			this.TxtResim = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
 			this.label8 = new System.Windows.Forms.Label();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.label9 = new System.Windows.Forms.Label();
+			this.TxtNumara = new System.Windows.Forms.MaskedTextBox();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.TxtNumara);
 			this.groupBox1.Controls.Add(this.label9);
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.label8);
-			this.groupBox1.Controls.Add(this.textBox7);
+			this.groupBox1.Controls.Add(this.TxtResim);
 			this.groupBox1.Controls.Add(this.label7);
-			this.groupBox1.Controls.Add(this.textBox6);
+			this.groupBox1.Controls.Add(this.TxtMail);
 			this.groupBox1.Controls.Add(this.label6);
-			this.groupBox1.Controls.Add(this.textBox5);
+			this.groupBox1.Controls.Add(this.TxtSifreTekrar);
 			this.groupBox1.Controls.Add(this.label5);
-			this.groupBox1.Controls.Add(this.textBox4);
+			this.groupBox1.Controls.Add(this.TxtSifre);
 			this.groupBox1.Controls.Add(this.label4);
-			this.groupBox1.Controls.Add(this.textBox3);
 			this.groupBox1.Controls.Add(this.label3);
-			this.groupBox1.Controls.Add(this.textBox2);
+			this.groupBox1.Controls.Add(this.TxtSoyad);
 			this.groupBox1.Controls.Add(this.label2);
-			this.groupBox1.Controls.Add(this.textBox1);
+			this.groupBox1.Controls.Add(this.TxtAd);
 			this.groupBox1.Controls.Add(this.BtnKaydet);
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Location = new System.Drawing.Point(12, 12);
@@ -76,14 +76,14 @@
 			this.groupBox1.TabIndex = 4;
 			this.groupBox1.TabStop = false;
 			// 
-			// textBox1
+			// TxtAd
 			// 
-			this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox1.ForeColor = System.Drawing.Color.White;
-			this.textBox1.Location = new System.Drawing.Point(153, 80);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(249, 28);
-			this.textBox1.TabIndex = 1;
+			this.TxtAd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtAd.ForeColor = System.Drawing.Color.White;
+			this.TxtAd.Location = new System.Drawing.Point(153, 80);
+			this.TxtAd.Name = "TxtAd";
+			this.TxtAd.Size = new System.Drawing.Size(249, 28);
+			this.TxtAd.TabIndex = 1;
 			// 
 			// BtnKaydet
 			// 
@@ -95,7 +95,7 @@
 			this.BtnKaydet.Location = new System.Drawing.Point(164, 370);
 			this.BtnKaydet.Name = "BtnKaydet";
 			this.BtnKaydet.Size = new System.Drawing.Size(223, 37);
-			this.BtnKaydet.TabIndex = 2;
+			this.BtnKaydet.TabIndex = 9;
 			this.BtnKaydet.Text = "Kaydet";
 			this.BtnKaydet.UseVisualStyleBackColor = false;
 			this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
@@ -111,14 +111,14 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Adı:";
 			// 
-			// textBox2
+			// TxtSoyad
 			// 
-			this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox2.ForeColor = System.Drawing.Color.White;
-			this.textBox2.Location = new System.Drawing.Point(153, 114);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(249, 28);
-			this.textBox2.TabIndex = 4;
+			this.TxtSoyad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtSoyad.ForeColor = System.Drawing.Color.White;
+			this.TxtSoyad.Location = new System.Drawing.Point(153, 114);
+			this.TxtSoyad.Name = "TxtSoyad";
+			this.TxtSoyad.Size = new System.Drawing.Size(249, 28);
+			this.TxtSoyad.TabIndex = 2;
 			// 
 			// label2
 			// 
@@ -131,15 +131,6 @@
 			this.label2.TabIndex = 3;
 			this.label2.Text = "Soyadı:";
 			// 
-			// textBox3
-			// 
-			this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox3.ForeColor = System.Drawing.Color.White;
-			this.textBox3.Location = new System.Drawing.Point(153, 148);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(249, 28);
-			this.textBox3.TabIndex = 6;
-			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
@@ -151,14 +142,14 @@
 			this.label3.TabIndex = 5;
 			this.label3.Text = "Numara:";
 			// 
-			// textBox4
+			// TxtSifre
 			// 
-			this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox4.ForeColor = System.Drawing.Color.White;
-			this.textBox4.Location = new System.Drawing.Point(153, 182);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(249, 28);
-			this.textBox4.TabIndex = 8;
+			this.TxtSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtSifre.ForeColor = System.Drawing.Color.White;
+			this.TxtSifre.Location = new System.Drawing.Point(153, 182);
+			this.TxtSifre.Name = "TxtSifre";
+			this.TxtSifre.Size = new System.Drawing.Size(249, 28);
+			this.TxtSifre.TabIndex = 4;
 			// 
 			// label4
 			// 
@@ -171,14 +162,14 @@
 			this.label4.TabIndex = 7;
 			this.label4.Text = "Şifre:";
 			// 
-			// textBox5
+			// TxtSifreTekrar
 			// 
-			this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox5.ForeColor = System.Drawing.Color.White;
-			this.textBox5.Location = new System.Drawing.Point(153, 216);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(249, 28);
-			this.textBox5.TabIndex = 10;
+			this.TxtSifreTekrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtSifreTekrar.ForeColor = System.Drawing.Color.White;
+			this.TxtSifreTekrar.Location = new System.Drawing.Point(153, 216);
+			this.TxtSifreTekrar.Name = "TxtSifreTekrar";
+			this.TxtSifreTekrar.Size = new System.Drawing.Size(249, 28);
+			this.TxtSifreTekrar.TabIndex = 5;
 			// 
 			// label5
 			// 
@@ -191,14 +182,14 @@
 			this.label5.TabIndex = 9;
 			this.label5.Text = "Şifre Tekrar:";
 			// 
-			// textBox6
+			// TxtMail
 			// 
-			this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox6.ForeColor = System.Drawing.Color.White;
-			this.textBox6.Location = new System.Drawing.Point(153, 250);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(249, 28);
-			this.textBox6.TabIndex = 12;
+			this.TxtMail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtMail.ForeColor = System.Drawing.Color.White;
+			this.TxtMail.Location = new System.Drawing.Point(153, 250);
+			this.TxtMail.Name = "TxtMail";
+			this.TxtMail.Size = new System.Drawing.Size(249, 28);
+			this.TxtMail.TabIndex = 6;
 			// 
 			// label6
 			// 
@@ -211,14 +202,14 @@
 			this.label6.TabIndex = 11;
 			this.label6.Text = "Mail:";
 			// 
-			// textBox7
+			// TxtResim
 			// 
-			this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox7.ForeColor = System.Drawing.Color.White;
-			this.textBox7.Location = new System.Drawing.Point(153, 284);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(249, 28);
-			this.textBox7.TabIndex = 14;
+			this.TxtResim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtResim.ForeColor = System.Drawing.Color.White;
+			this.TxtResim.Location = new System.Drawing.Point(153, 284);
+			this.TxtResim.Name = "TxtResim";
+			this.TxtResim.Size = new System.Drawing.Size(249, 28);
+			this.TxtResim.TabIndex = 7;
 			// 
 			// label7
 			// 
@@ -250,7 +241,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(153, 319);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(249, 30);
-			this.comboBox1.TabIndex = 16;
+			this.comboBox1.TabIndex = 8;
 			// 
 			// label9
 			// 
@@ -263,8 +254,20 @@
 			this.label9.TabIndex = 17;
 			this.label9.Text = "Öğrenci Kayıt Formu";
 			// 
+			// TxtNumara
+			// 
+			this.TxtNumara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtNumara.ForeColor = System.Drawing.Color.White;
+			this.TxtNumara.Location = new System.Drawing.Point(153, 148);
+			this.TxtNumara.Mask = "00000";
+			this.TxtNumara.Name = "TxtNumara";
+			this.TxtNumara.Size = new System.Drawing.Size(249, 28);
+			this.TxtNumara.TabIndex = 3;
+			this.TxtNumara.ValidatingType = typeof(int);
+			// 
 			// FrmOgrenciKayit
 			// 
+			this.AcceptButton = this.BtnKaydet;
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
@@ -289,20 +292,20 @@
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.ComboBox comboBox1;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.TextBox textBox7;
+		private System.Windows.Forms.TextBox TxtResim;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.TextBox textBox6;
+		private System.Windows.Forms.TextBox TxtMail;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.TextBox TxtSifreTekrar;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.TextBox TxtSifre;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox TxtSoyad;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox TxtAd;
 		private System.Windows.Forms.Button BtnKaydet;
 		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.MaskedTextBox TxtNumara;
 	}
 }
