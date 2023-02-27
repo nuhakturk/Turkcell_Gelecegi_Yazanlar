@@ -46,5 +46,17 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 		{
 			Listele();
 		}
+
+		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			TxtID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+			TxtAd.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+			TxtSoyad.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+			TxtNumara.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+			TxtSifre.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+			TxtMail.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+			TxtResim.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+			//comboBox1.ValueMember = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+		}
 	}
 }

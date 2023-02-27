@@ -29,29 +29,29 @@
 		private void InitializeComponent()
 		{
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.BtnListele = new System.Windows.Forms.Button();
+			this.BtnResimSec = new System.Windows.Forms.Button();
+			this.BtnGuncelle = new System.Windows.Forms.Button();
 			this.label9 = new System.Windows.Forms.Label();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.label8 = new System.Windows.Forms.Label();
-			this.textBox7 = new System.Windows.Forms.TextBox();
+			this.TxtResim = new System.Windows.Forms.TextBox();
 			this.label7 = new System.Windows.Forms.Label();
-			this.textBox6 = new System.Windows.Forms.TextBox();
+			this.TxtMail = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
-			this.textBox5 = new System.Windows.Forms.TextBox();
+			this.TxtID = new System.Windows.Forms.TextBox();
 			this.label5 = new System.Windows.Forms.Label();
-			this.textBox4 = new System.Windows.Forms.TextBox();
+			this.TxtSifre = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
-			this.textBox3 = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
-			this.textBox2 = new System.Windows.Forms.TextBox();
+			this.TxtSoyad = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
+			this.TxtAd = new System.Windows.Forms.TextBox();
 			this.BtnSil = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.BtnGuncelle = new System.Windows.Forms.Button();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.button3 = new System.Windows.Forms.Button();
-			this.BtnListele = new System.Windows.Forms.Button();
+			this.TxtNumara = new System.Windows.Forms.MaskedTextBox();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -59,25 +59,25 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.TxtNumara);
 			this.groupBox1.Controls.Add(this.BtnListele);
-			this.groupBox1.Controls.Add(this.button3);
+			this.groupBox1.Controls.Add(this.TxtID);
+			this.groupBox1.Controls.Add(this.label5);
+			this.groupBox1.Controls.Add(this.BtnResimSec);
 			this.groupBox1.Controls.Add(this.BtnGuncelle);
 			this.groupBox1.Controls.Add(this.label9);
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.label8);
-			this.groupBox1.Controls.Add(this.textBox7);
+			this.groupBox1.Controls.Add(this.TxtResim);
 			this.groupBox1.Controls.Add(this.label7);
-			this.groupBox1.Controls.Add(this.textBox6);
+			this.groupBox1.Controls.Add(this.TxtMail);
 			this.groupBox1.Controls.Add(this.label6);
-			this.groupBox1.Controls.Add(this.textBox5);
-			this.groupBox1.Controls.Add(this.label5);
-			this.groupBox1.Controls.Add(this.textBox4);
+			this.groupBox1.Controls.Add(this.TxtSifre);
 			this.groupBox1.Controls.Add(this.label4);
-			this.groupBox1.Controls.Add(this.textBox3);
 			this.groupBox1.Controls.Add(this.label3);
-			this.groupBox1.Controls.Add(this.textBox2);
+			this.groupBox1.Controls.Add(this.TxtSoyad);
 			this.groupBox1.Controls.Add(this.label2);
-			this.groupBox1.Controls.Add(this.textBox1);
+			this.groupBox1.Controls.Add(this.TxtAd);
 			this.groupBox1.Controls.Add(this.BtnSil);
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Location = new System.Drawing.Point(852, 12);
@@ -85,6 +85,49 @@
 			this.groupBox1.Size = new System.Drawing.Size(434, 504);
 			this.groupBox1.TabIndex = 5;
 			this.groupBox1.TabStop = false;
+			// 
+			// BtnListele
+			// 
+			this.BtnListele.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnListele.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnListele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnListele.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnListele.ForeColor = System.Drawing.Color.White;
+			this.BtnListele.Location = new System.Drawing.Point(142, 447);
+			this.BtnListele.Name = "BtnListele";
+			this.BtnListele.Size = new System.Drawing.Size(223, 37);
+			this.BtnListele.TabIndex = 11;
+			this.BtnListele.Text = "Listele";
+			this.BtnListele.UseVisualStyleBackColor = false;
+			this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
+			// 
+			// BtnResimSec
+			// 
+			this.BtnResimSec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnResimSec.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnResimSec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnResimSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnResimSec.ForeColor = System.Drawing.Color.White;
+			this.BtnResimSec.Location = new System.Drawing.Point(385, 269);
+			this.BtnResimSec.Name = "BtnResimSec";
+			this.BtnResimSec.Size = new System.Drawing.Size(30, 26);
+			this.BtnResimSec.TabIndex = 7;
+			this.BtnResimSec.Text = "...";
+			this.BtnResimSec.UseVisualStyleBackColor = false;
+			// 
+			// BtnGuncelle
+			// 
+			this.BtnGuncelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnGuncelle.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnGuncelle.ForeColor = System.Drawing.Color.White;
+			this.BtnGuncelle.Location = new System.Drawing.Point(142, 404);
+			this.BtnGuncelle.Name = "BtnGuncelle";
+			this.BtnGuncelle.Size = new System.Drawing.Size(223, 37);
+			this.BtnGuncelle.TabIndex = 10;
+			this.BtnGuncelle.Text = "Güncelle";
+			this.BtnGuncelle.UseVisualStyleBackColor = false;
 			// 
 			// label9
 			// 
@@ -109,7 +152,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(130, 305);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(249, 30);
-			this.comboBox1.TabIndex = 16;
+			this.comboBox1.TabIndex = 8;
 			// 
 			// label8
 			// 
@@ -122,14 +165,14 @@
 			this.label8.TabIndex = 15;
 			this.label8.Text = "Bölüm:";
 			// 
-			// textBox7
+			// TxtResim
 			// 
-			this.textBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox7.ForeColor = System.Drawing.Color.White;
-			this.textBox7.Location = new System.Drawing.Point(130, 270);
-			this.textBox7.Name = "textBox7";
-			this.textBox7.Size = new System.Drawing.Size(249, 28);
-			this.textBox7.TabIndex = 14;
+			this.TxtResim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtResim.ForeColor = System.Drawing.Color.White;
+			this.TxtResim.Location = new System.Drawing.Point(130, 270);
+			this.TxtResim.Name = "TxtResim";
+			this.TxtResim.Size = new System.Drawing.Size(249, 28);
+			this.TxtResim.TabIndex = 6;
 			// 
 			// label7
 			// 
@@ -142,14 +185,14 @@
 			this.label7.TabIndex = 13;
 			this.label7.Text = "Resim:";
 			// 
-			// textBox6
+			// TxtMail
 			// 
-			this.textBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox6.ForeColor = System.Drawing.Color.White;
-			this.textBox6.Location = new System.Drawing.Point(130, 236);
-			this.textBox6.Name = "textBox6";
-			this.textBox6.Size = new System.Drawing.Size(249, 28);
-			this.textBox6.TabIndex = 12;
+			this.TxtMail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtMail.ForeColor = System.Drawing.Color.White;
+			this.TxtMail.Location = new System.Drawing.Point(130, 236);
+			this.TxtMail.Name = "TxtMail";
+			this.TxtMail.Size = new System.Drawing.Size(249, 28);
+			this.TxtMail.TabIndex = 5;
 			// 
 			// label6
 			// 
@@ -162,94 +205,86 @@
 			this.label6.TabIndex = 11;
 			this.label6.Text = "Mail:";
 			// 
-			// textBox5
+			// TxtID
 			// 
-			this.textBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox5.ForeColor = System.Drawing.Color.White;
-			this.textBox5.Location = new System.Drawing.Point(130, 202);
-			this.textBox5.Name = "textBox5";
-			this.textBox5.Size = new System.Drawing.Size(249, 28);
-			this.textBox5.TabIndex = 10;
+			this.TxtID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtID.Enabled = false;
+			this.TxtID.ForeColor = System.Drawing.Color.White;
+			this.TxtID.Location = new System.Drawing.Point(130, 66);
+			this.TxtID.Name = "TxtID";
+			this.TxtID.Size = new System.Drawing.Size(249, 28);
+			this.TxtID.TabIndex = 10;
 			// 
 			// label5
 			// 
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label5.ForeColor = System.Drawing.Color.White;
-			this.label5.Location = new System.Drawing.Point(4, 205);
+			this.label5.Location = new System.Drawing.Point(92, 69);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(123, 22);
+			this.label5.Size = new System.Drawing.Size(35, 22);
 			this.label5.TabIndex = 9;
-			this.label5.Text = "Şifre Tekrar:";
+			this.label5.Text = "ID:";
 			// 
-			// textBox4
+			// TxtSifre
 			// 
-			this.textBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox4.ForeColor = System.Drawing.Color.White;
-			this.textBox4.Location = new System.Drawing.Point(130, 168);
-			this.textBox4.Name = "textBox4";
-			this.textBox4.Size = new System.Drawing.Size(249, 28);
-			this.textBox4.TabIndex = 8;
+			this.TxtSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtSifre.ForeColor = System.Drawing.Color.White;
+			this.TxtSifre.Location = new System.Drawing.Point(130, 202);
+			this.TxtSifre.Name = "TxtSifre";
+			this.TxtSifre.Size = new System.Drawing.Size(249, 28);
+			this.TxtSifre.TabIndex = 4;
 			// 
 			// label4
 			// 
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(69, 170);
+			this.label4.Location = new System.Drawing.Point(69, 204);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(58, 22);
 			this.label4.TabIndex = 7;
 			this.label4.Text = "Şifre:";
-			// 
-			// textBox3
-			// 
-			this.textBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox3.ForeColor = System.Drawing.Color.White;
-			this.textBox3.Location = new System.Drawing.Point(130, 134);
-			this.textBox3.Name = "textBox3";
-			this.textBox3.Size = new System.Drawing.Size(249, 28);
-			this.textBox3.TabIndex = 6;
 			// 
 			// label3
 			// 
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label3.ForeColor = System.Drawing.Color.White;
-			this.label3.Location = new System.Drawing.Point(42, 137);
+			this.label3.Location = new System.Drawing.Point(42, 171);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(85, 22);
 			this.label3.TabIndex = 5;
 			this.label3.Text = "Numara:";
 			// 
-			// textBox2
+			// TxtSoyad
 			// 
-			this.textBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox2.ForeColor = System.Drawing.Color.White;
-			this.textBox2.Location = new System.Drawing.Point(130, 100);
-			this.textBox2.Name = "textBox2";
-			this.textBox2.Size = new System.Drawing.Size(249, 28);
-			this.textBox2.TabIndex = 4;
+			this.TxtSoyad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtSoyad.ForeColor = System.Drawing.Color.White;
+			this.TxtSoyad.Location = new System.Drawing.Point(130, 134);
+			this.TxtSoyad.Name = "TxtSoyad";
+			this.TxtSoyad.Size = new System.Drawing.Size(249, 28);
+			this.TxtSoyad.TabIndex = 2;
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label2.ForeColor = System.Drawing.Color.White;
-			this.label2.Location = new System.Drawing.Point(50, 103);
+			this.label2.Location = new System.Drawing.Point(50, 137);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(77, 22);
 			this.label2.TabIndex = 3;
 			this.label2.Text = "Soyadı:";
 			// 
-			// textBox1
+			// TxtAd
 			// 
-			this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox1.ForeColor = System.Drawing.Color.White;
-			this.textBox1.Location = new System.Drawing.Point(130, 66);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(249, 28);
-			this.textBox1.TabIndex = 1;
+			this.TxtAd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtAd.ForeColor = System.Drawing.Color.White;
+			this.TxtAd.Location = new System.Drawing.Point(130, 100);
+			this.TxtAd.Name = "TxtAd";
+			this.TxtAd.Size = new System.Drawing.Size(249, 28);
+			this.TxtAd.TabIndex = 1;
 			// 
 			// BtnSil
 			// 
@@ -261,7 +296,7 @@
 			this.BtnSil.Location = new System.Drawing.Point(142, 361);
 			this.BtnSil.Name = "BtnSil";
 			this.BtnSil.Size = new System.Drawing.Size(223, 37);
-			this.BtnSil.TabIndex = 2;
+			this.BtnSil.TabIndex = 9;
 			this.BtnSil.Text = "Sil";
 			this.BtnSil.UseVisualStyleBackColor = false;
 			// 
@@ -270,25 +305,11 @@
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(82, 69);
+			this.label1.Location = new System.Drawing.Point(82, 103);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(45, 22);
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Adı:";
-			// 
-			// BtnGuncelle
-			// 
-			this.BtnGuncelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
-			this.BtnGuncelle.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.BtnGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.BtnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.BtnGuncelle.ForeColor = System.Drawing.Color.White;
-			this.BtnGuncelle.Location = new System.Drawing.Point(142, 404);
-			this.BtnGuncelle.Name = "BtnGuncelle";
-			this.BtnGuncelle.Size = new System.Drawing.Size(223, 37);
-			this.BtnGuncelle.TabIndex = 18;
-			this.BtnGuncelle.Text = "Güncelle";
-			this.BtnGuncelle.UseVisualStyleBackColor = false;
 			// 
 			// groupBox2
 			// 
@@ -310,35 +331,18 @@
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.Size = new System.Drawing.Size(828, 477);
 			this.dataGridView1.TabIndex = 0;
+			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
 			// 
-			// button3
+			// TxtNumara
 			// 
-			this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
-			this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button3.ForeColor = System.Drawing.Color.White;
-			this.button3.Location = new System.Drawing.Point(385, 269);
-			this.button3.Name = "button3";
-			this.button3.Size = new System.Drawing.Size(30, 26);
-			this.button3.TabIndex = 19;
-			this.button3.Text = "...";
-			this.button3.UseVisualStyleBackColor = false;
-			// 
-			// BtnListele
-			// 
-			this.BtnListele.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
-			this.BtnListele.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.BtnListele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.BtnListele.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.BtnListele.ForeColor = System.Drawing.Color.White;
-			this.BtnListele.Location = new System.Drawing.Point(142, 447);
-			this.BtnListele.Name = "BtnListele";
-			this.BtnListele.Size = new System.Drawing.Size(223, 37);
-			this.BtnListele.TabIndex = 20;
-			this.BtnListele.Text = "Listele";
-			this.BtnListele.UseVisualStyleBackColor = false;
-			this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
+			this.TxtNumara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtNumara.ForeColor = System.Drawing.Color.White;
+			this.TxtNumara.Location = new System.Drawing.Point(130, 168);
+			this.TxtNumara.Mask = "00000";
+			this.TxtNumara.Name = "TxtNumara";
+			this.TxtNumara.Size = new System.Drawing.Size(249, 28);
+			this.TxtNumara.TabIndex = 3;
+			this.TxtNumara.ValidatingType = typeof(int);
 			// 
 			// FrmOgrenci
 			// 
@@ -350,7 +354,7 @@
 			this.Controls.Add(this.groupBox1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "FrmOgrenci";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmOgrenci";
@@ -366,28 +370,28 @@
 		#endregion
 
 		private System.Windows.Forms.GroupBox groupBox1;
-		private System.Windows.Forms.Button button3;
+		private System.Windows.Forms.Button BtnResimSec;
 		private System.Windows.Forms.Button BtnGuncelle;
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.ComboBox comboBox1;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.TextBox textBox7;
+		private System.Windows.Forms.TextBox TxtResim;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.TextBox textBox6;
+		private System.Windows.Forms.TextBox TxtMail;
 		private System.Windows.Forms.Label label6;
-		private System.Windows.Forms.TextBox textBox5;
+		private System.Windows.Forms.TextBox TxtID;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox textBox4;
+		private System.Windows.Forms.TextBox TxtSifre;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox textBox3;
 		private System.Windows.Forms.Label label3;
-		private System.Windows.Forms.TextBox textBox2;
+		private System.Windows.Forms.TextBox TxtSoyad;
 		private System.Windows.Forms.Label label2;
-		private System.Windows.Forms.TextBox textBox1;
+		private System.Windows.Forms.TextBox TxtAd;
 		private System.Windows.Forms.Button BtnSil;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button BtnListele;
+		private System.Windows.Forms.MaskedTextBox TxtNumara;
 	}
 }
