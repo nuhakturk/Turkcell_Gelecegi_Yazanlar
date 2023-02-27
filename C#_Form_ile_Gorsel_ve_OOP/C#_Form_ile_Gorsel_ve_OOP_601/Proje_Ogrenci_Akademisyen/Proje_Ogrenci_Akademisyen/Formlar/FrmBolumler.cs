@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Proje_Ogrenci_Akademisyen.Entity;
 
 namespace Proje_Ogrenci_Akademisyen.Formlar
 {
@@ -17,6 +18,8 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			InitializeComponent();
 		}
 
+		OgrenciSinavEntities db = new OgrenciSinavEntities();
+
 		private void BtnKaydet_Click(object sender, EventArgs e)
 		{
 			if(TxtBolumAd.Text == "")
@@ -25,7 +28,11 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			}
 			else
 			{
-				MessageBox.Show("Kayıt yapıldı");
+				TblBolum t = new TblBolum();
+				t.BolumAd = TxtBolumAd.Text;
+				db.TblBolum.Add(t);
+				db.SaveChanges();
+				MessageBox.Show("Bölüm ekleme işlemi başarılı bir şekilde gerçekleşti", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 		}
 	}
