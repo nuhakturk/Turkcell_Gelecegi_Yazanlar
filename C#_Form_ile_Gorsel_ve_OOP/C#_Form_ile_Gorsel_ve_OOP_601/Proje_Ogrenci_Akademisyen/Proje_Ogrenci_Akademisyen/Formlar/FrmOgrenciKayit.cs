@@ -60,5 +60,11 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			}
 			
 		}
+
+		private void BtnResimSec_Click(object sender, EventArgs e)
+		{
+			openFileDialog1.ShowDialog();
+			TxtResim.Text = openFileDialog1.FileName; //path + file name
+		}
 	}
 }
