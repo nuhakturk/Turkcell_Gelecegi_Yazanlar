@@ -16,7 +16,7 @@ namespace Proje_Ogrenci_Akademisyen
 		{
 			Application.EnableVisualStyles();
 			Application.SetCompatibleTextRenderingDefault(false);
-			Application.Run(new Formlar.FrmBolumListesi());
+			Application.Run(new Formlar.FrmOgrenci());
 		}
 	}
 }
