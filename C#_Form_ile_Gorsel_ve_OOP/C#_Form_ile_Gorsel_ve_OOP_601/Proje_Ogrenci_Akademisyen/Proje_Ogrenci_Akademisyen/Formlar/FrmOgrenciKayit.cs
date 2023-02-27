@@ -40,17 +40,25 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 		private void BtnKaydet_Click(object sender, EventArgs e)
 		{
 			//textBox1.Text = comboBox1.SelectedValue.ToString();
-			TblOgrenci t = new TblOgrenci();
-			t.OgrAd = TxtAd.Text;
-			t.OgrSoyad = TxtSoyad.Text;
-			t.OgrNumara = TxtNumara.Text;
-			t.OgrSifre = TxtSifre.Text;
-			t.OgrMail = TxtMail.Text;
-			t.OgrResim = TxtResim.Text;
-			t.OgrBolum = int.Parse(comboBox1.SelectedValue.ToString());
-			db.TblOgrenci.Add(t);
-			db.SaveChanges();
-			MessageBox.Show("Öğrenci bilgileri sisteme başarılı bir şekilde kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			if (TxtSifre.Text == TxtSifreTekrar.Text)
+			{
+				TblOgrenci t = new TblOgrenci();
+				t.OgrAd = TxtAd.Text;
+				t.OgrSoyad = TxtSoyad.Text;
+				t.OgrNumara = TxtNumara.Text;
+				t.OgrSifre = TxtSifre.Text;
+				t.OgrMail = TxtMail.Text;
+				t.OgrResim = TxtResim.Text;
+				t.OgrBolum = int.Parse(comboBox1.SelectedValue.ToString());
+				db.TblOgrenci.Add(t);
+				db.SaveChanges();
+				MessageBox.Show("Öğrenci bilgileri sisteme başarılı bir şekilde kaydedildi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+			}
+			else
+			{
+				MessageBox.Show("Lütfen şifreleri birbiri ile aynı olacak şekilde yeniden girin", "Uyarı", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+			}
+			
 		}
 	}
 }
