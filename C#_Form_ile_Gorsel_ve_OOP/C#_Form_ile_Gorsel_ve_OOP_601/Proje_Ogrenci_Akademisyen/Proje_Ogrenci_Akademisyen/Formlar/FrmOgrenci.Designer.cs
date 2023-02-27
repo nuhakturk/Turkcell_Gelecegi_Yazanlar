@@ -45,12 +45,13 @@
 			this.textBox2 = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.BtnSil = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.button2 = new System.Windows.Forms.Button();
+			this.BtnGuncelle = new System.Windows.Forms.Button();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.button3 = new System.Windows.Forms.Button();
+			this.BtnListele = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -58,8 +59,9 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.BtnListele);
 			this.groupBox1.Controls.Add(this.button3);
-			this.groupBox1.Controls.Add(this.button2);
+			this.groupBox1.Controls.Add(this.BtnGuncelle);
 			this.groupBox1.Controls.Add(this.label9);
 			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.label8);
@@ -76,11 +78,11 @@
 			this.groupBox1.Controls.Add(this.textBox2);
 			this.groupBox1.Controls.Add(this.label2);
 			this.groupBox1.Controls.Add(this.textBox1);
-			this.groupBox1.Controls.Add(this.button1);
+			this.groupBox1.Controls.Add(this.BtnSil);
 			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.Location = new System.Drawing.Point(718, 12);
+			this.groupBox1.Location = new System.Drawing.Point(852, 12);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(434, 470);
+			this.groupBox1.Size = new System.Drawing.Size(434, 504);
 			this.groupBox1.TabIndex = 5;
 			this.groupBox1.TabStop = false;
 			// 
@@ -249,19 +251,19 @@
 			this.textBox1.Size = new System.Drawing.Size(249, 28);
 			this.textBox1.TabIndex = 1;
 			// 
-			// button1
+			// BtnSil
 			// 
-			this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
-			this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(142, 361);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(223, 37);
-			this.button1.TabIndex = 2;
-			this.button1.Text = "Sil";
-			this.button1.UseVisualStyleBackColor = false;
+			this.BtnSil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnSil.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnSil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnSil.ForeColor = System.Drawing.Color.White;
+			this.BtnSil.Location = new System.Drawing.Point(142, 361);
+			this.BtnSil.Name = "BtnSil";
+			this.BtnSil.Size = new System.Drawing.Size(223, 37);
+			this.BtnSil.TabIndex = 2;
+			this.BtnSil.Text = "Sil";
+			this.BtnSil.UseVisualStyleBackColor = false;
 			// 
 			// label1
 			// 
@@ -274,38 +276,39 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Adı:";
 			// 
-			// button2
+			// BtnGuncelle
 			// 
-			this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
-			this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button2.ForeColor = System.Drawing.Color.White;
-			this.button2.Location = new System.Drawing.Point(142, 404);
-			this.button2.Name = "button2";
-			this.button2.Size = new System.Drawing.Size(223, 37);
-			this.button2.TabIndex = 18;
-			this.button2.Text = "Güncelle";
-			this.button2.UseVisualStyleBackColor = false;
+			this.BtnGuncelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnGuncelle.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnGuncelle.ForeColor = System.Drawing.Color.White;
+			this.BtnGuncelle.Location = new System.Drawing.Point(142, 404);
+			this.BtnGuncelle.Name = "BtnGuncelle";
+			this.BtnGuncelle.Size = new System.Drawing.Size(223, 37);
+			this.BtnGuncelle.TabIndex = 18;
+			this.BtnGuncelle.Text = "Güncelle";
+			this.BtnGuncelle.UseVisualStyleBackColor = false;
 			// 
 			// groupBox2
 			// 
 			this.groupBox2.Controls.Add(this.dataGridView1);
 			this.groupBox2.Location = new System.Drawing.Point(12, 12);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(700, 470);
+			this.groupBox2.Size = new System.Drawing.Size(834, 504);
 			this.groupBox2.TabIndex = 6;
 			this.groupBox2.TabStop = false;
 			// 
 			// dataGridView1
 			// 
+			this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
 			this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.dataGridView1.Location = new System.Drawing.Point(3, 24);
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
-			this.dataGridView1.Size = new System.Drawing.Size(694, 443);
+			this.dataGridView1.Size = new System.Drawing.Size(828, 477);
 			this.dataGridView1.TabIndex = 0;
 			// 
 			// button3
@@ -322,12 +325,27 @@
 			this.button3.Text = "...";
 			this.button3.UseVisualStyleBackColor = false;
 			// 
+			// BtnListele
+			// 
+			this.BtnListele.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnListele.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnListele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnListele.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnListele.ForeColor = System.Drawing.Color.White;
+			this.BtnListele.Location = new System.Drawing.Point(142, 447);
+			this.BtnListele.Name = "BtnListele";
+			this.BtnListele.Size = new System.Drawing.Size(223, 37);
+			this.BtnListele.TabIndex = 20;
+			this.BtnListele.Text = "Listele";
+			this.BtnListele.UseVisualStyleBackColor = false;
+			this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
+			// 
 			// FrmOgrenci
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.ClientSize = new System.Drawing.Size(1164, 491);
+			this.ClientSize = new System.Drawing.Size(1298, 528);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -336,6 +354,7 @@
 			this.Name = "FrmOgrenci";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmOgrenci";
+			this.Load += new System.EventHandler(this.FrmOgrenci_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			this.groupBox2.ResumeLayout(false);
@@ -348,7 +367,7 @@
 
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.Button button3;
-		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button BtnGuncelle;
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.ComboBox comboBox1;
 		private System.Windows.Forms.Label label8;
@@ -365,9 +384,10 @@
 		private System.Windows.Forms.TextBox textBox2;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Button BtnSil;
 		private System.Windows.Forms.Label label1;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.DataGridView dataGridView1;
+		private System.Windows.Forms.Button BtnListele;
 	}
 }
