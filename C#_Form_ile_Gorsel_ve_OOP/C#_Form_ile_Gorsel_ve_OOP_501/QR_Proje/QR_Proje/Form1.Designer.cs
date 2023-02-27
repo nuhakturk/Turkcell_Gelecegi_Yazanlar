@@ -28,54 +28,65 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.button1 = new System.Windows.Forms.Button();
 			this.pictureBox1 = new System.Windows.Forms.PictureBox();
+			this.button2 = new System.Windows.Forms.Button();
+			this.button1 = new System.Windows.Forms.Button();
+			this.label1 = new System.Windows.Forms.Label();
+			this.textBox1 = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
 			this.SuspendLayout();
 			// 
-			// textBox1
+			// pictureBox1
 			// 
-			this.textBox1.Location = new System.Drawing.Point(84, 23);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(338, 30);
-			this.textBox1.TabIndex = 0;
+			this.pictureBox1.Location = new System.Drawing.Point(92, 96);
+			this.pictureBox1.Name = "pictureBox1";
+			this.pictureBox1.Size = new System.Drawing.Size(350, 350);
+			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+			this.pictureBox1.TabIndex = 3;
+			this.pictureBox1.TabStop = false;
+			// 
+			// button2
+			// 
+			this.button2.Location = new System.Drawing.Point(295, 48);
+			this.button2.Name = "button2";
+			this.button2.Size = new System.Drawing.Size(147, 42);
+			this.button2.TabIndex = 7;
+			this.button2.Text = "Çözümle";
+			this.button2.UseVisualStyleBackColor = true;
+			this.button2.Click += new System.EventHandler(this.button2_Click);
+			// 
+			// button1
+			// 
+			this.button1.Location = new System.Drawing.Point(92, 48);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(147, 42);
+			this.button1.TabIndex = 5;
+			this.button1.Text = "Oluştur";
+			this.button1.UseVisualStyleBackColor = true;
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(12, 26);
+			this.label1.Location = new System.Drawing.Point(12, 15);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(66, 25);
-			this.label1.TabIndex = 1;
+			this.label1.TabIndex = 6;
 			this.label1.Text = "Metin:";
 			// 
-			// button1
+			// textBox1
 			// 
-			this.button1.Location = new System.Drawing.Point(145, 71);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(147, 42);
-			this.button1.TabIndex = 2;
-			this.button1.Text = "Oluştur";
-			this.button1.UseVisualStyleBackColor = true;
-			this.button1.Click += new System.EventHandler(this.button1_Click);
-			// 
-			// pictureBox1
-			// 
-			this.pictureBox1.Location = new System.Drawing.Point(12, 129);
-			this.pictureBox1.Name = "pictureBox1";
-			this.pictureBox1.Size = new System.Drawing.Size(410, 285);
-			this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-			this.pictureBox1.TabIndex = 3;
-			this.pictureBox1.TabStop = false;
+			this.textBox1.Location = new System.Drawing.Point(92, 12);
+			this.textBox1.Name = "textBox1";
+			this.textBox1.Size = new System.Drawing.Size(350, 30);
+			this.textBox1.TabIndex = 4;
 			// 
 			// Form1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(434, 426);
+			this.ClientSize = new System.Drawing.Size(452, 457);
 			this.Controls.Add(this.pictureBox1);
+			this.Controls.Add(this.button2);
 			this.Controls.Add(this.button1);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.textBox1);
@@ -91,10 +102,11 @@
 
 		#endregion
 
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.Button button1;
 		private System.Windows.Forms.PictureBox pictureBox1;
+		private System.Windows.Forms.Button button2;
+		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.Label label1;
+		private System.Windows.Forms.TextBox textBox1;
 	}
 }
 
