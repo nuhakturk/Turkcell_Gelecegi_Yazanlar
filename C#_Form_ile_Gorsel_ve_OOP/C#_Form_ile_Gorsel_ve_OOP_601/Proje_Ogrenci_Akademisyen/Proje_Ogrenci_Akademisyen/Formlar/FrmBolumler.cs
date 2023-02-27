@@ -16,5 +16,17 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 		{
 			InitializeComponent();
 		}
+
+		private void BtnKaydet_Click(object sender, EventArgs e)
+		{
+			if(TxtBolumAd.Text == "")
+			{
+				errorProvider1.SetError(TxtBolumAd, "Bölüm adı boş geçilemez");
+			}
+			else
+			{
+				MessageBox.Show("Kayıt yapıldı");
+			}
+		}
 	}
 }

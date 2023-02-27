@@ -28,11 +28,14 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
+			this.components = new System.ComponentModel.Container();
 			this.label1 = new System.Windows.Forms.Label();
-			this.textBox1 = new System.Windows.Forms.TextBox();
-			this.button1 = new System.Windows.Forms.Button();
+			this.TxtBolumAd = new System.Windows.Forms.TextBox();
+			this.BtnKaydet = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
 			this.groupBox1.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// label1
@@ -46,39 +49,44 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Bölüm Adı:";
 			// 
-			// textBox1
+			// TxtBolumAd
 			// 
-			this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.textBox1.ForeColor = System.Drawing.Color.White;
-			this.textBox1.Location = new System.Drawing.Point(135, 45);
-			this.textBox1.Name = "textBox1";
-			this.textBox1.Size = new System.Drawing.Size(299, 28);
-			this.textBox1.TabIndex = 1;
+			this.TxtBolumAd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtBolumAd.ForeColor = System.Drawing.Color.White;
+			this.TxtBolumAd.Location = new System.Drawing.Point(135, 45);
+			this.TxtBolumAd.Name = "TxtBolumAd";
+			this.TxtBolumAd.Size = new System.Drawing.Size(299, 28);
+			this.TxtBolumAd.TabIndex = 1;
 			// 
-			// button1
+			// BtnKaydet
 			// 
-			this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
-			this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.button1.ForeColor = System.Drawing.Color.White;
-			this.button1.Location = new System.Drawing.Point(170, 103);
-			this.button1.Name = "button1";
-			this.button1.Size = new System.Drawing.Size(223, 37);
-			this.button1.TabIndex = 2;
-			this.button1.Text = "Kaydet";
-			this.button1.UseVisualStyleBackColor = false;
+			this.BtnKaydet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnKaydet.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnKaydet.ForeColor = System.Drawing.Color.White;
+			this.BtnKaydet.Location = new System.Drawing.Point(170, 103);
+			this.BtnKaydet.Name = "BtnKaydet";
+			this.BtnKaydet.Size = new System.Drawing.Size(223, 37);
+			this.BtnKaydet.TabIndex = 2;
+			this.BtnKaydet.Text = "Kaydet";
+			this.BtnKaydet.UseVisualStyleBackColor = false;
+			this.BtnKaydet.Click += new System.EventHandler(this.BtnKaydet_Click);
 			// 
 			// groupBox1
 			// 
-			this.groupBox1.Controls.Add(this.textBox1);
-			this.groupBox1.Controls.Add(this.button1);
+			this.groupBox1.Controls.Add(this.TxtBolumAd);
+			this.groupBox1.Controls.Add(this.BtnKaydet);
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Location = new System.Drawing.Point(12, 29);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(479, 186);
 			this.groupBox1.TabIndex = 3;
 			this.groupBox1.TabStop = false;
+			// 
+			// errorProvider1
+			// 
+			this.errorProvider1.ContainerControl = this;
 			// 
 			// FrmBolumler
 			// 
@@ -89,12 +97,13 @@
 			this.Controls.Add(this.groupBox1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "FrmBolumler";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmBolumler";
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
 			this.ResumeLayout(false);
 
 		}
@@ -102,8 +111,9 @@
 		#endregion
 
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox textBox1;
-		private System.Windows.Forms.Button button1;
+		private System.Windows.Forms.TextBox TxtBolumAd;
+		private System.Windows.Forms.Button BtnKaydet;
 		private System.Windows.Forms.GroupBox groupBox1;
+		private System.Windows.Forms.ErrorProvider errorProvider1;
 	}
 }
