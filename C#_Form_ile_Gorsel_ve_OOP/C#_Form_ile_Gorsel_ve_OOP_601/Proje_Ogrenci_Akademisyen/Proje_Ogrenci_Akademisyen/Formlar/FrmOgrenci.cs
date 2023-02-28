@@ -34,6 +34,7 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 							   x.OgrSifre,
 							   x.OgrMail,
 							   x.OgrResim,
+							   x.OgrBolum,
 							   x.TblBolum.BolumAd
 						   };
 			dataGridView1.DataSource = degerler.ToList();
@@ -42,6 +43,7 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 		private void FrmOgrenci_Load(object sender, EventArgs e)
 		{
 			Listele();
+			dataGridView1.Columns["OgrBolum"].Visible = false;
 			baglanti.Open();
 			SqlCommand komut = new SqlCommand("Select * From TblBolum", baglanti);
 			//SqlDataReader dr = komut.ExecuteReader();
@@ -67,7 +69,7 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			TxtSifre.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
 			TxtMail.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
 			TxtResim.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
-			//comboBox1.ValueMember = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+			comboBox1.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
 		}
 	}
 }
