@@ -35,7 +35,6 @@
     <Property Name="Sinav3" Type="tinyint" />
     <Property Name="Quiz1" Type="tinyint" />
     <Property Name="Quiz2" Type="tinyint" />
-    <Property Name="EkPuan" Type="tinyint" />
     <Property Name="Proje" Type="tinyint" />
     <Property Name="Ders" Type="int" />
     <Property Name="Ogrenci" Type="int" />

@@ -38,7 +38,6 @@
           <ScalarProperty Name="Sinav3" ColumnName="Sinav3" />
           <ScalarProperty Name="Quiz1" ColumnName="Quiz1" />
           <ScalarProperty Name="Quiz2" ColumnName="Quiz2" />
-          <ScalarProperty Name="EkPuan" ColumnName="EkPuan" />
           <ScalarProperty Name="Proje" ColumnName="Proje" />
           <ScalarProperty Name="Ders" ColumnName="Ders" />
           <ScalarProperty Name="Ogrenci" ColumnName="Ogrenci" />

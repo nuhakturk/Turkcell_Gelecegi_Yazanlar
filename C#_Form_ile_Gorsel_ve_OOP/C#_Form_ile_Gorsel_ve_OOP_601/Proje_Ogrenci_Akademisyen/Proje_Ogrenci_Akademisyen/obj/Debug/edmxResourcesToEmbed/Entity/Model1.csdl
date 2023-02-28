@@ -37,7 +37,6 @@
     <Property Name="Sinav3" Type="Byte" />
     <Property Name="Quiz1" Type="Byte" />
     <Property Name="Quiz2" Type="Byte" />
-    <Property Name="EkPuan" Type="Byte" />
     <Property Name="Proje" Type="Byte" />
     <Property Name="Ders" Type="Int32" />
     <Property Name="Ogrenci" Type="Int32" />
