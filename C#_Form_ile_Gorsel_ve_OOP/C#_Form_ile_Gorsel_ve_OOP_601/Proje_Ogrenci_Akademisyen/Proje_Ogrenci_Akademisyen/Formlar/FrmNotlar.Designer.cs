@@ -403,6 +403,7 @@
 			this.Name = "FrmNotlar";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmNotlar";
+			this.Load += new System.EventHandler(this.FrmNotlar_Load);
 			this.groupBox2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.groupBox1.ResumeLayout(false);
