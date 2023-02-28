@@ -83,5 +83,27 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			MessageBox.Show("Öğrenci başarılı bir şekilde sistemden silindi, silinen öğrencilere pasif öğrenciler listesi üzerinden erişim sağlayabilirsiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
 			Listele();
 		}
+
+		private void BtnGuncelle_Click(object sender, EventArgs e)
+		{
+			int id = int.Parse(TxtID.Text);
+			var x = db.TblOgrenci.Find(id);
+			x.OgrAd = TxtAd.Text;
+			x.OgrSoyad = TxtSoyad.Text;
+			x.OgrNumara = TxtNumara.Text;
+			x.OgrSifre = TxtSifre.Text;
+			x.OgrMail= TxtMail.Text;
+			x.OgrResim = TxtResim.Text;
+			x.OgrBolum = int.Parse(comboBox1.SelectedValue.ToString());
+			db.SaveChanges();
+			MessageBox.Show("Öğrenci başarılı bir şekilde güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+			Listele();
+		}
+
+		private void BtnResimSec_Click(object sender, EventArgs e)
+		{
+			openFileDialog1.ShowDialog();
+			TxtResim.Text = openFileDialog1.FileName; //path + filename
+		}
 	}
 }

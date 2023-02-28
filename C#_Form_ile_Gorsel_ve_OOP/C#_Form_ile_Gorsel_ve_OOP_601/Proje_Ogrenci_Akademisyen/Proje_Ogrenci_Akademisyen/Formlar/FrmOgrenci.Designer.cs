@@ -52,6 +52,7 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
+			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -146,6 +147,7 @@
 			this.BtnResimSec.TabIndex = 7;
 			this.BtnResimSec.Text = "...";
 			this.BtnResimSec.UseVisualStyleBackColor = false;
+			this.BtnResimSec.Click += new System.EventHandler(this.BtnResimSec_Click);
 			// 
 			// BtnGuncelle
 			// 
@@ -160,6 +162,7 @@
 			this.BtnGuncelle.TabIndex = 10;
 			this.BtnGuncelle.Text = "Güncelle";
 			this.BtnGuncelle.UseVisualStyleBackColor = false;
+			this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
 			// 
 			// label9
 			// 
@@ -339,9 +342,14 @@
 			this.dataGridView1.Name = "dataGridView1";
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
+			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dataGridView1.Size = new System.Drawing.Size(828, 477);
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+			// 
+			// openFileDialog1
+			// 
+			this.openFileDialog1.FileName = "openFileDialog1";
 			// 
 			// FrmOgrenci
 			// 
@@ -392,5 +400,6 @@
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.Button BtnListele;
 		private System.Windows.Forms.MaskedTextBox TxtNumara;
+		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 	}
 }
