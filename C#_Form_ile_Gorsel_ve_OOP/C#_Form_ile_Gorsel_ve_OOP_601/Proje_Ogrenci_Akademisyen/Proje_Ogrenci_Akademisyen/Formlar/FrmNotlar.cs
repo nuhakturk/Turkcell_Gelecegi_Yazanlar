@@ -26,5 +26,21 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			comboBox1.ValueMember = "DersID";
 			comboBox1.DataSource = db.TblDersler.ToList();
 		}
+
+		private void BtnEkle_Click(object sender, EventArgs e)
+		{
+			TblNotlar t = new TblNotlar();
+			t.Sinav1 = byte.Parse(TxtSinav1.Text);
+			t.Sinav2 = byte.Parse(TxtSinav2.Text);
+			t.Sinav3 = byte.Parse(TxtSinav3.Text);
+			t.Quiz1 = byte.Parse(TxtQuiz1.Text);
+			t.Quiz2 = byte.Parse(TxtQuiz2.Text);
+			t.Proje = byte.Parse(TxtProje.Text);
+			t.Ders = int.Parse(comboBox1.SelectedValue.ToString());
+			t.Ogrenci = int.Parse(TxtOgrenci.Text);
+			db.TblNotlar.Add(t);
+			db.SaveChanges();
+			MessageBox.Show("Öğrenci not bilgisi sisteme kaydedildi.");
+		}
 	}
 }

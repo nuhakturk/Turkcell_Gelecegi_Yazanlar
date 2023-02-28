@@ -93,7 +93,7 @@
 			this.BtnListele.Location = new System.Drawing.Point(140, 518);
 			this.BtnListele.Name = "BtnListele";
 			this.BtnListele.Size = new System.Drawing.Size(223, 37);
-			this.BtnListele.TabIndex = 11;
+			this.BtnListele.TabIndex = 13;
 			this.BtnListele.Text = "Listele";
 			this.BtnListele.UseVisualStyleBackColor = false;
 			// 
@@ -105,7 +105,7 @@
 			this.TxtID.Location = new System.Drawing.Point(130, 66);
 			this.TxtID.Name = "TxtID";
 			this.TxtID.Size = new System.Drawing.Size(249, 28);
-			this.TxtID.TabIndex = 10;
+			this.TxtID.TabIndex = 20;
 			// 
 			// label5
 			// 
@@ -128,7 +128,7 @@
 			this.BtnNumaraBul.Location = new System.Drawing.Point(385, 347);
 			this.BtnNumaraBul.Name = "BtnNumaraBul";
 			this.BtnNumaraBul.Size = new System.Drawing.Size(30, 26);
-			this.BtnNumaraBul.TabIndex = 7;
+			this.BtnNumaraBul.TabIndex = 9;
 			this.BtnNumaraBul.Text = "...";
 			this.BtnNumaraBul.UseVisualStyleBackColor = false;
 			// 
@@ -142,7 +142,7 @@
 			this.BtnGuncelle.Location = new System.Drawing.Point(140, 475);
 			this.BtnGuncelle.Name = "BtnGuncelle";
 			this.BtnGuncelle.Size = new System.Drawing.Size(223, 37);
-			this.BtnGuncelle.TabIndex = 10;
+			this.BtnGuncelle.TabIndex = 12;
 			this.BtnGuncelle.Text = "Güncelle";
 			this.BtnGuncelle.UseVisualStyleBackColor = false;
 			// 
@@ -167,7 +167,7 @@
 			this.comboBox1.Location = new System.Drawing.Point(130, 305);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(249, 30);
-			this.comboBox1.TabIndex = 8;
+			this.comboBox1.TabIndex = 7;
 			// 
 			// label8
 			// 
@@ -290,7 +290,7 @@
 			this.BtnHesapla.Location = new System.Drawing.Point(140, 432);
 			this.BtnHesapla.Name = "BtnHesapla";
 			this.BtnHesapla.Size = new System.Drawing.Size(223, 37);
-			this.BtnHesapla.TabIndex = 9;
+			this.BtnHesapla.TabIndex = 11;
 			this.BtnHesapla.Text = "Hesapla";
 			this.BtnHesapla.UseVisualStyleBackColor = false;
 			// 
@@ -344,7 +344,7 @@
 			this.TxtOgrenci.Location = new System.Drawing.Point(130, 347);
 			this.TxtOgrenci.Name = "TxtOgrenci";
 			this.TxtOgrenci.Size = new System.Drawing.Size(249, 28);
-			this.TxtOgrenci.TabIndex = 18;
+			this.TxtOgrenci.TabIndex = 8;
 			// 
 			// label10
 			// 
@@ -367,9 +367,10 @@
 			this.BtnEkle.Location = new System.Drawing.Point(140, 389);
 			this.BtnEkle.Name = "BtnEkle";
 			this.BtnEkle.Size = new System.Drawing.Size(223, 37);
-			this.BtnEkle.TabIndex = 20;
+			this.BtnEkle.TabIndex = 10;
 			this.BtnEkle.Text = "Ekle";
 			this.BtnEkle.UseVisualStyleBackColor = false;
+			this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
 			// 
 			// groupBox3
 			// 
@@ -386,7 +387,7 @@
 			this.TxtSinav3.Location = new System.Drawing.Point(130, 168);
 			this.TxtSinav3.Name = "TxtSinav3";
 			this.TxtSinav3.Size = new System.Drawing.Size(249, 28);
-			this.TxtSinav3.TabIndex = 21;
+			this.TxtSinav3.TabIndex = 3;
 			// 
 			// FrmNotlar
 			// 

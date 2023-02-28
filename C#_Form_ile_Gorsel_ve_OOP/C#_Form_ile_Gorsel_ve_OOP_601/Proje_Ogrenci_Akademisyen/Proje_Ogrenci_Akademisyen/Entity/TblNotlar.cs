@@ -23,6 +23,7 @@ namespace Proje_Ogrenci_Akademisyen.Entity
         public Nullable<byte> Proje { get; set; }
         public Nullable<int> Ders { get; set; }
         public Nullable<int> Ogrenci { get; set; }
+        public Nullable<decimal> Ortalama { get; set; }
     
         public virtual TblDersler TblDersler { get; set; }
         public virtual TblOgrenci TblOgrenci { get; set; }
