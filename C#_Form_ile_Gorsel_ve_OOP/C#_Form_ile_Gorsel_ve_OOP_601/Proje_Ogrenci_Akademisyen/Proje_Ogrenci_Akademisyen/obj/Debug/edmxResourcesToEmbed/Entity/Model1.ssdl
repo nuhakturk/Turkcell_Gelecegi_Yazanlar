@@ -36,6 +36,7 @@
     <Property Name="Quiz1" Type="tinyint" />
     <Property Name="Quiz2" Type="tinyint" />
     <Property Name="Proje" Type="tinyint" />
+    <Property Name="Ortalama" Type="decimal" Precision="5" Scale="2" />
     <Property Name="Ders" Type="int" />
     <Property Name="Ogrenci" Type="int" />
   </EntityType>

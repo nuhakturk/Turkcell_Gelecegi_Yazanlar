@@ -42,5 +42,19 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			db.SaveChanges();
 			MessageBox.Show("Öğrenci not bilgisi sisteme kaydedildi.");
 		}
+
+		private void BtnHesapla_Click(object sender, EventArgs e)
+		{
+			byte s1, s2, s3, q1, q2, proje;
+			double ortalama;
+			s1 = byte.Parse(TxtSinav1.Text);
+			s2 = byte.Parse(TxtSinav2.Text);
+			s3 = byte.Parse(TxtSinav3.Text);
+			q1 = byte.Parse(TxtQuiz1.Text);
+			q2 = byte.Parse(TxtQuiz2.Text);
+			proje = byte.Parse(TxtProje.Text);
+			ortalama = (s1 + s2 + s3 + q1 + q2 + proje) / 6;
+			TxtOrtalama.Text = ortalama.ToString();
+		}
 	}
 }

@@ -42,6 +42,7 @@
     <Property Name="Ogrenci" Type="Int32" />
     <NavigationProperty Name="TblDersler" Relationship="Self.FK_TblNotlar_TblDersler" FromRole="TblNotlar" ToRole="TblDersler" />
     <NavigationProperty Name="TblOgrenci" Relationship="Self.FK_TblNotlar_TblOgrenci" FromRole="TblNotlar" ToRole="TblOgrenci" />
+    <Property Name="Ortalama" Type="Decimal" Precision="5" Scale="2" />
   </EntityType>
   <EntityType Name="TblOgrenci">
     <Key>

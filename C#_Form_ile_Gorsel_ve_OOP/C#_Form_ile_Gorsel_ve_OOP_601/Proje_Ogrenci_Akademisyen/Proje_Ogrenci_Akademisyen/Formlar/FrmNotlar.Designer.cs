@@ -56,6 +56,8 @@
 			this.BtnEkle = new System.Windows.Forms.Button();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.TxtSinav3 = new System.Windows.Forms.TextBox();
+			this.TxtOrtalama = new System.Windows.Forms.TextBox();
+			this.label11 = new System.Windows.Forms.Label();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox1.SuspendLayout();
@@ -66,7 +68,7 @@
 			this.groupBox2.Controls.Add(this.dataGridView1);
 			this.groupBox2.Location = new System.Drawing.Point(12, 146);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(834, 429);
+			this.groupBox2.Size = new System.Drawing.Size(834, 473);
 			this.groupBox2.TabIndex = 8;
 			this.groupBox2.TabStop = false;
 			// 
@@ -80,7 +82,7 @@
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridView1.Size = new System.Drawing.Size(828, 402);
+			this.dataGridView1.Size = new System.Drawing.Size(828, 446);
 			this.dataGridView1.TabIndex = 0;
 			// 
 			// BtnListele
@@ -90,10 +92,10 @@
 			this.BtnListele.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.BtnListele.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnListele.ForeColor = System.Drawing.Color.White;
-			this.BtnListele.Location = new System.Drawing.Point(140, 518);
+			this.BtnListele.Location = new System.Drawing.Point(140, 554);
 			this.BtnListele.Name = "BtnListele";
 			this.BtnListele.Size = new System.Drawing.Size(223, 37);
-			this.BtnListele.TabIndex = 13;
+			this.BtnListele.TabIndex = 14;
 			this.BtnListele.Text = "Listele";
 			this.BtnListele.UseVisualStyleBackColor = false;
 			// 
@@ -112,7 +114,7 @@
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label5.ForeColor = System.Drawing.Color.White;
-			this.label5.Location = new System.Drawing.Point(93, 69);
+			this.label5.Location = new System.Drawing.Point(94, 69);
 			this.label5.Name = "label5";
 			this.label5.Size = new System.Drawing.Size(35, 22);
 			this.label5.TabIndex = 9;
@@ -125,7 +127,7 @@
 			this.BtnNumaraBul.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.BtnNumaraBul.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnNumaraBul.ForeColor = System.Drawing.Color.White;
-			this.BtnNumaraBul.Location = new System.Drawing.Point(385, 347);
+			this.BtnNumaraBul.Location = new System.Drawing.Point(385, 341);
 			this.BtnNumaraBul.Name = "BtnNumaraBul";
 			this.BtnNumaraBul.Size = new System.Drawing.Size(30, 26);
 			this.BtnNumaraBul.TabIndex = 9;
@@ -139,10 +141,10 @@
 			this.BtnGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.BtnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnGuncelle.ForeColor = System.Drawing.Color.White;
-			this.BtnGuncelle.Location = new System.Drawing.Point(140, 475);
+			this.BtnGuncelle.Location = new System.Drawing.Point(140, 511);
 			this.BtnGuncelle.Name = "BtnGuncelle";
 			this.BtnGuncelle.Size = new System.Drawing.Size(223, 37);
-			this.BtnGuncelle.TabIndex = 12;
+			this.BtnGuncelle.TabIndex = 13;
 			this.BtnGuncelle.Text = "Güncelle";
 			this.BtnGuncelle.UseVisualStyleBackColor = false;
 			// 
@@ -174,7 +176,7 @@
 			this.label8.AutoSize = true;
 			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label8.ForeColor = System.Drawing.Color.White;
-			this.label8.Location = new System.Drawing.Point(70, 308);
+			this.label8.Location = new System.Drawing.Point(71, 308);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(58, 22);
 			this.label8.TabIndex = 15;
@@ -194,7 +196,7 @@
 			this.label7.AutoSize = true;
 			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label7.ForeColor = System.Drawing.Color.White;
-			this.label7.Location = new System.Drawing.Point(65, 274);
+			this.label7.Location = new System.Drawing.Point(66, 274);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(63, 22);
 			this.label7.TabIndex = 13;
@@ -214,7 +216,7 @@
 			this.label6.AutoSize = true;
 			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label6.ForeColor = System.Drawing.Color.White;
-			this.label6.Location = new System.Drawing.Point(55, 239);
+			this.label6.Location = new System.Drawing.Point(56, 239);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(73, 22);
 			this.label6.TabIndex = 11;
@@ -234,7 +236,7 @@
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(55, 204);
+			this.label4.Location = new System.Drawing.Point(56, 204);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(73, 22);
 			this.label4.TabIndex = 7;
@@ -245,7 +247,7 @@
 			this.label3.AutoSize = true;
 			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label3.ForeColor = System.Drawing.Color.White;
-			this.label3.Location = new System.Drawing.Point(45, 171);
+			this.label3.Location = new System.Drawing.Point(46, 171);
 			this.label3.Name = "label3";
 			this.label3.Size = new System.Drawing.Size(83, 22);
 			this.label3.TabIndex = 5;
@@ -265,7 +267,7 @@
 			this.label2.AutoSize = true;
 			this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label2.ForeColor = System.Drawing.Color.White;
-			this.label2.Location = new System.Drawing.Point(45, 137);
+			this.label2.Location = new System.Drawing.Point(46, 137);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(83, 22);
 			this.label2.TabIndex = 3;
@@ -287,19 +289,20 @@
 			this.BtnHesapla.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.BtnHesapla.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnHesapla.ForeColor = System.Drawing.Color.White;
-			this.BtnHesapla.Location = new System.Drawing.Point(140, 432);
+			this.BtnHesapla.Location = new System.Drawing.Point(140, 468);
 			this.BtnHesapla.Name = "BtnHesapla";
 			this.BtnHesapla.Size = new System.Drawing.Size(223, 37);
-			this.BtnHesapla.TabIndex = 11;
+			this.BtnHesapla.TabIndex = 12;
 			this.BtnHesapla.Text = "Hesapla";
 			this.BtnHesapla.UseVisualStyleBackColor = false;
+			this.BtnHesapla.Click += new System.EventHandler(this.BtnHesapla_Click);
 			// 
 			// label1
 			// 
 			this.label1.AutoSize = true;
 			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label1.ForeColor = System.Drawing.Color.White;
-			this.label1.Location = new System.Drawing.Point(45, 103);
+			this.label1.Location = new System.Drawing.Point(46, 103);
 			this.label1.Name = "label1";
 			this.label1.Size = new System.Drawing.Size(83, 22);
 			this.label1.TabIndex = 0;
@@ -307,6 +310,8 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.TxtOrtalama);
+			this.groupBox1.Controls.Add(this.label11);
 			this.groupBox1.Controls.Add(this.TxtSinav3);
 			this.groupBox1.Controls.Add(this.BtnEkle);
 			this.groupBox1.Controls.Add(this.TxtOgrenci);
@@ -333,7 +338,7 @@
 			this.groupBox1.Controls.Add(this.label1);
 			this.groupBox1.Location = new System.Drawing.Point(852, 12);
 			this.groupBox1.Name = "groupBox1";
-			this.groupBox1.Size = new System.Drawing.Size(434, 563);
+			this.groupBox1.Size = new System.Drawing.Size(434, 607);
 			this.groupBox1.TabIndex = 7;
 			this.groupBox1.TabStop = false;
 			// 
@@ -341,7 +346,7 @@
 			// 
 			this.TxtOgrenci.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
 			this.TxtOgrenci.ForeColor = System.Drawing.Color.White;
-			this.TxtOgrenci.Location = new System.Drawing.Point(130, 347);
+			this.TxtOgrenci.Location = new System.Drawing.Point(130, 341);
 			this.TxtOgrenci.Name = "TxtOgrenci";
 			this.TxtOgrenci.Size = new System.Drawing.Size(249, 28);
 			this.TxtOgrenci.TabIndex = 8;
@@ -351,7 +356,7 @@
 			this.label10.AutoSize = true;
 			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label10.ForeColor = System.Drawing.Color.White;
-			this.label10.Location = new System.Drawing.Point(38, 350);
+			this.label10.Location = new System.Drawing.Point(43, 344);
 			this.label10.Name = "label10";
 			this.label10.Size = new System.Drawing.Size(86, 22);
 			this.label10.TabIndex = 19;
@@ -364,10 +369,10 @@
 			this.BtnEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.BtnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnEkle.ForeColor = System.Drawing.Color.White;
-			this.BtnEkle.Location = new System.Drawing.Point(140, 389);
+			this.BtnEkle.Location = new System.Drawing.Point(140, 426);
 			this.BtnEkle.Name = "BtnEkle";
 			this.BtnEkle.Size = new System.Drawing.Size(223, 37);
-			this.BtnEkle.TabIndex = 10;
+			this.BtnEkle.TabIndex = 11;
 			this.BtnEkle.Text = "Ekle";
 			this.BtnEkle.UseVisualStyleBackColor = false;
 			this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
@@ -384,17 +389,37 @@
 			// 
 			this.TxtSinav3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
 			this.TxtSinav3.ForeColor = System.Drawing.Color.White;
-			this.TxtSinav3.Location = new System.Drawing.Point(130, 168);
+			this.TxtSinav3.Location = new System.Drawing.Point(130, 169);
 			this.TxtSinav3.Name = "TxtSinav3";
 			this.TxtSinav3.Size = new System.Drawing.Size(249, 28);
 			this.TxtSinav3.TabIndex = 3;
+			// 
+			// TxtOrtalama
+			// 
+			this.TxtOrtalama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtOrtalama.ForeColor = System.Drawing.Color.White;
+			this.TxtOrtalama.Location = new System.Drawing.Point(130, 375);
+			this.TxtOrtalama.Name = "TxtOrtalama";
+			this.TxtOrtalama.Size = new System.Drawing.Size(249, 28);
+			this.TxtOrtalama.TabIndex = 10;
+			// 
+			// label11
+			// 
+			this.label11.AutoSize = true;
+			this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.label11.ForeColor = System.Drawing.Color.White;
+			this.label11.Location = new System.Drawing.Point(32, 378);
+			this.label11.Name = "label11";
+			this.label11.Size = new System.Drawing.Size(97, 22);
+			this.label11.TabIndex = 22;
+			this.label11.Text = "Ortalama:";
 			// 
 			// FrmNotlar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.ClientSize = new System.Drawing.Size(1298, 587);
+			this.ClientSize = new System.Drawing.Size(1298, 631);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
@@ -443,5 +468,7 @@
 		private System.Windows.Forms.Button BtnEkle;
 		private System.Windows.Forms.GroupBox groupBox3;
 		private System.Windows.Forms.TextBox TxtSinav3;
+		private System.Windows.Forms.TextBox TxtOrtalama;
+		private System.Windows.Forms.Label label11;
 	}
 }
