@@ -29,7 +29,10 @@
 		private void InitializeComponent()
 		{
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.TxtNumara = new System.Windows.Forms.MaskedTextBox();
 			this.BtnListele = new System.Windows.Forms.Button();
+			this.TxtID = new System.Windows.Forms.TextBox();
+			this.label5 = new System.Windows.Forms.Label();
 			this.BtnResimSec = new System.Windows.Forms.Button();
 			this.BtnGuncelle = new System.Windows.Forms.Button();
 			this.label9 = new System.Windows.Forms.Label();
@@ -39,8 +42,6 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.TxtMail = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
-			this.TxtID = new System.Windows.Forms.TextBox();
-			this.label5 = new System.Windows.Forms.Label();
 			this.TxtSifre = new System.Windows.Forms.TextBox();
 			this.label4 = new System.Windows.Forms.Label();
 			this.label3 = new System.Windows.Forms.Label();
@@ -51,7 +52,6 @@
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
-			this.TxtNumara = new System.Windows.Forms.MaskedTextBox();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -86,6 +86,17 @@
 			this.groupBox1.TabIndex = 5;
 			this.groupBox1.TabStop = false;
 			// 
+			// TxtNumara
+			// 
+			this.TxtNumara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtNumara.ForeColor = System.Drawing.Color.White;
+			this.TxtNumara.Location = new System.Drawing.Point(130, 168);
+			this.TxtNumara.Mask = "00000";
+			this.TxtNumara.Name = "TxtNumara";
+			this.TxtNumara.Size = new System.Drawing.Size(249, 28);
+			this.TxtNumara.TabIndex = 3;
+			this.TxtNumara.ValidatingType = typeof(int);
+			// 
 			// BtnListele
 			// 
 			this.BtnListele.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
@@ -100,6 +111,27 @@
 			this.BtnListele.Text = "Listele";
 			this.BtnListele.UseVisualStyleBackColor = false;
 			this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
+			// 
+			// TxtID
+			// 
+			this.TxtID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtID.Enabled = false;
+			this.TxtID.ForeColor = System.Drawing.Color.White;
+			this.TxtID.Location = new System.Drawing.Point(130, 66);
+			this.TxtID.Name = "TxtID";
+			this.TxtID.Size = new System.Drawing.Size(249, 28);
+			this.TxtID.TabIndex = 10;
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.label5.ForeColor = System.Drawing.Color.White;
+			this.label5.Location = new System.Drawing.Point(92, 69);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(35, 22);
+			this.label5.TabIndex = 9;
+			this.label5.Text = "ID:";
 			// 
 			// BtnResimSec
 			// 
@@ -146,9 +178,7 @@
 			this.comboBox1.ForeColor = System.Drawing.Color.White;
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Items.AddRange(new object[] {
-            "Yazılım Mühendisliği",
-            "Bilgisayar Mühendisliği",
-            "Endüstri Mühendisliği"});
+            ""});
 			this.comboBox1.Location = new System.Drawing.Point(130, 305);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(249, 30);
@@ -204,27 +234,6 @@
 			this.label6.Size = new System.Drawing.Size(52, 22);
 			this.label6.TabIndex = 11;
 			this.label6.Text = "Mail:";
-			// 
-			// TxtID
-			// 
-			this.TxtID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.TxtID.Enabled = false;
-			this.TxtID.ForeColor = System.Drawing.Color.White;
-			this.TxtID.Location = new System.Drawing.Point(130, 66);
-			this.TxtID.Name = "TxtID";
-			this.TxtID.Size = new System.Drawing.Size(249, 28);
-			this.TxtID.TabIndex = 10;
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.label5.ForeColor = System.Drawing.Color.White;
-			this.label5.Location = new System.Drawing.Point(92, 69);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(35, 22);
-			this.label5.TabIndex = 9;
-			this.label5.Text = "ID:";
 			// 
 			// TxtSifre
 			// 
@@ -332,17 +341,6 @@
 			this.dataGridView1.Size = new System.Drawing.Size(828, 477);
 			this.dataGridView1.TabIndex = 0;
 			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
-			// 
-			// TxtNumara
-			// 
-			this.TxtNumara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.TxtNumara.ForeColor = System.Drawing.Color.White;
-			this.TxtNumara.Location = new System.Drawing.Point(130, 168);
-			this.TxtNumara.Mask = "00000";
-			this.TxtNumara.Name = "TxtNumara";
-			this.TxtNumara.Size = new System.Drawing.Size(249, 28);
-			this.TxtNumara.TabIndex = 3;
-			this.TxtNumara.ValidatingType = typeof(int);
 			// 
 			// FrmOgrenci
 			// 

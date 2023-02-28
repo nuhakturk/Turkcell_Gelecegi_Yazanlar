@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -18,6 +19,7 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			InitializeComponent();
 		}
 
+		SqlConnection baglanti = new SqlConnection("Data Source=DESKTOP-U5FIOK2\\SQLEXPRESS;Initial Catalog=OgrenciSinav;Integrated Security=True");
 		OgrenciSinavEntities db = new OgrenciSinavEntities();
 
 		void Listele()
@@ -40,6 +42,15 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 		private void FrmOgrenci_Load(object sender, EventArgs e)
 		{
 			Listele();
+			baglanti.Open();
+			SqlCommand komut = new SqlCommand("Select * From TblBolum", baglanti);
+			//SqlDataReader dr = komut.ExecuteReader();
+			SqlDataAdapter da = new SqlDataAdapter(komut);
+			DataTable ds = new DataTable();
+			da.Fill(ds);
+			comboBox1.ValueMember = "BolumID";
+			comboBox1.DisplayMember = "BolumAd";
+			comboBox1.DataSource = ds;
 		}
 
 		private void BtnListele_Click(object sender, EventArgs e)
