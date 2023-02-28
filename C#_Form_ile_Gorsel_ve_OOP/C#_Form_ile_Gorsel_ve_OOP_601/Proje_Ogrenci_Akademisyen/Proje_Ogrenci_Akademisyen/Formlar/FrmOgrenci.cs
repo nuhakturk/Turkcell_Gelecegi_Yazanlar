@@ -73,5 +73,15 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			TxtResim.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
 			comboBox1.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
 		}
+
+		private void BtnSil_Click(object sender, EventArgs e)
+		{
+			int id = int.Parse(TxtID.Text);
+			var x = db.TblOgrenci.Find(id);
+			x.OgrDurum = false;
+			db.SaveChanges();
+			MessageBox.Show("Öğrenci başarılı bir şekilde sistemden silindi, silinen öğrencilere pasif öğrenciler listesi üzerinden erişim sağlayabilirsiniz.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Stop);
+			Listele();
+		}
 	}
 }
