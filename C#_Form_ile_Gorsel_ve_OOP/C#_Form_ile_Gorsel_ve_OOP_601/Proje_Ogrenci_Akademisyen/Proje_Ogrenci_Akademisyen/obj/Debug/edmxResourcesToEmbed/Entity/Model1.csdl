@@ -58,6 +58,7 @@
     <Property Name="OgrBolum" Type="Int32" />
     <NavigationProperty Name="TblBolum" Relationship="Self.FK_TblOgrenci_TblBolum" FromRole="TblOgrenci" ToRole="TblBolum" />
     <NavigationProperty Name="TblNotlar" Relationship="Self.FK_TblNotlar_TblOgrenci" FromRole="TblOgrenci" ToRole="TblNotlar" />
+    <Property Name="OgrDurum" Type="Boolean" />
   </EntityType>
   <Association Name="FK_TblOgrenci_TblBolum">
     <End Role="TblBolum" Type="Self.TblBolum" Multiplicity="0..1" />

@@ -52,6 +52,7 @@
     <Property Name="OgrMail" Type="nvarchar" MaxLength="50" />
     <Property Name="OgrResim" Type="nvarchar" MaxLength="100" />
     <Property Name="OgrBolum" Type="int" />
+    <Property Name="OgrDurum" Type="bit" />
   </EntityType>
   <Association Name="FK_TblNotlar_TblDersler">
     <End Role="TblDersler" Type="Self.TblDersler" Multiplicity="0..1" />

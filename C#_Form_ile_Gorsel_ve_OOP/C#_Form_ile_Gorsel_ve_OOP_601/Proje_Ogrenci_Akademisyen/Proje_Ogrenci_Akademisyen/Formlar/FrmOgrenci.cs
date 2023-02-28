@@ -35,15 +35,17 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 							   x.OgrMail,
 							   x.OgrResim,
 							   x.OgrBolum,
-							   x.TblBolum.BolumAd
+							   x.TblBolum.BolumAd,
+							   x.OgrDurum
 						   };
-			dataGridView1.DataSource = degerler.ToList();
+			dataGridView1.DataSource = degerler.Where(x => x.OgrDurum == true).ToList();
 		}
 
 		private void FrmOgrenci_Load(object sender, EventArgs e)
 		{
 			Listele();
 			dataGridView1.Columns["OgrBolum"].Visible = false;
+			dataGridView1.Columns["OgrDurum"].Visible = false;
 			baglanti.Open();
 			SqlCommand komut = new SqlCommand("Select * From TblBolum", baglanti);
 			//SqlDataReader dr = komut.ExecuteReader();
