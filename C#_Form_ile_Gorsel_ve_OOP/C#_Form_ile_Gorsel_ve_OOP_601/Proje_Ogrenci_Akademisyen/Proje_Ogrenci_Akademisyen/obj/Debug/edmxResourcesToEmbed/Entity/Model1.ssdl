@@ -108,6 +108,7 @@ warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary k
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="Notlar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="OgrenciSinavModelStoreContainer">
     <EntitySet Name="TblAkademisyen" EntityType="Self.TblAkademisyen" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblBolum" EntityType="Self.TblBolum" Schema="dbo" store:Type="Tables" />

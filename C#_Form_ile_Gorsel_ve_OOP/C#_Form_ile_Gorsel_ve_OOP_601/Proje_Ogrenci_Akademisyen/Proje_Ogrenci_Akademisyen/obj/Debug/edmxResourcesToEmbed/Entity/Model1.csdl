@@ -115,6 +115,7 @@
       <End Role="TblNotlar" EntitySet="TblNotlar" />
     </AssociationSet>
     <EntitySet Name="View_1" EntityType="OgrenciSinavModel.View_1" />
+    <FunctionImport Name="Notlar" ReturnType="Collection(OgrenciSinavModel.Notlar_Result)" />
   </EntityContainer>
   <EntityType Name="View_1">
     <Key>
@@ -132,4 +133,16 @@
     <Property Name="Proje" Type="Byte" />
     <Property Name="Ortalama" Type="Decimal" Precision="5" Scale="2" />
   </EntityType>
+  <ComplexType Name="Notlar_Result">
+    <Property Type="Int32" Name="Not_ID" Nullable="false" />
+    <Property Type="String" Name="Ders_Adı" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Öğrenci" Nullable="true" MaxLength="46" />
+    <Property Type="Byte" Name="Sinav1" Nullable="true" />
+    <Property Type="Byte" Name="Sinav2" Nullable="true" />
+    <Property Type="Byte" Name="Sinav3" Nullable="true" />
+    <Property Type="Byte" Name="Quiz1" Nullable="true" />
+    <Property Type="Byte" Name="Quiz2" Nullable="true" />
+    <Property Type="Byte" Name="Proje" Nullable="true" />
+    <Property Type="Decimal" Name="Ortalama" Nullable="true" Precision="5" Scale="2" />
+  </ComplexType>
 </Schema>
