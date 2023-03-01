@@ -15,12 +15,12 @@ namespace Proje_Ogrenci_Akademisyen.Entity
     public partial class TblNotlar
     {
         public int NotID { get; set; }
-        public Nullable<byte> Sinav1 { get; set; }
-        public Nullable<byte> Sinav2 { get; set; }
-        public Nullable<byte> Sinav3 { get; set; }
-        public Nullable<byte> Quiz1 { get; set; }
-        public Nullable<byte> Quiz2 { get; set; }
-        public Nullable<byte> Proje { get; set; }
+        public Nullable<int> Sinav1 { get; set; }
+        public Nullable<int> Sinav2 { get; set; }
+        public Nullable<int> Sinav3 { get; set; }
+        public Nullable<int> Quiz1 { get; set; }
+        public Nullable<int> Quiz2 { get; set; }
+        public Nullable<int> Proje { get; set; }
         public Nullable<int> Ders { get; set; }
         public Nullable<int> Ogrenci { get; set; }
         public Nullable<decimal> Ortalama { get; set; }

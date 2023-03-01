@@ -35,12 +35,12 @@
             <PropertyRef Name="NotID" />
           </Key>
           <Property Name="NotID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="Sinav1" Type="tinyint" />
-          <Property Name="Sinav2" Type="tinyint" />
-          <Property Name="Sinav3" Type="tinyint" />
-          <Property Name="Quiz1" Type="tinyint" />
-          <Property Name="Quiz2" Type="tinyint" />
-          <Property Name="Proje" Type="tinyint" />
+          <Property Name="Sinav1" Type="int" />
+          <Property Name="Sinav2" Type="int" />
+          <Property Name="Sinav3" Type="int" />
+          <Property Name="Quiz1" Type="int" />
+          <Property Name="Quiz2" Type="int" />
+          <Property Name="Proje" Type="int" />
           <Property Name="Ortalama" Type="decimal" Precision="5" Scale="2" />
           <Property Name="Ders" Type="int" />
           <Property Name="Ogrenci" Type="int" />
@@ -184,12 +184,12 @@ warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary k
             <PropertyRef Name="NotID" />
           </Key>
           <Property Name="NotID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Sinav1" Type="Byte" />
-          <Property Name="Sinav2" Type="Byte" />
-          <Property Name="Sinav3" Type="Byte" />
-          <Property Name="Quiz1" Type="Byte" />
-          <Property Name="Quiz2" Type="Byte" />
-          <Property Name="Proje" Type="Byte" />
+          <Property Name="Sinav1" Type="Int32" />
+          <Property Name="Sinav2" Type="Int32" />
+          <Property Name="Sinav3" Type="Int32" />
+          <Property Name="Quiz1" Type="Int32" />
+          <Property Name="Quiz2" Type="Int32" />
+          <Property Name="Proje" Type="Int32" />
           <Property Name="Ders" Type="Int32" />
           <Property Name="Ogrenci" Type="Int32" />
           <NavigationProperty Name="TblDersler" Relationship="Self.FK_TblNotlar_TblDersler" FromRole="TblNotlar" ToRole="TblDersler" />

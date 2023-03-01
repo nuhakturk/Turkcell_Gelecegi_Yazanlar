@@ -30,12 +30,12 @@
       <PropertyRef Name="NotID" />
     </Key>
     <Property Name="NotID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Sinav1" Type="tinyint" />
-    <Property Name="Sinav2" Type="tinyint" />
-    <Property Name="Sinav3" Type="tinyint" />
-    <Property Name="Quiz1" Type="tinyint" />
-    <Property Name="Quiz2" Type="tinyint" />
-    <Property Name="Proje" Type="tinyint" />
+    <Property Name="Sinav1" Type="int" />
+    <Property Name="Sinav2" Type="int" />
+    <Property Name="Sinav3" Type="int" />
+    <Property Name="Quiz1" Type="int" />
+    <Property Name="Quiz2" Type="int" />
+    <Property Name="Proje" Type="int" />
     <Property Name="Ortalama" Type="decimal" Precision="5" Scale="2" />
     <Property Name="Ders" Type="int" />
     <Property Name="Ogrenci" Type="int" />
