@@ -51,13 +51,13 @@
 			this.BtnHesapla = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.TxtOgrenci = new System.Windows.Forms.TextBox();
-			this.label10 = new System.Windows.Forms.Label();
-			this.BtnEkle = new System.Windows.Forms.Button();
-			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.TxtSinav3 = new System.Windows.Forms.TextBox();
 			this.TxtOrtalama = new System.Windows.Forms.TextBox();
 			this.label11 = new System.Windows.Forms.Label();
+			this.TxtSinav3 = new System.Windows.Forms.TextBox();
+			this.BtnEkle = new System.Windows.Forms.Button();
+			this.TxtOgrenci = new System.Windows.Forms.TextBox();
+			this.label10 = new System.Windows.Forms.Label();
+			this.groupBox3 = new System.Windows.Forms.GroupBox();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox1.SuspendLayout();
@@ -98,6 +98,7 @@
 			this.BtnListele.TabIndex = 14;
 			this.BtnListele.Text = "Listele";
 			this.BtnListele.UseVisualStyleBackColor = false;
+			this.BtnListele.Click += new System.EventHandler(this.BtnListele_Click);
 			// 
 			// TxtID
 			// 
@@ -342,58 +343,6 @@
 			this.groupBox1.TabIndex = 7;
 			this.groupBox1.TabStop = false;
 			// 
-			// TxtOgrenci
-			// 
-			this.TxtOgrenci.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.TxtOgrenci.ForeColor = System.Drawing.Color.White;
-			this.TxtOgrenci.Location = new System.Drawing.Point(130, 341);
-			this.TxtOgrenci.Name = "TxtOgrenci";
-			this.TxtOgrenci.Size = new System.Drawing.Size(249, 28);
-			this.TxtOgrenci.TabIndex = 8;
-			// 
-			// label10
-			// 
-			this.label10.AutoSize = true;
-			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.label10.ForeColor = System.Drawing.Color.White;
-			this.label10.Location = new System.Drawing.Point(43, 344);
-			this.label10.Name = "label10";
-			this.label10.Size = new System.Drawing.Size(86, 22);
-			this.label10.TabIndex = 19;
-			this.label10.Text = "Öğrenci:";
-			// 
-			// BtnEkle
-			// 
-			this.BtnEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
-			this.BtnEkle.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.BtnEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.BtnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.BtnEkle.ForeColor = System.Drawing.Color.White;
-			this.BtnEkle.Location = new System.Drawing.Point(140, 426);
-			this.BtnEkle.Name = "BtnEkle";
-			this.BtnEkle.Size = new System.Drawing.Size(223, 37);
-			this.BtnEkle.TabIndex = 11;
-			this.BtnEkle.Text = "Ekle";
-			this.BtnEkle.UseVisualStyleBackColor = false;
-			this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
-			// 
-			// groupBox3
-			// 
-			this.groupBox3.Location = new System.Drawing.Point(12, 12);
-			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(834, 137);
-			this.groupBox3.TabIndex = 9;
-			this.groupBox3.TabStop = false;
-			// 
-			// TxtSinav3
-			// 
-			this.TxtSinav3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.TxtSinav3.ForeColor = System.Drawing.Color.White;
-			this.TxtSinav3.Location = new System.Drawing.Point(130, 169);
-			this.TxtSinav3.Name = "TxtSinav3";
-			this.TxtSinav3.Size = new System.Drawing.Size(249, 28);
-			this.TxtSinav3.TabIndex = 3;
-			// 
 			// TxtOrtalama
 			// 
 			this.TxtOrtalama.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
@@ -414,6 +363,58 @@
 			this.label11.TabIndex = 22;
 			this.label11.Text = "Ortalama:";
 			// 
+			// TxtSinav3
+			// 
+			this.TxtSinav3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtSinav3.ForeColor = System.Drawing.Color.White;
+			this.TxtSinav3.Location = new System.Drawing.Point(130, 169);
+			this.TxtSinav3.Name = "TxtSinav3";
+			this.TxtSinav3.Size = new System.Drawing.Size(249, 28);
+			this.TxtSinav3.TabIndex = 3;
+			// 
+			// BtnEkle
+			// 
+			this.BtnEkle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnEkle.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnEkle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnEkle.ForeColor = System.Drawing.Color.White;
+			this.BtnEkle.Location = new System.Drawing.Point(140, 426);
+			this.BtnEkle.Name = "BtnEkle";
+			this.BtnEkle.Size = new System.Drawing.Size(223, 37);
+			this.BtnEkle.TabIndex = 11;
+			this.BtnEkle.Text = "Ekle";
+			this.BtnEkle.UseVisualStyleBackColor = false;
+			this.BtnEkle.Click += new System.EventHandler(this.BtnEkle_Click);
+			// 
+			// TxtOgrenci
+			// 
+			this.TxtOgrenci.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtOgrenci.ForeColor = System.Drawing.Color.White;
+			this.TxtOgrenci.Location = new System.Drawing.Point(130, 341);
+			this.TxtOgrenci.Name = "TxtOgrenci";
+			this.TxtOgrenci.Size = new System.Drawing.Size(249, 28);
+			this.TxtOgrenci.TabIndex = 8;
+			// 
+			// label10
+			// 
+			this.label10.AutoSize = true;
+			this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.label10.ForeColor = System.Drawing.Color.White;
+			this.label10.Location = new System.Drawing.Point(43, 344);
+			this.label10.Name = "label10";
+			this.label10.Size = new System.Drawing.Size(86, 22);
+			this.label10.TabIndex = 19;
+			this.label10.Text = "Öğrenci:";
+			// 
+			// groupBox3
+			// 
+			this.groupBox3.Location = new System.Drawing.Point(12, 12);
+			this.groupBox3.Name = "groupBox3";
+			this.groupBox3.Size = new System.Drawing.Size(834, 137);
+			this.groupBox3.TabIndex = 9;
+			this.groupBox3.TabStop = false;
+			// 
 			// FrmNotlar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -425,7 +426,7 @@
 			this.Controls.Add(this.groupBox1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "FrmNotlar";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmNotlar";

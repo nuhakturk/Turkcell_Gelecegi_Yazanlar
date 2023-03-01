@@ -54,6 +54,24 @@
     <Property Name="OgrBolum" Type="int" />
     <Property Name="OgrDurum" Type="bit" />
   </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="View_1">
+    <Key>
+      <PropertyRef Name="NotID" />
+    </Key>
+    <Property Name="NotID" Type="int" Nullable="false" />
+    <Property Name="OgrAd" Type="nvarchar" MaxLength="20" />
+    <Property Name="OgrSoyad" Type="nvarchar" MaxLength="25" />
+    <Property Name="DersAd" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sinav1" Type="tinyint" />
+    <Property Name="Sinav2" Type="tinyint" />
+    <Property Name="Sinav3" Type="tinyint" />
+    <Property Name="Quiz1" Type="tinyint" />
+    <Property Name="Quiz2" Type="tinyint" />
+    <Property Name="Proje" Type="tinyint" />
+    <Property Name="Ortalama" Type="decimal" Precision="5" Scale="2" />
+  </EntityType>
   <Association Name="FK_TblNotlar_TblDersler">
     <End Role="TblDersler" Type="Self.TblDersler" Multiplicity="0..1" />
     <End Role="TblNotlar" Type="Self.TblNotlar" Multiplicity="*" />
@@ -96,6 +114,21 @@
     <EntitySet Name="TblDersler" EntityType="Self.TblDersler" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblNotlar" EntityType="Self.TblNotlar" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblOgrenci" EntityType="Self.TblOgrenci" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="View_1" EntityType="Self.View_1" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [View_1].[NotID] AS [NotID], 
+    [View_1].[OgrAd] AS [OgrAd], 
+    [View_1].[OgrSoyad] AS [OgrSoyad], 
+    [View_1].[DersAd] AS [DersAd], 
+    [View_1].[Sinav1] AS [Sinav1], 
+    [View_1].[Sinav2] AS [Sinav2], 
+    [View_1].[Sinav3] AS [Sinav3], 
+    [View_1].[Quiz1] AS [Quiz1], 
+    [View_1].[Quiz2] AS [Quiz2], 
+    [View_1].[Proje] AS [Proje], 
+    [View_1].[Ortalama] AS [Ortalama]
+    FROM [dbo].[View_1] AS [View_1]</DefiningQuery>
+    </EntitySet>
     <AssociationSet Name="FK_TblNotlar_TblDersler" Association="Self.FK_TblNotlar_TblDersler">
       <End Role="TblDersler" EntitySet="TblDersler" />
       <End Role="TblNotlar" EntitySet="TblNotlar" />

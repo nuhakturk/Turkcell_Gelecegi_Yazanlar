@@ -30,5 +30,6 @@ namespace Proje_Ogrenci_Akademisyen.Entity
         public virtual DbSet<TblDersler> TblDersler { get; set; }
         public virtual DbSet<TblNotlar> TblNotlar { get; set; }
         public virtual DbSet<TblOgrenci> TblOgrenci { get; set; }
+        public virtual DbSet<View_1> View_1 { get; set; }
     }
 }

@@ -56,5 +56,10 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			ortalama = (s1 + s2 + s3 + q1 + q2 + proje) / 6;
 			TxtOrtalama.Text = ortalama.ToString();
 		}
+
+		private void BtnListele_Click(object sender, EventArgs e)
+		{
+			dataGridView1.DataSource = db.View_1.ToList();
+		}
 	}
 }
