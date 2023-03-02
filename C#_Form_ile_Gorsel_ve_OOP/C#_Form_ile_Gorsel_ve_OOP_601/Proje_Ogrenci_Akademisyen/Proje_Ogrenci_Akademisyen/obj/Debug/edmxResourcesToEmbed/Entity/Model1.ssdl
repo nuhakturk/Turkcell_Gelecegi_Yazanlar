@@ -64,12 +64,12 @@ warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary k
     <Property Name="OgrAd" Type="nvarchar" MaxLength="20" />
     <Property Name="OgrSoyad" Type="nvarchar" MaxLength="25" />
     <Property Name="DersAd" Type="nvarchar" MaxLength="50" />
-    <Property Name="Sinav1" Type="tinyint" />
-    <Property Name="Sinav2" Type="tinyint" />
-    <Property Name="Sinav3" Type="tinyint" />
-    <Property Name="Quiz1" Type="tinyint" />
-    <Property Name="Quiz2" Type="tinyint" />
-    <Property Name="Proje" Type="tinyint" />
+    <Property Name="Sinav1" Type="int" />
+    <Property Name="Sinav2" Type="int" />
+    <Property Name="Sinav3" Type="int" />
+    <Property Name="Quiz1" Type="int" />
+    <Property Name="Quiz2" Type="int" />
+    <Property Name="Proje" Type="int" />
     <Property Name="Ortalama" Type="decimal" Precision="5" Scale="2" />
   </EntityType>
   <Association Name="FK_TblNotlar_TblDersler">
@@ -109,6 +109,7 @@ warning 6002: The table/view 'OgrenciSinav.dbo.View_1' does not have a primary k
     </ReferentialConstraint>
   </Association>
   <Function Name="Notlar" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="Notlar2" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="OgrenciSinavModelStoreContainer">
     <EntitySet Name="TblAkademisyen" EntityType="Self.TblAkademisyen" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="TblBolum" EntityType="Self.TblBolum" Schema="dbo" store:Type="Tables" />

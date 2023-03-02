@@ -93,5 +93,21 @@
         </ComplexTypeMapping>
       </ResultMapping>
     </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Notlar2" FunctionName="OgrenciSinavModel.Store.Notlar2">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="OgrenciSinavModel.Notlar2_Result">
+          <ScalarProperty Name="Not_ID" ColumnName="Not ID" />
+          <ScalarProperty Name="Ders_Adı" ColumnName="Ders Adı" />
+          <ScalarProperty Name="Öğrenci" ColumnName="Öğrenci" />
+          <ScalarProperty Name="Sinav1" ColumnName="Sinav1" />
+          <ScalarProperty Name="Sinav2" ColumnName="Sinav2" />
+          <ScalarProperty Name="Sinav3" ColumnName="Sinav3" />
+          <ScalarProperty Name="Quiz1" ColumnName="Quiz1" />
+          <ScalarProperty Name="Quiz2" ColumnName="Quiz2" />
+          <ScalarProperty Name="Proje" ColumnName="Proje" />
+          <ScalarProperty Name="Ortalama" ColumnName="Ortalama" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
   </EntityContainerMapping>
 </Mapping>

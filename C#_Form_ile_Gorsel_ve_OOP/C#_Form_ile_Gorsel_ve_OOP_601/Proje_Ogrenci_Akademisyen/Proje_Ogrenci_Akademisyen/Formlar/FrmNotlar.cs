@@ -60,7 +60,7 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 		private void BtnListele_Click(object sender, EventArgs e)
 		{
 			//dataGridView1.DataSource = db.View_1.ToList();
-			dataGridView1.DataSource = db.Notlar();
+			dataGridView1.DataSource = db.Notlar2();
 		}
 	}
 }

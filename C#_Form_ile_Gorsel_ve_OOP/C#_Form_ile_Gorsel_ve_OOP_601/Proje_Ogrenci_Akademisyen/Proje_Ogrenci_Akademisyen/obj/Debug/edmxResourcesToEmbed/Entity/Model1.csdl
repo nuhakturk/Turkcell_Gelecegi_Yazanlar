@@ -32,12 +32,12 @@
       <PropertyRef Name="NotID" />
     </Key>
     <Property Name="NotID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Sinav1" Type="Byte" />
-    <Property Name="Sinav2" Type="Byte" />
-    <Property Name="Sinav3" Type="Byte" />
-    <Property Name="Quiz1" Type="Byte" />
-    <Property Name="Quiz2" Type="Byte" />
-    <Property Name="Proje" Type="Byte" />
+    <Property Name="Sinav1" Type="Int32" />
+    <Property Name="Sinav2" Type="Int32" />
+    <Property Name="Sinav3" Type="Int32" />
+    <Property Name="Quiz1" Type="Int32" />
+    <Property Name="Quiz2" Type="Int32" />
+    <Property Name="Proje" Type="Int32" />
     <Property Name="Ders" Type="Int32" />
     <Property Name="Ogrenci" Type="Int32" />
     <NavigationProperty Name="TblDersler" Relationship="Self.FK_TblNotlar_TblDersler" FromRole="TblNotlar" ToRole="TblDersler" />
@@ -116,6 +116,7 @@
     </AssociationSet>
     <EntitySet Name="View_1" EntityType="OgrenciSinavModel.View_1" />
     <FunctionImport Name="Notlar" ReturnType="Collection(OgrenciSinavModel.Notlar_Result)" />
+    <FunctionImport Name="Notlar2" ReturnType="Collection(OgrenciSinavModel.Notlar2_Result)" />
   </EntityContainer>
   <EntityType Name="View_1">
     <Key>
@@ -143,6 +144,18 @@
     <Property Type="Byte" Name="Quiz1" Nullable="true" />
     <Property Type="Byte" Name="Quiz2" Nullable="true" />
     <Property Type="Byte" Name="Proje" Nullable="true" />
+    <Property Type="Decimal" Name="Ortalama" Nullable="true" Precision="5" Scale="2" />
+  </ComplexType>
+  <ComplexType Name="Notlar2_Result">
+    <Property Type="Int32" Name="Not_ID" Nullable="false" />
+    <Property Type="String" Name="Ders_Adı" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="Öğrenci" Nullable="true" MaxLength="46" />
+    <Property Type="Int32" Name="Sinav1" Nullable="true" />
+    <Property Type="Int32" Name="Sinav2" Nullable="true" />
+    <Property Type="Int32" Name="Sinav3" Nullable="true" />
+    <Property Type="Int32" Name="Quiz1" Nullable="true" />
+    <Property Type="Int32" Name="Quiz2" Nullable="true" />
+    <Property Type="Int32" Name="Proje" Nullable="true" />
     <Property Type="Decimal" Name="Ortalama" Nullable="true" Precision="5" Scale="2" />
   </ComplexType>
 </Schema>

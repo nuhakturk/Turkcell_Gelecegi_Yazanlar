@@ -38,5 +38,10 @@ namespace Proje_Ogrenci_Akademisyen.Entity
         {
             return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Notlar_Result>("Notlar");
         }
+    
+        public virtual ObjectResult<Notlar2_Result> Notlar2()
+        {
+            return ((IObjectContextAdapter)this).ObjectContext.ExecuteFunction<Notlar2_Result>("Notlar2");
+        }
     }
 }
