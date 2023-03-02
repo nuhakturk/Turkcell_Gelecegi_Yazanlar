@@ -61,7 +61,7 @@
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.label12 = new System.Windows.Forms.Label();
 			this.label13 = new System.Windows.Forms.Label();
-			this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+			this.TxtNumara = new System.Windows.Forms.MaskedTextBox();
 			this.BtnAra = new System.Windows.Forms.Button();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -416,7 +416,7 @@
 			// groupBox3
 			// 
 			this.groupBox3.Controls.Add(this.BtnAra);
-			this.groupBox3.Controls.Add(this.maskedTextBox1);
+			this.groupBox3.Controls.Add(this.TxtNumara);
 			this.groupBox3.Controls.Add(this.label13);
 			this.groupBox3.Controls.Add(this.comboBox2);
 			this.groupBox3.Controls.Add(this.label12);
@@ -461,16 +461,16 @@
 			this.label13.TabIndex = 24;
 			this.label13.Text = "Öğrenci Numarası:";
 			// 
-			// maskedTextBox1
+			// TxtNumara
 			// 
-			this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.maskedTextBox1.ForeColor = System.Drawing.Color.White;
-			this.maskedTextBox1.Location = new System.Drawing.Point(508, 27);
-			this.maskedTextBox1.Mask = "00000";
-			this.maskedTextBox1.Name = "maskedTextBox1";
-			this.maskedTextBox1.Size = new System.Drawing.Size(189, 28);
-			this.maskedTextBox1.TabIndex = 25;
-			this.maskedTextBox1.ValidatingType = typeof(int);
+			this.TxtNumara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtNumara.ForeColor = System.Drawing.Color.White;
+			this.TxtNumara.Location = new System.Drawing.Point(508, 27);
+			this.TxtNumara.Mask = "00000";
+			this.TxtNumara.Name = "TxtNumara";
+			this.TxtNumara.Size = new System.Drawing.Size(189, 28);
+			this.TxtNumara.TabIndex = 25;
+			this.TxtNumara.ValidatingType = typeof(int);
 			// 
 			// BtnAra
 			// 
@@ -485,6 +485,7 @@
 			this.BtnAra.TabIndex = 23;
 			this.BtnAra.Text = "Ara";
 			this.BtnAra.UseVisualStyleBackColor = false;
+			this.BtnAra.Click += new System.EventHandler(this.BtnAra_Click);
 			// 
 			// FrmNotlar
 			// 
@@ -545,7 +546,7 @@
 		private System.Windows.Forms.TextBox TxtOrtalama;
 		private System.Windows.Forms.Label label11;
 		private System.Windows.Forms.Button BtnAra;
-		private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+		private System.Windows.Forms.MaskedTextBox TxtNumara;
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.ComboBox comboBox2;
 		private System.Windows.Forms.Label label12;
