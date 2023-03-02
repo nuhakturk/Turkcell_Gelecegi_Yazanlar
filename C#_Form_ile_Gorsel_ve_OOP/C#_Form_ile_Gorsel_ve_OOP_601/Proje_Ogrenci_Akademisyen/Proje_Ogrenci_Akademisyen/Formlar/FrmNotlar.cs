@@ -72,11 +72,20 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 						   select new
 						   {
 							   x.NotID,
+							   x.TblDersler.DersAd,
+							   Öğrenci_Adı = x.TblOgrenci.OgrAd + " " + x.TblOgrenci.OgrSoyad,
 							   x.Sinav1,
-							   x.Ders,
-							   x.TblDersler.DersAd
+							   x.Sinav2,
+							   x.Sinav3,
+							   x.Quiz1,
+							   x.Quiz2,
+							   x.Proje,
+							   x.Ortalama,
+							   x.Ders
 						   };
-			dataGridView1.DataSource = degerler.Where(y => y.Ders == 3).ToList();
+			int d = int.Parse(comboBox2.SelectedValue.ToString());
+			dataGridView1.DataSource = degerler.Where(y => y.Ders == d).ToList();
+			dataGridView1.Columns["Ders"].Visible = false;
 		}
 	}
 }
