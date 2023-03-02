@@ -58,17 +58,23 @@
 			this.TxtOgrenci = new System.Windows.Forms.TextBox();
 			this.label10 = new System.Windows.Forms.Label();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.comboBox2 = new System.Windows.Forms.ComboBox();
+			this.label12 = new System.Windows.Forms.Label();
+			this.label13 = new System.Windows.Forms.Label();
+			this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+			this.BtnAra = new System.Windows.Forms.Button();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox1.SuspendLayout();
+			this.groupBox3.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// groupBox2
 			// 
 			this.groupBox2.Controls.Add(this.dataGridView1);
-			this.groupBox2.Location = new System.Drawing.Point(12, 146);
+			this.groupBox2.Location = new System.Drawing.Point(12, 92);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(834, 473);
+			this.groupBox2.Size = new System.Drawing.Size(834, 527);
 			this.groupBox2.TabIndex = 8;
 			this.groupBox2.TabStop = false;
 			// 
@@ -82,7 +88,7 @@
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridView1.Size = new System.Drawing.Size(828, 446);
+			this.dataGridView1.Size = new System.Drawing.Size(828, 500);
 			this.dataGridView1.TabIndex = 0;
 			// 
 			// BtnListele
@@ -409,11 +415,75 @@
 			// 
 			// groupBox3
 			// 
+			this.groupBox3.Controls.Add(this.BtnAra);
+			this.groupBox3.Controls.Add(this.maskedTextBox1);
+			this.groupBox3.Controls.Add(this.label13);
+			this.groupBox3.Controls.Add(this.comboBox2);
+			this.groupBox3.Controls.Add(this.label12);
 			this.groupBox3.Location = new System.Drawing.Point(12, 12);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(834, 137);
+			this.groupBox3.Size = new System.Drawing.Size(834, 74);
 			this.groupBox3.TabIndex = 9;
 			this.groupBox3.TabStop = false;
+			// 
+			// comboBox2
+			// 
+			this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.comboBox2.ForeColor = System.Drawing.Color.White;
+			this.comboBox2.FormattingEnabled = true;
+			this.comboBox2.Items.AddRange(new object[] {
+            ""});
+			this.comboBox2.Location = new System.Drawing.Point(123, 27);
+			this.comboBox2.Name = "comboBox2";
+			this.comboBox2.Size = new System.Drawing.Size(189, 30);
+			this.comboBox2.TabIndex = 23;
+			// 
+			// label12
+			// 
+			this.label12.AutoSize = true;
+			this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.label12.ForeColor = System.Drawing.Color.White;
+			this.label12.Location = new System.Drawing.Point(13, 30);
+			this.label12.Name = "label12";
+			this.label12.Size = new System.Drawing.Size(114, 22);
+			this.label12.TabIndex = 24;
+			this.label12.Text = "Ders Seçin:";
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.label13.ForeColor = System.Drawing.Color.White;
+			this.label13.Location = new System.Drawing.Point(336, 30);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(176, 22);
+			this.label13.TabIndex = 24;
+			this.label13.Text = "Öğrenci Numarası:";
+			// 
+			// maskedTextBox1
+			// 
+			this.maskedTextBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.maskedTextBox1.ForeColor = System.Drawing.Color.White;
+			this.maskedTextBox1.Location = new System.Drawing.Point(508, 27);
+			this.maskedTextBox1.Mask = "00000";
+			this.maskedTextBox1.Name = "maskedTextBox1";
+			this.maskedTextBox1.Size = new System.Drawing.Size(189, 28);
+			this.maskedTextBox1.TabIndex = 25;
+			this.maskedTextBox1.ValidatingType = typeof(int);
+			// 
+			// BtnAra
+			// 
+			this.BtnAra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnAra.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnAra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnAra.ForeColor = System.Drawing.Color.White;
+			this.BtnAra.Location = new System.Drawing.Point(703, 27);
+			this.BtnAra.Name = "BtnAra";
+			this.BtnAra.Size = new System.Drawing.Size(120, 28);
+			this.BtnAra.TabIndex = 23;
+			this.BtnAra.Text = "Ara";
+			this.BtnAra.UseVisualStyleBackColor = false;
 			// 
 			// FrmNotlar
 			// 
@@ -435,6 +505,8 @@
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
+			this.groupBox3.ResumeLayout(false);
+			this.groupBox3.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -471,5 +543,10 @@
 		private System.Windows.Forms.TextBox TxtSinav3;
 		private System.Windows.Forms.TextBox TxtOrtalama;
 		private System.Windows.Forms.Label label11;
+		private System.Windows.Forms.Button BtnAra;
+		private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+		private System.Windows.Forms.Label label13;
+		private System.Windows.Forms.ComboBox comboBox2;
+		private System.Windows.Forms.Label label12;
 	}
 }
