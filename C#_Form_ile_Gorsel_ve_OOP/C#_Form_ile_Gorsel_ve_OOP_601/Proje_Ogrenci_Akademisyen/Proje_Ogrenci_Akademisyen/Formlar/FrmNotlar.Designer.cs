@@ -63,6 +63,7 @@
 			this.label13 = new System.Windows.Forms.Label();
 			this.TxtNumara = new System.Windows.Forms.MaskedTextBox();
 			this.BtnAra = new System.Windows.Forms.Button();
+			this.BtnAra2 = new System.Windows.Forms.Button();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox1.SuspendLayout();
@@ -74,7 +75,7 @@
 			this.groupBox2.Controls.Add(this.dataGridView1);
 			this.groupBox2.Location = new System.Drawing.Point(12, 92);
 			this.groupBox2.Name = "groupBox2";
-			this.groupBox2.Size = new System.Drawing.Size(834, 527);
+			this.groupBox2.Size = new System.Drawing.Size(909, 527);
 			this.groupBox2.TabIndex = 8;
 			this.groupBox2.TabStop = false;
 			// 
@@ -88,7 +89,7 @@
 			this.dataGridView1.RowHeadersWidth = 51;
 			this.dataGridView1.RowTemplate.Height = 24;
 			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.dataGridView1.Size = new System.Drawing.Size(828, 500);
+			this.dataGridView1.Size = new System.Drawing.Size(903, 500);
 			this.dataGridView1.TabIndex = 0;
 			// 
 			// BtnListele
@@ -343,7 +344,7 @@
 			this.groupBox1.Controls.Add(this.TxtSinav1);
 			this.groupBox1.Controls.Add(this.BtnHesapla);
 			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.Location = new System.Drawing.Point(852, 12);
+			this.groupBox1.Location = new System.Drawing.Point(927, 12);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(434, 607);
 			this.groupBox1.TabIndex = 7;
@@ -415,6 +416,7 @@
 			// 
 			// groupBox3
 			// 
+			this.groupBox3.Controls.Add(this.BtnAra2);
 			this.groupBox3.Controls.Add(this.BtnAra);
 			this.groupBox3.Controls.Add(this.TxtNumara);
 			this.groupBox3.Controls.Add(this.label13);
@@ -422,7 +424,7 @@
 			this.groupBox3.Controls.Add(this.label12);
 			this.groupBox3.Location = new System.Drawing.Point(12, 12);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(834, 74);
+			this.groupBox3.Size = new System.Drawing.Size(909, 74);
 			this.groupBox3.TabIndex = 9;
 			this.groupBox3.TabStop = false;
 			// 
@@ -481,18 +483,33 @@
 			this.BtnAra.ForeColor = System.Drawing.Color.White;
 			this.BtnAra.Location = new System.Drawing.Point(703, 27);
 			this.BtnAra.Name = "BtnAra";
-			this.BtnAra.Size = new System.Drawing.Size(120, 28);
+			this.BtnAra.Size = new System.Drawing.Size(96, 28);
 			this.BtnAra.TabIndex = 23;
 			this.BtnAra.Text = "Ara";
 			this.BtnAra.UseVisualStyleBackColor = false;
 			this.BtnAra.Click += new System.EventHandler(this.BtnAra_Click);
+			// 
+			// BtnAra2
+			// 
+			this.BtnAra2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnAra2.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnAra2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnAra2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnAra2.ForeColor = System.Drawing.Color.White;
+			this.BtnAra2.Location = new System.Drawing.Point(805, 27);
+			this.BtnAra2.Name = "BtnAra2";
+			this.BtnAra2.Size = new System.Drawing.Size(96, 28);
+			this.BtnAra2.TabIndex = 26;
+			this.BtnAra2.Text = "Ara 2";
+			this.BtnAra2.UseVisualStyleBackColor = false;
+			this.BtnAra2.Click += new System.EventHandler(this.BtnAra2_Click);
 			// 
 			// FrmNotlar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.ClientSize = new System.Drawing.Size(1298, 631);
+			this.ClientSize = new System.Drawing.Size(1373, 631);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
@@ -550,5 +567,6 @@
 		private System.Windows.Forms.Label label13;
 		private System.Windows.Forms.ComboBox comboBox2;
 		private System.Windows.Forms.Label label12;
+		private System.Windows.Forms.Button BtnAra2;
 	}
 }
