@@ -25,6 +25,9 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			comboBox1.DisplayMember = "DersAd";
 			comboBox1.ValueMember = "DersID";
 			comboBox1.DataSource = db.TblDersler.ToList();
+			comboBox2.DisplayMember = "DersAd";
+			comboBox2.ValueMember = "DersID";
+			comboBox2.DataSource = db.TblDersler.ToList();
 		}
 
 		private void BtnEkle_Click(object sender, EventArgs e)
@@ -61,6 +64,19 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 		{
 			//dataGridView1.DataSource = db.View_1.ToList();
 			dataGridView1.DataSource = db.Notlar2();
+		}
+
+		private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+		{
+			var degerler = from x in db.TblNotlar
+						   select new
+						   {
+							   x.NotID,
+							   x.Sinav1,
+							   x.Ders,
+							   x.TblDersler.DersAd
+						   };
+			dataGridView1.DataSource = degerler.Where(y => y.Ders == 3).ToList();
 		}
 	}
 }
