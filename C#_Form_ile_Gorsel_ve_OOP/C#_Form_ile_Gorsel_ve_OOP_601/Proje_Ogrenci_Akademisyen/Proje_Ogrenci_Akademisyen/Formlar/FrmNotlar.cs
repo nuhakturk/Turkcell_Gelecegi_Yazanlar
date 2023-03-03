@@ -133,5 +133,23 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			dataGridView1.DataSource = notlar.Where(z => z.Ogrenci == deger).ToList();
 			dataGridView1.Columns["Ogrenci"].Visible = false;
 		}
+
+		private void BtnGuncelle_Click(object sender, EventArgs e)
+		{
+
+		}
+
+		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			TxtID.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+			TxtSinav1.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+			TxtSinav2.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+			TxtSinav3.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+			TxtQuiz1.Text = dataGridView1.Rows[e.RowIndex].Cells[6].Value.ToString();
+			TxtQuiz2.Text = dataGridView1.Rows[e.RowIndex].Cells[7].Value.ToString();
+			TxtProje.Text = dataGridView1.Rows[e.RowIndex].Cells[8].Value.ToString();
+			TxtOrtalama.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
+			//comboBox1.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
+		}
 	}
 }

@@ -58,12 +58,12 @@
 			this.TxtOgrenci = new System.Windows.Forms.TextBox();
 			this.label10 = new System.Windows.Forms.Label();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
+			this.BtnAra2 = new System.Windows.Forms.Button();
+			this.BtnAra = new System.Windows.Forms.Button();
+			this.TxtNumara = new System.Windows.Forms.MaskedTextBox();
+			this.label13 = new System.Windows.Forms.Label();
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.label12 = new System.Windows.Forms.Label();
-			this.label13 = new System.Windows.Forms.Label();
-			this.TxtNumara = new System.Windows.Forms.MaskedTextBox();
-			this.BtnAra = new System.Windows.Forms.Button();
-			this.BtnAra2 = new System.Windows.Forms.Button();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox1.SuspendLayout();
@@ -91,6 +91,7 @@
 			this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.dataGridView1.Size = new System.Drawing.Size(903, 500);
 			this.dataGridView1.TabIndex = 0;
+			this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
 			// 
 			// BtnListele
 			// 
@@ -155,6 +156,7 @@
 			this.BtnGuncelle.TabIndex = 13;
 			this.BtnGuncelle.Text = "Güncelle";
 			this.BtnGuncelle.UseVisualStyleBackColor = false;
+			this.BtnGuncelle.Click += new System.EventHandler(this.BtnGuncelle_Click);
 			// 
 			// label9
 			// 
@@ -428,6 +430,58 @@
 			this.groupBox3.TabIndex = 9;
 			this.groupBox3.TabStop = false;
 			// 
+			// BtnAra2
+			// 
+			this.BtnAra2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnAra2.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnAra2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnAra2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnAra2.ForeColor = System.Drawing.Color.White;
+			this.BtnAra2.Location = new System.Drawing.Point(805, 27);
+			this.BtnAra2.Name = "BtnAra2";
+			this.BtnAra2.Size = new System.Drawing.Size(96, 28);
+			this.BtnAra2.TabIndex = 26;
+			this.BtnAra2.Text = "Ara 2";
+			this.BtnAra2.UseVisualStyleBackColor = false;
+			this.BtnAra2.Click += new System.EventHandler(this.BtnAra2_Click);
+			// 
+			// BtnAra
+			// 
+			this.BtnAra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnAra.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnAra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnAra.ForeColor = System.Drawing.Color.White;
+			this.BtnAra.Location = new System.Drawing.Point(703, 27);
+			this.BtnAra.Name = "BtnAra";
+			this.BtnAra.Size = new System.Drawing.Size(96, 28);
+			this.BtnAra.TabIndex = 23;
+			this.BtnAra.Text = "Ara";
+			this.BtnAra.UseVisualStyleBackColor = false;
+			this.BtnAra.Click += new System.EventHandler(this.BtnAra_Click);
+			// 
+			// TxtNumara
+			// 
+			this.TxtNumara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtNumara.ForeColor = System.Drawing.Color.White;
+			this.TxtNumara.Location = new System.Drawing.Point(508, 27);
+			this.TxtNumara.Mask = "00000";
+			this.TxtNumara.Name = "TxtNumara";
+			this.TxtNumara.Size = new System.Drawing.Size(189, 28);
+			this.TxtNumara.TabIndex = 25;
+			this.TxtNumara.ValidatingType = typeof(int);
+			// 
+			// label13
+			// 
+			this.label13.AutoSize = true;
+			this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.label13.ForeColor = System.Drawing.Color.White;
+			this.label13.Location = new System.Drawing.Point(336, 30);
+			this.label13.Name = "label13";
+			this.label13.Size = new System.Drawing.Size(176, 22);
+			this.label13.TabIndex = 24;
+			this.label13.Text = "Öğrenci Numarası:";
+			// 
 			// comboBox2
 			// 
 			this.comboBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
@@ -451,58 +505,6 @@
 			this.label12.Size = new System.Drawing.Size(114, 22);
 			this.label12.TabIndex = 24;
 			this.label12.Text = "Ders Seçin:";
-			// 
-			// label13
-			// 
-			this.label13.AutoSize = true;
-			this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.label13.ForeColor = System.Drawing.Color.White;
-			this.label13.Location = new System.Drawing.Point(336, 30);
-			this.label13.Name = "label13";
-			this.label13.Size = new System.Drawing.Size(176, 22);
-			this.label13.TabIndex = 24;
-			this.label13.Text = "Öğrenci Numarası:";
-			// 
-			// TxtNumara
-			// 
-			this.TxtNumara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.TxtNumara.ForeColor = System.Drawing.Color.White;
-			this.TxtNumara.Location = new System.Drawing.Point(508, 27);
-			this.TxtNumara.Mask = "00000";
-			this.TxtNumara.Name = "TxtNumara";
-			this.TxtNumara.Size = new System.Drawing.Size(189, 28);
-			this.TxtNumara.TabIndex = 25;
-			this.TxtNumara.ValidatingType = typeof(int);
-			// 
-			// BtnAra
-			// 
-			this.BtnAra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
-			this.BtnAra.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.BtnAra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.BtnAra.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.BtnAra.ForeColor = System.Drawing.Color.White;
-			this.BtnAra.Location = new System.Drawing.Point(703, 27);
-			this.BtnAra.Name = "BtnAra";
-			this.BtnAra.Size = new System.Drawing.Size(96, 28);
-			this.BtnAra.TabIndex = 23;
-			this.BtnAra.Text = "Ara";
-			this.BtnAra.UseVisualStyleBackColor = false;
-			this.BtnAra.Click += new System.EventHandler(this.BtnAra_Click);
-			// 
-			// BtnAra2
-			// 
-			this.BtnAra2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
-			this.BtnAra2.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.BtnAra2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.BtnAra2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.BtnAra2.ForeColor = System.Drawing.Color.White;
-			this.BtnAra2.Location = new System.Drawing.Point(805, 27);
-			this.BtnAra2.Name = "BtnAra2";
-			this.BtnAra2.Size = new System.Drawing.Size(96, 28);
-			this.BtnAra2.TabIndex = 26;
-			this.BtnAra2.Text = "Ara 2";
-			this.BtnAra2.UseVisualStyleBackColor = false;
-			this.BtnAra2.Click += new System.EventHandler(this.BtnAra2_Click);
 			// 
 			// FrmNotlar
 			// 
