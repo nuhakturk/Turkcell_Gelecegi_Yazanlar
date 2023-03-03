@@ -52,5 +52,11 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			FrmDersListesi fr = new FrmDersListesi();
 			fr.Show();
 		}
+
+		private void PnlYeniDers_Click(object sender, EventArgs e)
+		{
+			FrmYeniDers fr = new FrmYeniDers();
+			fr.Show();
+		}
 	}
 }
