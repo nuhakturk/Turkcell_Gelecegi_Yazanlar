@@ -40,5 +40,25 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			}
 			baglanti.Close();
 		}
+
+		private void TxtNumara_TextChanged(object sender, EventArgs e)
+		{
+			if(TxtNumara.Text == "00000" && TxtSifre.Text == "000")
+			{
+				FrmHarita frm = new FrmHarita();
+				frm.Show();
+				this.Hide();
+			}
+		}
+
+		private void TxtSifre_TextChanged(object sender, EventArgs e)
+		{
+			if (TxtSifre.Text == "000" && TxtNumara.Text == "00000")
+			{
+				FrmHarita frm = new FrmHarita();
+				frm.Show();
+				this.Hide();
+			}
+		}
 	}
 }

@@ -49,6 +49,7 @@
 			this.TxtNumara.Size = new System.Drawing.Size(249, 28);
 			this.TxtNumara.TabIndex = 0;
 			this.TxtNumara.ValidatingType = typeof(int);
+			this.TxtNumara.TextChanged += new System.EventHandler(this.TxtNumara_TextChanged);
 			// 
 			// label3
 			// 
@@ -81,6 +82,7 @@
 			this.TxtSifre.Size = new System.Drawing.Size(249, 28);
 			this.TxtSifre.TabIndex = 1;
 			this.TxtSifre.UseSystemPasswordChar = true;
+			this.TxtSifre.TextChanged += new System.EventHandler(this.TxtSifre_TextChanged);
 			// 
 			// BtnGirisYap
 			// 
