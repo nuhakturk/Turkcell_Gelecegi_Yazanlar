@@ -18,6 +18,7 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			InitializeComponent();
 		}
 
+		int ogrenciID;
 		public string numara;
 		OgrenciSinavEntities db = new OgrenciSinavEntities();
 
@@ -31,7 +32,7 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			//TxtResim.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrResim).FirstOrDefault();
 			TxtBolum.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrBolum).FirstOrDefault().ToString();
 
-			int ogrenciID = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrID).FirstOrDefault();
+			ogrenciID = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrID).FirstOrDefault();
 
 			var sinavNotlari = (from x in db.TblNotlar
 							   select new
@@ -51,7 +52,17 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 
 		private void BtnGuncelle_Click(object sender, EventArgs e)
 		{
-
+			if (TxtYeniSifre.Text == TxtYeniSifreTekrar.Text)
+			{
+				var deger = db.TblOgrenci.Find(ogrenciID);
+				deger.OgrSifre = TxtYeniSifre.Text;
+				db.SaveChanges();
+				MessageBox.Show("Şifre değiştirme işlemi başarılı bir şekilde gerçekleşti");
+			}
+			else
+			{
+				MessageBox.Show("Girdiğiniz yeni şifreler birbiri ile uyuşmuyor!");
+			}
 		}
 	}
 }
