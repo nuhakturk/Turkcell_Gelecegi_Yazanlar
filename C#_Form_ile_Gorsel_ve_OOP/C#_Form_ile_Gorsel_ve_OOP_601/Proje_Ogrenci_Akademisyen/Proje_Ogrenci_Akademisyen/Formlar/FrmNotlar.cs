@@ -136,7 +136,17 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 
 		private void BtnGuncelle_Click(object sender, EventArgs e)
 		{
-
+			int id = int.Parse(TxtID.Text);
+			var x = db.TblNotlar.Find(id);
+			x.Sinav1 = int.Parse(TxtSinav1.Text);
+			x.Sinav2 = int.Parse(TxtSinav2.Text);
+			x.Sinav3 = int.Parse(TxtSinav3.Text);
+			x.Quiz1 = int.Parse(TxtQuiz1.Text);
+			x.Quiz2 = int.Parse(TxtQuiz2.Text);
+			x.Proje = int.Parse(TxtProje.Text);
+			x.Ortalama = int.Parse(TxtOrtalama.Text);
+			db.SaveChanges();
+			MessageBox.Show("Öğrenci notları başarılı bir şekilde güncellendi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 		}
 
 		private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
