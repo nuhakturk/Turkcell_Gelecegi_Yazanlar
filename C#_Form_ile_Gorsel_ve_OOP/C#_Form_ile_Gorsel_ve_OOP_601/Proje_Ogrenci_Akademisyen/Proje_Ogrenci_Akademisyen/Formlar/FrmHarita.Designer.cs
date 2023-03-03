@@ -38,7 +38,7 @@
 			this.label4 = new System.Windows.Forms.Label();
 			this.PnlOgrenciKayit = new System.Windows.Forms.Panel();
 			this.label5 = new System.Windows.Forms.Label();
-			this.panel6 = new System.Windows.Forms.Panel();
+			this.PnlDersListesi = new System.Windows.Forms.Panel();
 			this.label6 = new System.Windows.Forms.Label();
 			this.panel7 = new System.Windows.Forms.Panel();
 			this.label7 = new System.Windows.Forms.Label();
@@ -51,7 +51,7 @@
 			this.PnlNotlar.SuspendLayout();
 			this.PnlOgrenci.SuspendLayout();
 			this.PnlOgrenciKayit.SuspendLayout();
-			this.panel6.SuspendLayout();
+			this.PnlDersListesi.SuspendLayout();
 			this.panel7.SuspendLayout();
 			this.panel8.SuspendLayout();
 			this.panel9.SuspendLayout();
@@ -167,15 +167,16 @@
 			this.label5.TabIndex = 0;
 			this.label5.Text = "Öğrenci Kayıt";
 			// 
-			// panel6
+			// PnlDersListesi
 			// 
-			this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(137)))), ((int)(((byte)(167)))));
-			this.panel6.Controls.Add(this.label6);
-			this.panel6.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.panel6.Location = new System.Drawing.Point(424, 118);
-			this.panel6.Name = "panel6";
-			this.panel6.Size = new System.Drawing.Size(200, 100);
-			this.panel6.TabIndex = 3;
+			this.PnlDersListesi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(137)))), ((int)(((byte)(167)))));
+			this.PnlDersListesi.Controls.Add(this.label6);
+			this.PnlDersListesi.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.PnlDersListesi.Location = new System.Drawing.Point(424, 118);
+			this.PnlDersListesi.Name = "PnlDersListesi";
+			this.PnlDersListesi.Size = new System.Drawing.Size(200, 100);
+			this.PnlDersListesi.TabIndex = 3;
+			this.PnlDersListesi.Click += new System.EventHandler(this.PnlDersListesi_Click);
 			// 
 			// label6
 			// 
@@ -259,7 +260,7 @@
 			this.Controls.Add(this.panel9);
 			this.Controls.Add(this.panel8);
 			this.Controls.Add(this.panel7);
-			this.Controls.Add(this.panel6);
+			this.Controls.Add(this.PnlDersListesi);
 			this.Controls.Add(this.PnlOgrenciKayit);
 			this.Controls.Add(this.PnlOgrenci);
 			this.Controls.Add(this.PnlNotlar);
@@ -281,8 +282,8 @@
 			this.PnlOgrenci.PerformLayout();
 			this.PnlOgrenciKayit.ResumeLayout(false);
 			this.PnlOgrenciKayit.PerformLayout();
-			this.panel6.ResumeLayout(false);
-			this.panel6.PerformLayout();
+			this.PnlDersListesi.ResumeLayout(false);
+			this.PnlDersListesi.PerformLayout();
 			this.panel7.ResumeLayout(false);
 			this.panel7.PerformLayout();
 			this.panel8.ResumeLayout(false);
@@ -305,7 +306,7 @@
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.Panel PnlOgrenciKayit;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.Panel panel6;
+		private System.Windows.Forms.Panel PnlDersListesi;
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Panel panel7;
 		private System.Windows.Forms.Label label7;

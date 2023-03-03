@@ -46,5 +46,11 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			FrmOgrenciKayit fr = new FrmOgrenciKayit();
 			fr.Show();
 		}
+
+		private void PnlDersListesi_Click(object sender, EventArgs e)
+		{
+			FrmDersListesi fr = new FrmDersListesi();
+			fr.Show();
+		}
 	}
 }
