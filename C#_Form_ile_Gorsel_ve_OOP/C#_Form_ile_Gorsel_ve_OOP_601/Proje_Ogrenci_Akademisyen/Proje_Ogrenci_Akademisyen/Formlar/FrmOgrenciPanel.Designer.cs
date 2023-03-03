@@ -32,7 +32,6 @@
 			this.TxtAd = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.TxtSoyad = new System.Windows.Forms.TextBox();
-			this.label3 = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.TxtSifre = new System.Windows.Forms.TextBox();
 			this.label6 = new System.Windows.Forms.Label();
@@ -45,11 +44,10 @@
 			this.BtnGuncelle = new System.Windows.Forms.Button();
 			this.BtnResimSec = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
-			this.TxtID = new System.Windows.Forms.TextBox();
-			this.TxtNumara = new System.Windows.Forms.MaskedTextBox();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
+			this.TxtNumara = new System.Windows.Forms.TextBox();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox2.SuspendLayout();
@@ -95,23 +93,12 @@
 			this.TxtSoyad.Size = new System.Drawing.Size(249, 28);
 			this.TxtSoyad.TabIndex = 2;
 			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.label3.ForeColor = System.Drawing.Color.White;
-			this.label3.Location = new System.Drawing.Point(42, 171);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(85, 22);
-			this.label3.TabIndex = 5;
-			this.label3.Text = "Numara:";
-			// 
 			// label4
 			// 
 			this.label4.AutoSize = true;
 			this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label4.ForeColor = System.Drawing.Color.White;
-			this.label4.Location = new System.Drawing.Point(69, 204);
+			this.label4.Location = new System.Drawing.Point(69, 170);
 			this.label4.Name = "label4";
 			this.label4.Size = new System.Drawing.Size(58, 22);
 			this.label4.TabIndex = 7;
@@ -121,7 +108,7 @@
 			// 
 			this.TxtSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
 			this.TxtSifre.ForeColor = System.Drawing.Color.White;
-			this.TxtSifre.Location = new System.Drawing.Point(130, 202);
+			this.TxtSifre.Location = new System.Drawing.Point(130, 168);
 			this.TxtSifre.Name = "TxtSifre";
 			this.TxtSifre.Size = new System.Drawing.Size(249, 28);
 			this.TxtSifre.TabIndex = 4;
@@ -131,7 +118,7 @@
 			this.label6.AutoSize = true;
 			this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label6.ForeColor = System.Drawing.Color.White;
-			this.label6.Location = new System.Drawing.Point(75, 239);
+			this.label6.Location = new System.Drawing.Point(75, 205);
 			this.label6.Name = "label6";
 			this.label6.Size = new System.Drawing.Size(52, 22);
 			this.label6.TabIndex = 11;
@@ -141,7 +128,7 @@
 			// 
 			this.TxtMail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
 			this.TxtMail.ForeColor = System.Drawing.Color.White;
-			this.TxtMail.Location = new System.Drawing.Point(130, 236);
+			this.TxtMail.Location = new System.Drawing.Point(130, 202);
 			this.TxtMail.Name = "TxtMail";
 			this.TxtMail.Size = new System.Drawing.Size(249, 28);
 			this.TxtMail.TabIndex = 5;
@@ -151,7 +138,7 @@
 			this.label7.AutoSize = true;
 			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label7.ForeColor = System.Drawing.Color.White;
-			this.label7.Location = new System.Drawing.Point(56, 274);
+			this.label7.Location = new System.Drawing.Point(56, 240);
 			this.label7.Name = "label7";
 			this.label7.Size = new System.Drawing.Size(71, 22);
 			this.label7.TabIndex = 13;
@@ -161,7 +148,7 @@
 			// 
 			this.TxtResim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
 			this.TxtResim.ForeColor = System.Drawing.Color.White;
-			this.TxtResim.Location = new System.Drawing.Point(130, 270);
+			this.TxtResim.Location = new System.Drawing.Point(130, 236);
 			this.TxtResim.Name = "TxtResim";
 			this.TxtResim.Size = new System.Drawing.Size(249, 28);
 			this.TxtResim.TabIndex = 6;
@@ -171,7 +158,7 @@
 			this.label8.AutoSize = true;
 			this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label8.ForeColor = System.Drawing.Color.White;
-			this.label8.Location = new System.Drawing.Point(56, 308);
+			this.label8.Location = new System.Drawing.Point(56, 274);
 			this.label8.Name = "label8";
 			this.label8.Size = new System.Drawing.Size(71, 22);
 			this.label8.TabIndex = 15;
@@ -184,7 +171,7 @@
 			this.comboBox1.FormattingEnabled = true;
 			this.comboBox1.Items.AddRange(new object[] {
             ""});
-			this.comboBox1.Location = new System.Drawing.Point(130, 305);
+			this.comboBox1.Location = new System.Drawing.Point(130, 271);
 			this.comboBox1.Name = "comboBox1";
 			this.comboBox1.Size = new System.Drawing.Size(249, 30);
 			this.comboBox1.TabIndex = 8;
@@ -207,7 +194,7 @@
 			this.BtnGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.BtnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnGuncelle.ForeColor = System.Drawing.Color.White;
-			this.BtnGuncelle.Location = new System.Drawing.Point(142, 353);
+			this.BtnGuncelle.Location = new System.Drawing.Point(142, 319);
 			this.BtnGuncelle.Name = "BtnGuncelle";
 			this.BtnGuncelle.Size = new System.Drawing.Size(223, 37);
 			this.BtnGuncelle.TabIndex = 10;
@@ -221,7 +208,7 @@
 			this.BtnResimSec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.BtnResimSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.BtnResimSec.ForeColor = System.Drawing.Color.White;
-			this.BtnResimSec.Location = new System.Drawing.Point(385, 269);
+			this.BtnResimSec.Location = new System.Drawing.Point(385, 235);
 			this.BtnResimSec.Name = "BtnResimSec";
 			this.BtnResimSec.Size = new System.Drawing.Size(30, 26);
 			this.BtnResimSec.TabIndex = 7;
@@ -233,37 +220,15 @@
 			this.label5.AutoSize = true;
 			this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label5.ForeColor = System.Drawing.Color.White;
-			this.label5.Location = new System.Drawing.Point(92, 69);
+			this.label5.Location = new System.Drawing.Point(42, 69);
 			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(35, 22);
+			this.label5.Size = new System.Drawing.Size(85, 22);
 			this.label5.TabIndex = 9;
-			this.label5.Text = "ID:";
-			// 
-			// TxtID
-			// 
-			this.TxtID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.TxtID.Enabled = false;
-			this.TxtID.ForeColor = System.Drawing.Color.White;
-			this.TxtID.Location = new System.Drawing.Point(130, 66);
-			this.TxtID.Name = "TxtID";
-			this.TxtID.Size = new System.Drawing.Size(249, 28);
-			this.TxtID.TabIndex = 10;
-			// 
-			// TxtNumara
-			// 
-			this.TxtNumara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.TxtNumara.ForeColor = System.Drawing.Color.White;
-			this.TxtNumara.Location = new System.Drawing.Point(130, 168);
-			this.TxtNumara.Mask = "00000";
-			this.TxtNumara.Name = "TxtNumara";
-			this.TxtNumara.Size = new System.Drawing.Size(249, 28);
-			this.TxtNumara.TabIndex = 3;
-			this.TxtNumara.ValidatingType = typeof(int);
+			this.label5.Text = "Numara:";
 			// 
 			// groupBox1
 			// 
 			this.groupBox1.Controls.Add(this.TxtNumara);
-			this.groupBox1.Controls.Add(this.TxtID);
 			this.groupBox1.Controls.Add(this.label5);
 			this.groupBox1.Controls.Add(this.BtnResimSec);
 			this.groupBox1.Controls.Add(this.BtnGuncelle);
@@ -276,7 +241,6 @@
 			this.groupBox1.Controls.Add(this.label6);
 			this.groupBox1.Controls.Add(this.TxtSifre);
 			this.groupBox1.Controls.Add(this.label4);
-			this.groupBox1.Controls.Add(this.label3);
 			this.groupBox1.Controls.Add(this.TxtSoyad);
 			this.groupBox1.Controls.Add(this.label2);
 			this.groupBox1.Controls.Add(this.TxtAd);
@@ -309,6 +273,16 @@
 			this.groupBox2.TabIndex = 8;
 			this.groupBox2.TabStop = false;
 			// 
+			// TxtNumara
+			// 
+			this.TxtNumara.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtNumara.Enabled = false;
+			this.TxtNumara.ForeColor = System.Drawing.Color.White;
+			this.TxtNumara.Location = new System.Drawing.Point(130, 66);
+			this.TxtNumara.Name = "TxtNumara";
+			this.TxtNumara.Size = new System.Drawing.Size(249, 28);
+			this.TxtNumara.TabIndex = 10;
+			// 
 			// FrmOgrenciPanel
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -323,6 +297,7 @@
 			this.Name = "FrmOgrenciPanel";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmOgrenciPanel";
+			this.Load += new System.EventHandler(this.FrmOgrenciPanel_Load);
 			this.groupBox1.ResumeLayout(false);
 			this.groupBox1.PerformLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -337,7 +312,6 @@
 		private System.Windows.Forms.TextBox TxtAd;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.TextBox TxtSoyad;
-		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label4;
 		private System.Windows.Forms.TextBox TxtSifre;
 		private System.Windows.Forms.Label label6;
@@ -350,10 +324,9 @@
 		private System.Windows.Forms.Button BtnGuncelle;
 		private System.Windows.Forms.Button BtnResimSec;
 		private System.Windows.Forms.Label label5;
-		private System.Windows.Forms.TextBox TxtID;
-		private System.Windows.Forms.MaskedTextBox TxtNumara;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.GroupBox groupBox2;
+		private System.Windows.Forms.TextBox TxtNumara;
 	}
 }

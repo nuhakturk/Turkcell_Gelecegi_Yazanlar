@@ -30,6 +30,7 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			if(dr.Read())
 			{
 				FrmOgrenciPanel frm = new FrmOgrenciPanel();
+				frm.numara = TxtNumara.Text;
 				frm.Show();
 				this.Hide();
 			}

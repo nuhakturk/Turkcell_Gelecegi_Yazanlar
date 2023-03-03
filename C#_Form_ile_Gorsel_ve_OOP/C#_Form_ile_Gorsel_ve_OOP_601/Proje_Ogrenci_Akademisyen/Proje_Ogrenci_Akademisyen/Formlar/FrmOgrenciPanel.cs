@@ -16,5 +16,11 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 		{
 			InitializeComponent();
 		}
+
+		public string numara;
+		private void FrmOgrenciPanel_Load(object sender, EventArgs e)
+		{
+			TxtNumara.Text = numara;
+		}
 	}
 }
