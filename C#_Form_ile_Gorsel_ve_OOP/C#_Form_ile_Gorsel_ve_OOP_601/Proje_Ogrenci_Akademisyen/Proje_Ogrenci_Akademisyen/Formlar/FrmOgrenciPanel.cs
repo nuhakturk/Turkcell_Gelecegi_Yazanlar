@@ -31,7 +31,22 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			TxtResim.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrResim).FirstOrDefault();
 			TxtBolum.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrBolum).FirstOrDefault().ToString();
 
-			label3.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrID).FirstOrDefault().ToString();
+			int ogrenciID = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrID).FirstOrDefault();
+
+			var sinavNotlari = (from x in db.TblNotlar
+							   select new
+							   {
+								   x.TblDersler.DersAd,
+								   x.Sinav1,
+								   x.Sinav2,
+								   x.Sinav3,
+								   x.Quiz1,
+								   x.Quiz2,
+								   x.Proje,
+								   x.Ortalama,
+								   x.Ogrenci
+							   }).Where(x => x.Ogrenci == ogrenciID).ToList();
+			dataGridView1.DataSource = sinavNotlari;
 		}
 	}
 }
