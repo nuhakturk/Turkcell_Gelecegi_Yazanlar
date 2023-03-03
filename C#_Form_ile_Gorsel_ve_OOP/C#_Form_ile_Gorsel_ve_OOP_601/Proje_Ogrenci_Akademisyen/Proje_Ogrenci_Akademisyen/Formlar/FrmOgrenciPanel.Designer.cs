@@ -39,7 +39,6 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.TxtResim = new System.Windows.Forms.TextBox();
 			this.label8 = new System.Windows.Forms.Label();
-			this.comboBox1 = new System.Windows.Forms.ComboBox();
 			this.label9 = new System.Windows.Forms.Label();
 			this.BtnGuncelle = new System.Windows.Forms.Button();
 			this.BtnResimSec = new System.Windows.Forms.Button();
@@ -48,6 +47,7 @@
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.TxtNumara = new System.Windows.Forms.TextBox();
+			this.TxtBolum = new System.Windows.Forms.TextBox();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox2.SuspendLayout();
@@ -67,6 +67,7 @@
 			// TxtAd
 			// 
 			this.TxtAd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtAd.Enabled = false;
 			this.TxtAd.ForeColor = System.Drawing.Color.White;
 			this.TxtAd.Location = new System.Drawing.Point(130, 100);
 			this.TxtAd.Name = "TxtAd";
@@ -87,6 +88,7 @@
 			// TxtSoyad
 			// 
 			this.TxtSoyad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtSoyad.Enabled = false;
 			this.TxtSoyad.ForeColor = System.Drawing.Color.White;
 			this.TxtSoyad.Location = new System.Drawing.Point(130, 134);
 			this.TxtSoyad.Name = "TxtSoyad";
@@ -127,6 +129,7 @@
 			// TxtMail
 			// 
 			this.TxtMail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtMail.Enabled = false;
 			this.TxtMail.ForeColor = System.Drawing.Color.White;
 			this.TxtMail.Location = new System.Drawing.Point(130, 202);
 			this.TxtMail.Name = "TxtMail";
@@ -147,6 +150,7 @@
 			// TxtResim
 			// 
 			this.TxtResim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtResim.Enabled = false;
 			this.TxtResim.ForeColor = System.Drawing.Color.White;
 			this.TxtResim.Location = new System.Drawing.Point(130, 236);
 			this.TxtResim.Name = "TxtResim";
@@ -163,18 +167,6 @@
 			this.label8.Size = new System.Drawing.Size(71, 22);
 			this.label8.TabIndex = 15;
 			this.label8.Text = "Bölüm:";
-			// 
-			// comboBox1
-			// 
-			this.comboBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.comboBox1.ForeColor = System.Drawing.Color.White;
-			this.comboBox1.FormattingEnabled = true;
-			this.comboBox1.Items.AddRange(new object[] {
-            ""});
-			this.comboBox1.Location = new System.Drawing.Point(130, 271);
-			this.comboBox1.Name = "comboBox1";
-			this.comboBox1.Size = new System.Drawing.Size(249, 30);
-			this.comboBox1.TabIndex = 8;
 			// 
 			// label9
 			// 
@@ -228,12 +220,12 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.TxtBolum);
 			this.groupBox1.Controls.Add(this.TxtNumara);
 			this.groupBox1.Controls.Add(this.label5);
 			this.groupBox1.Controls.Add(this.BtnResimSec);
 			this.groupBox1.Controls.Add(this.BtnGuncelle);
 			this.groupBox1.Controls.Add(this.label9);
-			this.groupBox1.Controls.Add(this.comboBox1);
 			this.groupBox1.Controls.Add(this.label8);
 			this.groupBox1.Controls.Add(this.TxtResim);
 			this.groupBox1.Controls.Add(this.label7);
@@ -283,6 +275,16 @@
 			this.TxtNumara.Size = new System.Drawing.Size(249, 28);
 			this.TxtNumara.TabIndex = 10;
 			// 
+			// TxtBolum
+			// 
+			this.TxtBolum.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtBolum.Enabled = false;
+			this.TxtBolum.ForeColor = System.Drawing.Color.White;
+			this.TxtBolum.Location = new System.Drawing.Point(130, 270);
+			this.TxtBolum.Name = "TxtBolum";
+			this.TxtBolum.Size = new System.Drawing.Size(249, 28);
+			this.TxtBolum.TabIndex = 18;
+			// 
 			// FrmOgrenciPanel
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -319,7 +321,6 @@
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.TextBox TxtResim;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.ComboBox comboBox1;
 		private System.Windows.Forms.Label label9;
 		private System.Windows.Forms.Button BtnGuncelle;
 		private System.Windows.Forms.Button BtnResimSec;
@@ -328,5 +329,6 @@
 		private System.Windows.Forms.DataGridView dataGridView1;
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.TextBox TxtNumara;
+		private System.Windows.Forms.TextBox TxtBolum;
 	}
 }
