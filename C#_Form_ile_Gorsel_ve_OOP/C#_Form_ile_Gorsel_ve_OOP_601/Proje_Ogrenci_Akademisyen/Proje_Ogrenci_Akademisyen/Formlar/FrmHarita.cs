@@ -34,5 +34,17 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			FrmNotlar fr = new FrmNotlar();
 			fr.Show();
 		}
+
+		private void PnlOgrenci_Click(object sender, EventArgs e)
+		{
+			FrmOgrenci fr = new FrmOgrenci();
+			fr.Show();
+		}
+
+		private void PnlOgrenciKayit_Click(object sender, EventArgs e)
+		{
+			FrmOgrenciKayit fr = new FrmOgrenciKayit();
+			fr.Show();
+		}
 	}
 }

@@ -105,5 +105,10 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			openFileDialog1.ShowDialog();
 			TxtResim.Text = openFileDialog1.FileName; //path + filename
 		}
+
+		private void BtnCikis_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 	}
 }

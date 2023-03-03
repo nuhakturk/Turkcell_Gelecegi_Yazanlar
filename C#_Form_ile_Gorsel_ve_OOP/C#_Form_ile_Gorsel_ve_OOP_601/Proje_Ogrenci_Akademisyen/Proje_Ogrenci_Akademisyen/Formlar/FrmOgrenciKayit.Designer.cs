@@ -29,6 +29,7 @@
 		private void InitializeComponent()
 		{
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.BtnResimSec = new System.Windows.Forms.Button();
 			this.TxtNumara = new System.Windows.Forms.MaskedTextBox();
 			this.label9 = new System.Windows.Forms.Label();
 			this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -47,8 +48,8 @@
 			this.TxtAd = new System.Windows.Forms.TextBox();
 			this.BtnKaydet = new System.Windows.Forms.Button();
 			this.label1 = new System.Windows.Forms.Label();
-			this.BtnResimSec = new System.Windows.Forms.Button();
 			this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+			this.BtnCikis = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -73,11 +74,26 @@
 			this.groupBox1.Controls.Add(this.TxtAd);
 			this.groupBox1.Controls.Add(this.BtnKaydet);
 			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.Location = new System.Drawing.Point(12, 12);
+			this.groupBox1.Location = new System.Drawing.Point(12, 40);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(446, 417);
 			this.groupBox1.TabIndex = 4;
 			this.groupBox1.TabStop = false;
+			// 
+			// BtnResimSec
+			// 
+			this.BtnResimSec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnResimSec.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnResimSec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnResimSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnResimSec.ForeColor = System.Drawing.Color.White;
+			this.BtnResimSec.Location = new System.Drawing.Point(408, 284);
+			this.BtnResimSec.Name = "BtnResimSec";
+			this.BtnResimSec.Size = new System.Drawing.Size(30, 26);
+			this.BtnResimSec.TabIndex = 20;
+			this.BtnResimSec.Text = "...";
+			this.BtnResimSec.UseVisualStyleBackColor = false;
+			this.BtnResimSec.Click += new System.EventHandler(this.BtnResimSec_Click);
 			// 
 			// TxtNumara
 			// 
@@ -95,7 +111,7 @@
 			this.label9.AutoSize = true;
 			this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.label9.ForeColor = System.Drawing.Color.White;
-			this.label9.Location = new System.Drawing.Point(126, 24);
+			this.label9.Location = new System.Drawing.Point(140, 24);
 			this.label9.Name = "label9";
 			this.label9.Size = new System.Drawing.Size(193, 22);
 			this.label9.TabIndex = 17;
@@ -268,24 +284,24 @@
 			this.label1.TabIndex = 0;
 			this.label1.Text = "Adı:";
 			// 
-			// BtnResimSec
-			// 
-			this.BtnResimSec.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
-			this.BtnResimSec.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.BtnResimSec.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.BtnResimSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.BtnResimSec.ForeColor = System.Drawing.Color.White;
-			this.BtnResimSec.Location = new System.Drawing.Point(408, 284);
-			this.BtnResimSec.Name = "BtnResimSec";
-			this.BtnResimSec.Size = new System.Drawing.Size(30, 26);
-			this.BtnResimSec.TabIndex = 20;
-			this.BtnResimSec.Text = "...";
-			this.BtnResimSec.UseVisualStyleBackColor = false;
-			this.BtnResimSec.Click += new System.EventHandler(this.BtnResimSec_Click);
-			// 
 			// openFileDialog1
 			// 
 			this.openFileDialog1.FileName = "openFileDialog1";
+			// 
+			// BtnCikis
+			// 
+			this.BtnCikis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.BtnCikis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.BtnCikis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+			this.BtnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnCikis.ForeColor = System.Drawing.Color.White;
+			this.BtnCikis.Location = new System.Drawing.Point(428, 10);
+			this.BtnCikis.Name = "BtnCikis";
+			this.BtnCikis.Size = new System.Drawing.Size(30, 30);
+			this.BtnCikis.TabIndex = 5;
+			this.BtnCikis.Text = "X";
+			this.BtnCikis.UseVisualStyleBackColor = false;
+			this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
 			// 
 			// FrmOgrenciKayit
 			// 
@@ -293,7 +309,8 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.ClientSize = new System.Drawing.Size(470, 441);
+			this.ClientSize = new System.Drawing.Size(470, 469);
+			this.Controls.Add(this.BtnCikis);
 			this.Controls.Add(this.groupBox1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -331,5 +348,6 @@
 		private System.Windows.Forms.MaskedTextBox TxtNumara;
 		private System.Windows.Forms.Button BtnResimSec;
 		private System.Windows.Forms.OpenFileDialog openFileDialog1;
+		private System.Windows.Forms.Button BtnCikis;
 	}
 }
