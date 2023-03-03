@@ -34,6 +34,7 @@
 			this.BtnKaydet = new System.Windows.Forms.Button();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
 			this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+			this.BtnCikis = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
 			this.SuspendLayout();
@@ -78,7 +79,7 @@
 			this.groupBox1.Controls.Add(this.TxtBolumAd);
 			this.groupBox1.Controls.Add(this.BtnKaydet);
 			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.Location = new System.Drawing.Point(12, 29);
+			this.groupBox1.Location = new System.Drawing.Point(12, 39);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(479, 186);
 			this.groupBox1.TabIndex = 3;
@@ -88,12 +89,28 @@
 			// 
 			this.errorProvider1.ContainerControl = this;
 			// 
+			// BtnCikis
+			// 
+			this.BtnCikis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.BtnCikis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.BtnCikis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+			this.BtnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnCikis.ForeColor = System.Drawing.Color.White;
+			this.BtnCikis.Location = new System.Drawing.Point(461, 7);
+			this.BtnCikis.Name = "BtnCikis";
+			this.BtnCikis.Size = new System.Drawing.Size(30, 30);
+			this.BtnCikis.TabIndex = 4;
+			this.BtnCikis.Text = "X";
+			this.BtnCikis.UseVisualStyleBackColor = false;
+			this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
+			// 
 			// FrmBolumler
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.ClientSize = new System.Drawing.Size(503, 227);
+			this.ClientSize = new System.Drawing.Size(503, 237);
+			this.Controls.Add(this.BtnCikis);
 			this.Controls.Add(this.groupBox1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -115,5 +132,6 @@
 		private System.Windows.Forms.Button BtnKaydet;
 		private System.Windows.Forms.GroupBox groupBox1;
 		private System.Windows.Forms.ErrorProvider errorProvider1;
+		private System.Windows.Forms.Button BtnCikis;
 	}
 }

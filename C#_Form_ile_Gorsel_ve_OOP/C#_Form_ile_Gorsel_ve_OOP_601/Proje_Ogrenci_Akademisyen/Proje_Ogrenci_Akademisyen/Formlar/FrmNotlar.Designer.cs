@@ -64,6 +64,7 @@
 			this.label13 = new System.Windows.Forms.Label();
 			this.comboBox2 = new System.Windows.Forms.ComboBox();
 			this.label12 = new System.Windows.Forms.Label();
+			this.BtnCikis = new System.Windows.Forms.Button();
 			this.groupBox2.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox1.SuspendLayout();
@@ -73,7 +74,7 @@
 			// groupBox2
 			// 
 			this.groupBox2.Controls.Add(this.dataGridView1);
-			this.groupBox2.Location = new System.Drawing.Point(12, 92);
+			this.groupBox2.Location = new System.Drawing.Point(12, 115);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(909, 527);
 			this.groupBox2.TabIndex = 8;
@@ -346,7 +347,7 @@
 			this.groupBox1.Controls.Add(this.TxtSinav1);
 			this.groupBox1.Controls.Add(this.BtnHesapla);
 			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.Location = new System.Drawing.Point(927, 12);
+			this.groupBox1.Location = new System.Drawing.Point(927, 35);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(434, 607);
 			this.groupBox1.TabIndex = 7;
@@ -424,7 +425,7 @@
 			this.groupBox3.Controls.Add(this.label13);
 			this.groupBox3.Controls.Add(this.comboBox2);
 			this.groupBox3.Controls.Add(this.label12);
-			this.groupBox3.Location = new System.Drawing.Point(12, 12);
+			this.groupBox3.Location = new System.Drawing.Point(12, 35);
 			this.groupBox3.Name = "groupBox3";
 			this.groupBox3.Size = new System.Drawing.Size(909, 74);
 			this.groupBox3.TabIndex = 9;
@@ -506,12 +507,28 @@
 			this.label12.TabIndex = 24;
 			this.label12.Text = "Ders Seçin:";
 			// 
+			// BtnCikis
+			// 
+			this.BtnCikis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.BtnCikis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.BtnCikis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+			this.BtnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnCikis.ForeColor = System.Drawing.Color.White;
+			this.BtnCikis.Location = new System.Drawing.Point(1331, 8);
+			this.BtnCikis.Name = "BtnCikis";
+			this.BtnCikis.Size = new System.Drawing.Size(30, 30);
+			this.BtnCikis.TabIndex = 10;
+			this.BtnCikis.Text = "X";
+			this.BtnCikis.UseVisualStyleBackColor = false;
+			this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
+			// 
 			// FrmNotlar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.ClientSize = new System.Drawing.Size(1373, 631);
+			this.ClientSize = new System.Drawing.Size(1373, 654);
+			this.Controls.Add(this.BtnCikis);
 			this.Controls.Add(this.groupBox3);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
@@ -570,5 +587,6 @@
 		private System.Windows.Forms.ComboBox comboBox2;
 		private System.Windows.Forms.Label label12;
 		private System.Windows.Forms.Button BtnAra2;
+		private System.Windows.Forms.Button BtnCikis;
 	}
 }

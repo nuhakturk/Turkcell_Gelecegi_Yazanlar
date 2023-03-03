@@ -161,5 +161,10 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			TxtOrtalama.Text = dataGridView1.Rows[e.RowIndex].Cells[9].Value.ToString();
 			//comboBox1.SelectedValue = dataGridView1.Rows[e.RowIndex].Cells[10].Value.ToString();
 		}
+
+		private void BtnCikis_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 	}
 }

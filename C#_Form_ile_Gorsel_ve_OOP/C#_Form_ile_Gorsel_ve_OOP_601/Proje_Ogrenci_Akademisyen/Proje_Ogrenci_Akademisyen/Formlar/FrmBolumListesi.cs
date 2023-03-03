@@ -30,5 +30,10 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 						   };
 			dataGridView1.DataSource = degerler.ToList();
 		}
+
+		private void BtnCikis_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 	}
 }

@@ -35,5 +35,10 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 				MessageBox.Show("Bölüm ekleme işlemi başarılı bir şekilde gerçekleşti", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 		}
+
+		private void BtnCikis_Click(object sender, EventArgs e)
+		{
+			this.Close();
+		}
 	}
 }

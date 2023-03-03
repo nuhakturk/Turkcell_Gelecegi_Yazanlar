@@ -16,5 +16,23 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 		{
 			InitializeComponent();
 		}
+
+		private void PnlBolumListesi_Click(object sender, EventArgs e)
+		{
+			FrmBolumListesi fr = new FrmBolumListesi();
+			fr.Show();
+		}
+
+		private void PnlYeniBolum_Click(object sender, EventArgs e)
+		{
+			FrmBolumler fr = new FrmBolumler();
+			fr.Show();
+		}
+
+		private void PnlNotlar_Click(object sender, EventArgs e)
+		{
+			FrmNotlar fr = new FrmNotlar();
+			fr.Show();
+		}
 	}
 }
