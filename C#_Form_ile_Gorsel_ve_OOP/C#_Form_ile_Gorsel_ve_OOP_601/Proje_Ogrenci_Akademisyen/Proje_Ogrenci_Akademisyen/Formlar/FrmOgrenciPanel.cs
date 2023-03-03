@@ -28,7 +28,7 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			TxtSoyad.Text = db.TblOgrenci.Where(x => x.OgrNumara== numara).Select(y => y.OgrSoyad).FirstOrDefault();
 			TxtSifre.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrSifre).FirstOrDefault();
 			TxtMail.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrMail).FirstOrDefault();
-			TxtResim.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrResim).FirstOrDefault();
+			//TxtResim.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrResim).FirstOrDefault();
 			TxtBolum.Text = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrBolum).FirstOrDefault().ToString();
 
 			int ogrenciID = db.TblOgrenci.Where(x => x.OgrNumara == numara).Select(y => y.OgrID).FirstOrDefault();
@@ -47,6 +47,11 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 								   x.Ogrenci
 							   }).Where(x => x.Ogrenci == ogrenciID).ToList();
 			dataGridView1.DataSource = sinavNotlari;
+		}
+
+		private void BtnGuncelle_Click(object sender, EventArgs e)
+		{
+
 		}
 	}
 }
