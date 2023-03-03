@@ -48,6 +48,7 @@
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
 			this.TxtNumara = new System.Windows.Forms.TextBox();
 			this.TxtBolum = new System.Windows.Forms.TextBox();
+			this.label3 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox2.SuspendLayout();
@@ -220,6 +221,7 @@
 			// 
 			// groupBox1
 			// 
+			this.groupBox1.Controls.Add(this.label3);
 			this.groupBox1.Controls.Add(this.TxtBolum);
 			this.groupBox1.Controls.Add(this.TxtNumara);
 			this.groupBox1.Controls.Add(this.label5);
@@ -285,6 +287,16 @@
 			this.TxtBolum.Size = new System.Drawing.Size(249, 28);
 			this.TxtBolum.TabIndex = 18;
 			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.ForeColor = System.Drawing.Color.White;
+			this.label3.Location = new System.Drawing.Point(37, 339);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(58, 22);
+			this.label3.TabIndex = 19;
+			this.label3.Text = "label3";
+			// 
 			// FrmOgrenciPanel
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
@@ -330,5 +342,6 @@
 		private System.Windows.Forms.GroupBox groupBox2;
 		private System.Windows.Forms.TextBox TxtNumara;
 		private System.Windows.Forms.TextBox TxtBolum;
+		private System.Windows.Forms.Label label3;
 	}
 }
