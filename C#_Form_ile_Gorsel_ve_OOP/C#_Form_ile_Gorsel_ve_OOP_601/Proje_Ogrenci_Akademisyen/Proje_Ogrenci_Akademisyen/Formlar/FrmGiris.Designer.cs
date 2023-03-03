@@ -31,8 +31,8 @@
 			this.TxtNumara = new System.Windows.Forms.MaskedTextBox();
 			this.label3 = new System.Windows.Forms.Label();
 			this.label1 = new System.Windows.Forms.Label();
-			this.TxtSoyad = new System.Windows.Forms.TextBox();
-			this.BtnGuncelle = new System.Windows.Forms.Button();
+			this.TxtSifre = new System.Windows.Forms.TextBox();
+			this.BtnGirisYap = new System.Windows.Forms.Button();
 			this.checkBox1 = new System.Windows.Forms.CheckBox();
 			this.linkLabel1 = new System.Windows.Forms.LinkLabel();
 			this.label2 = new System.Windows.Forms.Label();
@@ -72,29 +72,30 @@
 			this.label1.TabIndex = 8;
 			this.label1.Text = "Şifre";
 			// 
-			// TxtSoyad
+			// TxtSifre
 			// 
-			this.TxtSoyad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.TxtSoyad.ForeColor = System.Drawing.Color.White;
-			this.TxtSoyad.Location = new System.Drawing.Point(138, 141);
-			this.TxtSoyad.Name = "TxtSoyad";
-			this.TxtSoyad.Size = new System.Drawing.Size(249, 28);
-			this.TxtSoyad.TabIndex = 1;
-			this.TxtSoyad.UseSystemPasswordChar = true;
+			this.TxtSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtSifre.ForeColor = System.Drawing.Color.White;
+			this.TxtSifre.Location = new System.Drawing.Point(138, 141);
+			this.TxtSifre.Name = "TxtSifre";
+			this.TxtSifre.Size = new System.Drawing.Size(249, 28);
+			this.TxtSifre.TabIndex = 1;
+			this.TxtSifre.UseSystemPasswordChar = true;
 			// 
-			// BtnGuncelle
+			// BtnGirisYap
 			// 
-			this.BtnGuncelle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
-			this.BtnGuncelle.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.BtnGuncelle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.BtnGuncelle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.BtnGuncelle.ForeColor = System.Drawing.Color.White;
-			this.BtnGuncelle.Location = new System.Drawing.Point(138, 207);
-			this.BtnGuncelle.Name = "BtnGuncelle";
-			this.BtnGuncelle.Size = new System.Drawing.Size(249, 37);
-			this.BtnGuncelle.TabIndex = 3;
-			this.BtnGuncelle.Text = "Giriş Yap";
-			this.BtnGuncelle.UseVisualStyleBackColor = false;
+			this.BtnGirisYap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(177)))), ((int)(((byte)(140)))));
+			this.BtnGirisYap.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.BtnGirisYap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnGirisYap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.BtnGirisYap.ForeColor = System.Drawing.Color.White;
+			this.BtnGirisYap.Location = new System.Drawing.Point(138, 207);
+			this.BtnGirisYap.Name = "BtnGirisYap";
+			this.BtnGirisYap.Size = new System.Drawing.Size(249, 37);
+			this.BtnGirisYap.TabIndex = 3;
+			this.BtnGirisYap.Text = "Giriş Yap";
+			this.BtnGirisYap.UseVisualStyleBackColor = false;
+			this.BtnGirisYap.Click += new System.EventHandler(this.BtnGirisYap_Click);
 			// 
 			// checkBox1
 			// 
@@ -150,14 +151,14 @@
 			this.Controls.Add(this.label2);
 			this.Controls.Add(this.linkLabel1);
 			this.Controls.Add(this.checkBox1);
-			this.Controls.Add(this.BtnGuncelle);
-			this.Controls.Add(this.TxtSoyad);
+			this.Controls.Add(this.BtnGirisYap);
+			this.Controls.Add(this.TxtSifre);
 			this.Controls.Add(this.label1);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.TxtNumara);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "FrmGiris";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmGiris";
@@ -171,8 +172,8 @@
 		private System.Windows.Forms.MaskedTextBox TxtNumara;
 		private System.Windows.Forms.Label label3;
 		private System.Windows.Forms.Label label1;
-		private System.Windows.Forms.TextBox TxtSoyad;
-		private System.Windows.Forms.Button BtnGuncelle;
+		private System.Windows.Forms.TextBox TxtSifre;
+		private System.Windows.Forms.Button BtnGirisYap;
 		private System.Windows.Forms.CheckBox checkBox1;
 		private System.Windows.Forms.LinkLabel linkLabel1;
 		private System.Windows.Forms.Label label2;
