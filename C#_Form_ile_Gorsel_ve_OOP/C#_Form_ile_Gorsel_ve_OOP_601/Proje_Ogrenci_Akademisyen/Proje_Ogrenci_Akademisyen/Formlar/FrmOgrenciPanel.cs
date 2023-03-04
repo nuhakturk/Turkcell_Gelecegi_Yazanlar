@@ -64,5 +64,10 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 				MessageBox.Show("Girdiğiniz yeni şifreler birbiri ile uyuşmuyor!");
 			}
 		}
+
+		private void BtnCikis_Click(object sender, EventArgs e)
+		{
+			Application.Exit();
+		}
 	}
 }

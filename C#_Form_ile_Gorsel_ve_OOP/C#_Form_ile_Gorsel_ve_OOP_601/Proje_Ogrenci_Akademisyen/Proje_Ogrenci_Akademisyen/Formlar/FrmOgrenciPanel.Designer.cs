@@ -41,14 +41,15 @@
 			this.BtnGuncelle = new System.Windows.Forms.Button();
 			this.label5 = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
+			this.TxtYeniSifreTekrar = new System.Windows.Forms.TextBox();
+			this.label7 = new System.Windows.Forms.Label();
+			this.TxtYeniSifre = new System.Windows.Forms.TextBox();
+			this.label3 = new System.Windows.Forms.Label();
 			this.TxtBolum = new System.Windows.Forms.TextBox();
 			this.TxtNumara = new System.Windows.Forms.TextBox();
 			this.dataGridView1 = new System.Windows.Forms.DataGridView();
 			this.groupBox2 = new System.Windows.Forms.GroupBox();
-			this.TxtYeniSifre = new System.Windows.Forms.TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.TxtYeniSifreTekrar = new System.Windows.Forms.TextBox();
-			this.label7 = new System.Windows.Forms.Label();
+			this.BtnCikis = new System.Windows.Forms.Button();
 			this.groupBox1.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
 			this.groupBox2.SuspendLayout();
@@ -205,11 +206,52 @@
 			this.groupBox1.Controls.Add(this.label2);
 			this.groupBox1.Controls.Add(this.TxtAd);
 			this.groupBox1.Controls.Add(this.label1);
-			this.groupBox1.Location = new System.Drawing.Point(853, 13);
+			this.groupBox1.Location = new System.Drawing.Point(852, 43);
 			this.groupBox1.Name = "groupBox1";
 			this.groupBox1.Size = new System.Drawing.Size(434, 406);
 			this.groupBox1.TabIndex = 7;
 			this.groupBox1.TabStop = false;
+			// 
+			// TxtYeniSifreTekrar
+			// 
+			this.TxtYeniSifreTekrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtYeniSifreTekrar.ForeColor = System.Drawing.Color.White;
+			this.TxtYeniSifreTekrar.Location = new System.Drawing.Point(151, 236);
+			this.TxtYeniSifreTekrar.Name = "TxtYeniSifreTekrar";
+			this.TxtYeniSifreTekrar.Size = new System.Drawing.Size(249, 28);
+			this.TxtYeniSifreTekrar.TabIndex = 21;
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.label7.ForeColor = System.Drawing.Color.White;
+			this.label7.Location = new System.Drawing.Point(22, 239);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(123, 22);
+			this.label7.TabIndex = 22;
+			this.label7.Text = "Yeni Şifre T:";
+			// 
+			// TxtYeniSifre
+			// 
+			this.TxtYeniSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.TxtYeniSifre.ForeColor = System.Drawing.Color.White;
+			this.TxtYeniSifre.Location = new System.Drawing.Point(151, 202);
+			this.TxtYeniSifre.Name = "TxtYeniSifre";
+			this.TxtYeniSifre.Size = new System.Drawing.Size(249, 28);
+			this.TxtYeniSifre.TabIndex = 19;
+			this.TxtYeniSifre.UseSystemPasswordChar = true;
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+			this.label3.ForeColor = System.Drawing.Color.White;
+			this.label3.Location = new System.Drawing.Point(41, 205);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(104, 22);
+			this.label3.TabIndex = 20;
+			this.label3.Text = "Yeni Şifre:";
 			// 
 			// TxtBolum
 			// 
@@ -247,59 +289,34 @@
 			// groupBox2
 			// 
 			this.groupBox2.Controls.Add(this.dataGridView1);
-			this.groupBox2.Location = new System.Drawing.Point(13, 13);
+			this.groupBox2.Location = new System.Drawing.Point(12, 43);
 			this.groupBox2.Name = "groupBox2";
 			this.groupBox2.Size = new System.Drawing.Size(834, 406);
 			this.groupBox2.TabIndex = 8;
 			this.groupBox2.TabStop = false;
 			// 
-			// TxtYeniSifre
+			// BtnCikis
 			// 
-			this.TxtYeniSifre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.TxtYeniSifre.ForeColor = System.Drawing.Color.White;
-			this.TxtYeniSifre.Location = new System.Drawing.Point(151, 202);
-			this.TxtYeniSifre.Name = "TxtYeniSifre";
-			this.TxtYeniSifre.Size = new System.Drawing.Size(249, 28);
-			this.TxtYeniSifre.TabIndex = 19;
-			this.TxtYeniSifre.UseSystemPasswordChar = true;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.label3.ForeColor = System.Drawing.Color.White;
-			this.label3.Location = new System.Drawing.Point(41, 205);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(104, 22);
-			this.label3.TabIndex = 20;
-			this.label3.Text = "Yeni Şifre:";
-			// 
-			// TxtYeniSifreTekrar
-			// 
-			this.TxtYeniSifreTekrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.TxtYeniSifreTekrar.ForeColor = System.Drawing.Color.White;
-			this.TxtYeniSifreTekrar.Location = new System.Drawing.Point(151, 236);
-			this.TxtYeniSifreTekrar.Name = "TxtYeniSifreTekrar";
-			this.TxtYeniSifreTekrar.Size = new System.Drawing.Size(249, 28);
-			this.TxtYeniSifreTekrar.TabIndex = 21;
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-			this.label7.ForeColor = System.Drawing.Color.White;
-			this.label7.Location = new System.Drawing.Point(22, 239);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(123, 22);
-			this.label7.TabIndex = 22;
-			this.label7.Text = "Yeni Şifre T:";
+			this.BtnCikis.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
+			this.BtnCikis.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+			this.BtnCikis.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Red;
+			this.BtnCikis.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.BtnCikis.ForeColor = System.Drawing.Color.White;
+			this.BtnCikis.Location = new System.Drawing.Point(1256, 11);
+			this.BtnCikis.Name = "BtnCikis";
+			this.BtnCikis.Size = new System.Drawing.Size(30, 30);
+			this.BtnCikis.TabIndex = 9;
+			this.BtnCikis.Text = "X";
+			this.BtnCikis.UseVisualStyleBackColor = false;
+			this.BtnCikis.Click += new System.EventHandler(this.BtnCikis_Click);
 			// 
 			// FrmOgrenciPanel
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(51)))), ((int)(((byte)(64)))));
-			this.ClientSize = new System.Drawing.Size(1298, 429);
+			this.ClientSize = new System.Drawing.Size(1298, 461);
+			this.Controls.Add(this.BtnCikis);
 			this.Controls.Add(this.groupBox2);
 			this.Controls.Add(this.groupBox1);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -340,5 +357,6 @@
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.TextBox TxtYeniSifre;
 		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.Button BtnCikis;
 	}
 }
