@@ -44,7 +44,7 @@
 			this.label7 = new System.Windows.Forms.Label();
 			this.PnlYardim = new System.Windows.Forms.Panel();
 			this.label8 = new System.Windows.Forms.Label();
-			this.panel9 = new System.Windows.Forms.Panel();
+			this.PnlCikisYap = new System.Windows.Forms.Panel();
 			this.label9 = new System.Windows.Forms.Label();
 			this.PnlBolumListesi.SuspendLayout();
 			this.PnlYeniBolum.SuspendLayout();
@@ -54,7 +54,7 @@
 			this.PnlDersListesi.SuspendLayout();
 			this.PnlYeniDers.SuspendLayout();
 			this.PnlYardim.SuspendLayout();
-			this.panel9.SuspendLayout();
+			this.PnlCikisYap.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// PnlBolumListesi
@@ -233,15 +233,16 @@
 			this.label8.TabIndex = 0;
 			this.label8.Text = "Yardım";
 			// 
-			// panel9
+			// PnlCikisYap
 			// 
-			this.panel9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(82)))), ((int)(((byte)(221)))));
-			this.panel9.Controls.Add(this.label9);
-			this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.panel9.Location = new System.Drawing.Point(424, 224);
-			this.panel9.Name = "panel9";
-			this.panel9.Size = new System.Drawing.Size(200, 100);
-			this.panel9.TabIndex = 5;
+			this.PnlCikisYap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(82)))), ((int)(((byte)(221)))));
+			this.PnlCikisYap.Controls.Add(this.label9);
+			this.PnlCikisYap.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.PnlCikisYap.Location = new System.Drawing.Point(424, 224);
+			this.PnlCikisYap.Name = "PnlCikisYap";
+			this.PnlCikisYap.Size = new System.Drawing.Size(200, 100);
+			this.PnlCikisYap.TabIndex = 5;
+			this.PnlCikisYap.Click += new System.EventHandler(this.PnlCikisYap_Click);
 			// 
 			// label9
 			// 
@@ -259,7 +260,7 @@
 			this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 22F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(636, 334);
-			this.Controls.Add(this.panel9);
+			this.Controls.Add(this.PnlCikisYap);
 			this.Controls.Add(this.PnlYardim);
 			this.Controls.Add(this.PnlYeniDers);
 			this.Controls.Add(this.PnlDersListesi);
@@ -290,8 +291,8 @@
 			this.PnlYeniDers.PerformLayout();
 			this.PnlYardim.ResumeLayout(false);
 			this.PnlYardim.PerformLayout();
-			this.panel9.ResumeLayout(false);
-			this.panel9.PerformLayout();
+			this.PnlCikisYap.ResumeLayout(false);
+			this.PnlCikisYap.PerformLayout();
 			this.ResumeLayout(false);
 
 		}
@@ -314,7 +315,7 @@
 		private System.Windows.Forms.Label label7;
 		private System.Windows.Forms.Panel PnlYardim;
 		private System.Windows.Forms.Label label8;
-		private System.Windows.Forms.Panel panel9;
+		private System.Windows.Forms.Panel PnlCikisYap;
 		private System.Windows.Forms.Label label9;
 	}
 }
