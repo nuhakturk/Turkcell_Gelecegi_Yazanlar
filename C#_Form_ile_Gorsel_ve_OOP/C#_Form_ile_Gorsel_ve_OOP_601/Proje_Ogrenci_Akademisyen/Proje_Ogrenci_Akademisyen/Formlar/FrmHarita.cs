@@ -58,5 +58,10 @@ namespace Proje_Ogrenci_Akademisyen.Formlar
 			FrmYeniDers fr = new FrmYeniDers();
 			fr.Show();
 		}
+
+		private void PnlYardim_Click(object sender, EventArgs e)
+		{
+			MessageBox.Show("Bu proje Turkcell Geleceği Yazanlar Eğitimi Kapsamında hazırlanmıştır. Müfredatın son projesinde amacımız şu ana kadar öğrenmiş olduğumuz konuların büyük bir kısmını içeren örnek bir veri tabanlı proje uygulaması geliştirmektir. Projemizde akademisyen için kullanıcı adı: 00000 olup şifre: 000 şeklindedir. Akademisyen panelinden öğrenci, ders, bölüm, sınav notları gibi işlemlerin tamamı gerçekleştirilebilir. Sisteme giriş yapan öğrenci sadece kendisine ait bilgileri ve sınav notlarını görüntüler.", "Yardım Penceresi", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+		}
 	}
 }

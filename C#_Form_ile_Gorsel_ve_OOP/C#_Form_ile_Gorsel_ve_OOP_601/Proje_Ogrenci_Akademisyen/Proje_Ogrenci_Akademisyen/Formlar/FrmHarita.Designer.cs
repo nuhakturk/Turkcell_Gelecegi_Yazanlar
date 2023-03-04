@@ -42,7 +42,7 @@
 			this.label6 = new System.Windows.Forms.Label();
 			this.PnlYeniDers = new System.Windows.Forms.Panel();
 			this.label7 = new System.Windows.Forms.Label();
-			this.panel8 = new System.Windows.Forms.Panel();
+			this.PnlYardim = new System.Windows.Forms.Panel();
 			this.label8 = new System.Windows.Forms.Label();
 			this.panel9 = new System.Windows.Forms.Panel();
 			this.label9 = new System.Windows.Forms.Label();
@@ -53,7 +53,7 @@
 			this.PnlOgrenciKayit.SuspendLayout();
 			this.PnlDersListesi.SuspendLayout();
 			this.PnlYeniDers.SuspendLayout();
-			this.panel8.SuspendLayout();
+			this.PnlYardim.SuspendLayout();
 			this.panel9.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -211,15 +211,16 @@
 			this.label7.TabIndex = 0;
 			this.label7.Text = "Yeni Ders";
 			// 
-			// panel8
+			// PnlYardim
 			// 
-			this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(50)))));
-			this.panel8.Controls.Add(this.label8);
-			this.panel8.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.panel8.Location = new System.Drawing.Point(218, 224);
-			this.panel8.Name = "panel8";
-			this.panel8.Size = new System.Drawing.Size(200, 100);
-			this.panel8.TabIndex = 5;
+			this.PnlYardim.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(148)))), ((int)(((byte)(50)))));
+			this.PnlYardim.Controls.Add(this.label8);
+			this.PnlYardim.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.PnlYardim.Location = new System.Drawing.Point(218, 224);
+			this.PnlYardim.Name = "PnlYardim";
+			this.PnlYardim.Size = new System.Drawing.Size(200, 100);
+			this.PnlYardim.TabIndex = 5;
+			this.PnlYardim.Click += new System.EventHandler(this.PnlYardim_Click);
 			// 
 			// label8
 			// 
@@ -259,7 +260,7 @@
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(636, 334);
 			this.Controls.Add(this.panel9);
-			this.Controls.Add(this.panel8);
+			this.Controls.Add(this.PnlYardim);
 			this.Controls.Add(this.PnlYeniDers);
 			this.Controls.Add(this.PnlDersListesi);
 			this.Controls.Add(this.PnlOgrenciKayit);
@@ -269,7 +270,7 @@
 			this.Controls.Add(this.PnlBolumListesi);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
 			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-			this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+			this.Margin = new System.Windows.Forms.Padding(4);
 			this.Name = "FrmHarita";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "FrmHarita";
@@ -287,8 +288,8 @@
 			this.PnlDersListesi.PerformLayout();
 			this.PnlYeniDers.ResumeLayout(false);
 			this.PnlYeniDers.PerformLayout();
-			this.panel8.ResumeLayout(false);
-			this.panel8.PerformLayout();
+			this.PnlYardim.ResumeLayout(false);
+			this.PnlYardim.PerformLayout();
 			this.panel9.ResumeLayout(false);
 			this.panel9.PerformLayout();
 			this.ResumeLayout(false);
@@ -311,7 +312,7 @@
 		private System.Windows.Forms.Label label6;
 		private System.Windows.Forms.Panel PnlYeniDers;
 		private System.Windows.Forms.Label label7;
-		private System.Windows.Forms.Panel panel8;
+		private System.Windows.Forms.Panel PnlYardim;
 		private System.Windows.Forms.Label label8;
 		private System.Windows.Forms.Panel panel9;
 		private System.Windows.Forms.Label label9;
